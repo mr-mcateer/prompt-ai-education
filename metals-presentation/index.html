@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metal Types &mdash; Metals Class</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="css/metals.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ============================================================
+           SLIDE 1 — TITLE
+           ============================================================ -->
+      <section data-background-image="img/title-bg.jpg"
+               data-background-opacity="0.4"
+               data-background-size="cover">
+        <h1 class="title-main">Metal Types</h1>
+        <p class="title-sub">Metals &amp; Manufacturing</p>
+        <aside class="notes">
+          <strong>WELCOME &amp; OPENING (2 min)</strong><br><br>
+          Welcome to our unit on metal types. Just like we learn to identify different species of wood
+          in woodworking, in metals class we need to be able to identify and understand the properties
+          of different metals — because choosing the wrong metal for a job can mean the difference
+          between a project that lasts a lifetime and one that fails on day one.<br><br>
+          <strong>Key question to pose:</strong> "If I handed you two pieces of metal that looked almost
+          identical, how would you tell them apart?" (Let students brainstorm — weight, magnetism, color,
+          spark test). We'll come back to this.
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 2 — HOOK: WHAT ABOUT METAL?
+           ============================================================ -->
+      <section>
+        <h2>What About Metal?</h2>
+        <aside class="notes">
+          <strong>TRANSITION (1 min)</strong><br><br>
+          In woodworking, students learn to tell the difference between hardwoods and softwoods —
+          oak vs. pine, maple vs. cedar. Each one has a color, a grain, a hardness, and a best use.<br><br>
+          Metals are the same way. Steel isn't just "steel." Aluminum isn't just "aluminum."
+          There are families, grades, and alloys — and each one behaves differently when you
+          cut it, weld it, bend it, or finish it.<br><br>
+          Today we're going to build your metal vocabulary so you can walk into any shop and
+          know what you're working with.
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 3 — TERMS: FERROUS vs. NON-FERROUS
+           ============================================================ -->
+      <section>
+        <h2 class="slide-heading">Terms:</h2>
+        <div class="two-col">
+          <div class="col">
+            <h3 class="accent-heading">Ferrous</h3>
+            <img src="img/ferrous-rust.jpg" alt="Rusted ferrous steel surface" class="col-img">
+            <ul>
+              <li>Contains <span class="highlight">iron (Fe)</span></li>
+              <li><span class="highlight">Magnetic</span></li>
+              <li>Prone to rust (oxidation)</li>
+              <li>Generally stronger</li>
+              <li>Examples: steel, cast iron, wrought iron</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 class="accent-heading">Non-Ferrous</h3>
+            <img src="img/nonferrous-copper.jpg" alt="Copper pipes representing non-ferrous metals" class="col-img">
+            <ul>
+              <li>Contains <span class="highlight">no iron</span></li>
+              <li><span class="highlight">Not magnetic</span></li>
+              <li>Naturally corrosion resistant</li>
+              <li>Generally lighter</li>
+              <li>Examples: aluminum, copper, brass, titanium</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="notes">
+          <strong>KEY CONCEPTS (5 min)</strong><br><br>
+          This is the single most important classification in metals. Write "Ferrous" and "Non-Ferrous"
+          on the board.<br><br>
+          <strong>Ferrous</strong> comes from the Latin word <em>ferrum</em> meaning iron — that's why iron's
+          chemical symbol is Fe. ANY metal that contains iron as its primary ingredient is ferrous.<br><br>
+          <strong>Quick demo idea:</strong> Grab a magnet and walk around the shop. Touch it to different
+          metals. If it sticks → ferrous. If it doesn't → non-ferrous. This is the simplest field
+          test students will ever learn.<br><br>
+          <strong>Why it matters practically:</strong><br>
+          • Ferrous metals RUST. If a student leaves a mild steel project unfinished without primer,
+            it will have surface rust by Monday.<br>
+          • Non-ferrous metals resist corrosion naturally — that's why aluminum is used for aircraft
+            and copper for plumbing.<br>
+          • Welding parameters are completely different between ferrous and non-ferrous.<br><br>
+          <strong>Check for understanding:</strong> "Is stainless steel ferrous or non-ferrous?" (Trick question —
+          it IS ferrous because it contains iron, but the chromium content prevents rust. Good discussion starter.)
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 4 — WHY DO YOU CARE?
+           ============================================================ -->
+      <section>
+        <h2 class="slide-heading">Why Do You Care?</h2>
+        <ul class="spaced-list">
+          <li>The <span class="highlight">harder</span> the metal, the more it wears your tools</li>
+          <li>"Machinability" = how easy it is to cut, drill, and shape</li>
+          <li>Wrong metal + wrong process = <span class="highlight">ruined project</span></li>
+          <li>Different metals require different <span class="highlight">welding wire, gas, and settings</span></li>
+          <li>Cost varies wildly — mild steel is <span class="highlight">~$1/lb</span>, stainless can be <span class="highlight">~$3-4/lb</span></li>
+        </ul>
+        <aside class="notes">
+          <strong>RELEVANCE CONNECTION (3 min)</strong><br><br>
+          This is the "so what?" slide. Students need to understand that metal selection isn't
+          academic — it directly affects their shop work.<br><br>
+          <strong>Analogies to woodworking they may know:</strong><br>
+          • Just like sanding oak takes longer than sanding pine, machining stainless takes way
+            longer than machining aluminum.<br>
+          • Just like you wouldn't use balsa wood for a load-bearing shelf, you wouldn't use
+            aluminum where you need the strength of steel.<br><br>
+          <strong>Real consequences in our shop:</strong><br>
+          • If you try to MIG weld aluminum with steel wire → contaminated weld, no fusion, scrapped part.<br>
+          • If you run lathe speeds for steel when cutting aluminum → clogged tool, bad finish.<br>
+          • If you pick stainless when mild steel would work → you just tripled your material cost.<br><br>
+          <strong>Engagement prompt:</strong> "Has anyone ever tried to drill through something and the
+          drill bit just squealed and smoked? What probably happened?" (Wrong speed/feed for the
+          material hardness.)
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 5 — MILD STEEL (1018 / A36)
+           ============================================================ -->
+      <section>
+        <h2 class="slide-heading">Mild Steel <span class="subheading">(1018 / A36)</span></h2>
+        <div class="metal-profile">
+          <div class="properties">
+            <ul>
+              <li>FERROUS</li>
+              <li><span class="highlight">Color: dark grey, bluish mill scale</span></li>
+              <li>Hardness: low-medium (Brinell ~126)</li>
+              <li>Machinability: <span class="highlight">excellent</span></li>
+              <li>Weldability: excellent — easiest to weld</li>
+              <li>Density: 7.87 g/cm&sup3; (heavy)</li>
+              <li><span class="highlight">Magnetic: yes</span></li>
+              <li><span class="highlight">Corrosion: rusts easily</span></li>
+              <li>Carbon content: 0.18% (low carbon)</li>
+              <li>Most common steel in the shop</li>
+              <li><span class="highlight">Inexpensive — the "pine" of metals</span></li>
+            </ul>
+          </div>
+          <div class="images">
+            <img src="img/mild-steel.jpg" alt="Mild steel bars and stock" class="profile-img">
+            <img src="img/mild-steel-project.jpg" alt="Welded mild steel project" class="profile-img">
+          </div>
+        </div>
+        <aside class="notes">
+          <strong>MILD STEEL DEEP DIVE (5 min)</strong><br><br>
+          Mild steel is the bread and butter of any metals shop. If students only remember one
+          metal from this entire unit, it should be this one.<br><br>
+          <strong>The naming system:</strong><br>
+          • "1018" is an AISI/SAE grade. The "10" means plain carbon steel, the "18" means 0.18%
+            carbon. Low carbon = soft, ductile, weldable.<br>
+          • "A36" is an ASTM structural grade — same family, slightly different spec. Most of the
+            flat bar, angle iron, and tube in our shop is A36.<br><br>
+          <strong>Identification tips:</strong><br>
+          • Fresh-cut mild steel is silvery grey. But it usually has dark blue-grey "mill scale"
+            (oxide layer from hot rolling).<br>
+          • It's magnetic — always sticks to a magnet.<br>
+          • Spark test: long, white, branching sparks with lots of forks (carbon bursts).<br>
+          • It WILL rust if you leave it bare. Oil it or prime it.<br><br>
+          <strong>In our shop:</strong><br>
+          • This is what we weld in MIG — ER70S-6 wire, C25 gas (75% argon / 25% CO2).<br>
+          • It machines beautifully on the lathe and mill. Forgiving for beginners.<br>
+          • Almost every first project in metals class is mild steel because it's cheap and forgiving.<br><br>
+          <strong>Analogy:</strong> "Mild steel is to metals class what pine is to woodworking —
+          it's cheap, it's everywhere, it's easy to work with, and it's what you learn on."
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 6 — 6061 ALUMINUM
+           ============================================================ -->
+      <section>
+        <h2 class="slide-heading">6061 Aluminum</h2>
+        <div class="metal-profile">
+          <div class="properties">
+            <ul>
+              <li>NON-FERROUS</li>
+              <li><span class="highlight">Color: silver-white, bright</span></li>
+              <li>Hardness: medium (Brinell ~95)</li>
+              <li>Machinability: <span class="highlight">very good</span></li>
+              <li>Weldability: weldable (TIG preferred, MIG possible)</li>
+              <li>Density: 2.70 g/cm&sup3; (<span class="highlight">~1/3 the weight of steel</span>)</li>
+              <li><span class="highlight">Magnetic: no</span></li>
+              <li>Corrosion: naturally resistant (oxide layer)</li>
+              <li>Alloy series: 6xxx (magnesium + silicon)</li>
+              <li>Heat treatable — T6 temper is strongest</li>
+              <li><span class="highlight">The "workhorse" aluminum alloy</span></li>
+            </ul>
+          </div>
+          <div class="images">
+            <img src="img/aluminum.jpg" alt="6061 Aluminum stock" class="profile-img">
+            <img src="img/aluminum-project.jpg" alt="Aluminum fabrication project" class="profile-img">
+          </div>
+        </div>
+        <aside class="notes">
+          <strong>6061 ALUMINUM DEEP DIVE (5 min)</strong><br><br>
+          If mild steel is the pine of metals, 6061 aluminum is the poplar — lighter, softer,
+          and very versatile.<br><br>
+          <strong>The naming system:</strong><br>
+          • "6061" — the "6" means it's alloyed with magnesium and silicon. The "061" is
+            the specific recipe. 6061 is by far the most common aluminum alloy in general fabrication.<br>
+          • You'll also see "6061-T6" — the T6 means it's been heat treated and artificially aged
+            for maximum strength. T6 is harder to bend but stronger.<br><br>
+          <strong>Identification tips:</strong><br>
+          • Bright silver-white color — much lighter looking than steel.<br>
+          • Pick it up — it's shockingly light. About 1/3 the weight of the same size piece of steel.<br>
+          • NOT magnetic. Magnet slides right off.<br>
+          • No spark on a grinder — aluminum doesn't spark.<br>
+          • Leaves a silvery smear if you rub it on concrete.<br><br>
+          <strong>In our shop:</strong><br>
+          • Machines FAST — you can run 2-3x the spindle speed compared to steel.<br>
+          • BUT: aluminum is "gummy." Chips can weld to your cutting tool if you don't use
+            the right speed/feed and cutting fluid.<br>
+          • Welding aluminum requires different everything: aluminum wire, 100% argon gas, AC
+            current (TIG) or special MIG setup.<br>
+          • Can't mix aluminum and steel chips in the recycling — keep bins separate!<br><br>
+          <strong>Where you see it:</strong> Bike frames, aircraft, boat hardware, phone cases, laptop
+          bodies, car wheels. If it needs to be light and strong, it's probably 6061.
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 7 — STAINLESS STEEL (304 / 316)
+           ============================================================ -->
+      <section>
+        <h2 class="slide-heading">Stainless Steel <span class="subheading">(304 / 316)</span></h2>
+        <div class="metal-profile">
+          <div class="properties">
+            <ul>
+              <li>FERROUS <span class="highlight">(still contains iron!)</span></li>
+              <li><span class="highlight">Color: bright silver, stays shiny</span></li>
+              <li>Hardness: high (Brinell ~200)</li>
+              <li>Machinability: <span class="highlight">poor — work hardens</span></li>
+              <li>Weldability: weldable (TIG preferred)</li>
+              <li>Density: 8.00 g/cm&sup3; (slightly heavier than mild steel)</li>
+              <li>Magnetic: <span class="highlight">depends on grade</span> (304 is weakly magnetic)</li>
+              <li><span class="highlight">Corrosion: highly resistant (10.5%+ chromium)</span></li>
+              <li>Expensive — 3-4x the cost of mild steel</li>
+              <li>Don't cross-contaminate with carbon steel tools</li>
+              <li><span class="highlight">The "premium" metal — worth the extra cost when you need it</span></li>
+            </ul>
+          </div>
+          <div class="images">
+            <img src="img/stainless-steel.jpg" alt="Stainless steel surface" class="profile-img">
+            <img src="img/stainless-project.jpg" alt="Stainless steel application" class="profile-img">
+          </div>
+        </div>
+        <aside class="notes">
+          <strong>STAINLESS STEEL DEEP DIVE (5 min)</strong><br><br>
+          Stainless steel is the most misunderstood metal in the shop. Students assume it's
+          "just fancier steel." It's actually a completely different animal to work with.<br><br>
+          <strong>The naming system:</strong><br>
+          • "304" is the most common grade — the "kitchen sink" stainless. 18% chromium, 8% nickel.
+            Also called "18-8."<br>
+          • "316" has added molybdenum for even better corrosion resistance — used in marine and
+            medical applications.<br>
+          • The chromium (minimum 10.5%) reacts with oxygen to form an invisible, self-healing
+            protective layer. That's what makes it "stainless."<br><br>
+          <strong>Identification tips:</strong><br>
+          • Looks similar to mild steel when freshly ground, but stays bright — doesn't form
+            mill scale or rust.<br>
+          • Slightly heavier than mild steel if you compare same-size pieces.<br>
+          • Magnet test is unreliable — some stainless is slightly magnetic, some isn't.<br>
+          • Spark test: short, dark-red sparks with very few forks (low carbon).<br><br>
+          <strong>Critical shop rules:</strong><br>
+          • NEVER use a grinding wheel, wire brush, or flap disc on stainless that has been used
+            on carbon steel. Carbon particles embed in the stainless surface and cause rust spots.
+            This is called "cross-contamination."<br>
+          • Keep dedicated stainless tools marked separately.<br>
+          • Stainless "work hardens" — if you go too slow on the lathe or drill press, the
+            surface gets harder and harder. Keep feeds aggressive and cutting tools sharp.<br><br>
+          <strong>Where you see it:</strong> Kitchen appliances, food processing, surgical instruments,
+          boat railings, handrails, architectural features. Anywhere corrosion resistance matters
+          more than cost.
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 8 — MIG WELDING
+           ============================================================ -->
+      <section>
+        <h2 class="slide-heading">MIG Welding</h2>
+        <p class="process-subtitle">Gas Metal Arc Welding (GMAW)</p>
+        <div class="process-layout">
+          <div class="process-info">
+            <ul>
+              <li><span class="highlight">How it works:</span> wire-fed electrode melts into the joint</li>
+              <li>Shielding gas protects the weld pool from contamination</li>
+              <li><span class="highlight">Steel setup:</span> ER70S-6 wire + C25 gas (75% Ar / 25% CO2)</li>
+              <li>Aluminum setup: ER4043 wire + 100% Argon</li>
+              <li>Easiest welding process to learn</li>
+              <li><span class="highlight">"Point and shoot" — the hot glue gun of welding</span></li>
+              <li>Travel speed matters — too fast = cold weld, too slow = burn-through</li>
+              <li>Wire speed + voltage must be balanced</li>
+            </ul>
+          </div>
+          <div class="process-image">
+            <img src="img/mig-welding.jpg" alt="MIG welding in action" class="profile-img-large">
+          </div>
+        </div>
+        <aside class="notes">
+          <strong>MIG WELDING OVERVIEW (5 min)</strong><br><br>
+          MIG welding is the first welding process most students learn because it has the
+          shortest learning curve.<br><br>
+          <strong>How to explain it simply:</strong><br>
+          "Imagine a hot glue gun, but instead of glue, it feeds metal wire. And instead of
+          heating it with electricity in the gun, there's an electrical arc between the wire
+          and the workpiece that's about 6,000&deg;F. The shielding gas is like an invisible
+          bubble that keeps oxygen away from the molten puddle."<br><br>
+          <strong>Key settings students need to understand:</strong><br>
+          • <strong>Wire speed</strong> — controls how much filler metal goes into the joint.
+            Too much = big, blobby weld. Too little = no fusion.<br>
+          • <strong>Voltage</strong> — controls the arc length and heat. Higher voltage = wider,
+            flatter bead. Lower = narrower, taller bead.<br>
+          • <strong>Travel speed</strong> — how fast you move the gun along the joint. This is
+            the hardest thing for beginners to get consistent.<br><br>
+          <strong>Common beginner mistakes:</strong><br>
+          1. Holding the gun too far from the workpiece (arc goes everywhere)<br>
+          2. Moving too fast (cold, ropy bead with no penetration)<br>
+          3. Not cleaning the metal first (porosity — tiny holes in the weld)<br>
+          4. Wrong polarity (DCEP for MIG — wire is positive)<br><br>
+          <strong>Safety callout:</strong> Never look at the arc without a welding helmet (minimum
+          shade 10). Even a brief flash can cause "arc eye" — feels like sand in your eyes,
+          starts hurting hours later. No UV exposure is safe.
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 9 — LATHE TURNING
+           ============================================================ -->
+      <section>
+        <h2 class="slide-heading">Lathe Turning</h2>
+        <p class="process-subtitle">Cylindrical Machining</p>
+        <div class="process-layout">
+          <div class="process-info">
+            <ul>
+              <li><span class="highlight">How it works:</span> workpiece spins, cutting tool stays still</li>
+              <li>Creates round/cylindrical shapes</li>
+              <li>Operations: facing, turning, boring, threading, knurling</li>
+              <li><span class="highlight">RPM changes by material:</span></li>
+              <li class="sub-item">Steel: ~300-600 RPM</li>
+              <li class="sub-item">Aluminum: ~800-1500 RPM</li>
+              <li class="sub-item">Stainless: ~200-400 RPM (slow!)</li>
+              <li>Cutting fluid reduces heat and improves finish</li>
+              <li><span class="highlight">Never leave the chuck key in the chuck</span></li>
+            </ul>
+          </div>
+          <div class="process-image">
+            <img src="img/lathe.jpg" alt="Metal lathe turning operation" class="profile-img-large">
+          </div>
+        </div>
+        <aside class="notes">
+          <strong>LATHE TURNING OVERVIEW (5 min)</strong><br><br>
+          The lathe is one of the oldest machine tools — it's been around in some form for
+          thousands of years. But it's still one of the most important machines in any shop.<br><br>
+          <strong>The key concept:</strong><br>
+          "On a lathe, the WORK spins and the TOOL stays still. This is the opposite of a drill
+          press or mill where the tool spins. Because the work spins, everything a lathe makes
+          is round." Draw this distinction clearly — students often confuse which is moving.<br><br>
+          <strong>Speed matters — A LOT:</strong><br>
+          • Aluminum can handle high RPMs because it's soft and conducts heat away quickly.<br>
+          • Stainless steel needs LOW RPMs because it work-hardens. If students go too slow on
+            the feed, the surface gets harder with each pass, and eventually the tool just rubs
+            instead of cutting. This destroys the tool and the workpiece.<br>
+          • Rule of thumb: softer metal = faster RPM, harder metal = slower RPM.<br><br>
+          <strong>Safety — absolute non-negotiables:</strong><br>
+          1. <strong>NEVER leave the chuck key in the chuck.</strong> If the lathe starts, that key
+             becomes a projectile. This is the #1 lathe safety rule.<br>
+          2. No loose clothing, gloves, or jewelry near a spinning lathe. Long sleeves get
+             rolled up. No gloves (they catch and pull your hand in).<br>
+          3. Safety glasses at ALL times — chips are hot and sharp.<br>
+          4. Stand to the side of the chuck, not in front of it, when starting the machine.<br><br>
+          <strong>Common operations students will do:</strong><br>
+          • Facing — cutting the end flat<br>
+          • Turning — reducing the diameter<br>
+          • Drilling — center drill first, then drill bit in the tailstock<br>
+          • Chamfering — putting a 45&deg; angle on edges
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 10 — MILLING
+           ============================================================ -->
+      <section>
+        <h2 class="slide-heading">Milling</h2>
+        <p class="process-subtitle">Precision Material Removal</p>
+        <div class="process-layout">
+          <div class="process-info">
+            <ul>
+              <li><span class="highlight">How it works:</span> spinning cutter removes material from a clamped workpiece</li>
+              <li>Creates flat surfaces, slots, pockets, and contours</li>
+              <li>Operations: face milling, end milling, slot cutting, drilling</li>
+              <li><span class="highlight">Feed rate changes by material:</span></li>
+              <li class="sub-item">Steel: moderate feed, lower RPM</li>
+              <li class="sub-item">Aluminum: aggressive feed, higher RPM</li>
+              <li class="sub-item">Stainless: light feed, low RPM, constant cutting fluid</li>
+              <li>Workholding is critical — vise must be tight</li>
+              <li><span class="highlight">Climb milling vs. conventional — know the difference</span></li>
+            </ul>
+          </div>
+          <div class="process-image">
+            <img src="img/milling.jpg" alt="Milling machine cutting metal" class="profile-img-large">
+          </div>
+        </div>
+        <aside class="notes">
+          <strong>MILLING OVERVIEW (5 min)</strong><br><br>
+          If the lathe makes round things, the mill makes everything else — flat surfaces,
+          square shapes, pockets, slots, and complex contours.<br><br>
+          <strong>The key concept:</strong><br>
+          "On a mill, the TOOL spins and the WORK stays still (but moves on a table).
+          The cutting tool has multiple flutes (cutting edges) that each take a small bite
+          as they spin." Contrast this with the lathe where the work spins.<br><br>
+          <strong>Types of operations:</strong><br>
+          • <strong>Face milling</strong> — using the bottom of the end mill to flatten a surface.
+            Like using a hand plane on wood, but with a spinning cutter.<br>
+          • <strong>End milling</strong> — cutting with the side of the tool. Makes walls, steps,
+            and profiles.<br>
+          • <strong>Slot cutting</strong> — plunging the end mill in and cutting a channel.
+            Like a router cutting a dado in wood.<br><br>
+          <strong>Material-specific tips:</strong><br>
+          • Aluminum: use 2 or 3 flute end mills (more room for chips to evacuate).
+            Aluminum chips are big and can clog a 4-flute cutter.<br>
+          • Steel: 4 flute is fine. Slower RPM, moderate feed.<br>
+          • Stainless: sharp tools are critical. A dull end mill on stainless work-hardens
+            the surface and creates a vicious cycle of heat and hardening.<br><br>
+          <strong>Safety:</strong><br>
+          • Workpiece MUST be securely clamped in the vise. A loose workpiece that catches
+            the cutter can become a projectile or shatter the end mill.<br>
+          • Clear chips with a brush, never your hands — they're razor sharp and hot.<br>
+          • Safety glasses mandatory. Face shield recommended for heavy cuts.
+        </aside>
+      </section>
+
+      <!-- ============================================================
+           SLIDE 11 — QUICK REFERENCE COMPARISON
+           ============================================================ -->
+      <section>
+        <h2 class="slide-heading">Quick Reference</h2>
+        <table class="metal-table">
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Mild Steel</th>
+              <th>6061 Aluminum</th>
+              <th>Stainless Steel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Type</td>
+              <td>Ferrous</td>
+              <td>Non-Ferrous</td>
+              <td>Ferrous</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>Heavy</td>
+              <td class="highlight">Light (~1/3)</td>
+              <td>Heavy</td>
+            </tr>
+            <tr>
+              <td>Magnetic?</td>
+              <td class="highlight">Yes</td>
+              <td>No</td>
+              <td>Varies</td>
+            </tr>
+            <tr>
+              <td>Rusts?</td>
+              <td class="highlight">Yes!</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Machinability</td>
+              <td>Excellent</td>
+              <td>Very Good</td>
+              <td class="highlight">Poor</td>
+            </tr>
+            <tr>
+              <td>Weldability</td>
+              <td>Excellent</td>
+              <td>Moderate</td>
+              <td>Moderate</td>
+            </tr>
+            <tr>
+              <td>Relative Cost</td>
+              <td>$</td>
+              <td>$$</td>
+              <td class="highlight">$$$</td>
+            </tr>
+          </tbody>
+        </table>
+        <aside class="notes">
+          <strong>COMPARISON & REVIEW (5 min)</strong><br><br>
+          This is your summary slide. Use it for quick review or as a reference during
+          hands-on activities.<br><br>
+          <strong>Activity idea:</strong> Hand out unmarked samples of each metal. Have students
+          use what they've learned (magnet test, weight comparison, visual inspection) to
+          identify each one. They can use this chart to check their answers.<br><br>
+          <strong>Discussion questions:</strong><br>
+          • "You're building an outdoor railing. Which metal do you choose and why?"
+            (Stainless or aluminum — both resist corrosion. But stainless is stronger.
+            Mild steel works too if you powder coat or galvanize it.)<br>
+          • "You're making a go-kart frame on a budget. What do you pick?"
+            (Mild steel — cheap, easy to weld, plenty strong.)<br>
+          • "You're machining a lightweight bracket for a drone. What do you use?"
+            (6061 Aluminum — light, machines easily, plenty strong for the load.)<br><br>
+          <strong>Key takeaway to emphasize:</strong> There's no "best" metal. There's only the
+          best metal FOR THE JOB. Every choice is a trade-off between strength, weight,
+          cost, corrosion resistance, and workability.
+        </aside>
+      </section>
+
+    </div><!-- /slides -->
+  </div><!-- /reveal -->
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      showSlideNumber: 'all',
+      transition: 'slide',
+      transitionSpeed: 'default',
+      width: 1280,
+      height: 720,
+      margin: 0.04,
+      plugins: [ RevealNotes ]
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+{
+  "primary": [
+    {
+      "label": "About",
+      "href": "about/",
+      "children": [
+        { "label": "District Information", "href": "about/#info" },
+        { "label": "Leadership", "href": "about/#leadership" },
+        { "label": "Strategic Path", "href": "about/#strategic" },
+        { "label": "Equity", "href": "about/#equity" },
+        { "label": "Budget", "href": "about/#budget" },
+        { "label": "Facilities", "href": "about/#facilities" }
+      ]
+    },
+    {
+      "label": "Schools",
+      "href": "schools/",
+      "children": [
+        { "label": "Elementary Schools", "href": "schools/#elementary" },
+        { "label": "Middle Schools", "href": "schools/#middle" },
+        { "label": "High Schools", "href": "schools/#high" },
+        { "label": "Charter & Alternative", "href": "schools/#charter" }
+      ]
+    },
+    {
+      "label": "Families",
+      "href": "families/",
+      "children": [
+        { "label": "Enrollment", "href": "families/#enrollment" },
+        { "label": "Transportation", "href": "families/#transportation" },
+        { "label": "School Menus", "href": "families/#menus" },
+        { "label": "School Safety", "href": "families/#safety" },
+        { "label": "Special Education", "href": "families/#special-ed" }
+      ]
+    },
+    {
+      "label": "Community",
+      "href": "community/",
+      "children": [
+        { "label": "School Board", "href": "community/#board" },
+        { "label": "Employment", "href": "community/#employment" },
+        { "label": "Calendar", "href": "community/#calendar" },
+        { "label": "Facility Use", "href": "community/#facility-use" }
+      ]
+    },
+    {
+      "label": "Staff",
+      "href": "staff/",
+      "children": [
+        { "label": "ClassLink", "href": "staff/#classlink" },
+        { "label": "Contracts & Salary", "href": "staff/#contracts" },
+        { "label": "Benefits", "href": "staff/#benefits" },
+        { "label": "IT Resources", "href": "staff/#it" }
+      ]
+    },
+    {
+      "label": "Departments",
+      "href": "departments/",
+      "children": [
+        { "label": "Business Services", "href": "departments/#business" },
+        { "label": "Human Resources", "href": "departments/#hr" },
+        { "label": "Technology", "href": "departments/#tech" },
+        { "label": "Transportation", "href": "departments/#transportation" },
+        { "label": "Food & Nutrition", "href": "departments/#food" }
+      ]
+    }
+  ],
+  "quickLinks": [
+    { "label": "Calendar", "icon": "📅", "href": "community/#calendar", "desc": "District events & schedules" },
+    { "label": "Transportation", "icon": "🚌", "href": "families/#transportation", "desc": "Bus routes & My Ride K-12" },
+    { "label": "School Menus", "icon": "🍎", "href": "families/#menus", "desc": "Breakfast & lunch menus" },
+    { "label": "Budget Updates", "icon": "📊", "href": "about/#budget", "desc": "Financial reports & planning" },
+    { "label": "Consolidation", "icon": "🏫", "href": "about/#facilities", "desc": "26-27 planning updates" },
+    { "label": "Contact", "icon": "📞", "href": "contact/", "desc": "Directory & feedback" }
+  ],
+  "utility": [
+    { "label": "News", "href": "news/" },
+    { "label": "Contact", "href": "contact/" }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "departments": [
+    {
+      "id": "business-services",
+      "name": "Business Services",
+      "description": "Budget development, financial management, payroll, purchasing, and accounts payable/receivable.",
+      "phone": "(541) 757-5811 ext. 3240",
+      "icon": "💰",
+      "links": [
+        { "label": "Adopted Budget", "url": "https://www.csd509j.net/departments/business-services/" },
+        { "label": "Financial Reports (ACFR)", "url": "https://www.csd509j.net/departments/business-services/" }
+      ]
+    },
+    {
+      "id": "communications",
+      "name": "Communications",
+      "description": "Public information, media relations, community outreach, website management, and publications.",
+      "phone": "(541) 757-5811",
+      "icon": "📢",
+      "links": [
+        { "label": "News & Announcements", "url": "news/" },
+        { "label": "Flyer Distribution", "url": "https://www.csd509j.net/departments/communications/" }
+      ]
+    },
+    {
+      "id": "equity",
+      "name": "Equity & Community Engagement",
+      "description": "Diversity initiatives, equity-driven practices, family engagement, and community partnerships.",
+      "phone": "(541) 757-5811",
+      "icon": "🤝",
+      "links": [
+        { "label": "Equity Resources", "url": "about/#equity" }
+      ]
+    },
+    {
+      "id": "facilities",
+      "name": "Facilities & Maintenance",
+      "description": "Building maintenance, grounds, custodial services, capital projects, and facility use permits.",
+      "phone": "(541) 757-5811 ext. 3500",
+      "icon": "🏗️",
+      "links": [
+        { "label": "Facility Use Request", "url": "https://www.csd509j.net/departments/facilities-maintenance/" },
+        { "label": "Long Range Facilities Plan", "url": "about/#facilities" }
+      ]
+    },
+    {
+      "id": "food-nutrition",
+      "name": "Food & Nutrition Services",
+      "description": "School meal programs, dietary accommodations, free/reduced meal applications, and nutrition education.",
+      "phone": "(541) 757-5811 ext. 3350",
+      "icon": "🍎",
+      "links": [
+        { "label": "School Menus", "url": "families/#menus" },
+        { "label": "Free/Reduced Meals", "url": "https://www.csd509j.net/departments/food-and-nutrition-services/" }
+      ]
+    },
+    {
+      "id": "human-resources",
+      "name": "Human Resources",
+      "description": "Employment, contracts, salary schedules, benefits, licensure, and staff development.",
+      "phone": "(541) 757-5811 ext. 3200",
+      "icon": "👥",
+      "links": [
+        { "label": "Current Openings", "url": "community/#employment" },
+        { "label": "Salary Schedules", "url": "staff/#contracts" }
+      ]
+    },
+    {
+      "id": "student-growth",
+      "name": "Student Growth & Experience",
+      "description": "Curriculum, instruction, assessment, special education, TAG, multilingual programs, and mental health support.",
+      "phone": "(541) 757-5811",
+      "icon": "📚",
+      "links": [
+        { "label": "Special Education", "url": "families/#special-ed" },
+        { "label": "Multilingual Programs", "url": "families/#multilingual" }
+      ]
+    },
+    {
+      "id": "technology",
+      "name": "Technology Services",
+      "description": "Network infrastructure, device management, help desk, student/staff accounts, and digital learning tools.",
+      "phone": "(541) 757-5811 ext. 3600",
+      "icon": "💻",
+      "links": [
+        { "label": "Help Desk", "url": "https://www.csd509j.net/departments/technology-services/" },
+        { "label": "Device Policies", "url": "https://www.csd509j.net/departments/technology-services/" }
+      ]
+    },
+    {
+      "id": "transportation",
+      "name": "Student Transportation",
+      "description": "Bus routes, schedules, eligibility, safety training, and the My Ride K-12 tracking app.",
+      "phone": "(541) 757-5811 ext. 3550",
+      "icon": "🚌",
+      "links": [
+        { "label": "Bus Routes & Schedules", "url": "families/#transportation" },
+        { "label": "My Ride K-12 App", "url": "https://www.csd509j.net/families/transportation/" }
+      ]
+    }
+  ]
+}

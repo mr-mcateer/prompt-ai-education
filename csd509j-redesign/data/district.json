@@ -1,0 +1,62 @@
+{
+  "name": "Corvallis School District 509J",
+  "shortName": "CSD 509J",
+  "location": "Corvallis, Oregon",
+  "county": "Benton County",
+  "superintendent": {
+    "name": "Ryan Noss",
+    "title": "Superintendent",
+    "email": "ryan.noss@corvallis.k12.or.us"
+  },
+  "phone": "(541) 757-5811",
+  "fax": "(541) 757-5899",
+  "address": {
+    "street": "1555 SW 35th Street",
+    "city": "Corvallis",
+    "state": "OR",
+    "zip": "97333"
+  },
+  "website": "https://www.csd509j.net",
+  "stats": {
+    "students": 5859,
+    "staff": 917,
+    "schools": 13,
+    "languages": 74,
+    "graduationRate": "87%",
+    "budget": "$182.6M",
+    "minorityEnrollment": "30%",
+    "economicallyDisadvantaged": "29.9%"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/CorvallisSD",
+    "instagram": "https://www.instagram.com/corvallissd/",
+    "youtube": "https://www.youtube.com/@CorvallisSchoolDistrict"
+  },
+  "strategicGoals": [
+    {
+      "title": "Excellent Learning Experience",
+      "description": "Ensure every student experiences an excellent, equitable education through the 5 Dimensions of Teaching and Learning Framework."
+    },
+    {
+      "title": "Equitable Systems",
+      "description": "Build and sustain equitable systems that support the success of every student, particularly those historically underserved."
+    },
+    {
+      "title": "Relevant and Engaging Learning",
+      "description": "Provide culturally relevant, real-world learning experiences that build trust, inclusivity, and engagement."
+    },
+    {
+      "title": "Healthy Communities",
+      "description": "Foster healthy school communities through social-emotional learning, environmental stewardship, and strong partnerships."
+    }
+  ],
+  "boardMembers": [
+    { "name": "Sami Al-AbdRabbuh", "position": "Chair" },
+    { "name": "Sarah Finger McDonald", "position": "Vice Chair" },
+    { "name": "Luhui Whitebear", "position": "Member" },
+    { "name": "Ricky Malone", "position": "Member" },
+    { "name": "Matt Boroski", "position": "Member" },
+    { "name": "Megan Shumway", "position": "Member" },
+    { "name": "Lisa Scherf", "position": "Member" }
+  ]
+}

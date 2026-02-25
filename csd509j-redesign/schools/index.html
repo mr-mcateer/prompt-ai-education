@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Schools — Corvallis School District 509J</title>
+  <meta name="description" content="Explore the 13 schools of Corvallis School District 509J — elementary, middle, high, K-8, and charter schools serving the Corvallis community.">
+  <meta property="og:title" content="Our Schools — Corvallis School District 509J">
+  <meta property="og:description" content="Explore the 13 schools of Corvallis School District 509J — elementary, middle, high, K-8, and charter schools serving the Corvallis community.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Our Schools — Corvallis School District 509J">
+  <meta name="twitter:description" content="Explore the 13 schools of Corvallis School District 509J — elementary, middle, high, K-8, and charter schools serving the Corvallis community.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mr-mcateer.github.io/csd509j-redesign/schools/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <div class="utility-bar__inner">
+      <span class="utility-bar__phone"><a href="tel:+15417575811">(541) 757-5811</a></span>
+      <div class="utility-bar__links">
+        <a href="../staff/">Staff Portal</a>
+        <a href="../contact/">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav__inner">
+      <a href="../" class="site-nav__logo">
+              <img src="../images/csd-logo-dark.svg" alt="Corvallis School District" class="site-nav__logo-img">
+              <span>509J</span>
+            </a>
+      <ul class="site-nav__links">
+        <li><a href="../about/">About</a></li>
+        <li><a href="../schools/" class="active">Schools</a></li>
+        <li><a href="../families/">Families</a></li>
+        <li><a href="../community/">Community</a></li>
+        <li><a href="../staff/">Staff</a></li>
+        <li><a href="../departments/">Departments</a></li>
+      </ul>
+      <div class="site-nav__actions">
+        <button class="site-nav__search-btn" aria-label="Search" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="site-nav__hamburger" aria-label="Open menu" aria-expanded="false" type="button">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav__close" aria-label="Close menu" type="button">&times;</button>
+    <div class="mobile-nav__section">
+      <a href="../" class="mobile-nav__link">Home</a>
+    </div>
+    <div class="mobile-nav__section">
+      <a href="../about/" class="mobile-nav__link">About</a>
+      <a href="../schools/" class="mobile-nav__link active">Schools</a>
+      <a href="../families/" class="mobile-nav__link">Families</a>
+      <a href="../community/" class="mobile-nav__link">Community</a>
+      <a href="../staff/" class="mobile-nav__link">Staff</a>
+      <a href="../departments/" class="mobile-nav__link">Departments</a>
+    </div>
+    <div class="mobile-nav__section">
+      <a href="../news/" class="mobile-nav__link">News</a>
+      <a href="../contact/" class="mobile-nav__link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" role="dialog" aria-label="Site search" aria-hidden="true">
+    <div class="search-overlay__box">
+      <input type="text" class="search-overlay__input" placeholder="Search CSD 509J..." autocomplete="off">
+      <div class="search-overlay__results"></div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../">Home</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span aria-current="page">Schools</span>
+        </nav>
+        <h1 class="reveal">Our Schools</h1>
+        <p class="page-hero__sub reveal reveal-delay-1">13 schools serving the Corvallis community from kindergarten through graduation</p>
+      </div>
+    </section>
+
+    <!-- Filter Tabs & School Cards -->
+    <section class="section section--light" aria-label="School directory">
+      <div class="container--wide">
+        <div class="filter-tabs reveal" role="tablist" aria-label="Filter schools by type">
+          <button class="filter-tab active" data-filter="all" type="button" role="tab" aria-selected="true">All</button>
+          <button class="filter-tab" data-filter="elementary" type="button" role="tab" aria-selected="false">Elementary</button>
+          <button class="filter-tab" data-filter="middle" type="button" role="tab" aria-selected="false">Middle</button>
+          <button class="filter-tab" data-filter="high" type="button" role="tab" aria-selected="false">High</button>
+          <button class="filter-tab" data-filter="charter" type="button" role="tab" aria-selected="false">Charter</button>
+          <button class="filter-tab" data-filter="k8" type="button" role="tab" aria-selected="false">K-8</button>
+        </div>
+
+        <h2 class="sr-only">School Directory</h2>
+        <div class="grid--auto" id="elementary" role="tabpanel">
+
+          <!-- Adams Elementary -->
+          <article class="card school-card reveal" data-type="elementary" id="adams">
+            <div class="card__body">
+              <span class="school-card__type">Elementary</span>
+              <h3 class="card__title">Adams Elementary</h3>
+              <p class="school-card__grades">Grades K-5</p>
+              <p class="card__desc">1615 SW 35th St, Corvallis, OR 97333</p>
+              <p class="card__meta">(541) 757-5961</p>
+              <p class="card__desc" style="margin-top: 8px; font-size: 13px; color: var(--blue);">Dual Language Immersion</p>
+              <a href="https://adams.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Garfield Elementary -->
+          <article class="card school-card reveal reveal-delay-1" data-type="elementary" id="garfield">
+            <div class="card__body">
+              <span class="school-card__type">Elementary</span>
+              <h3 class="card__title">Garfield Elementary</h3>
+              <p class="school-card__grades">Grades K-5</p>
+              <p class="card__desc">1205 NW Garfield Ave, Corvallis, OR 97330</p>
+              <p class="card__meta">(541) 757-5971</p>
+              <p class="card__desc" style="margin-top: 8px; font-size: 13px; color: var(--blue);">Dual Language Immersion (Spanish)</p>
+              <a href="https://garfield.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Hoover Elementary -->
+          <article class="card school-card reveal reveal-delay-2" data-type="elementary" id="hoover">
+            <div class="card__body">
+              <span class="school-card__type">Elementary</span>
+              <h3 class="card__title">Hoover Elementary</h3>
+              <p class="school-card__grades">Grades K-5</p>
+              <p class="card__desc">3375 SW Western Blvd, Corvallis, OR 97333</p>
+              <p class="card__meta">(541) 757-5981</p>
+              <a href="https://hoover.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Jefferson Elementary -->
+          <article class="card school-card reveal" data-type="elementary" id="jefferson">
+            <div class="card__body">
+              <span class="school-card__type">Elementary</span>
+              <h3 class="card__title">Jefferson Elementary</h3>
+              <p class="school-card__grades">Grades K-5</p>
+              <p class="card__desc">727 NW 18th St, Corvallis, OR 97330</p>
+              <p class="card__meta">(541) 757-5991</p>
+              <a href="https://jefferson.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Lincoln Elementary -->
+          <article class="card school-card reveal reveal-delay-1" data-type="elementary" id="lincoln">
+            <div class="card__body">
+              <span class="school-card__type">Elementary</span>
+              <h3 class="card__title">Lincoln Elementary</h3>
+              <p class="school-card__grades">Grades K-5</p>
+              <p class="card__desc">110 SE Alexander Ave, Corvallis, OR 97333</p>
+              <p class="card__meta">(541) 757-6001</p>
+              <p class="card__desc" style="margin-top: 8px; font-size: 13px; color: var(--blue);">Dual Language Immersion (Spanish)</p>
+              <a href="https://lincoln.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Wilson Elementary -->
+          <article class="card school-card reveal reveal-delay-2" data-type="elementary" id="wilson">
+            <div class="card__body">
+              <span class="school-card__type">Elementary</span>
+              <h3 class="card__title">Wilson Elementary</h3>
+              <p class="school-card__grades">Grades K-5</p>
+              <p class="card__desc">3905 NW Harrison Blvd, Corvallis, OR 97330</p>
+              <p class="card__meta">(541) 757-6021</p>
+              <a href="https://wilson.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Cheldelin Middle School -->
+          <article class="card school-card reveal" data-type="middle" id="middle">
+            <div class="card__body">
+              <span class="school-card__type">Middle</span>
+              <h3 class="card__title">Cheldelin Middle School</h3>
+              <p class="school-card__grades">Grades 6-8</p>
+              <p class="card__desc">986 NW Circle Blvd, Corvallis, OR 97330</p>
+              <p class="card__meta">(541) 757-6031</p>
+              <a href="https://cheldelin.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Cheldelin Consolidation Warning -->
+          <div class="callout callout--warning reveal" role="alert" style="grid-column: 1 / -1;">
+            <strong>Consolidation Notice</strong>
+            Cheldelin Middle School will be consolidated for the 2026-27 school year per Board action November 2025. Visit the <a href="../about/#facilities">consolidation planning page</a> for details and community updates.
+          </div>
+
+          <!-- Linus Pauling Middle School -->
+          <article class="card school-card reveal reveal-delay-1" data-type="middle" id="linus-pauling">
+            <div class="card__body">
+              <span class="school-card__type">Middle</span>
+              <h3 class="card__title">Linus Pauling Middle School</h3>
+              <p class="school-card__grades">Grades 6-8</p>
+              <p class="card__desc">1111 NW Cleveland Ave, Corvallis, OR 97330</p>
+              <p class="card__meta">(541) 757-6041</p>
+              <a href="https://linuspauling.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Corvallis High School -->
+          <article class="card school-card reveal" data-type="high" id="high">
+            <div class="card__body">
+              <span class="school-card__type">High School</span>
+              <h3 class="card__title">Corvallis High School</h3>
+              <p class="school-card__grades">Grades 9-12</p>
+              <p class="card__desc">1400 NW Buchanan Ave, Corvallis, OR 97330</p>
+              <p class="card__meta">(541) 757-6051</p>
+              <p class="card__desc" style="margin-top: 8px; font-size: 13px; color: var(--blue);">International Baccalaureate &middot; CTE Programs</p>
+              <a href="https://corvallis-high.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Crescent Valley High School -->
+          <article class="card school-card reveal reveal-delay-1" data-type="high" id="crescent-valley">
+            <div class="card__body">
+              <span class="school-card__type">High School</span>
+              <h3 class="card__title">Crescent Valley High School</h3>
+              <p class="school-card__grades">Grades 9-12</p>
+              <p class="card__desc">4444 NW Highland Dr, Corvallis, OR 97330</p>
+              <p class="card__meta">(541) 757-6061</p>
+              <p class="card__desc" style="margin-top: 8px; font-size: 13px; color: var(--blue);">CTE Metals &amp; Fabrication &middot; CTE Automotive &middot; AVID</p>
+              <a href="https://cv.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Bridges (Alternative Programs) -->
+          <article class="card school-card reveal reveal-delay-2" data-type="high" id="bridges">
+            <div class="card__body">
+              <span class="school-card__type">High School</span>
+              <h3 class="card__title">Bridges (Alternative Programs)</h3>
+              <p class="school-card__grades">Grades 9-12</p>
+              <p class="card__desc">4444 NW Highland Dr, Corvallis, OR 97330</p>
+              <p class="card__meta">(541) 757-5811</p>
+              <p class="card__desc" style="margin-top: 8px; font-size: 13px; color: var(--blue);">Alternative Education &middot; Post-Graduate Scholars</p>
+              <a href="https://www.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Letitia Carson Elementary -->
+          <article class="card school-card reveal reveal-delay-2" data-type="elementary" id="letitia-carson">
+            <div class="card__body">
+              <span class="school-card__type">Elementary</span>
+              <h3 class="card__title">Letitia Carson Elementary</h3>
+              <p class="school-card__grades">Grades K-5</p>
+              <p class="card__desc">3555 NW Walnut Blvd, Corvallis, OR 97330</p>
+              <p class="card__meta">(541) 757-5811</p>
+              <p class="card__desc" style="margin-top: 8px; font-size: 13px; color: var(--danger);">Closing after 2025-26 per Board consolidation vote</p>
+              <a href="https://www.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- College Hill K-8 -->
+          <article class="card school-card reveal" data-type="k8" id="college-hill">
+            <div class="card__body">
+              <span class="school-card__type">K-8</span>
+              <h3 class="card__title">College Hill (K-8)</h3>
+              <p class="school-card__grades">Grades K-8</p>
+              <p class="card__desc">Address to be determined</p>
+              <p class="card__meta">(541) 757-5811</p>
+              <p class="card__desc" style="margin-top: 8px; font-size: 13px; color: var(--warning);">May be affected by 2026-27 consolidation planning</p>
+              <a href="https://www.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Muddy Creek Charter School -->
+          <article class="card school-card reveal reveal-delay-1" data-type="charter" id="charter">
+            <div class="card__body">
+              <span class="school-card__type">Charter</span>
+              <h3 class="card__title">Muddy Creek Charter School</h3>
+              <p class="school-card__grades">Grades K-5</p>
+              <p class="card__desc">35794 Goltra Rd, Corvallis, OR 97333</p>
+              <p class="card__meta">(541) 753-1047</p>
+              <p class="card__desc" style="margin-top: 8px; font-size: 13px; color: var(--blue);">Place-Based Learning &middot; Outdoor Education</p>
+              <a href="https://muddycreek.csd509j.net" class="school-card__link">
+                Visit school website
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Break -->
+    <div class="photo-break" aria-hidden="true">
+      <img src="../images/schools/elementary.jpg" alt="" loading="lazy" width="1200" height="400">
+    </div>
+
+    <!-- Programs Callout -->
+    <section class="section section--gray" aria-label="Special programs across schools">
+      <div class="container--wide">
+        <div class="section__header reveal">
+          <h2>Programs Across Our Schools</h2>
+          <p>Specialized programs that enrich the learning experience for Corvallis students</p>
+        </div>
+        <div class="grid--4">
+          <div class="card reveal">
+            <div class="card__body">
+              <p class="card__tag">Gifted Education</p>
+              <h3 class="card__title">TAG Program</h3>
+              <p class="card__desc">The Talented and Gifted program identifies and serves students who perform or show potential for performing at remarkably high levels of accomplishment across all district schools.</p>
+            </div>
+          </div>
+          <div class="card reveal reveal-delay-1">
+            <div class="card__body">
+              <p class="card__tag">Language</p>
+              <h3 class="card__title">Dual Language Immersion</h3>
+              <p class="card__desc">Students at Adams, Garfield, and Lincoln Elementary develop bilingual and biliterate skills through instruction in both English and Spanish beginning in kindergarten.</p>
+            </div>
+          </div>
+          <div class="card reveal reveal-delay-2">
+            <div class="card__body">
+              <p class="card__tag">Career Readiness</p>
+              <h3 class="card__title">CTE Pathways</h3>
+              <p class="card__desc">Corvallis High and Crescent Valley High offer Career and Technical Education pathways including metals and fabrication, automotive technology, and International Baccalaureate.</p>
+            </div>
+          </div>
+          <div class="card reveal reveal-delay-3">
+            <div class="card__body">
+              <p class="card__tag">Charter</p>
+              <h3 class="card__title">Place-Based Education</h3>
+              <p class="card__desc">Muddy Creek Charter School uses the local environment and community as a starting point for teaching across the curriculum, connecting learning to real-world context through outdoor education.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container--wide">
+      <div class="footer__grid">
+        <div class="footer__col">
+              <img src="../images/csd-logo-white.svg" alt="Corvallis School District" class="footer__logo">
+              <p>Corvallis School District 509J<br>1555 SW 35th Street<br>Corvallis, OR 97333</p>
+              <p style="margin-top: 12px;"><a href="tel:+15417575811">(541) 757-5811</a></p>
+              <div class="footer__social">
+                <a href="https://www.facebook.com/CorvallisSD" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a href="https://www.instagram.com/corvallissd/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                <a href="https://www.youtube.com/@CorvallisSchoolDistrict" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+              </div>
+              <p class="footer__vision">Building trust, inclusivity, and engagement through culturally relevant, real-world learning experiences.</p>
+            </div>
+        <div class="footer__col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../about/">About the District</a></li>
+            <li><a href="../schools/">Our Schools</a></li>
+            <li><a href="../families/">For Families</a></li>
+            <li><a href="../community/">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Schools</h3>
+          <ul>
+            <li><a href="../schools/#elementary">Elementary Schools</a></li>
+            <li><a href="../schools/#middle">Middle Schools</a></li>
+            <li><a href="../schools/#high">High Schools</a></li>
+            <li><a href="../schools/#charter">Charter &amp; Alternative</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="../contact/">Contact Directory</a></li>
+            <li><a href="../departments/">Departments</a></li>
+            <li><a href="../staff/">Staff Resources</a></li>
+            <li><a href="../news/">News &amp; Updates</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Corvallis School District 509J. All rights reserved.</p>
+        <p><a href="../how-it-was-built/">How This Site Was Built</a> &middot; <a href="https://www.csd509j.net" target="_blank" rel="noopener">csd509j.net</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    // School type filter logic
+    document.querySelectorAll('.filter-tab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.filter-tab').forEach(function(t) {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-selected', 'true');
+        var type = this.getAttribute('data-filter');
+        document.querySelectorAll('.school-card').forEach(function(card) {
+          if (type === 'all' || card.getAttribute('data-type') === type) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        // Also toggle the Cheldelin callout visibility with middle filter
+        var callout = document.querySelector('.callout--warning');
+        if (callout) {
+          if (type === 'all' || type === 'middle') {
+            callout.style.display = '';
+          } else {
+            callout.style.display = 'none';
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How This Site Was Built — Corvallis School District 509J</title>
+  <meta name="description" content="A CTE instructor built this entire school district website in one evening using AI. No budget. No contractor. No coding experience required. Here's the story.">
+  <meta property="og:title" content="How This Site Was Built — One Teacher, One Evening, AI">
+  <meta property="og:description" content="A CTE instructor built a complete school district website in one evening using AI tools. No budget, no contractor, no prior web development experience needed.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How This Site Was Built — One Teacher, One Evening, AI">
+  <meta name="twitter:description" content="A complete school district website built in one evening by a teacher using AI. Here's how — and what it means for your district.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mr-mcateer.github.io/csd509j-redesign/how-it-was-built/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .prose {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .prose p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--gray-600);
+      margin-bottom: 24px;
+    }
+    .prose p:last-child {
+      margin-bottom: 0;
+    }
+    .section--dark .prose p {
+      color: rgba(255,255,255,0.72);
+    }
+    .prose-lead {
+      font-size: 1.2rem !important;
+      color: var(--gray-800) !important;
+      line-height: 1.65 !important;
+    }
+    .section--dark .prose-lead {
+      color: rgba(255,255,255,0.88) !important;
+    }
+    .pull-quote {
+      font-family: var(--font-body);
+      font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+      line-height: 1.45;
+      font-style: italic;
+      color: var(--gray-800);
+      text-align: center;
+      max-width: 660px;
+      margin: 48px auto;
+      padding: 32px 0;
+      border-top: 1px solid var(--gray-200);
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .section--dark .pull-quote {
+      color: rgba(255,255,255,0.85);
+      border-color: rgba(255,255,255,0.12);
+    }
+    .section--gray .pull-quote {
+      border-color: var(--gray-200);
+    }
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .step-card {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      border-radius: var(--r-lg);
+      padding: 32px 28px;
+      transition: box-shadow var(--ease), transform var(--ease);
+    }
+    .step-card:hover {
+      box-shadow: var(--sh-md);
+      transform: translateY(-2px);
+    }
+    .step-number {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+    .step-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .step-card p {
+      font-size: 0.92rem;
+      color: var(--gray-600);
+      line-height: 1.65;
+    }
+    .before-after {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      max-width: 800px;
+      margin: 40px auto 0;
+    }
+    .before-after__col {
+      padding: 28px;
+      border-radius: var(--r-lg);
+    }
+    .before-after__col--before {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .before-after__col--after {
+      background: rgba(252,182,68,0.08);
+      border: 1px solid rgba(252,182,68,0.2);
+    }
+    .before-after__label {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+    }
+    .before-after__col--before .before-after__label {
+      color: rgba(255,255,255,0.4);
+    }
+    .before-after__col--after .before-after__label {
+      color: var(--gold);
+    }
+    .before-after__col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .before-after__col li {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      padding: 6px 0;
+      color: rgba(255,255,255,0.65);
+    }
+    .before-after__col--after li {
+      color: rgba(255,255,255,0.85);
+    }
+    .scenario-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 32px;
+    }
+    .scenario {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-100);
+      border-radius: var(--r-md);
+      padding: 24px;
+    }
+    .scenario__who {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+    .scenario h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    .scenario p {
+      font-size: 0.88rem;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+    .credit-block {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .credit-block p {
+      font-size: 0.95rem;
+      color: var(--gray-600);
+      line-height: 1.7;
+      margin-bottom: 8px;
+    }
+    .credit-name {
+      font-family: var(--font-body);
+      font-size: 1.5rem;
+      color: var(--gray-800);
+      margin-bottom: 4px;
+    }
+    .credit-role {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--gray-400);
+      letter-spacing: 0.02em;
+    }
+    .recursive-note {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--gray-400);
+      text-align: center;
+      margin-top: 40px;
+      font-style: italic;
+    }
+    @media (max-width: 768px) {
+      .before-after {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .step-grid {
+        grid-template-columns: 1fr;
+      }
+      .scenario-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <div class="utility-bar__inner">
+      <span class="utility-bar__phone"><a href="tel:+15417575811">(541) 757-5811</a></span>
+      <div class="utility-bar__links">
+        <a href="../staff/">Staff Portal</a>
+        <a href="../contact/">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav__inner">
+      <a href="../" class="site-nav__logo">
+              <img src="../images/csd-logo-dark.svg" alt="Corvallis School District" class="site-nav__logo-img">
+              <span>509J</span>
+            </a>
+      <ul class="site-nav__links">
+        <li><a href="../about/">About</a></li>
+        <li><a href="../schools/">Schools</a></li>
+        <li><a href="../families/">Families</a></li>
+        <li><a href="../community/">Community</a></li>
+        <li><a href="../staff/">Staff</a></li>
+        <li><a href="../departments/">Departments</a></li>
+      </ul>
+      <div class="site-nav__actions">
+        <button class="site-nav__search-btn" aria-label="Search" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="site-nav__hamburger" aria-label="Open menu" aria-expanded="false" type="button">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav__close" aria-label="Close menu" type="button">&times;</button>
+    <div class="mobile-nav__section">
+      <a href="../" class="mobile-nav__link">Home</a>
+    </div>
+    <div class="mobile-nav__section">
+      <a href="../about/" class="mobile-nav__link">About</a>
+      <a href="../schools/" class="mobile-nav__link">Schools</a>
+      <a href="../families/" class="mobile-nav__link">Families</a>
+      <a href="../community/" class="mobile-nav__link">Community</a>
+      <a href="../staff/" class="mobile-nav__link">Staff</a>
+      <a href="../departments/" class="mobile-nav__link">Departments</a>
+    </div>
+    <div class="mobile-nav__section">
+      <a href="../news/" class="mobile-nav__link">News</a>
+      <a href="../contact/" class="mobile-nav__link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" role="dialog" aria-label="Site search" aria-hidden="true">
+    <div class="search-overlay__box">
+      <input type="text" class="search-overlay__input" placeholder="Search CSD 509J..." autocomplete="off">
+      <div class="search-overlay__results"></div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- ================================================================
+         1. HERO
+         ================================================================ -->
+    <section class="section section--dark" style="padding: 120px 0 60px; text-align: center;">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb" style="justify-content: center; display: flex;">
+          <a href="../" style="color: rgba(255,255,255,0.45);">Home</a>
+          <span class="breadcrumb__sep" aria-hidden="true" style="color: rgba(255,255,255,0.2);">/</span>
+          <span aria-current="page" style="color: rgba(255,255,255,0.65);">How It Was Built</span>
+        </nav>
+        <h1 class="reveal" style="font-size: clamp(2.2rem, 5.5vw, 3.4rem); font-weight: 700; color: var(--white); margin-top: 16px; letter-spacing: -0.025em;">One Teacher. One Evening. A&nbsp;Complete&nbsp;Website.</h1>
+        <p class="reveal reveal-delay-1" style="font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.6); max-width: 640px; margin: 20px auto 0; line-height: 1.6;">This entire district website&thinsp;&mdash;&thinsp;every page, every photo, every feature&thinsp;&mdash;&thinsp;was built by a single CTE instructor using AI, in about the time it takes to watch a movie. No budget. No web developer. No prior coding experience required.</p>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         2. THE STORY
+         ================================================================ -->
+    <section class="section section--light" aria-label="The story">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2>Wait, Seriously?</h2>
+        </div>
+        <div class="prose reveal">
+          <p class="prose-lead">Yes. Every school district has someone like this: a teacher, a secretary, an IT coordinator who already does three jobs. They know their district needs a better website, but the quotes come back at $15,000&ndash;$40,000, the timeline is six months, and the budget meeting isn't until spring.</p>
+          <p>So the old site stays up. Parents can't find the enrollment forms. The calendar hasn't been updated since October. The phone number on the contact page is wrong. Everyone knows it's a problem. Nobody has the budget to fix it.</p>
+          <p>This project started with a question: <strong>What if the person who knows the district best could build the website themselves&thinsp;&mdash;&thinsp;not by learning to code, but by directing AI the same way a general contractor directs a construction crew?</strong></p>
+          <p>The answer is the site you're looking at right now.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         3. THE NUMBERS
+         ================================================================ -->
+    <section class="section section--dark" aria-label="Build statistics">
+      <div class="container--wide">
+        <div class="section__header reveal">
+          <h2>What Got Built</h2>
+          <p>One evening, start to finish</p>
+        </div>
+        <div class="stats-bar stats-bar--dark reveal">
+          <div class="stat">
+            <div class="stat__number" data-counter="10">0</div>
+            <div class="stat__label">Complete Pages</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" data-counter="13">0</div>
+            <div class="stat__label">School Profiles</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">Search</div>
+            <div class="stat__label">Built-In Site Search</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">Mobile</div>
+            <div class="stat__label">Works on Any Device</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">~1 hr</div>
+            <div class="stat__label">Total Build Time</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" data-prefix="$" data-counter="0">$0</div>
+            <div class="stat__label">Cost to Build</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         4. HOW IT ACTUALLY WORKS
+         ================================================================ -->
+    <section class="section section--light" aria-label="How it works">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2>How It Works (In Plain English)</h2>
+          <p>No jargon, no buzzwords&thinsp;&mdash;&thinsp;just the honest version</p>
+        </div>
+
+        <div class="prose reveal">
+          <p class="prose-lead">Think of it like building a house. You don't need to know how to wire an outlet or hang drywall. You need to know what rooms you want, how big the kitchen should be, and what the finished product should look and feel like. The skilled tradespeople handle the rest.</p>
+          <p>AI works the same way here. The teacher describes what each page should contain and how it should feel. The AI does the technical work&thinsp;&mdash;&thinsp;writing the code, styling the layout, connecting the navigation&thinsp;&mdash;&thinsp;and comes back with a working draft. The teacher reviews it, asks for changes, and the AI revises. It's a conversation, not a command line.</p>
+        </div>
+
+        <div class="step-grid reveal">
+          <div class="step-card">
+            <div class="step-number">Step 1</div>
+            <h3>Describe What You Need</h3>
+            <p>Tell the AI what pages you want, what information goes on each one, and what the overall feel should be. "We need a schools page with all 13 buildings, a way to filter by level, and contact info for each."</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">Step 2</div>
+            <h3>AI Builds a Working Draft</h3>
+            <p>The AI creates all the pages at once&thinsp;&mdash;&thinsp;not one at a time, but simultaneously, like a crew framing multiple rooms in the same house. In minutes, you have a complete working website to look at.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">Step 3</div>
+            <h3>Review and Revise</h3>
+            <p>"Make the phone numbers bigger." "Swap that photo for something warmer." "Add an FAQ section for parents." You give feedback in plain language, just like you'd talk to a designer. The AI makes the changes.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">Step 4</div>
+            <h3>Publish for Free</h3>
+            <p>The finished site goes live on GitHub Pages&thinsp;&mdash;&thinsp;free hosting, no monthly fees, no server to maintain. It just works. If you need changes next month, you have the same conversation again.</p>
+          </div>
+        </div>
+
+        <div class="callout reveal" style="max-width: 720px; margin: 40px auto 0;">
+          The key insight: <strong>the human provides the judgment</strong>&thinsp;&mdash;&thinsp;what information matters, what feels right, what parents actually need&thinsp;&mdash;&thinsp;<strong>and the AI provides the labor.</strong> You don't need to become a programmer. You already have the most important skill: knowing your community.
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         5. BEFORE & AFTER
+         ================================================================ -->
+    <section class="section section--dark" aria-label="Before and after">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2>The Old Way vs. The New Way</h2>
+        </div>
+
+        <div class="before-after reveal">
+          <div class="before-after__col before-after__col--before">
+            <div class="before-after__label">The old way</div>
+            <ul>
+              <li>$15,000&ndash;$40,000 quoted budget</li>
+              <li>3&ndash;6 month timeline</li>
+              <li>Requires a web development firm</li>
+              <li>Every change costs more money</li>
+              <li>Content goes stale between contracts</li>
+              <li>District loses control of its own site</li>
+            </ul>
+          </div>
+          <div class="before-after__col before-after__col--after">
+            <div class="before-after__label">This way</div>
+            <ul>
+              <li>$0 production cost</li>
+              <li>One evening to build</li>
+              <li>Built by someone who knows the district</li>
+              <li>Changes happen the same day</li>
+              <li>Content stays current because updates are easy</li>
+              <li>The district owns everything</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         6. WHO IS THIS FOR
+         ================================================================ -->
+    <section class="section section--gray" aria-label="Who this is for">
+      <div class="container--wide">
+        <div class="section__header reveal">
+          <h2>Who Can Do This?</h2>
+          <p>You don't need to be technical. You need to care about your community.</p>
+        </div>
+
+        <div class="pull-quote reveal">
+          &ldquo;The person who knows the most about what a district website should say is almost never the person who knows how to build one. AI closes that gap.&rdquo;
+        </div>
+
+        <div class="scenario-grid reveal">
+          <div class="scenario">
+            <div class="scenario__who">The CTE Instructor</div>
+            <h3>Teaching kids to build things? Build this too.</h3>
+            <p>You already think in projects and deliverables. A district website is just another build&thinsp;&mdash;&thinsp;and this time, your students can watch the process and learn from it.</p>
+          </div>
+          <div class="scenario">
+            <div class="scenario__who">The Office Manager</div>
+            <h3>You answer every phone call. You know what people ask.</h3>
+            <p>Nobody understands what information parents actually need better than the person who fields those calls every day. That knowledge is the hardest part. The AI handles the rest.</p>
+          </div>
+          <div class="scenario">
+            <div class="scenario__who">The IT Coordinator</div>
+            <h3>You're already managing everything else.</h3>
+            <p>You maintain the network, fix the printers, and reset the passwords. Now you can add "built the website" to the list&thinsp;&mdash;&thinsp;without adding another vendor relationship to manage.</p>
+          </div>
+          <div class="scenario">
+            <div class="scenario__who">The Superintendent</div>
+            <h3>Your district's website is its front door.</h3>
+            <p>When families are deciding where to enroll, the website is often the first thing they see. This approach means a professional-quality site that reflects your district's values&thinsp;&mdash;&thinsp;without a line item in the budget.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         7. THE BIGGER PICTURE
+         ================================================================ -->
+    <section class="section section--dark" aria-label="The bigger picture">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2>This Isn't Really About Websites</h2>
+          <p>It's about what becomes possible when one person can do the work of a team</p>
+        </div>
+        <div class="prose reveal">
+          <p class="prose-lead">A website is a visible, tangible proof of concept. But the same approach works for almost any information task a district faces.</p>
+          <p>Need to draft 16 lesson plans aligned to state standards? Describe what each unit should cover and let AI produce working drafts you can refine. Need personalized letters for 200 families about schedule changes? Provide the template and the details, and let AI handle the variation. Need to analyze survey data from three schools and write a board presentation? AI can crunch the numbers and draft the slides while you focus on what the data actually means.</p>
+          <p>The pattern is always the same: a human who understands the goal provides direction and quality judgment. AI provides the throughput. The human is not replaced&thinsp;&mdash;&thinsp;the human is <em>multiplied</em>.</p>
+        </div>
+
+        <div class="callout reveal" style="max-width: 720px; margin: 48px auto 0; border-color: var(--gold); background: rgba(252,182,68,0.08);">
+          Every district has people who could do twice as much&thinsp;&mdash;&thinsp;not because they aren't working hard enough, but because the tools haven't kept up with their ambition. Now they have.
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         8. UNDER THE HOOD (for the curious)
+         ================================================================ -->
+    <section class="section section--light" aria-label="Technical details">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2>For the Curious</h2>
+          <p>Technical details for those who want to peek behind the curtain</p>
+        </div>
+
+        <div class="accordion reveal" style="max-width: 780px; margin: 0 auto;">
+          <details>
+            <summary>What AI tool was used?</summary>
+            <div class="accordion__content">
+              <p>This site was built using <a href="https://claude.ai" target="_blank" rel="noopener">Claude Code</a> by Anthropic. Claude Code is a coding assistant that can create, edit, and manage files through a conversational interface. The human describes what they want; Claude writes the code. It's like having a conversation with a very patient, very fast web developer who never gets tired and never charges by the hour.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Does the person need to know how to code?</summary>
+            <div class="accordion__content">
+              <p>No. The entire site was directed through plain-language instructions like "build a schools page with 13 profiles and a way to filter by elementary, middle, and high school." Some familiarity with how websites work is helpful (you should know what a "page" and a "link" are), but you don't need to understand HTML, CSS, or JavaScript. The AI handles all of that.</p>
+            </div>
+          </details>
+          <details>
+            <summary>What does the site run on?</summary>
+            <div class="accordion__content">
+              <p>Plain HTML, CSS, and JavaScript&thinsp;&mdash;&thinsp;the simplest, most reliable building blocks of the web. No WordPress, no content management system, no monthly subscription. The site is hosted for free on GitHub Pages. There are no databases, no plugins to update, no security patches to worry about. It's just files on a server, the same way the web has worked since 1995. That simplicity is a feature: there's almost nothing that can break.</p>
+            </div>
+          </details>
+          <details>
+            <summary>How hard is it to update?</summary>
+            <div class="accordion__content">
+              <p>About as hard as describing the change you want. "Change the superintendent's phone number to 541-555-1234." "Add a news story about the bond measure." "Remove the winter break notice from the homepage." You tell the AI what to change, it makes the change, and the site updates within minutes. If you could explain it in an email, you can explain it to the AI.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Is the site accessible?</summary>
+            <div class="accordion__content">
+              <p>Yes. The site is built to meet WCAG 2.1 AA accessibility standards. That means it works with screen readers, supports keyboard navigation throughout, provides sufficient color contrast for low-vision users, and respects user preferences like reduced motion. Every page has proper headings, labels, and landmark regions so assistive technology can navigate the content.</p>
+            </div>
+          </details>
+          <details>
+            <summary>What does it cost to maintain?</summary>
+            <div class="accordion__content">
+              <p>Hosting is free through GitHub Pages. There are no recurring fees, no vendor contracts, no licensing costs. The only cost is the time of the person making updates, and with AI assistance, most changes take minutes rather than hours. Compare that to a typical CMS-based district site, which often runs $200&ndash;$500 per month in hosting, licensing, and maintenance fees.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         9. CREDITS
+         ================================================================ -->
+    <section class="section section--gray" aria-label="Credits">
+      <div class="container">
+        <div class="credit-block reveal">
+          <p class="credit-name">Andy McAteer</p>
+          <p class="credit-role">CTE Instructor &middot; Crescent Valley High School &middot; Corvallis, OR</p>
+          <p style="margin-top: 24px;">Designed and orchestrated with <a href="https://claude.ai" target="_blank" rel="noopener">Claude Code</a> by Anthropic.</p>
+          <p style="margin-top: 8px;"><a href="https://mr-mcateer.github.io" target="_blank" rel="noopener">mr-mcateer.github.io</a></p>
+        </div>
+
+        <p class="recursive-note reveal">This page is itself part of the site it describes&thinsp;&mdash;&thinsp;proof that the tools work.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container--wide">
+      <div class="footer__grid">
+        <div class="footer__col">
+              <img src="../images/csd-logo-white.svg" alt="Corvallis School District" class="footer__logo">
+              <p>Corvallis School District 509J<br>1555 SW 35th Street<br>Corvallis, OR 97333</p>
+              <p style="margin-top: 12px;"><a href="tel:+15417575811">(541) 757-5811</a></p>
+              <div class="footer__social">
+                <a href="https://www.facebook.com/CorvallisSD" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a href="https://www.instagram.com/corvallissd/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                <a href="https://www.youtube.com/@CorvallisSchoolDistrict" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+              </div>
+              <p class="footer__vision">Building trust, inclusivity, and engagement through culturally relevant, real-world learning experiences.</p>
+            </div>
+        <div class="footer__col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../about/">About the District</a></li>
+            <li><a href="../schools/">Our Schools</a></li>
+            <li><a href="../families/">For Families</a></li>
+            <li><a href="../community/">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Schools</h3>
+          <ul>
+            <li><a href="../schools/#elementary">Elementary Schools</a></li>
+            <li><a href="../schools/#middle">Middle Schools</a></li>
+            <li><a href="../schools/#high">High Schools</a></li>
+            <li><a href="../schools/#charter">Charter &amp; Alternative</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="../contact/">Contact Directory</a></li>
+            <li><a href="../departments/">Departments</a></li>
+            <li><a href="../staff/">Staff Resources</a></li>
+            <li><a href="../news/">News &amp; Updates</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Corvallis School District 509J. All rights reserved.</p>
+        <p><a href="../how-it-was-built/">How This Site Was Built</a> &middot; <a href="https://www.csd509j.net" target="_blank" rel="noopener">csd509j.net</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

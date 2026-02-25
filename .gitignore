@@ -1,0 +1,25 @@
+# Security: Never commit secrets
+.env
+.env.*
+
+# OS artifacts
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Claude Code local settings (may contain token references)
+.claude/settings.local.json
+
+# Planning state (ephemeral, not for version control)
+.planning/state.md
+
+# Temporary files
+/tmp/
+*.tmp

@@ -1,0 +1,437 @@
+course_name,course_id,student_name,student_sis_id,student_canvas_id,assignment_name,assignment_id,assignment_type,points_possible,score,grade,percentage,submitted_at,due_at,late,missing,attempt,workflow_state
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,Portable Tool Organizer - SolidWorks,475443,"online_upload, online_url",30.0,0.0,0,0.0,,2026-02-12T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,Portable Tool Organizer - SolidWorks,475443,"online_upload, online_url",30.0,0.0,0,0.0,2026-02-24T18:02:42Z,2026-02-12T23:59:59Z,True,False,1,submitted
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,Portable Tool Organizer - SolidWorks,475443,"online_upload, online_url",30.0,30.0,30,100.0,2026-02-12T19:11:37Z,2026-02-12T23:59:59Z,False,False,1,graded
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,Portable Tool Organizer - SolidWorks,475443,"online_upload, online_url",30.0,0.0,0,0.0,,2026-02-12T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,Portable Tool Organizer - SolidWorks,475443,"online_upload, online_url",30.0,0.0,0,0.0,,2026-02-12T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,Portable Tool Organizer - SolidWorks,475443,"online_upload, online_url",30.0,0.0,0,0.0,2026-02-24T18:04:43Z,2026-02-12T23:59:59Z,True,False,1,submitted
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,Portable Tool Organizer - SolidWorks,475443,"online_upload, online_url",30.0,30.0,30,100.0,2026-02-23T17:12:49Z,2026-02-12T23:59:59Z,True,False,1,graded
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,Portable Tool Organizer - SolidWorks,475443,"online_upload, online_url",30.0,0.0,0,0.0,,2026-02-12T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,Portable Tool Organizer - SolidWorks,475443,"online_upload, online_url",30.0,30.0,30,100.0,2026-02-19T17:52:12Z,2026-02-12T23:59:59Z,True,False,1,graded
+P3 Metals 1,23164,Unknown (23631),,23631,Portable Tool Organizer - SolidWorks,475443,"online_upload, online_url",30.0,0.0,0,0.0,,2026-02-12T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,Sheet Metal Cell Phone Stand - POP Writeup,475448,"online_upload, online_url",50.0,0.0,0,0.0,,2026-02-19T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,Sheet Metal Cell Phone Stand - POP Writeup,475448,"online_upload, online_url",50.0,0.0,0,0.0,2026-02-24T18:03:46Z,2026-02-19T23:59:59Z,True,False,1,submitted
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,Sheet Metal Cell Phone Stand - POP Writeup,475448,"online_upload, online_url",50.0,50.0,50,100.0,2026-02-12T18:08:16Z,2026-02-19T23:59:59Z,False,False,1,graded
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,Sheet Metal Cell Phone Stand - POP Writeup,475448,"online_upload, online_url",50.0,0.0,0,0.0,,2026-02-19T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,Sheet Metal Cell Phone Stand - POP Writeup,475448,"online_upload, online_url",50.0,0.0,0,0.0,,2026-02-19T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,Sheet Metal Cell Phone Stand - POP Writeup,475448,"online_upload, online_url",50.0,0.0,0,0.0,2026-02-24T18:01:22Z,2026-02-19T23:59:59Z,True,False,1,submitted
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,Sheet Metal Cell Phone Stand - POP Writeup,475448,"online_upload, online_url",50.0,0.0,0,0.0,2026-02-23T17:18:56Z,2026-02-19T23:59:59Z,True,False,1,submitted
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,Sheet Metal Cell Phone Stand - POP Writeup,475448,"online_upload, online_url",50.0,0.0,0,0.0,,2026-02-19T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,Sheet Metal Cell Phone Stand - POP Writeup,475448,"online_upload, online_url",50.0,50.0,50,100.0,2026-02-19T18:57:47Z,2026-02-19T23:59:59Z,False,False,1,graded
+P3 Metals 1,23164,Unknown (23631),,23631,Sheet Metal Cell Phone Stand - POP Writeup,475448,"online_upload, online_url",50.0,0.0,0,0.0,,2026-02-19T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,Campus Handrail Plaque - Design & Fabrication,475458,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,Campus Handrail Plaque - Design & Fabrication,475458,"online_upload, online_url",70.0,0.0,0,0.0,2026-02-24T18:13:47Z,2026-02-20T23:59:59Z,True,False,1,submitted
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,Campus Handrail Plaque - Design & Fabrication,475458,"online_upload, online_url",70.0,0.0,0,0.0,2026-02-23T17:14:07Z,2026-02-20T23:59:59Z,True,False,1,submitted
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,Campus Handrail Plaque - Design & Fabrication,475458,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,Campus Handrail Plaque - Design & Fabrication,475458,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,Campus Handrail Plaque - Design & Fabrication,475458,"online_upload, online_url",70.0,0.0,0,0.0,2026-02-24T18:26:47Z,2026-02-20T23:59:59Z,True,False,2,submitted
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,Campus Handrail Plaque - Design & Fabrication,475458,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,Campus Handrail Plaque - Design & Fabrication,475458,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,Campus Handrail Plaque - Design & Fabrication,475458,"online_upload, online_url",70.0,0.0,0,0.0,2026-02-24T17:51:45Z,2026-02-20T23:59:59Z,True,False,1,submitted
+P3 Metals 1,23164,Unknown (23631),,23631,Campus Handrail Plaque - Design & Fabrication,475458,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,The Exorcism of the Plasma Cutter — Practice Lab,476529,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,The Exorcism of the Plasma Cutter — Practice Lab,476529,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,The Exorcism of the Plasma Cutter — Practice Lab,476529,"online_upload, online_text_entry",20.0,20.0,20,100.0,2026-02-24T18:35:41Z,2026-02-24T23:30:00Z,False,False,2,graded
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,The Exorcism of the Plasma Cutter — Practice Lab,476529,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,The Exorcism of the Plasma Cutter — Practice Lab,476529,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,The Exorcism of the Plasma Cutter — Practice Lab,476529,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,The Exorcism of the Plasma Cutter — Practice Lab,476529,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,The Exorcism of the Plasma Cutter — Practice Lab,476529,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,The Exorcism of the Plasma Cutter — Practice Lab,476529,"online_upload, online_text_entry",20.0,20.0,20,100.0,2026-02-23T17:45:31Z,2026-02-24T23:30:00Z,False,False,1,graded
+P3 Metals 1,23164,Unknown (23631),,23631,The Exorcism of the Plasma Cutter — Practice Lab,476529,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,The Exorcism of the Plasma Cutter — Reflection,476530,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,The Exorcism of the Plasma Cutter — Reflection,476530,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,The Exorcism of the Plasma Cutter — Reflection,476530,online_quiz,10.0,0.0,0,0.0,2026-02-24T18:51:12Z,2026-02-24T23:30:00Z,False,False,1,pending_review
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,The Exorcism of the Plasma Cutter — Reflection,476530,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,The Exorcism of the Plasma Cutter — Reflection,476530,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,The Exorcism of the Plasma Cutter — Reflection,476530,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,The Exorcism of the Plasma Cutter — Reflection,476530,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,The Exorcism of the Plasma Cutter — Reflection,476530,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,The Exorcism of the Plasma Cutter — Reflection,476530,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,Unknown (23631),,23631,The Exorcism of the Plasma Cutter — Reflection,476530,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,Shop Cleanup — Thursday 2/12,475453,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,Shop Cleanup — Thursday 2/12,475453,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,Shop Cleanup — Thursday 2/12,475453,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,Shop Cleanup — Thursday 2/12,475453,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,Shop Cleanup — Thursday 2/12,475453,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,Shop Cleanup — Thursday 2/12,475453,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,Shop Cleanup — Thursday 2/12,475453,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,Shop Cleanup — Thursday 2/12,475453,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,Shop Cleanup — Thursday 2/12,475453,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,Unknown (23631),,23631,Shop Cleanup — Thursday 2/12,475453,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,Shop Cleanup — Thursday 2/19,476136,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,Shop Cleanup — Thursday 2/19,476136,online_text_entry,10.0,8.0,8,80.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,Shop Cleanup — Thursday 2/19,476136,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,Shop Cleanup — Thursday 2/19,476136,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,Shop Cleanup — Thursday 2/19,476136,online_text_entry,10.0,8.0,8,80.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,Shop Cleanup — Thursday 2/19,476136,online_text_entry,10.0,8.0,8,80.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,Shop Cleanup — Thursday 2/19,476136,online_text_entry,10.0,8.0,8,80.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,Shop Cleanup — Thursday 2/19,476136,online_text_entry,10.0,9.0,9,90.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,Shop Cleanup — Thursday 2/19,476136,online_text_entry,10.0,8.0,8,80.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,Unknown (23631),,23631,Shop Cleanup — Thursday 2/19,476136,online_text_entry,10.0,0.0,0,0.0,,2026-02-20T07:59:59Z,False,True,,graded
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,General Shop Safety — S1 Credit,476497,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,General Shop Safety — S1 Credit,476497,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,General Shop Safety — S1 Credit,476497,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,General Shop Safety — S1 Credit,476497,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,General Shop Safety — S1 Credit,476497,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,General Shop Safety — S1 Credit,476497,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,General Shop Safety — S1 Credit,476497,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,General Shop Safety — S1 Credit,476497,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,General Shop Safety — S1 Credit,476497,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,Abrasive Cutoff Saw — S1 Credit,476498,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,Abrasive Cutoff Saw — S1 Credit,476498,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,Abrasive Cutoff Saw — S1 Credit,476498,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,Abrasive Cutoff Saw — S1 Credit,476498,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,Abrasive Cutoff Saw — S1 Credit,476498,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,Abrasive Cutoff Saw — S1 Credit,476498,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,Abrasive Cutoff Saw — S1 Credit,476498,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,Abrasive Cutoff Saw — S1 Credit,476498,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,Abrasive Cutoff Saw — S1 Credit,476498,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,Arc Welding — S1 Credit,476499,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,Arc Welding — S1 Credit,476499,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,Arc Welding — S1 Credit,476499,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,Arc Welding — S1 Credit,476499,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,Arc Welding — S1 Credit,476499,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,Arc Welding — S1 Credit,476499,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,Arc Welding — S1 Credit,476499,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,Arc Welding — S1 Credit,476499,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,Arc Welding — S1 Credit,476499,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,Metal Bandsaw — S1 Credit,476500,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,Metal Bandsaw — S1 Credit,476500,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,Metal Bandsaw — S1 Credit,476500,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,Metal Bandsaw — S1 Credit,476500,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,Metal Bandsaw — S1 Credit,476500,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,Metal Bandsaw — S1 Credit,476500,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,Metal Bandsaw — S1 Credit,476500,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,Metal Bandsaw — S1 Credit,476500,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,Metal Bandsaw — S1 Credit,476500,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Barton, Colm",0332154,4523,Shop Cleanup — Thursday 2/5,476543,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Holmboe, Simon",0342302,4586,Shop Cleanup — Thursday 2/5,476543,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bailes, Iain",0331200,8384,Shop Cleanup — Thursday 2/5,476543,online_text_entry,10.0,10.0,10,100.0,2026-02-23T17:15:13Z,2026-02-06T07:59:59Z,True,False,1,graded
+P3 Metals 1,23164,"Baller, Logan",0330318,8388,Shop Cleanup — Thursday 2/5,476543,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Skaggs, Trevor",0334105,8401,Shop Cleanup — Thursday 2/5,476543,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Manley, Navin",0330864,8435,Shop Cleanup — Thursday 2/5,476543,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Bertsch, Kaydenn",0344274,11921,Shop Cleanup — Thursday 2/5,476543,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Hankey, Colton",0404247,15415,Shop Cleanup — Thursday 2/5,476543,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,"Martinez, Travis",2001026,21134,Shop Cleanup — Thursday 2/5,476543,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P3 Metals 1,23164,Unknown (23631),,23631,Shop Cleanup — Thursday 2/5,476543,online_text_entry,10.0,0.0,0,0.0,,2026-02-06T07:59:59Z,False,True,,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,Portable Tool Organizer - SolidWorks,475444,"online_upload, online_url",30.0,0.0,0,0.0,,2026-02-12T23:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,Portable Tool Organizer - SolidWorks,475444,"online_upload, online_url",30.0,30.0,30,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,Portable Tool Organizer - SolidWorks,475444,"online_upload, online_url",30.0,15.0,15,50.0,2026-02-17T18:11:50Z,2026-02-12T23:59:59Z,True,False,1,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,Portable Tool Organizer - SolidWorks,475444,"online_upload, online_url",30.0,30.0,30,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,Sheet Metal Cell Phone Stand - POP Writeup,475449,"online_upload, online_url",50.0,0.0,0,0.0,,2026-02-19T23:59:59Z,False,True,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,Sheet Metal Cell Phone Stand - POP Writeup,475449,"online_upload, online_url",50.0,50.0,50,100.0,2026-02-17T18:21:58Z,2026-02-19T23:59:59Z,False,False,1,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,Sheet Metal Cell Phone Stand - POP Writeup,475449,"online_upload, online_url",50.0,0.0,0,0.0,,2026-02-19T23:59:59Z,False,True,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,Sheet Metal Cell Phone Stand - POP Writeup,475449,"online_upload, online_url",50.0,50.0,50,100.0,2026-02-19T18:14:53Z,2026-02-19T23:59:59Z,False,False,1,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,Campus Handrail Plaque - Design & Fabrication,475459,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,Campus Handrail Plaque - Design & Fabrication,475459,"online_upload, online_url",70.0,70.0,70,100.0,,2026-02-20T23:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,Campus Handrail Plaque - Design & Fabrication,475459,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,Campus Handrail Plaque - Design & Fabrication,475459,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,The Exorcism of the Plasma Cutter — Practice Lab,476531,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,The Exorcism of the Plasma Cutter — Practice Lab,476531,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,The Exorcism of the Plasma Cutter — Practice Lab,476531,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,The Exorcism of the Plasma Cutter — Practice Lab,476531,"online_upload, online_text_entry",20.0,20.0,20,100.0,2026-02-23T17:48:54Z,2026-02-24T23:30:00Z,False,False,1,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,The Exorcism of the Plasma Cutter — Reflection,476532,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,The Exorcism of the Plasma Cutter — Reflection,476532,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,The Exorcism of the Plasma Cutter — Reflection,476532,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,The Exorcism of the Plasma Cutter — Reflection,476532,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,Shop Cleanup — Thursday 2/12,475454,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,Shop Cleanup — Thursday 2/12,475454,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,Shop Cleanup — Thursday 2/12,475454,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,Shop Cleanup — Thursday 2/12,475454,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,Shop Cleanup — Thursday 2/19,476135,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,Shop Cleanup — Thursday 2/19,476135,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,Shop Cleanup — Thursday 2/19,476135,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,Shop Cleanup — Thursday 2/19,476135,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,Portable Angle Grinder Safety,476103,online_quiz,15.0,15.0,15,100.0,,,False,False,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,Portable Angle Grinder Safety,476103,online_quiz,15.0,15.0,15,100.0,,,False,False,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,Portable Angle Grinder Safety,476103,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,Portable Angle Grinder Safety,476103,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,General Shop Safety — S1 Credit,476501,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,General Shop Safety — S1 Credit,476501,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,General Shop Safety — S1 Credit,476501,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,General Shop Safety — S1 Credit,476501,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,Abrasive Cutoff Saw — S1 Credit,476502,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,Abrasive Cutoff Saw — S1 Credit,476502,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,Abrasive Cutoff Saw — S1 Credit,476502,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,Abrasive Cutoff Saw — S1 Credit,476502,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,Arc Welding — S1 Credit,476503,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,Arc Welding — S1 Credit,476503,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,Arc Welding — S1 Credit,476503,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,Arc Welding — S1 Credit,476503,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,Metal Bandsaw — S1 Credit,476504,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,Metal Bandsaw — S1 Credit,476504,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,Metal Bandsaw — S1 Credit,476504,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,Metal Bandsaw — S1 Credit,476504,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Lucas, Kaiden",0326798,3713,Shop Cleanup — Thursday 2/5,476560,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Godinez, Audrey",0344807,4671,Shop Cleanup — Thursday 2/5,476560,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Ziniker, Lincoln",0322841,8354,Shop Cleanup — Thursday 2/5,476560,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P3 Metals 2,23132,"Richards, Dawson",0332860,8370,Shop Cleanup — Thursday 2/5,476560,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,30.0,30,100.0,2026-02-12T21:09:51Z,2026-02-12T23:59:59Z,False,False,1,graded
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,15.0,15,50.0,2026-02-17T20:07:49Z,2026-02-12T23:59:59Z,True,False,1,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,30.0,30,100.0,2026-02-23T18:11:02Z,2026-02-12T23:59:59Z,True,False,1,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,30.0,30,100.0,2026-02-12T20:10:34Z,2026-02-12T23:59:59Z,False,False,1,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,0.0,0,0.0,,2026-02-12T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,15.0,15,50.0,2026-02-19T21:10:25Z,2026-02-12T23:59:59Z,True,False,1,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,30.0,30,100.0,2026-02-17T20:19:40Z,2026-02-12T23:59:59Z,False,False,1,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,30.0,30,100.0,2026-02-12T20:27:31Z,2026-02-12T23:59:59Z,False,False,1,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,30.0,30,100.0,2026-02-23T18:24:19Z,2026-02-12T23:59:59Z,True,False,1,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,30.0,30,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,0.0,0,0.0,,2026-02-12T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,15.0,15,50.0,2026-02-19T19:59:46Z,2026-02-12T23:59:59Z,False,False,3,submitted
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,Portable Tool Organizer - SolidWorks,475446,"online_text_entry, online_url, online_upload",30.0,15.0,15,50.0,2026-02-17T20:06:08Z,2026-02-12T23:59:59Z,True,False,1,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,50.0,50,100.0,2026-02-17T20:49:04Z,2026-02-19T23:59:59Z,False,False,1,graded
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,50.0,50,100.0,2026-02-19T20:01:43Z,2026-02-19T23:59:59Z,False,False,1,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,0.0,0,0.0,2026-02-24T20:57:26Z,2026-02-19T23:59:59Z,True,False,1,submitted
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,50.0,50,100.0,2026-02-19T20:26:27Z,2026-02-19T23:59:59Z,False,False,1,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,0.0,0,0.0,,2026-02-19T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,50.0,50,100.0,2026-02-23T18:33:32Z,2026-02-19T23:59:59Z,True,False,1,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,50.0,50,100.0,2026-02-17T20:39:21Z,2026-02-19T23:59:59Z,False,False,1,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,0.0,0,0.0,,2026-02-19T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,0.0,0,0.0,2026-02-24T20:08:08Z,2026-02-19T23:59:59Z,True,False,1,submitted
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,50.0,50,100.0,2026-02-19T20:04:00Z,2026-02-19T23:59:59Z,False,False,1,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,0.0,0,0.0,,2026-02-19T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,50.0,50,100.0,2026-02-17T20:05:54Z,2026-02-19T23:59:59Z,False,False,1,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,Sheet Metal Cell Phone Stand - POP Writeup,475451,"online_upload, online_url",50.0,0.0,0,0.0,,2026-02-19T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,0.0,0,0.0,2026-02-24T20:26:19Z,2026-02-20T23:59:59Z,True,False,1,submitted
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,70.0,70,100.0,2026-02-23T18:54:06Z,2026-02-20T23:59:59Z,True,False,1,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,70.0,70,100.0,2026-02-17T20:07:37Z,2026-02-20T23:59:59Z,False,False,1,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,Campus Handrail Plaque - Design & Fabrication,475461,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,20.0,20,100.0,2026-02-23T18:48:33Z,2026-02-24T23:30:00Z,False,False,1,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,20.0,20,100.0,2026-02-24T21:17:38Z,2026-02-24T23:30:00Z,False,False,1,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,20.0,20,100.0,2026-02-23T18:24:17Z,2026-02-24T23:30:00Z,False,False,1,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,20.0,20,100.0,2026-02-24T22:04:51Z,2026-02-24T23:30:00Z,False,False,1,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,The Exorcism of the Plasma Cutter — Practice Lab,476535,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,2026-02-24T23:10:08Z,2026-02-24T23:30:00Z,False,False,1,pending_review
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,2026-02-24T20:23:17Z,2026-02-24T23:30:00Z,False,False,1,pending_review
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,2026-02-24T22:26:03Z,2026-02-24T23:30:00Z,False,False,1,pending_review
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,The Exorcism of the Plasma Cutter — Reflection,476536,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,Shop Cleanup — Thursday 2/12,475456,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,7.0,7,70.0,2026-02-23T07:08:19Z,2026-02-20T07:59:59Z,True,False,1,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,Shop Cleanup — Thursday 2/19,476133,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Metal Types — Unit Quiz,476474,online_quiz,25.0,23.0,23,92.0,2026-02-24T20:27:37Z,,False,False,1,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Metal Types — Unit Quiz,476474,online_quiz,25.0,20.0,20,80.0,2026-02-24T23:01:22Z,,False,False,1,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Metal Types — Unit Quiz,476474,online_quiz,25.0,8.0,8,32.0,2026-02-24T20:53:20Z,,False,False,1,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Portable Angle Grinder Safety,476110,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Portable Angle Grinder Safety,476110,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,Portable Angle Grinder Safety,476110,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,Portable Angle Grinder Safety,476110,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Portable Angle Grinder Safety,476110,online_quiz,15.0,15.0,15,100.0,,,False,False,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,Portable Angle Grinder Safety,476110,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,Portable Angle Grinder Safety,476110,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,Portable Angle Grinder Safety,476110,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,Portable Angle Grinder Safety,476110,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,Portable Angle Grinder Safety,476110,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,Portable Angle Grinder Safety,476110,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,General Shop Safety — S1 Credit,476509,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Abrasive Cutoff Saw — S1 Credit,476510,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Abrasive Cutoff Saw — S1 Credit,476510,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,Abrasive Cutoff Saw — S1 Credit,476510,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,Abrasive Cutoff Saw — S1 Credit,476510,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Abrasive Cutoff Saw — S1 Credit,476510,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,Abrasive Cutoff Saw — S1 Credit,476510,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,Abrasive Cutoff Saw — S1 Credit,476510,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,Abrasive Cutoff Saw — S1 Credit,476510,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,Abrasive Cutoff Saw — S1 Credit,476510,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,Abrasive Cutoff Saw — S1 Credit,476510,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,Abrasive Cutoff Saw — S1 Credit,476510,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,Arc Welding — S1 Credit,476511,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,Metal Bandsaw — S1 Credit,476512,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,5.0,5,50.0,2026-02-23T16:08:14Z,2026-02-06T07:59:59Z,True,False,1,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,Shop Cleanup — Thursday 2/5,476594,online_text_entry,10.0,10.0,10,100.0,,2026-02-06T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Morris, Zack",0313452,1320,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Ellis, Calan",0366364,1768,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"McKeown, North",0317774,3623,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Inman, Willow",0312118,8348,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Desalvo, Dominic",0335775,8362,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"MacCarty, Odin",0332392,8430,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Smith, Jackson",0398525,11596,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Slupe, Calvin",2000541,20460,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Curtis, Matthew",2000890,20528,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Zaremba, Bodhi",2000515,20623,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Miller, Liam",2000542,20754,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Tarubal, Hans",2000986,20756,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 1,23188,"Rutherford, Dell",2001694,22591,Shop Cleanup — Thursday 2/26,476595,online_text_entry,10.0,10.0,10,100.0,,2026-02-27T07:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,Portable Tool Organizer - SolidWorks,475447,"online_upload, online_url",30.0,15.0,15,50.0,2026-02-19T20:02:22Z,2026-02-12T23:59:59Z,True,False,1,graded
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,Portable Tool Organizer - SolidWorks,475447,"online_upload, online_url",30.0,30.0,30,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,Sheet Metal Cell Phone Stand - POP Writeup,475452,"online_upload, online_url",50.0,0.0,0,0.0,2026-02-23T18:14:13Z,2026-02-19T23:59:59Z,True,False,1,submitted
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,Sheet Metal Cell Phone Stand - POP Writeup,475452,"online_upload, online_url",50.0,0.0,0,0.0,2026-02-23T18:19:13Z,2026-02-19T23:59:59Z,True,False,1,submitted
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,Campus Handrail Plaque - Design & Fabrication,475462,"online_upload, online_url",70.0,0.0,0,0.0,,2026-02-20T23:59:59Z,False,True,,graded
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,Campus Handrail Plaque - Design & Fabrication,475462,"online_upload, online_url",70.0,0.0,0,0.0,2026-02-23T18:17:42Z,2026-02-20T23:59:59Z,True,False,1,submitted
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,The Exorcism of the Plasma Cutter — Practice Lab,476537,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,The Exorcism of the Plasma Cutter — Practice Lab,476537,"online_upload, online_text_entry",20.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,The Exorcism of the Plasma Cutter — Reflection,476538,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,The Exorcism of the Plasma Cutter — Reflection,476538,online_quiz,10.0,0.0,0,0.0,,2026-02-24T23:30:00Z,False,True,,graded
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,Shop Cleanup — Thursday 2/12,475457,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,Shop Cleanup — Thursday 2/12,475457,online_text_entry,10.0,10.0,10,100.0,,2026-02-13T07:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,Shop Cleanup — Thursday 2/19,476138,online_text_entry,10.0,0.0,0,0.0,2026-02-23T18:15:28Z,2026-02-20T07:59:59Z,True,False,1,submitted
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,Shop Cleanup — Thursday 2/19,476138,online_text_entry,10.0,0.0,0,0.0,,2026-02-20T07:59:59Z,False,True,,graded
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,Portable Angle Grinder Safety,476107,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,Portable Angle Grinder Safety,476107,online_quiz,15.0,14.0,14,93.3,,,False,False,,graded
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,General Shop Safety — S1 Credit,476513,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,General Shop Safety — S1 Credit,476513,none,15.0,15.0,15,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,Abrasive Cutoff Saw — S1 Credit,476514,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,Abrasive Cutoff Saw — S1 Credit,476514,none,12.0,12.0,12,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,Arc Welding — S1 Credit,476515,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,Arc Welding — S1 Credit,476515,none,13.0,13.0,13,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,Metal Bandsaw — S1 Credit,476516,none,11.0,11.0,11,100.0,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,Metal Bandsaw — S1 Credit,476516,none,11.0,10.0,10,90.9,,2026-02-28T07:59:59Z,False,False,,graded
+P5 Metals 2,23177,"Kelly, Gwen",0350494,4823,Shop Cleanup — Thursday 2/5,476611,online_text_entry,10.0,0.0,0,0.0,2026-02-23T18:14:45Z,2026-02-06T07:59:59Z,True,False,1,submitted
+P5 Metals 2,23177,"Moore, Abe",0379007,10263,Shop Cleanup — Thursday 2/5,476611,online_text_entry,10.0,0.0,0,0.0,,2026-02-06T07:59:59Z,False,True,,graded
+P1 Engines Fab 1,23124,"Eigel, Alex",0324682,1424,Anatomy of the Small Engine,475893,online_quiz,30.0,26.0,26,86.7,2026-02-19T16:30:15Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 1,23124,"Fuhrman, Ian",0311955,2567,Anatomy of the Small Engine,475893,online_quiz,30.0,,,,,2026-02-19T23:59:00Z,False,True,,unsubmitted
+P1 Engines Fab 1,23124,"Lehman, Cole",0322039,3659,Anatomy of the Small Engine,475893,online_quiz,30.0,27.0,27,90.0,2026-02-19T16:27:05Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 1,23124,"Caze, Zeph",0312588,3678,Anatomy of the Small Engine,475893,online_quiz,30.0,27.0,27,90.0,2026-02-19T16:22:52Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 1,23124,"Shaub, Hazel",0384310,3719,Anatomy of the Small Engine,475893,online_quiz,30.0,12.0,12,40.0,2026-02-19T16:26:04Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 1,23124,"Clark, Nathan",0311703,3876,Anatomy of the Small Engine,475893,online_quiz,30.0,25.0,25,83.3,2026-02-19T16:28:39Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 1,23124,"Tran, Cynthia",0330750,8312,Anatomy of the Small Engine,475893,online_quiz,30.0,25.0,25,83.3,2026-02-19T16:28:06Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 1,23124,"Moore, Abe",0379007,10263,Anatomy of the Small Engine,475893,online_quiz,30.0,26.0,26,86.7,2026-02-19T16:24:34Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 1,23124,"Darling, Daniel",2000068,14996,Anatomy of the Small Engine,475893,online_quiz,30.0,23.0,23,76.7,2026-02-19T16:53:44Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 1,23124,"Yong, Natalie",0404072,17511,Anatomy of the Small Engine,475893,online_quiz,30.0,20.0,20,66.7,2026-02-19T16:26:03Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 1,23124,Unknown (23662),,23662,Anatomy of the Small Engine,475893,online_quiz,30.0,,,,,2026-02-19T23:59:00Z,False,True,,unsubmitted
+P1 Engines Fab 1,23124,"Eigel, Alex",0324682,1424,Shop Cleanup — Thursday 2/19,476139,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Fuhrman, Ian",0311955,2567,Shop Cleanup — Thursday 2/19,476139,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Lehman, Cole",0322039,3659,Shop Cleanup — Thursday 2/19,476139,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Caze, Zeph",0312588,3678,Shop Cleanup — Thursday 2/19,476139,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Shaub, Hazel",0384310,3719,Shop Cleanup — Thursday 2/19,476139,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Clark, Nathan",0311703,3876,Shop Cleanup — Thursday 2/19,476139,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Tran, Cynthia",0330750,8312,Shop Cleanup — Thursday 2/19,476139,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Moore, Abe",0379007,10263,Shop Cleanup — Thursday 2/19,476139,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Darling, Daniel",2000068,14996,Shop Cleanup — Thursday 2/19,476139,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Yong, Natalie",0404072,17511,Shop Cleanup — Thursday 2/19,476139,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,Unknown (23662),,23662,Shop Cleanup — Thursday 2/19,476139,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Eigel, Alex",0324682,1424,Shop Cleanup — Thursday 2/13,475436,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Fuhrman, Ian",0311955,2567,Shop Cleanup — Thursday 2/13,475436,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Lehman, Cole",0322039,3659,Shop Cleanup — Thursday 2/13,475436,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Caze, Zeph",0312588,3678,Shop Cleanup — Thursday 2/13,475436,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Shaub, Hazel",0384310,3719,Shop Cleanup — Thursday 2/13,475436,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Clark, Nathan",0311703,3876,Shop Cleanup — Thursday 2/13,475436,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Tran, Cynthia",0330750,8312,Shop Cleanup — Thursday 2/13,475436,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Moore, Abe",0379007,10263,Shop Cleanup — Thursday 2/13,475436,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Darling, Daniel",2000068,14996,Shop Cleanup — Thursday 2/13,475436,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,"Yong, Natalie",0404072,17511,Shop Cleanup — Thursday 2/13,475436,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 1,23124,Unknown (23662),,23662,Shop Cleanup — Thursday 2/13,475436,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Hankey, Colton",0404247,15415,Predator 212 - Engine Teardown Portfolio,475435,"online_upload, online_url",100.0,100.0,100,100.0,,2026-03-20T23:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"O'Briant, David",0322673,763,Anatomy of the Small Engine,475894,online_quiz,30.0,29.0,29,96.7,2026-02-19T16:23:48Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 2,23344,"Norris, Oliver",0324428,1875,Anatomy of the Small Engine,475894,online_quiz,30.0,26.0,26,86.7,2026-02-19T16:35:57Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 2,23344,"Quick, John",0322901,2306,Anatomy of the Small Engine,475894,online_quiz,30.0,27.0,27,90.0,2026-02-19T16:27:14Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 2,23344,"Lucas, Kaiden",0326798,3713,Anatomy of the Small Engine,475894,online_quiz,30.0,24.0,24,80.0,2026-02-19T16:20:40Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 2,23344,"Robertson, Brandon",0313447,3736,Anatomy of the Small Engine,475894,online_quiz,30.0,30.0,30,100.0,2026-02-19T16:20:43Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 2,23344,"Ziniker, Lincoln",0322841,8354,Anatomy of the Small Engine,475894,online_quiz,30.0,28.0,28,93.3,2026-02-19T16:33:20Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 2,23344,"Steele, Noah",0330265,8410,Anatomy of the Small Engine,475894,online_quiz,30.0,27.0,27,90.0,2026-02-19T16:21:25Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 2,23344,"Hankey, Colton",0404247,15415,Anatomy of the Small Engine,475894,online_quiz,30.0,30.0,30,100.0,2026-02-19T16:31:48Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 2,23344,"Tarubal, Hans",2000986,20756,Anatomy of the Small Engine,475894,online_quiz,30.0,20.0,20,66.7,2026-02-19T16:18:13Z,2026-02-19T23:59:00Z,False,False,1,graded
+P1 Engines Fab 2,23344,"O'Briant, David",0322673,763,Shop Cleanup — Thursday 2/19,476134,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Norris, Oliver",0324428,1875,Shop Cleanup — Thursday 2/19,476134,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Quick, John",0322901,2306,Shop Cleanup — Thursday 2/19,476134,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Lucas, Kaiden",0326798,3713,Shop Cleanup — Thursday 2/19,476134,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Robertson, Brandon",0313447,3736,Shop Cleanup — Thursday 2/19,476134,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Ziniker, Lincoln",0322841,8354,Shop Cleanup — Thursday 2/19,476134,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Steele, Noah",0330265,8410,Shop Cleanup — Thursday 2/19,476134,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Hankey, Colton",0404247,15415,Shop Cleanup — Thursday 2/19,476134,online_text_entry,10.0,10.0,10,100.0,,2026-02-20T07:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Tarubal, Hans",2000986,20756,Shop Cleanup — Thursday 2/19,476134,online_text_entry,10.0,10.0,10,100.0,2026-02-23T07:09:08Z,2026-02-20T07:59:59Z,True,False,1,graded
+P1 Engines Fab 2,23344,"O'Briant, David",0322673,763,Shop Cleanup — Thursday 2/13,475437,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Norris, Oliver",0324428,1875,Shop Cleanup — Thursday 2/13,475437,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Quick, John",0322901,2306,Shop Cleanup — Thursday 2/13,475437,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Lucas, Kaiden",0326798,3713,Shop Cleanup — Thursday 2/13,475437,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Robertson, Brandon",0313447,3736,Shop Cleanup — Thursday 2/13,475437,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Ziniker, Lincoln",0322841,8354,Shop Cleanup — Thursday 2/13,475437,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Steele, Noah",0330265,8410,Shop Cleanup — Thursday 2/13,475437,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Hankey, Colton",0404247,15415,Shop Cleanup — Thursday 2/13,475437,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded
+P1 Engines Fab 2,23344,"Tarubal, Hans",2000986,20756,Shop Cleanup — Thursday 2/13,475437,"online_upload, online_url",10.0,10.0,10,100.0,,2026-02-12T23:59:59Z,False,False,,graded

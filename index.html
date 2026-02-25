@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andy McAteer - CTE Instructor | Metals, Engines &amp; Fabrication, CVHS Corvallis</title>
+  <meta name="description" content="Hands-on metals, engines, and fabrication classes at Crescent Valley High School in Corvallis, Oregon. Real skills, real tools, real projects — students leave with a portfolio and the confidence to back it up.">
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ===== DESIGN TOKENS ===== */
+    :root {
+      --white: #ffffff;
+      --off-white: #fafafa;
+      --gray-50: #f5f5f7;
+      --gray-100: #e8e8ed;
+      --gray-200: #d2d2d7;
+      --gray-400: #86868b;
+      --gray-600: #6e6e73;
+      --gray-800: #1d1d1f;
+      --black: #000000;
+      --accent: #0071e3;
+      --accent-hover: #0077ed;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --max-width: 980px;
+      --max-width-wide: 1120px;
+      --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* ===== DARK MODE ===== */
+    [data-theme="dark"] {
+      --white: #1d1d1f;
+      --off-white: #161618;
+      --gray-50: #2a2a2c;
+      --gray-100: #3a3a3c;
+      --gray-200: #48484a;
+      --gray-400: #98989d;
+      --gray-600: #aeaeb2;
+      --gray-800: #f5f5f7;
+      --black: #ffffff;
+      --accent: #2997ff;
+      --accent-hover: #64b5f6;
+    }
+    [data-theme="dark"] .site-nav {
+      background: rgba(29, 29, 31, 0.82);
+      border-bottom-color: var(--gray-100);
+    }
+    [data-theme="dark"] .site-nav.nav-scrolled {
+      background: rgba(29, 29, 31, 0.95);
+    }
+    [data-theme="dark"] .course-card,
+    [data-theme="dark"] .parent-card {
+      border: 1px solid var(--gray-100);
+    }
+
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--gray-800);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.15; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s var(--ease-out);
+    }
+    a:hover { color: var(--accent-hover); }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* ===== GLOBAL LAYOUT ===== */
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+    .container--wide { max-width: var(--max-width-wide); margin: 0 auto; padding: 0 24px; }
+    section { padding: 120px 0; }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* ===== NAV ===== */
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--gray-100);
+      transition: background 0.3s;
+    }
+    .site-nav__inner {
+      max-width: var(--max-width-wide);
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-nav__name {
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--gray-800);
+      letter-spacing: -0.01em;
+    }
+    .site-nav__links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .site-nav__links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--gray-600);
+      transition: color 0.2s;
+    }
+    .site-nav__links a:hover { color: var(--gray-800); }
+    .site-nav.nav-scrolled { background: rgba(255, 255, 255, 0.95); }
+    .theme-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--gray-600);
+      padding: 6px;
+      display: flex;
+      align-items: center;
+      transition: color 0.2s;
+    }
+    .theme-toggle:hover { color: var(--gray-800); }
+    .theme-icon--sun { display: none; }
+    [data-theme="dark"] .theme-icon--moon { display: none; }
+    [data-theme="dark"] .theme-icon--sun { display: block; }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 200px 0 140px;
+      text-align: center;
+      background: var(--white);
+    }
+    .hero__eyebrow {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(2.8rem, 6vw, 4.2rem);
+      letter-spacing: -0.025em;
+      color: var(--gray-800);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero__sub {
+      font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+      color: var(--gray-600);
+      max-width: 580px;
+      margin: 0 auto 40px;
+      line-height: 1.65;
+    }
+    .hero__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--accent);
+      transition: gap 0.25s var(--ease-spring);
+    }
+    .hero__cta:hover { gap: 10px; }
+    .hero__cta svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.25s var(--ease-spring);
+    }
+    .hero__cta:hover svg { transform: translateX(2px); }
+
+    /* ===== PHOTO BREAK ===== */
+    .photo-break {
+      width: 100%;
+      height: 56vw;
+      max-height: 540px;
+      overflow: hidden;
+      position: relative;
+    }
+    .photo-break img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+    }
+    .photo-break__caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 40px 32px 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.55));
+      color: rgba(255,255,255,0.8);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    /* ===== COURSES ===== */
+    .courses {
+      background: var(--gray-50);
+      padding: 120px 0;
+    }
+    .courses__header {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+    .courses__header h2 {
+      font-size: clamp(1.8rem, 3.8vw, 2.6rem);
+      letter-spacing: -0.02em;
+      color: var(--gray-800);
+      margin-bottom: 12px;
+    }
+    .courses__header p {
+      font-size: 1.05rem;
+      color: var(--gray-600);
+    }
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .course-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 40px 32px;
+      transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+    }
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 44px rgba(0, 0, 0, 0.08);
+    }
+    .course-card__icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+    .course-card__title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--gray-800);
+      margin-bottom: 12px;
+      letter-spacing: -0.015em;
+      line-height: 1.2;
+    }
+    .course-card__desc {
+      font-size: 0.95rem;
+      color: var(--gray-600);
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+    .course-card__outcomes {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .course-card__outcomes li {
+      font-size: 0.88rem;
+      color: var(--gray-600);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.5;
+    }
+    .course-card__outcomes li::before {
+      content: "\2192";
+      color: var(--accent);
+      font-weight: 600;
+      flex-shrink: 0;
+      margin-top: 0.1em;
+    }
+
+    /* ===== PROJECT CARDS ===== */
+    .projects { background: var(--white); }
+    .projects__header {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+    .projects__header h2 {
+      font-size: clamp(1.8rem, 3.8vw, 2.6rem);
+      letter-spacing: -0.02em;
+      color: var(--gray-800);
+    }
+    .projects__header p {
+      margin-top: 12px;
+      font-size: 1.05rem;
+      color: var(--gray-600);
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      background: var(--gray-50);
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 48px;
+      transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+    .project-card--reverse .project-card__image { order: 2; }
+    .project-card--reverse .project-card__body { order: 1; }
+
+    .project-card__image {
+      position: relative;
+      overflow: hidden;
+      min-height: 360px;
+    }
+    .project-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease-out);
+    }
+    .project-card:hover .project-card__image img {
+      transform: scale(1.03);
+    }
+
+    .project-card__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 56px 48px;
+    }
+    .project-card__tag {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      margin-bottom: 12px;
+    }
+    .project-card__title {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 500;
+      letter-spacing: -0.015em;
+      color: var(--gray-800);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .project-card__desc {
+      font-size: 0.95rem;
+      color: var(--gray-600);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+    .project-card__stats {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .stat {
+      text-align: left;
+    }
+    .stat__number {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      line-height: 1.1;
+    }
+    .stat__label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .project-card__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--accent);
+      transition: gap 0.25s var(--ease-spring);
+    }
+    .project-card__link:hover { gap: 10px; }
+    .project-card__link svg {
+      width: 15px;
+      height: 15px;
+    }
+    .project-card__links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* ===== ALSO BUILT ===== */
+    .also-built {
+      background: var(--white);
+      padding: 100px 0;
+    }
+    .also-built__header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .also-built__header h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--gray-800);
+      letter-spacing: -0.015em;
+    }
+    .also-built__header p {
+      font-size: 1.05rem;
+      color: var(--gray-600);
+      margin-top: 12px;
+    }
+    .also-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .also-card {
+      background: var(--gray-50);
+      border-radius: 16px;
+      padding: 36px 32px;
+      transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+    }
+    .also-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+    .also-card__icon {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+    .also-card__title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--gray-800);
+      margin-bottom: 8px;
+    }
+    .also-card__desc {
+      font-size: 0.88rem;
+      color: var(--gray-600);
+      line-height: 1.55;
+      margin-bottom: 16px;
+    }
+    .also-card__link {
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* ===== FOR PARENTS ===== */
+    .for-parents {
+      background: var(--gray-50);
+      padding: 100px 0;
+    }
+    .parents__header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .parents__header h2 {
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      letter-spacing: -0.02em;
+      color: var(--gray-800);
+      margin-bottom: 12px;
+    }
+    .parents__header p {
+      font-size: 1.05rem;
+      color: var(--gray-600);
+    }
+    .parents-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+    .parent-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 36px 32px;
+    }
+    .parent-card__icon {
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+    }
+    .parent-card__title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--gray-800);
+      margin-bottom: 10px;
+    }
+    .parent-card__desc {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+      line-height: 1.65;
+    }
+
+    /* ===== STUDENT WORK GALLERY ===== */
+    .student-work {
+      background: var(--gray-50);
+      padding: 100px 0;
+    }
+    .student-work__header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .student-work__header h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.4rem);
+      letter-spacing: -0.02em;
+      color: var(--gray-800);
+      margin-bottom: 12px;
+    }
+    .student-work__header p {
+      font-size: 1.05rem;
+      color: var(--gray-600);
+    }
+    .gallery-carousel { position: relative; }
+    .gallery-track-wrap { overflow: hidden; }
+    .gallery-track {
+      display: flex;
+      gap: 16px;
+      transition: transform 0.5s var(--ease-out);
+      will-change: transform;
+    }
+    .gallery-slide {
+      flex-shrink: 0;
+      aspect-ratio: 4/3;
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--gray-200);
+    }
+    .gallery-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s var(--ease-out);
+    }
+    .gallery-slide:hover img { transform: scale(1.04); }
+    .gallery-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 28px;
+    }
+    .gallery-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--gray-200);
+      background: var(--white);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s var(--ease-out), border-color 0.2s var(--ease-out), transform 0.15s var(--ease-out);
+      flex-shrink: 0;
+    }
+    .gallery-btn:hover { background: var(--gray-100); border-color: var(--gray-400); transform: scale(1.06); }
+    .gallery-btn:active { transform: scale(0.94); }
+    .gallery-btn svg { width: 16px; height: 16px; pointer-events: none; }
+    .gallery-progress {
+      flex: 1;
+      max-width: 200px;
+      height: 2px;
+      background: var(--gray-200);
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-progress-fill {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 0%;
+      background: var(--gray-800);
+      border-radius: 2px;
+      transition: width 0.5s var(--ease-out);
+    }
+
+    /* ===== ABOUT ===== */
+    .about {
+      background: var(--white);
+      padding: 120px 0;
+    }
+    .about__inner {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .about__image {
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .about__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4/5;
+    }
+    .about__text h2 {
+      font-size: clamp(1.8rem, 3.6vw, 2.4rem);
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+    .about__text p {
+      font-size: 1rem;
+      color: var(--gray-600);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .about__text p strong { color: var(--gray-800); font-weight: 600; }
+    .about__contact {
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: var(--gray-50);
+      border-top: 1px solid var(--gray-100);
+      padding: 40px 0;
+      text-align: center;
+    }
+    .site-footer p {
+      font-size: 13px;
+      color: var(--gray-400);
+      margin-bottom: 6px;
+    }
+    .site-footer p:last-child { margin-bottom: 0; }
+    .site-footer a { color: var(--gray-600); }
+    .site-footer a:hover { color: var(--gray-800); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .project-card {
+        grid-template-columns: 1fr;
+      }
+      .project-card--reverse .project-card__image { order: 0; }
+      .project-card--reverse .project-card__body { order: 0; }
+      .project-card__image { min-height: 280px; }
+      .project-card__body { padding: 40px 32px; }
+      .about__inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .about__image { max-width: 400px; }
+      .also-grid { grid-template-columns: repeat(2, 1fr); }
+      .courses-grid { grid-template-columns: repeat(2, 1fr); }
+      .parents-grid { grid-template-columns: repeat(2, 1fr); }
+      /* gallery-slide widths set by JS */
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 80px 0; }
+      .hero { padding: 140px 0 80px; }
+      .hero h1 { font-size: 2.2rem; }
+      .project-card__body { padding: 32px 24px; }
+      .project-card__title { font-size: 1.4rem; }
+      .project-card__stats { gap: 16px; }
+      .site-nav__links { gap: 16px; }
+      .site-nav__links a { font-size: 12px; }
+      .nav-hide-mobile { display: none; }
+      .also-grid { grid-template-columns: 1fr; }
+      .courses-grid { grid-template-columns: 1fr; }
+      .parents-grid { grid-template-columns: 1fr; }
+      /* gallery-slide widths set by JS */
+    }
+
+    /* ===== REDUCED MOTION ===== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; }
+      .project-card:hover { transform: none; }
+      .also-card:hover { transform: none; }
+      .course-card:hover { transform: none; }
+    }
+
+    /* ===== PRINT ===== */
+    @media print {
+      .site-nav, .photo-break { display: none; }
+      body { font-size: 11pt; color: #000; }
+      section { padding: 40px 0; }
+      .project-card { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+    }
+  </style>
+  <script>(function(){var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav__inner">
+      <span class="site-nav__name">Andy McAteer</span>
+      <ul class="site-nav__links">
+        <li><a href="#programs">Programs</a></li>
+        <li class="nav-hide-mobile"><a href="#projects">The Program</a></li>
+        <li><a href="#parents">For Parents</a></li>
+        <li class="nav-hide-mobile"><a href="#gallery">Student Work</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+      <div class="container reveal">
+        <p class="hero__eyebrow">Crescent Valley High School &middot; Corvallis, Oregon</p>
+        <h1>You can build real things here.</h1>
+        <p class="hero__sub">Metal fabrication, small engines, and digital design - taught hands-on from day one. Students leave with skills, a portfolio, and the confidence to back it up.</p>
+        <a href="#projects" class="hero__cta">
+          Explore what you'll build
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== PHOTO BREAK ===== -->
+    <div class="photo-break reveal" style="background: #1d1d1f;">
+      <img
+        src="img/hero-shop.jpg"
+        alt="Students at work in the CVHS metals and fabrication shop"
+        width="1400" height="788" loading="eager"
+      >
+      <div class="photo-break__caption">Students at work &middot; CVHS Metals &amp; Fabrication</div>
+    </div>
+
+    <!-- ===== COURSES ===== -->
+    <section class="courses" id="programs">
+      <div class="container--wide">
+
+        <div class="courses__header reveal">
+          <h2>What you build here.</h2>
+          <p>Three programs. Real tools. Skills you keep.</p>
+        </div>
+
+        <div class="courses-grid">
+
+          <div class="course-card reveal reveal-delay-1">
+            <div class="course-card__icon" aria-hidden="true">&#x2692;&#xFE0F;</div>
+            <h3 class="course-card__title">Metals &amp; Fabrication</h3>
+            <p class="course-card__desc">You will cut, weld, and shape real steel and aluminum using the same equipment found in professional fabrication shops. By the end of the semester, you can read a blueprint, run a clean weld bead, and hold a dimension.</p>
+            <ul class="course-card__outcomes">
+              <li>MIG and TIG welding on steel and aluminum</li>
+              <li>CNC plasma cutting from your own CAD files</li>
+              <li>Press brake forming and blueprint reading</li>
+            </ul>
+          </div>
+
+          <div class="course-card reveal reveal-delay-2">
+            <div class="course-card__icon" aria-hidden="true">&#x1F527;</div>
+            <h3 class="course-card__title">Small Engines &amp; Fabrication</h3>
+            <p class="course-card__desc">You will tear down a 212cc engine to bare metal and put it back together running. You will also learn what nobody taught your parents about buying and owning a car, from reading a window sticker to calculating the real cost of ownership.</p>
+            <ul class="course-card__outcomes">
+              <li>Full teardown and rebuild of a Predator 212cc engine</li>
+              <li>Automotive consumer education: buying, insuring, maintaining</li>
+              <li>Total cost of ownership and real-world car math</li>
+            </ul>
+          </div>
+
+          <div class="course-card reveal reveal-delay-3">
+            <div class="course-card__icon" aria-hidden="true">&#x1F5A8;&#xFE0F;</div>
+            <h3 class="course-card__title">Digital Fabrication &amp; Design</h3>
+            <p class="course-card__desc">Design a part that will break in a specific way. Print it on a Bambu 3D printer. Test it until it fails. Compare your simulation to reality. If you were wrong, you fix it and try again. That is how real engineers work, and you will do it every week.</p>
+            <ul class="course-card__outcomes">
+              <li>SolidWorks CAD modeling and FEA stress simulation</li>
+              <li>3D printing with real tolerances on a Bambu P1S</li>
+              <li>Design, break, analyze, and iterate on physical parts</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects" id="projects">
+      <div class="container--wide">
+
+        <div class="projects__header reveal">
+          <h2>Built for your student. Used every week.</h2>
+          <p>Every tool here was built in-house, specifically for this program. Students use these in class, not generic textbooks or photocopied handouts.</p>
+        </div>
+
+        <!-- PROJECT 0: CSD 509J District Website -->
+        <div class="project-card reveal">
+          <div class="project-card__image">
+            <img
+              src="img/csd509j-redesign.jpg"
+              alt="Modern school district website showing school navigation and family resources"
+              width="800" height="600" loading="lazy"
+            >
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Web Development</span>
+            <h3 class="project-card__title">CSD 509J District Website</h3>
+            <p class="project-card__desc">A complete school district website built to help families find information, navigate school options, and connect with their community. Every school in the district has its own profile page, and the site meets federal accessibility standards so it works for everyone.</p>
+            <div class="project-card__stats">
+              <div class="stat">
+                <div class="stat__number">10</div>
+                <div class="stat__label">Pages</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">13</div>
+                <div class="stat__label">Schools</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">AA</div>
+                <div class="stat__label">Accessible</div>
+              </div>
+            </div>
+            <div class="project-card__links">
+              <a href="csd509j-redesign/" class="project-card__link">
+                Explore the site
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+              </a>
+              <a href="csd509j-redesign/how-it-was-built/" class="project-card__link">
+                How it was built
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 1: Consumer Education -->
+        <div class="project-card project-card--reverse reveal">
+          <div class="project-card__image">
+            <img
+              src="img/consumer-ed.jpg"
+              alt="Car on a road representing automotive consumer education"
+              width="800" height="600" loading="lazy"
+            >
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Consumer Life Skills</span>
+            <h3 class="project-card__title">Automotive Consumer Education</h3>
+            <p class="project-card__desc">A full semester course covering everything nobody else teaches about owning a car. Students work through buying smart, understanding insurance, reading a window sticker, choosing a mechanic, and calculating the real cost of ownership before they ever sign anything.</p>
+            <div class="project-card__stats">
+              <div class="stat">
+                <div class="stat__number">16</div>
+                <div class="stat__label">Modules</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">300</div>
+                <div class="stat__label">Portfolio Pts</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">1</div>
+                <div class="stat__label">Semester</div>
+              </div>
+            </div>
+            <a href="https://mr-mcateer.github.io/Small-Engines-Fab/student_docs/consumer_education/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+              View curriculum
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Engineering Hub -->
+        <div class="project-card reveal">
+          <div class="project-card__image">
+            <img
+              src="img/engineering-hub.jpg"
+              alt="Organized workshop with metal fabrication equipment"
+              width="800" height="600" loading="lazy"
+            >
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Safety &amp; Reference</span>
+            <h3 class="project-card__title">Engineering Hub</h3>
+            <p class="project-card__desc">A searchable reference for every piece of equipment in the shop, organized so students can find what they need quickly and safely. Nine categories cover metals, welding, automotive, CNC, woodworking, pneumatics, and maintenance. Students look up the procedure on their phone before they touch anything.</p>
+            <div class="project-card__stats">
+              <div class="stat">
+                <div class="stat__number">9</div>
+                <div class="stat__label">Categories</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">100+</div>
+                <div class="stat__label">Equipment Pages</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">Free</div>
+                <div class="stat__label">No Login</div>
+              </div>
+            </div>
+            <a href="https://mr-mcateer.github.io/cvhs-safety/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+              View Engineering Hub
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Plasma Shop -->
+        <div class="project-card project-card--reverse reveal">
+          <div class="project-card__image">
+            <img
+              src="img/plasma-sparks.jpg"
+              alt="Metal sparks flying during plasma cutting fabrication work"
+              width="800" height="600" loading="lazy"
+            >
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Student-Run Enterprise</span>
+            <h3 class="project-card__title">CVHS Plasma Shop</h3>
+            <p class="project-card__desc">Students don't just make projects for a grade. They run a shop. They quote real jobs, calculate material costs and margins, and take orders for plasma-cut signs, powder-coated brackets, and custom LED-backlit panels. Real clients. Real work. Real experience that reads on a resume.</p>
+            <div class="project-card__stats">
+              <div class="stat">
+                <div class="stat__number">4</div>
+                <div class="stat__label">Services</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">Real</div>
+                <div class="stat__label">Clients</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">Live</div>
+                <div class="stat__label">Cost Estimator</div>
+              </div>
+            </div>
+            <a href="https://mr-mcateer.github.io/authentic-work/" class="project-card__link" target="_blank" rel="noopener noreferrer">
+              View Plasma Shop
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== FOR PARENTS ===== -->
+    <section class="for-parents" id="parents">
+      <div class="container">
+
+        <div class="parents__header reveal">
+          <h2>For parents who want to know.</h2>
+          <p>Real questions, answered before you have to ask them.</p>
+        </div>
+
+        <div class="parents-grid">
+
+          <div class="parent-card reveal reveal-delay-1">
+            <div class="parent-card__icon" aria-hidden="true">&#x1F6E1;&#xFE0F;</div>
+            <h3 class="parent-card__title">Safety First</h3>
+            <p class="parent-card__desc">Every student completes tool certification before touching any equipment. PPE is required and enforced. Students look up the digital safety procedure for each machine before they start. Certified equipment, supervised practice, no guessing.</p>
+          </div>
+
+          <div class="parent-card reveal reveal-delay-2">
+            <div class="parent-card__icon" aria-hidden="true">&#x1F3AF;</div>
+            <h3 class="parent-card__title">Career Ready</h3>
+            <p class="parent-card__desc">Three years of this program reads like a two-year apprenticeship on a resume. Students leave with certifications and documented work that trade programs, manufacturing companies, and engineering schools recognize.</p>
+          </div>
+
+          <div class="parent-card reveal reveal-delay-3">
+            <div class="parent-card__icon" aria-hidden="true">&#x1F4C2;</div>
+            <h3 class="parent-card__title">A Portfolio, Not Just a Grade</h3>
+            <p class="parent-card__desc">Students leave with documented, real work they built with their own hands. That project history is something they can show a hiring manager or college program on day one. A transcript entry plus actual evidence.</p>
+          </div>
+
+          <div class="parent-card reveal reveal-delay-1">
+            <div class="parent-card__icon" aria-hidden="true">&#x1F331;</div>
+            <h3 class="parent-card__title">For Every Student</h3>
+            <p class="parent-card__desc">No experience needed. You do not need to be handy. Half of every class walks in never having used a drill. We teach everything from scratch, and we meet students where they are.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <div class="container--wide">
+        <div class="about__inner reveal">
+          <div class="about__image">
+            <img
+              src="img/andy-mcateer.jpg"
+              alt="Andy McAteer with his son on a tree-lined path in Corvallis, Oregon"
+              width="600" height="750" loading="lazy"
+            >
+          </div>
+          <div class="about__text">
+            <h2>Your instructor.</h2>
+            <p><strong>Andy McAteer</strong> teaches like he designs tools: assume students are smart, then get out of the way. A decade, four programs, and four states later, the results speak for themselves.</p>
+            <p>That track record matters for one reason: the tools on this site aren't experiments. They're what actually works with real students in a real shop, refined over years of daily use in class.</p>
+            <p>The approach is simple: <strong>give students tools that respect their intelligence.</strong> Interactive digital curriculum instead of photocopied worksheets. Searchable safety databases instead of laminated posters. Real enterprise projects instead of busywork. Students rise to match the expectations set for them.</p>
+            <p>Every tool here was built in-house, for the specific students in this program, and is in use every week.</p>
+            <p class="about__contact">
+              Interested in bringing this approach to your program?
+              <a href="mailto:andy.mcateer@corvallis.k12.or.us">Get in touch.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STUDENT WORK GALLERY ===== -->
+    <section class="student-work" id="gallery">
+      <div class="container--wide">
+        <div class="student-work__header reveal">
+          <h2>From the shop.</h2>
+          <p>Work made by students in this program.</p>
+        </div>
+        <div class="gallery-carousel reveal">
+          <div class="gallery-track-wrap">
+            <div class="gallery-track" id="gallery-track">
+              <div class="gallery-slide">
+                <img src="img/abrasive-chop-saw-sparks-action.jpg" alt="Student in face shield operating a chop saw with sparks flying in the metals shop" loading="eager" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/student-mig-welding-setup.jpg" alt="Student in welding helmet and gloves at a MIG welding station" loading="eager" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-wildlife-panel-led-rainbow.jpg" alt="Oval plasma-cut metal wildlife panel with rainbow LED backlighting" loading="eager" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/students-group-engine-teardown-lab.jpg" alt="Group of students collaborating on a small engine teardown at a shop workbench" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-panels-outdoor-railing.jpg" alt="Plasma-cut student metal art panels installed in an outdoor school railing" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/student-cold-saw-sparks.jpg" alt="Student wearing face shield operating a metal cutoff saw with sparks flying" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-wildlife-panel-led-warm.jpg" alt="Oval plasma-cut wildlife panel with warm rainbow LED backlighting on a classroom desk" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/lathe-turned-aluminum-cylinder.jpg" alt="Machined aluminum cylinder held in front of a metal lathe in the shop" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-wildlife-panel-led-blue.jpg" alt="Oval plasma-cut wildlife panel with cool blue and teal LED backlighting" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/students-engine-lab-workbench.jpg" alt="Two students working on a small engine teardown at a shop class workbench" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-engine-silhouette-finishing.jpg" alt="Hand applying finish to a plasma-cut engine silhouette on sheet metal at a workbench" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/lathe-turned-aluminum-threaded-shaft.jpg" alt="Machined aluminum shaft with threaded bore held in front of a metal lathe" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-creature-silhouette-wood-frame.jpg" alt="Plasma-cut metal creature silhouette mounted in a small wooden frame panel" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/student-engine-teardown-workbench.jpg" alt="Student at a workbench with a disassembled small engine in an engines class" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/student-metal-sheet-cutting-outdoor.jpg" alt="Student in safety glasses and gloves cutting a large sheet of metal outdoors" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/students-engine-demo-outdoor.jpg" alt="Students and instructor examining a small engine outside a shop classroom" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/3d-printed-part-on-print-bed.jpg" alt="3D-printed curved part resting on the build plate inside a 3D printer" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/bicycle-frame-disassembly-floor.jpg" alt="Disassembled blue mountain bike frame and wheel on a shop floor" loading="lazy" width="800" height="600">
+              </div>
+            </div>
+          </div>
+          <div class="gallery-controls">
+            <button class="gallery-btn gallery-btn--prev" aria-label="Previous photos">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M10 4L6 8l4 4"/></svg>
+            </button>
+            <div class="gallery-progress" role="progressbar" aria-label="Gallery position">
+              <div class="gallery-progress-fill" id="gallery-progress-fill"></div>
+            </div>
+            <button class="gallery-btn gallery-btn--next" aria-label="Next photos">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 4l4 4-4 4"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SUPPORTING CURRICULUM ===== -->
+    <section class="also-built" id="more">
+      <div class="container--wide">
+        <div class="also-built__header reveal">
+          <h2>Supporting curriculum.</h2>
+          <p>Reference materials and lesson guides built in-house and updated each semester.</p>
+        </div>
+        <div class="also-grid">
+          <div class="also-card reveal reveal-delay-1">
+            <div class="also-card__icon" aria-hidden="true">&#x1F525;</div>
+            <h3 class="also-card__title">CNC Plasma Curriculum</h3>
+            <p class="also-card__desc">A complete student guide for the Arclight/Hypertherm/SheetCam/CommandCNC workflow. From CAD file to finished cut.</p>
+            <a href="https://mr-mcateer.github.io/plasma-cnc-curriculum/" class="also-card__link" target="_blank" rel="noopener noreferrer">View guide &rarr;</a>
+          </div>
+          <div class="also-card reveal reveal-delay-2">
+            <div class="also-card__icon" aria-hidden="true">&#x1F9EA;</div>
+            <h3 class="also-card__title">FEA + 3D Print Lab</h3>
+            <p class="also-card__desc">Predict with SolidWorks. Print on a Bambu P1S. Break it in a 3-point bend test. Compare simulation to reality.</p>
+            <a href="https://mr-mcateer.github.io/fea-solidworks-2025/" class="also-card__link" target="_blank" rel="noopener noreferrer">View lesson &rarr;</a>
+          </div>
+          <div class="also-card reveal reveal-delay-3">
+            <div class="also-card__icon" aria-hidden="true">&#x1F527;</div>
+            <h3 class="also-card__title">Predator 212 Rebuild</h3>
+            <p class="also-card__desc">A print-ready small engine curriculum. Students disassemble and rebuild a 212cc from bare block to running engine.</p>
+            <a href="https://github.com/mr-mcateer/predator-212-curriculum" class="also-card__link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+          </div>
+          <div class="also-card reveal reveal-delay-1">
+            <div class="also-card__icon" aria-hidden="true">&#x1F4CA;</div>
+            <h3 class="also-card__title">CTE Program Pitch</h3>
+            <p class="also-card__desc">Data-driven proposal for program expansion. Enrollment trends, budget impact, and the case for investing in shop programs.</p>
+            <a href="https://mr-mcateer.github.io/mcateer-pitch/" class="also-card__link" target="_blank" rel="noopener noreferrer">View pitch &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Crescent Valley High School &middot; Corvallis School District 509J &middot; Corvallis, Oregon</p>
+      <p>100+ students. Real projects. Career-ready outcomes.</p>
+      <p>For Educators &amp; District Partners: <a href="mailto:andy.mcateer@corvallis.k12.or.us">Get in touch</a></p>
+    </div>
+  </footer>
+
+  <!-- ===== JS ===== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Respect reduced motion
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelectorAll('.reveal').forEach(function(el) {
+          el.classList.add('visible');
+        });
+        return;
+      }
+
+      // Immediately reveal elements already in view (hero)
+      var heroReveal = document.querySelector('.hero .reveal');
+      if (heroReveal) heroReveal.classList.add('visible');
+
+      // Scroll reveal via Intersection Observer
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.08,
+        rootMargin: '0px 0px -20px 0px'
+      });
+
+      document.querySelectorAll('.reveal').forEach(function(el) {
+        if (!el.classList.contains('visible')) {
+          observer.observe(el);
+        }
+      });
+
+      // Subtle nav background on scroll
+      var nav = document.querySelector('.site-nav');
+      var scrolled = false;
+      window.addEventListener('scroll', function() {
+        if (!scrolled) {
+          requestAnimationFrame(function() {
+            nav.classList.toggle('nav-scrolled', window.scrollY > 80);
+            scrolled = false;
+          });
+          scrolled = true;
+        }
+      });
+
+      // Theme toggle
+      var toggle = document.getElementById('theme-toggle');
+      if (toggle) {
+        toggle.addEventListener('click', function() {
+          var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+        });
+      }
+      // Gallery carousel
+      var gwrap = document.querySelector('.gallery-track-wrap');
+      var gtrack = document.querySelector('.gallery-track');
+      if (gwrap && gtrack) {
+        var gslides = gtrack.querySelectorAll('.gallery-slide');
+        var gPrev = document.querySelector('.gallery-btn--prev');
+        var gNext = document.querySelector('.gallery-btn--next');
+        var gFill = document.getElementById('gallery-progress-fill');
+        var gIdx = 0;
+        var gAuto = null;
+
+        function gVis() {
+          return window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 2 : 3;
+        }
+        function gMaxIdx() { return gslides.length - gVis(); }
+        function gSlideW() {
+          var v = gVis(), gap = 16;
+          return (gwrap.offsetWidth - (v - 1) * gap) / v;
+        }
+        function gSize() {
+          var w = gSlideW();
+          for (var i = 0; i < gslides.length; i++) gslides[i].style.width = w + 'px';
+        }
+        function gGo(idx) {
+          var mx = gMaxIdx();
+          gIdx = Math.max(0, Math.min(idx, mx));
+          var step = gSlideW() + 16;
+          gtrack.style.transform = 'translateX(-' + (gIdx * step) + 'px)';
+          if (gFill) gFill.style.width = (mx > 0 ? (gIdx / mx) * 100 : 100) + '%';
+        }
+        function gFwd() { gGo(gIdx >= gMaxIdx() ? 0 : gIdx + 1); }
+        function gBck() { gGo(gIdx <= 0 ? gMaxIdx() : gIdx - 1); }
+        function gStart() { gStop(); gAuto = setInterval(gFwd, 4500); }
+        function gStop() { if (gAuto) { clearInterval(gAuto); gAuto = null; } }
+
+        if (gPrev) gPrev.addEventListener('click', function() { gBck(); gStart(); });
+        if (gNext) gNext.addEventListener('click', function() { gFwd(); gStart(); });
+
+        var gCar = document.querySelector('.gallery-carousel');
+        if (gCar) {
+          gCar.addEventListener('mouseenter', gStop);
+          gCar.addEventListener('mouseleave', gStart);
+        }
+
+        var gResize;
+        window.addEventListener('resize', function() {
+          clearTimeout(gResize);
+          gResize = setTimeout(function() { gSize(); gGo(gIdx); }, 150);
+        });
+
+        gSize();
+        gGo(0);
+        gStart();
+      }
+    })();
+  </script>
+
+</body>
+</html>

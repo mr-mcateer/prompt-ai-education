@@ -1,0 +1,244 @@
+/* ============================================================
+   METALS PRESENTATION — Custom Theme
+   Mirrors the dark gradient + yellow highlight style of the
+   Wood Types deck, adapted with a cool steel-blue palette.
+   ============================================================ */
+
+/* --- Base Overrides --- */
+:root {
+  --bg-dark: #1a1a2e;
+  --bg-mid: #16213e;
+  --bg-light: #0f3460;
+  --accent: #e2b714;       /* yellow highlights, matching wood deck */
+  --accent-dim: #c9a012;
+  --text-primary: #f0f0f0;
+  --text-secondary: #b8b8b8;
+  --steel-blue: #4a6fa5;
+  --metal-grey: #8d99ae;
+}
+
+.reveal {
+  background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-mid) 50%, #1b2838 100%);
+  color: var(--text-primary);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  color: var(--text-primary);
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* --- Title Slide --- */
+.title-main {
+  font-size: 3.2em;
+  font-weight: 700;
+  margin-bottom: 0.1em;
+  text-shadow: 2px 4px 12px rgba(0,0,0,0.6);
+}
+
+.title-sub {
+  font-size: 1.3em;
+  color: var(--metal-grey);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+/* --- Slide Headings (with horizontal rule, mirroring wood deck) --- */
+.slide-heading {
+  font-size: 2.2em;
+  padding-bottom: 0.25em;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+
+.slide-heading .subheading {
+  font-size: 0.55em;
+  color: var(--metal-grey);
+  font-weight: 400;
+}
+
+/* --- Accent / Highlight (yellow like wood deck) --- */
+.highlight {
+  color: var(--accent);
+}
+
+.accent-heading {
+  color: var(--accent);
+  font-size: 1.4em;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+
+/* --- Two-Column Layout (Terms slide) --- */
+.two-col {
+  display: flex;
+  gap: 3em;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.two-col .col {
+  flex: 1;
+}
+
+.col-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+/* --- Metal Profile Layout (species slides) --- */
+.metal-profile {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.metal-profile .properties {
+  flex: 1.2;
+}
+
+.metal-profile .images {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.profile-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+
+/* --- Process Layout (MIG, Lathe, Mill slides) --- */
+.process-subtitle {
+  color: var(--metal-grey);
+  font-size: 0.9em;
+  margin-top: -0.4em;
+  margin-bottom: 0.8em;
+  font-style: italic;
+}
+
+.process-layout {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.process-info {
+  flex: 1.2;
+}
+
+.process-image {
+  flex: 0.8;
+}
+
+.profile-img-large {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+
+/* --- Lists --- */
+.reveal ul {
+  list-style-type: disc;
+  margin-left: 0.8em;
+}
+
+.reveal ul li {
+  font-size: 0.78em;
+  margin-bottom: 0.35em;
+  line-height: 1.35;
+}
+
+.reveal .spaced-list li {
+  font-size: 0.88em;
+  margin-bottom: 0.6em;
+}
+
+.reveal li.sub-item {
+  margin-left: 1.5em;
+  font-size: 0.72em;
+  color: var(--text-secondary);
+  list-style-type: "— ";
+}
+
+/* --- Comparison Table --- */
+.metal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.7em;
+  margin-top: 0.5em;
+}
+
+.metal-table th {
+  background: var(--steel-blue);
+  color: white;
+  padding: 0.6em 0.8em;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.metal-table td {
+  padding: 0.5em 0.8em;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+}
+
+.metal-table tr:nth-child(even) td {
+  background: rgba(255,255,255,0.06);
+}
+
+.metal-table td.highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* --- Speaker Notes Styling (visible in notes view) --- */
+.reveal aside.notes {
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+/* --- Image Credits --- */
+.img-credit {
+  font-size: 0.5em;
+  color: var(--text-secondary);
+  text-align: right;
+  margin-top: 0.2em;
+}
+
+/* --- Responsive tweaks for projector --- */
+@media (max-width: 960px) {
+  .two-col, .metal-profile, .process-layout {
+    flex-direction: column;
+  }
+  .metal-profile .images {
+    flex-direction: row;
+  }
+  .profile-img {
+    max-height: 160px;
+  }
+}
+
+/* --- Print / PDF export --- */
+@media print {
+  .reveal {
+    background: #1a1a2e !important;
+  }
+}

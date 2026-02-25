@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departments — Corvallis School District 509J</title>
+  <meta name="description" content="District office departments serving students, families, and staff at Corvallis School District 509J.">
+  <meta property="og:title" content="Departments — Corvallis School District 509J">
+  <meta property="og:description" content="District office departments serving students, families, and staff at Corvallis School District 509J.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Departments — Corvallis School District 509J">
+  <meta name="twitter:description" content="District office departments serving students, families, and staff at Corvallis School District 509J.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mr-mcateer.github.io/csd509j-redesign/departments/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Utility Bar -->
+  <div class="utility-bar">
+    <div class="utility-bar__inner">
+      <span class="utility-bar__phone"><a href="tel:+15417575811">(541) 757-5811</a></span>
+      <div class="utility-bar__links">
+        <a href="../staff/">Staff Portal</a>
+        <a href="../contact/">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="site-nav__inner">
+      <a href="../" class="site-nav__logo">
+              <img src="../images/csd-logo-dark.svg" alt="Corvallis School District" class="site-nav__logo-img">
+              <span>509J</span>
+            </a>
+      <ul class="site-nav__links">
+        <li><a href="../about/">About</a></li>
+        <li><a href="../schools/">Schools</a></li>
+        <li><a href="../families/">Families</a></li>
+        <li><a href="../community/">Community</a></li>
+        <li><a href="../staff/">Staff</a></li>
+        <li><a href="../departments/" class="active">Departments</a></li>
+      </ul>
+      <div class="site-nav__actions">
+        <button class="site-nav__search-btn" aria-label="Search" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="site-nav__hamburger" aria-label="Open menu" aria-expanded="false" type="button">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav__close" aria-label="Close menu" type="button">&times;</button>
+    <div class="mobile-nav__section">
+      <a href="../" class="mobile-nav__link">Home</a>
+    </div>
+    <div class="mobile-nav__section">
+      <a href="../about/" class="mobile-nav__link">About</a>
+      <a href="../schools/" class="mobile-nav__link">Schools</a>
+      <a href="../families/" class="mobile-nav__link">Families</a>
+      <a href="../community/" class="mobile-nav__link">Community</a>
+      <a href="../staff/" class="mobile-nav__link">Staff</a>
+      <a href="../departments/" class="mobile-nav__link active">Departments</a>
+    </div>
+    <div class="mobile-nav__section">
+      <a href="../news/" class="mobile-nav__link">News</a>
+      <a href="../contact/" class="mobile-nav__link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" role="dialog" aria-label="Site search" aria-hidden="true">
+    <div class="search-overlay__box">
+      <input type="text" class="search-overlay__input" placeholder="Search CSD 509J..." autocomplete="off">
+      <div class="search-overlay__results"></div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../">Home</a>
+          <span class="breadcrumb__sep" aria-hidden="true">/</span>
+          <span aria-current="page">Departments</span>
+        </nav>
+        <h1 class="reveal">Departments</h1>
+        <p class="page-hero__sub reveal reveal-delay-1">District office departments serving students, families, and staff</p>
+      </div>
+    </section>
+
+    <!-- Department Directory -->
+    <section class="section section--light" aria-label="Department directory">
+      <div class="container--wide">
+        <div class="section__header reveal">
+          <h2>Department Directory</h2>
+          <p>Connect with the teams that support our schools and community</p>
+        </div>
+        <div class="grid--3">
+
+          <!-- Business Services -->
+          <div class="card dept-card reveal" id="business">
+            <div class="card__body">
+              <div class="dept-card__icon" aria-hidden="true">&#x1F4B0;</div>
+              <h3 class="card__title">Business Services</h3>
+              <p class="card__desc">Budget, finance, payroll, and purchasing</p>
+              <p class="dept-card__phone"><a href="tel:+15417575811">(541) 757-5811</a></p>
+              <div class="dept-card__links">
+                <a href="../about/#budget">Adopted Budget</a>
+                <a href="https://www.csd509j.net" target="_blank" rel="noopener">Financial Reports</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Communications -->
+          <div class="card dept-card reveal reveal-delay-1" id="communications">
+            <div class="card__body">
+              <div class="dept-card__icon" aria-hidden="true">&#x1F4E2;</div>
+              <h3 class="card__title">Communications</h3>
+              <p class="card__desc">District news, media relations, and community outreach</p>
+              <p class="dept-card__phone"><a href="tel:+15417575811">(541) 757-5811</a></p>
+              <div class="dept-card__links">
+                <a href="../news/">News</a>
+                <a href="https://www.csd509j.net" target="_blank" rel="noopener">District Newsletter</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Equity & Community Engagement -->
+          <div class="card dept-card reveal reveal-delay-2" id="equity">
+            <div class="card__body">
+              <div class="dept-card__icon" aria-hidden="true">&#x1F91D;</div>
+              <h3 class="card__title">Equity &amp; Community Engagement</h3>
+              <p class="card__desc">Equity initiatives, family partnerships, and community liaison services</p>
+              <p class="dept-card__phone"><a href="tel:+15417575811">(541) 757-5811</a></p>
+              <div class="dept-card__links">
+                <a href="../about/#equity">Equity Policy</a>
+                <a href="../community/#get-involved">Community Events</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Facilities & Maintenance -->
+          <div class="card dept-card reveal" id="facilities">
+            <div class="card__body">
+              <div class="dept-card__icon" aria-hidden="true">&#x1F527;</div>
+              <h3 class="card__title">Facilities &amp; Maintenance</h3>
+              <p class="card__desc">Building maintenance, grounds, capital projects, and facility use requests</p>
+              <p class="dept-card__phone"><a href="tel:+15417575871">(541) 757-5871</a></p>
+              <div class="dept-card__links">
+                <a href="../community/#facility-use">Facility Use Request</a>
+                <a href="../about/#facilities">Capital Projects</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Food & Nutrition -->
+          <div class="card dept-card reveal reveal-delay-1" id="food">
+            <div class="card__body">
+              <div class="dept-card__icon" aria-hidden="true">&#x1F34E;</div>
+              <h3 class="card__title">Food &amp; Nutrition</h3>
+              <p class="card__desc">Breakfast and lunch programs, meal applications, and nutrition education</p>
+              <p class="dept-card__phone"><a href="tel:+15417575841">(541) 757-5841</a></p>
+              <div class="dept-card__links">
+                <a href="../families/#menus">School Menus</a>
+                <a href="https://www.csd509j.net" target="_blank" rel="noopener">Free/Reduced Application</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Human Resources -->
+          <div class="card dept-card reveal reveal-delay-2" id="hr">
+            <div class="card__body">
+              <div class="dept-card__icon" aria-hidden="true">&#x1F465;</div>
+              <h3 class="card__title">Human Resources</h3>
+              <p class="card__desc">Employment, benefits, labor relations, and professional development</p>
+              <p class="dept-card__phone"><a href="tel:+15417575811">(541) 757-5811</a></p>
+              <div class="dept-card__links">
+                <a href="../community/#employment">Job Openings</a>
+                <a href="../staff/#benefits">Benefits Information</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Student Growth & Experience -->
+          <div class="card dept-card reveal" id="student-growth">
+            <div class="card__body">
+              <div class="dept-card__icon" aria-hidden="true">&#x1F4DA;</div>
+              <h3 class="card__title">Student Growth &amp; Experience</h3>
+              <p class="card__desc">Curriculum, instruction, assessment, special education, and student services</p>
+              <p class="dept-card__phone"><a href="tel:+15417575811">(541) 757-5811</a></p>
+              <div class="dept-card__links">
+                <a href="https://www.csd509j.net" target="_blank" rel="noopener">Curriculum</a>
+                <a href="../families/#special-ed">Special Education</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technology Services -->
+          <div class="card dept-card reveal reveal-delay-1" id="tech">
+            <div class="card__body">
+              <div class="dept-card__icon" aria-hidden="true">&#x1F4BB;</div>
+              <h3 class="card__title">Technology Services</h3>
+              <p class="card__desc">IT support, infrastructure, student data systems, and educational technology</p>
+              <p class="dept-card__phone"><a href="tel:+15417575848">(541) 757-5848</a></p>
+              <div class="dept-card__links">
+                <a href="../staff/#it">Help Desk</a>
+                <a href="../staff/#classlink">ClassLink</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Student Transportation -->
+          <div class="card dept-card reveal reveal-delay-2" id="transportation">
+            <div class="card__body">
+              <div class="dept-card__icon" aria-hidden="true">&#x1F68C;</div>
+              <h3 class="card__title">Student Transportation</h3>
+              <p class="card__desc">Bus routes, safety, and ride tracking via My Ride K-12</p>
+              <p class="dept-card__phone"><a href="tel:+15417575838">(541) 757-5838</a></p>
+              <div class="dept-card__links">
+                <a href="../families/#transportation">Bus Routes</a>
+                <a href="../families/#transportation">My Ride K-12</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- District Office Contact -->
+    <section class="section section--gray" aria-label="District office contact information">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2>District Office</h2>
+          <p>Central administration for Corvallis School District 509J</p>
+        </div>
+        <div class="contact-card reveal" style="max-width: 560px; margin: 0 auto; text-align: center;">
+          <h3>Corvallis School District 509J</h3>
+          <p>1555 SW 35th Street<br>Corvallis, OR 97333</p>
+          <p style="margin-top: 16px;">
+            <strong style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--gray-400); font-family: var(--font-mono);">Phone</strong><br>
+            <a href="tel:+15417575811">(541) 757-5811</a>
+          </p>
+          <p style="margin-top: 12px;">
+            <strong style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--gray-400); font-family: var(--font-mono);">Fax</strong><br>
+            (541) 757-5899
+          </p>
+          <p style="margin-top: 12px;">
+            <strong style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--gray-400); font-family: var(--font-mono);">Hours</strong><br>
+            Monday &ndash; Friday, 8:00 AM &ndash; 4:30 PM
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container--wide">
+      <div class="footer__grid">
+        <div class="footer__col">
+              <img src="../images/csd-logo-white.svg" alt="Corvallis School District" class="footer__logo">
+              <p>Corvallis School District 509J<br>1555 SW 35th Street<br>Corvallis, OR 97333</p>
+              <p style="margin-top: 12px;"><a href="tel:+15417575811">(541) 757-5811</a></p>
+              <div class="footer__social">
+                <a href="https://www.facebook.com/CorvallisSD" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                <a href="https://www.instagram.com/corvallissd/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                <a href="https://www.youtube.com/@CorvallisSchoolDistrict" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+              </div>
+              <p class="footer__vision">Building trust, inclusivity, and engagement through culturally relevant, real-world learning experiences.</p>
+            </div>
+        <div class="footer__col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../about/">About the District</a></li>
+            <li><a href="../schools/">Our Schools</a></li>
+            <li><a href="../families/">For Families</a></li>
+            <li><a href="../community/">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Schools</h3>
+          <ul>
+            <li><a href="../schools/#elementary">Elementary Schools</a></li>
+            <li><a href="../schools/#middle">Middle Schools</a></li>
+            <li><a href="../schools/#high">High Schools</a></li>
+            <li><a href="../schools/#charter">Charter &amp; Alternative</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="../contact/">Contact Directory</a></li>
+            <li><a href="../departments/">Departments</a></li>
+            <li><a href="../staff/">Staff Resources</a></li>
+            <li><a href="../news/">News &amp; Updates</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Corvallis School District 509J. All rights reserved.</p>
+        <p><a href="../how-it-was-built/">How This Site Was Built</a> &middot; <a href="https://www.csd509j.net" target="_blank" rel="noopener">csd509j.net</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

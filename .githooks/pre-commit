@@ -1,0 +1,53 @@
+#!/bin/sh
+#
+# pre-commit guard: block student PII, secrets, and known-internal files from
+# being committed to a repo that may be public. Installed 2026-06-10 after an
+# exposure audit found student records and an API key in public repos.
+#
+# Bypass (only when you are certain the match is a false positive):
+#   git commit --no-verify
+#
+# Checks staged ADDED/MODIFIED files for:
+#   1. Student email addresses on the district student mail domain
+#   2. Secret/token shapes (Google API keys, Anthropic/OpenAI keys, GitHub PATs,
+#      Slack tokens, AWS keys, Canvas tokens, private-key headers)
+#   3. Known-internal filenames (contacts DB, gradebook dumps, draft-grade CSVs)
+
+set -e
+
+staged=$(git diff --cached --name-only --diff-filter=AM)
+[ -z "$staged" ] && exit 0
+
+violations=""
+
+# regexes
+secret_re='AIza[0-9A-Za-z_-]\{35\}|sk-ant-[A-Za-z0-9_-]\{16,\}|sk-[A-Za-z0-9]\{40,\}|ghp_[A-Za-z0-9]\{36\}|github_pat_[A-Za-z0-9_]\{20,\}|xox[baprs]-[A-Za-z0-9-]\{10,\}|AKIA[0-9A-Z]\{16\}|[0-9]\{3,5\}~[A-Za-z0-9]\{40,\}|BEGIN [A-Z ]*PRIVATE KEY'
+pii_re='@student\.csd509j\.net'
+fname_re='CONTACTS_DATABASE|gradebook_snapshot|draft_grades_|detailed_audit|score_anomaly|EMAIL_SYSTEM_GUIDE'
+
+for f in $staged; do
+    # filename screen
+    if printf '%s' "$f" | grep -qE "$fname_re"; then
+        violations="${violations}  [filename] ${f}\n"
+        continue
+    fi
+    # only scan text blobs for content patterns
+    if git show ":$f" 2>/dev/null | LC_ALL=C grep -qaE "$secret_re"; then
+        violations="${violations}  [secret] ${f}\n"
+    fi
+    if git show ":$f" 2>/dev/null | LC_ALL=C grep -qaE "$pii_re"; then
+        violations="${violations}  [student-email] ${f}\n"
+    fi
+done
+
+if [ -n "$violations" ]; then
+    printf '\n[pre-commit] PII/SECRET GUARD -- aborting commit.\n\n' >&2
+    printf 'These staged files look like they contain secrets, student PII, or\n' >&2
+    printf 'internal records that must not be committed (this repo may be public):\n\n' >&2
+    printf '%b\n' "$violations" >&2
+    printf 'Move them out of the repo or add them to .gitignore. If this is a\n' >&2
+    printf 'genuine false positive: git commit --no-verify\n\n' >&2
+    exit 1
+fi
+
+exit 0

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "education-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8082", "--directory", "/Users/andymcateer/Desktop/Claude Projects/03_BUSINESS/Prompt_AI_Solutions/prompt-ai-education"],
+      "port": 8082
+    }
+  ]
+}

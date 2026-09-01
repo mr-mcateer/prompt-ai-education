@@ -6,16 +6,67 @@
 <meta name="robots" content="noindex">
 <title>Daily Agendas | Mr. McAteer</title>
 <style>
+*, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; background: #ffffff; }
-body { padding: 26px 20px 56px; -webkit-font-smoothing: antialiased; }
-a:hover { text-decoration: underline !important; }
-@media (max-width: 480px) { body { padding: 18px 14px 40px; } }
+body { font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.65;
+  color: #222222; -webkit-font-smoothing: antialiased; }
+.inner { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+
+.masthead { padding: 26px 0 18px; border-bottom: 3px solid #8B1538; }
+.masthead h1 { font-size: 34px; font-weight: 300; letter-spacing: .4px;
+  color: #8B1538; margin: 0 0 6px; }
+.masthead .meta { font-size: 12px; font-weight: 700; color: #5f6368;
+  letter-spacing: .09em; margin: 0; }
+.masthead .note { font-size: 14px; color: #5f6368; margin: 10px 0 0; }
+
+/* Full-bleed alternating bands, the way a Sites page separates days.
+   The offset from the masthead being child 1 is harmless: it still
+   alternates, which is the whole job. */
+.agenda-day { padding: 28px 0 34px; }
+.agenda-day:nth-child(even) { background: #f2f2f2; }
+.day-grid { display: grid; grid-template-columns: minmax(0, 1.45fr)
+  minmax(0, 1fr); gap: 46px; align-items: start; }
+.day-side { padding-left: 30px; border-left: 1px solid #dadce0; }
+
+.dayline { font-size: 33px; font-weight: 300; letter-spacing: .4px;
+  color: #8B1538; margin: 0 0 2px; }
+.daytitle { font-size: 21px; font-weight: 400; color: #222222;
+  margin: 0 0 4px; }
+.periods { font-size: 12px; font-weight: 700; color: #5f6368;
+  letter-spacing: .06em; margin: 0 0 6px; }
+
+h2 { font-size: 13px; font-weight: 700; color: #8B1538;
+  text-transform: uppercase; letter-spacing: .09em; margin: 24px 0 8px; }
+.day-side > h2:first-child { margin-top: 4px; }
+p { margin: 0 0 11px; }
+ul, ol { margin: 0 0 12px; padding-left: 24px; }
+li { margin: 0 0 8px; }
+a { color: #1155cc; }
+strong { font-weight: 700; }
+
+.foot { padding: 16px 0 44px; border-top: 1px solid #dadce0;
+  font-size: 12px; color: #5f6368; margin-top: 8px; }
+
+/* One column on a phone. Source order already reads correctly - date,
+   title, journal, today, then what you owe - so nothing is reordered;
+   the right column just becomes the same tinted callout Canvas uses,
+   which keeps the two surfaces recognizable as one another. */
+@media (max-width: 760px) {
+  .inner { padding: 0 18px; }
+  .day-grid { grid-template-columns: 1fr; gap: 0; }
+  .day-side { margin: 22px 0 0; padding: 4px 16px 12px;
+    border-left: 4px solid #8B1538; background: #F8F4F0; }
+  .agenda-day:nth-child(even) .day-side { background: #ffffff; }
+  .masthead h1 { font-size: 27px; }
+  .dayline { font-size: 25px; }
+  .daytitle { font-size: 19px; }
+}
 </style>
 </head>
 <body>
-<div style="font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:13px;line-height:1.62;color:#333333;background:#ffffff;max-width:720px;margin:0 auto;">
-<div style="padding:0 0 18px 0;border-bottom:1px solid #dddddd;margin:0 0 4px 0;"><div style="font-family:'Myriad Pro', 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:27px;letter-spacing:-0.01em;color:#111111;margin:0 0 6px 0;"><strong style="font-weight:600;">Daily Agendas</strong></div><div style="font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;letter-spacing:0.09em;color:#8a8a8a;margin:0;">MR. MCATEER &middot; CRESCENT VALLEY HIGH SCHOOL</div><div style="font-size:12px;color:#8a8a8a;margin:10px 0 0 0;">What we did in class, every teaching day.</div></div>
-<div style="margin-top:28px;"><div style="margin:0 0 22px 0;"><a style="font-family:'Myriad Pro', 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;font-weight:600;color:#0066cc;text-decoration:none;" href="se/">Small Engines Daily Agenda</a><div style="font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;letter-spacing:0.09em;text-transform:uppercase;color:#8a8a8a;margin:5px 0 0 0;">Period 3</div></div><div style="margin:0 0 22px 0;"><a style="font-family:'Myriad Pro', 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;font-weight:600;color:#0066cc;text-decoration:none;" href="metals/">Metals Daily Agenda</a><div style="font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;letter-spacing:0.09em;text-transform:uppercase;color:#8a8a8a;margin:5px 0 0 0;">Periods 5 and 7</div></div></div>
+<div style="font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:15px;line-height:1.65;color:#222222;background:#ffffff;max-width:860px;margin:0 auto;">
+<div style="padding:0 0 16px 0;border-bottom:2px solid #8B1538;margin:0 0 4px 0;"><div style="font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:30px;letter-spacing:0.01em;color:#8B1538;margin:0 0 6px 0;">Daily Agendas</div><div style="font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12px;letter-spacing:0.08em;color:#5f6368;margin:0;">MR. MCATEER &middot; CRESCENT VALLEY HIGH SCHOOL</div><div style="font-size:13px;color:#5f6368;margin:10px 0 0 0;">What we did in class, every teaching day.</div></div>
+<div style="margin-top:28px;"><div style="margin:0 0 22px 0;"><a style="font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;font-weight:600;color:#1155cc;text-decoration:none;" href="se/">Small Engines Daily Agenda</a><div style="font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;letter-spacing:0.09em;text-transform:uppercase;color:#5f6368;margin:5px 0 0 0;">Period 3</div></div><div style="margin:0 0 22px 0;"><a style="font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;font-weight:600;color:#1155cc;text-decoration:none;" href="metals/">Metals Daily Agenda</a><div style="font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;letter-spacing:0.09em;text-transform:uppercase;color:#5f6368;margin:5px 0 0 0;">Periods 5 and 7</div></div></div>
 </div>
 </body>
 </html>

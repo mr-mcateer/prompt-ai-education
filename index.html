@@ -813,6 +813,94 @@
       section { padding: 32px 0; }
       .project-card { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
     }
+
+    /* ===== ADDED 2026-09-01: agenda block, level lists, caption ===== */
+    .agenda { padding: 96px 0; background: var(--gray-50); }
+    .agenda-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .agenda-card {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: transform .35s var(--ease-out), box-shadow .35s var(--ease-out);
+    }
+    .agenda-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.08); }
+    .agenda-card__period {
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .agenda-card__title { font-family: var(--font-display); font-size: 28px; line-height: 1.15; }
+    .agenda-card__desc { color: var(--gray-600); font-size: 16px; }
+    .agenda-card__link {
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      padding-top: 8px;
+    }
+    .agenda-card__link svg { width: 16px; height: 16px; transition: transform .25s var(--ease-out); }
+    .agenda-card__link:hover svg { transform: translateX(4px); }
+    .agenda-note {
+      margin-top: 32px;
+      font-size: 15px;
+      color: var(--gray-600);
+      text-align: center;
+    }
+
+    .levels { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 14px; }
+    .levels li { padding-left: 0; }
+    .levels strong {
+      display: block;
+      font-size: 13px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--gray-800);
+      margin-bottom: 2px;
+    }
+    .levels span { color: var(--gray-600); font-size: 16px; line-height: 1.55; }
+
+    .site-nav__logo { white-space: nowrap; }
+    @media (max-width: 560px) {
+      .site-nav__badge { display: none; }
+      .site-nav__links { gap: 18px; }
+      .site-nav__links a { font-size: 14px; white-space: nowrap; }
+    }
+
+    .rule-band { background: var(--gray-800); color: var(--white); padding: 64px 0; text-align: center; }
+    [data-theme="dark"] .rule-band { background: var(--gray-50); }
+    .rule-band p {
+      font-family: var(--font-display);
+      font-size: clamp(24px, 3.4vw, 38px);
+      line-height: 1.25;
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--white);
+    }
+    [data-theme="dark"] .rule-band p { color: var(--gray-800); }
+    .rule-band small {
+      display: block;
+      margin-top: 20px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      letter-spacing: .04em;
+      opacity: .72;
+      color: var(--white);
+    }
+    [data-theme="dark"] .rule-band small { color: var(--gray-600); opacity: 1; }
   </style>
   <script>(function(){var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
 </head>
@@ -822,15 +910,15 @@
   <nav class="site-nav" aria-label="Main navigation">
     <div class="site-nav__inner">
       <div class="site-nav__brand">
-        <span class="site-nav__logo">CVHS CTE</span>
-        <span class="site-nav__badge">Metals &amp; Fab</span>
+        <span class="site-nav__logo">Mr. McAteer</span>
+        <span class="site-nav__badge">CVHS</span>
       </div>
       <ul class="site-nav__links">
         <li><a href="#courses">Courses</a></li>
-        <li class="nav-hide-mobile"><a href="#program">The Program</a></li>
-        <li><a href="#parents">For Parents</a></li>
+        <li><a href="#agenda">Daily Agenda</a></li>
         <li class="nav-hide-mobile"><a href="#gallery">Student Work</a></li>
-        <li><a href="#about">About</a></li>
+        <li class="nav-hide-mobile"><a href="#parents">For Parents</a></li>
+        <li class="nav-hide-mobile"><a href="#about">About</a></li>
       </ul>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
         <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
@@ -845,15 +933,15 @@
     <section class="hero" id="top">
       <div class="container reveal">
         <p class="hero__eyebrow">Crescent Valley High School &middot; Corvallis, Oregon</p>
-        <h1>Build real things.<br>Learn real skills.</h1>
-        <p class="hero__sub">Metals, engines, and fabrication taught hands-on from day one. No experience needed. Students leave with a portfolio, certifications, and the confidence to use them.</p>
+        <h1>Come in with no experience.<br>Leave with something you built.</h1>
+        <p class="hero__sub">Metals and Small Engines. Seven sections across three periods, and one rule that comes before all the others: nobody touches a machine until they have passed the safety test for it.</p>
         <div class="hero__actions">
           <a href="#courses" class="btn btn--primary">
-            Explore courses
+            See the courses
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
           </a>
-          <a href="#parents" class="btn btn--secondary">
-            Info for parents
+          <a href="#agenda" class="btn btn--secondary">
+            Today's agenda
           </a>
         </div>
       </div>
@@ -862,12 +950,12 @@
     <!-- ===== PHOTO BANNER ===== -->
     <div class="photo-banner reveal" style="background: #1d1d1f;">
       <img
-        src="img/hero-shop.jpg"
-        alt="Students working in the CVHS metals and fabrication shop"
+        src="img/abrasive-chop-saw-sparks-action.jpg"
+        alt="A student in a face shield cutting steel stock on the abrasive saw, sparks streaming across the table"
         width="1400" height="788" loading="eager"
       >
       <div class="photo-banner__overlay">
-        <span class="photo-banner__text">Students at work &middot; CVHS Metals &amp; Fabrication Shop</span>
+        <span class="photo-banner__text">Cutting stock on the abrasive saw &middot; CVHS metals shop</span>
       </div>
     </div>
 
@@ -876,224 +964,210 @@
       <div class="container--wide">
         <div class="stats-strip__inner">
           <div class="stat-item reveal">
-            <div class="stat-item__number">100+</div>
-            <div class="stat-item__label">Students per year</div>
+            <div class="stat-item__number">7</div>
+            <div class="stat-item__label">Sections this year</div>
           </div>
           <div class="stat-item reveal reveal-delay-1">
-            <div class="stat-item__number">3</div>
-            <div class="stat-item__label">Course tracks</div>
+            <div class="stat-item__number">5</div>
+            <div class="stat-item__label">Levels across two programs</div>
           </div>
           <div class="stat-item reveal reveal-delay-2">
             <div class="stat-item__number">0</div>
-            <div class="stat-item__label">Experience required</div>
+            <div class="stat-item__label">Experience needed to start</div>
           </div>
           <div class="stat-item reveal reveal-delay-3">
-            <div class="stat-item__number">Real</div>
-            <div class="stat-item__label">Portfolio on exit</div>
+            <div class="stat-item__number">1</div>
+            <div class="stat-item__label">Safety test before any machine</div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- ===== COURSES ===== -->
-    <section class="courses" id="courses">
+    <section class="projects" id="courses">
       <div class="container--wide">
 
         <div class="section-header reveal">
-          <h2>Three programs. Real tools.</h2>
-          <p>Every course builds skills students keep for life. No busywork, no filler.</p>
+          <h2>Two programs. Five levels.</h2>
+          <p>Students can take one term or stay three years. The work gets harder on purpose.</p>
         </div>
 
-        <div class="courses-grid">
-
-          <div class="course-card reveal reveal-delay-1">
-            <div class="course-card__icon" aria-hidden="true">&#x2692;&#xFE0F;</div>
-            <h3 class="course-card__title">Metals &amp; Fabrication</h3>
-            <p class="course-card__desc">Cut, weld, and shape real steel and aluminum using the same equipment found in professional fabrication shops. Students learn to read blueprints, run clean weld beads, and hold a dimension.</p>
-            <ul class="course-card__outcomes">
-              <li>MIG and TIG welding on steel and aluminum</li>
-              <li>CNC plasma cutting from your own CAD files</li>
-              <li>Press brake forming and blueprint reading</li>
-            </ul>
+        <!-- Metals -->
+        <div class="project-card reveal">
+          <div class="project-card__image">
+            <img
+              src="img/student-mig-welding-setup.jpg"
+              alt="A student in gloves and safety glasses setting up at a MIG welding station"
+              width="800" height="600" loading="lazy"
+            >
           </div>
-
-          <div class="course-card reveal reveal-delay-2">
-            <div class="course-card__icon" aria-hidden="true">&#x1F527;</div>
-            <h3 class="course-card__title">Small Engines &amp; Fabrication</h3>
-            <p class="course-card__desc">Tear down a 212cc engine to bare metal and rebuild it running. Plus everything nobody teaches about buying and owning a car, from window stickers to the real cost of ownership.</p>
-            <ul class="course-card__outcomes">
-              <li>Full teardown and rebuild of a Predator 212cc engine</li>
-              <li>Automotive consumer education: buying, insuring, maintaining</li>
-              <li>Total cost of ownership and real-world car math</li>
+          <div class="project-card__body">
+            <span class="project-card__tag">Periods 5 and 7</span>
+            <h3 class="project-card__title">Metals and Fabrication</h3>
+            <p class="project-card__desc">Cut, weld and shape real steel and aluminum on the same equipment a production shop runs. You start by learning to hold a dimension. You finish by drawing a part yourself and cutting it on the CNC plasma table.</p>
+            <ul class="levels">
+              <li><strong>Metals 1</strong><span>MIG and stick welding, layout and measurement. The pyramid, the scroll bracket, the book end, the desk organizer, your first plasma cut sign.</span></li>
+              <li><strong>Metals 2</strong><span>Aluminum, tighter tolerances, harder joints. The hitch receiver, the infinity cube, the dice, the aluminum frame.</span></li>
+              <li><strong>Metals 3</strong><span>Shop track. Real repair tickets that come in the door, plus a build proposal you write, price and defend before you cut anything.</span></li>
             </ul>
+            <div class="project-card__stats">
+              <div class="stat">
+                <div class="stat__number">23</div>
+                <div class="stat__label">Project sheets</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">3</div>
+                <div class="stat__label">Levels</div>
+              </div>
+            </div>
           </div>
-
-          <div class="course-card reveal reveal-delay-3">
-            <div class="course-card__icon" aria-hidden="true">&#x1F5A8;&#xFE0F;</div>
-            <h3 class="course-card__title">Digital Fabrication &amp; Design</h3>
-            <p class="course-card__desc">Design a part that will break in a specific way. Print it. Test it until it fails. Compare simulation to reality. Fix it and try again. That is how real engineers work.</p>
-            <ul class="course-card__outcomes">
-              <li>SolidWorks CAD modeling and FEA stress simulation</li>
-              <li>3D printing with real tolerances on a Bambu P1S</li>
-              <li>Design, break, analyze, and iterate on physical parts</li>
-            </ul>
-          </div>
-
         </div>
+
+        <!-- Small Engines -->
+        <div class="project-card project-card--reverse reveal">
+          <div class="project-card__image">
+            <img
+              src="img/students-group-engine-teardown-lab.jpg"
+              alt="Students gathered around a workbench taking a small engine apart"
+              width="800" height="600" loading="lazy"
+            >
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Period 3</span>
+            <h3 class="project-card__title">Small Engines</h3>
+            <p class="project-card__desc">Take a Predator 212 down to bare metal, work out why it stopped running, and put it back together running. Every step gets photographed and written down. No evidence, no credit.</p>
+            <ul class="levels">
+              <li><strong>Small Engines 1</strong><span>Full teardown and rebuild. Tool identification, torque, clearances, and the habit of checking your work before you close it up.</span></li>
+              <li><strong>Small Engines 2</strong><span>Diagnosis on engines that arrive broken, plus fabrication work on the frames and mounts those engines end up in.</span></li>
+            </ul>
+            <div class="project-card__stats">
+              <div class="stat">
+                <div class="stat__number">212</div>
+                <div class="stat__label">cc, torn down and rebuilt</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number">2</div>
+                <div class="stat__label">Levels</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- ===== WHAT STUDENTS BUILD ===== -->
-    <section class="projects" id="program">
+    <!-- ===== THE RULE ===== -->
+    <div class="rule-band reveal">
+      <div class="container">
+        <p>Nobody runs a machine in this shop until they have passed the safety test for that machine.</p>
+        <small>Every machine sits in a tier. Some stay red tagged and instructor only all year.</small>
+      </div>
+    </div>
+
+    <!-- ===== DAILY AGENDA ===== -->
+    <section class="agenda" id="agenda">
       <div class="container--wide">
-
         <div class="section-header reveal">
-          <h2>Built for this program. Used every week.</h2>
-          <p>Every tool here was built in-house, specifically for these students. No generic textbooks or photocopied handouts.</p>
+          <h2>What we did today.</h2>
+          <p>The agenda goes up every teaching day, newest on top. If you want to know what your student did in class, it is written down here.</p>
         </div>
-
-        <!-- Consumer Education -->
-        <div class="project-card reveal">
-          <div class="project-card__image">
-            <img
-              src="img/consumer-ed.jpg"
-              alt="Car on a road representing automotive consumer education"
-              width="800" height="600" loading="lazy"
-            >
+        <div class="agenda-cards">
+          <div class="agenda-card reveal reveal-delay-1">
+            <span class="agenda-card__period">Periods 5 and 7</span>
+            <h3 class="agenda-card__title">Metals</h3>
+            <p class="agenda-card__desc">The objective for the day, what happened on the floor, and anything assigned with its due date.</p>
+            <a class="agenda-card__link" href="agenda/metals/">
+              Open the metals agenda
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
           </div>
-          <div class="project-card__body">
-            <span class="project-card__tag">Consumer Life Skills</span>
-            <h3 class="project-card__title">Automotive Consumer Education</h3>
-            <p class="project-card__desc">A full semester covering everything nobody else teaches about owning a car. Buying smart, understanding insurance, reading a window sticker, choosing a mechanic, and calculating the real cost of ownership.</p>
-            <div class="project-card__stats">
-              <div class="stat">
-                <div class="stat__number">16</div>
-                <div class="stat__label">Modules</div>
-              </div>
-              <div class="stat">
-                <div class="stat__number">300</div>
-                <div class="stat__label">Portfolio Pts</div>
-              </div>
-              <div class="stat">
-                <div class="stat__number">1</div>
-                <div class="stat__label">Semester</div>
-              </div>
-            </div>
-            <a href="https://mr-mcateer.github.io/Small-Engines-Fab/student_docs/consumer_education/" class="project-card__link" target="_blank" rel="noopener noreferrer">
-              View curriculum
+          <div class="agenda-card reveal reveal-delay-2">
+            <span class="agenda-card__period">Period 3</span>
+            <h3 class="agenda-card__title">Small Engines</h3>
+            <p class="agenda-card__desc">Same format. What the objective was, what the class actually got done, and what is due next.</p>
+            <a class="agenda-card__link" href="agenda/se/">
+              Open the engines agenda
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+          </div>
+          <div class="agenda-card reveal reveal-delay-3">
+            <span class="agenda-card__period">Grades and assignments</span>
+            <h3 class="agenda-card__title">Canvas</h3>
+            <p class="agenda-card__desc">Assignments, submissions and grades live in Canvas. Students work there every day. Parents can request observer access through the office.</p>
+            <a class="agenda-card__link" href="https://csd509j.instructure.com" target="_blank" rel="noopener noreferrer">
+              Go to Canvas
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
             </a>
           </div>
         </div>
+        <p class="agenda-note">The same agenda is posted to Canvas and to this page in one step, so the two never disagree.</p>
+      </div>
+    </section>
 
-        <!-- Engineering Hub -->
-        <div class="project-card project-card--reverse reveal">
-          <div class="project-card__image">
-            <img
-              src="img/engineering-hub.jpg"
-              alt="Organized workshop with metal fabrication equipment"
-              width="800" height="600" loading="lazy"
-            >
-          </div>
-          <div class="project-card__body">
-            <span class="project-card__tag">Safety &amp; Reference</span>
-            <h3 class="project-card__title">Engineering Hub</h3>
-            <p class="project-card__desc">A searchable reference for every piece of equipment in the shop. Nine categories covering metals, welding, automotive, CNC, woodworking, pneumatics, and maintenance. Students look up the procedure on their phone before they touch anything.</p>
-            <div class="project-card__stats">
-              <div class="stat">
-                <div class="stat__number">9</div>
-                <div class="stat__label">Categories</div>
+    <!-- ===== STUDENT WORK ===== -->
+    <section class="student-work" id="gallery">
+      <div class="container--wide">
+        <div class="section-header reveal">
+          <h2>What comes out of the shop.</h2>
+          <p>Work made by students in this program. Plasma cut art, welded assemblies, machined parts, rebuilt engines.</p>
+        </div>
+        <div class="gallery-carousel reveal">
+          <div class="gallery-track-wrap">
+            <div class="gallery-track" id="gallery-track">
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-wildlife-panel-led-blue.jpg" alt="Plasma cut elk and mountain scene backlit with blue LEDs" loading="eager" width="800" height="600">
               </div>
-              <div class="stat">
-                <div class="stat__number">100+</div>
-                <div class="stat__label">Equipment Pages</div>
+              <div class="gallery-slide">
+                <img src="img/led-sign-bel-air.jpg" alt="Plasma cut Bel Air car silhouette sign backlit in blue" loading="eager" width="800" height="600">
               </div>
-              <div class="stat">
-                <div class="stat__number">Free</div>
-                <div class="stat__label">No Login</div>
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-creature-silhouette-wood-frame.jpg" alt="Plasma cut creature silhouette mounted in a window frame" loading="eager" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-monogram.jpg" alt="Script letter monogram cut from steel and mounted in a frame" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/lathe-turned-aluminum-cylinder.jpg" alt="Machined aluminum part held in front of a metal lathe" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/lathe-turned-aluminum-threaded-shaft.jpg" alt="Threaded aluminum shaft turned on the lathe" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-panels-outdoor-railing.jpg" alt="Plasma cut metal art panels installed in an outdoor school railing" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-wildlife-panel-led-rainbow.jpg" alt="Plasma cut wildlife panel backlit with colour changing LEDs" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/student-metal-sheet-cutting-outdoor.jpg" alt="A student in gloves cutting sheet metal outside the shop door" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/predator-212-engine.jpg" alt="A Predator 212 engine on the bench ready for teardown" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/students-engine-lab-workbench.jpg" alt="Two students working through an engine teardown at a workbench" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/student-drift-trike.jpg" alt="A student riding a shop built drift trike powered by a small engine" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/plasma-cut-engine-silhouette-finishing.jpg" alt="Hands applying finish to a plasma cut engine silhouette" loading="lazy" width="800" height="600">
+              </div>
+              <div class="gallery-slide">
+                <img src="img/shop-wide-fabrication.jpg" alt="Wide view of the fabrication side of the metals shop" loading="lazy" width="800" height="600">
               </div>
             </div>
-            <a href="https://mr-mcateer.github.io/cvhs-safety/" class="project-card__link" target="_blank" rel="noopener noreferrer">
-              View Engineering Hub
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-            </a>
+          </div>
+          <div class="gallery-controls">
+            <div class="gallery-progress"><div class="gallery-progress-fill" id="gallery-progress-fill"></div></div>
+            <button class="gallery-btn" id="gallery-prev" aria-label="Previous images">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3L5 8l5 5"/></svg>
+            </button>
+            <button class="gallery-btn" id="gallery-next" aria-label="More images">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l5 5-5 5"/></svg>
+            </button>
           </div>
         </div>
-
-        <!-- Plasma Shop -->
-        <div class="project-card reveal">
-          <div class="project-card__image">
-            <img
-              src="img/plasma-sparks.jpg"
-              alt="Metal sparks flying during plasma cutting fabrication work"
-              width="800" height="600" loading="lazy"
-            >
-          </div>
-          <div class="project-card__body">
-            <span class="project-card__tag">Student-Run Enterprise</span>
-            <h3 class="project-card__title">CVHS Plasma Shop</h3>
-            <p class="project-card__desc">Students run a real shop. They quote jobs, calculate material costs and margins, and take orders for plasma-cut signs, powder-coated brackets, and custom LED-backlit panels. Real clients, real work, real experience.</p>
-            <div class="project-card__stats">
-              <div class="stat">
-                <div class="stat__number">4</div>
-                <div class="stat__label">Services</div>
-              </div>
-              <div class="stat">
-                <div class="stat__number">Real</div>
-                <div class="stat__label">Clients</div>
-              </div>
-              <div class="stat">
-                <div class="stat__number">Live</div>
-                <div class="stat__label">Cost Estimator</div>
-              </div>
-            </div>
-            <a href="https://mr-mcateer.github.io/authentic-work/" class="project-card__link" target="_blank" rel="noopener noreferrer">
-              View Plasma Shop
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- CSD 509J District Website -->
-        <div class="project-card project-card--reverse reveal">
-          <div class="project-card__image">
-            <img
-              src="img/csd509j-redesign.jpg"
-              alt="Modern school district website showing school navigation and family resources"
-              width="800" height="600" loading="lazy"
-            >
-          </div>
-          <div class="project-card__body">
-            <span class="project-card__tag">Web Development</span>
-            <h3 class="project-card__title">CSD 509J District Website</h3>
-            <p class="project-card__desc">A complete school district website built to help families find information, navigate school options, and connect with their community. Every school has its own profile page, and the site meets federal accessibility standards.</p>
-            <div class="project-card__stats">
-              <div class="stat">
-                <div class="stat__number">10</div>
-                <div class="stat__label">Pages</div>
-              </div>
-              <div class="stat">
-                <div class="stat__number">13</div>
-                <div class="stat__label">Schools</div>
-              </div>
-              <div class="stat">
-                <div class="stat__number">AA</div>
-                <div class="stat__label">Accessible</div>
-              </div>
-            </div>
-            <div class="project-card__links">
-              <a href="csd509j-redesign/" class="project-card__link">
-                Explore the site
-                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-              </a>
-              <a href="csd509j-redesign/how-it-was-built/" class="project-card__link">
-                How it was built
-                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -1102,153 +1176,32 @@
       <div class="container">
 
         <div class="section-header reveal">
-          <h2>For parents who want to know.</h2>
-          <p>Real questions, answered before you have to ask them.</p>
+          <h2>For parents.</h2>
+          <p>The questions that come up most, answered before you have to ask.</p>
         </div>
 
         <div class="parents-grid">
 
           <div class="parent-card reveal reveal-delay-1">
-            <div class="parent-card__icon" aria-hidden="true">&#x1F6E1;&#xFE0F;</div>
-            <h3 class="parent-card__title">Safety First</h3>
-            <p class="parent-card__desc">Every student completes tool certification before touching any equipment. PPE is required and enforced. Students look up the digital safety procedure for each machine before they start. Certified equipment, supervised practice, no guessing.</p>
+            <h3 class="parent-card__title">Is it safe?</h3>
+            <p class="parent-card__desc">Safety certification comes before operation, on every machine, with no exceptions. Students test on general shop rules first, then on each machine individually. Eye protection is worn by everyone in the shop, including visitors. Some equipment stays red tagged and instructor only for the whole year.</p>
           </div>
 
           <div class="parent-card reveal reveal-delay-2">
-            <div class="parent-card__icon" aria-hidden="true">&#x1F3AF;</div>
-            <h3 class="parent-card__title">Career Ready</h3>
-            <p class="parent-card__desc">Three years of this program reads like a two-year apprenticeship on a resume. Students leave with certifications and documented work that trade programs, manufacturing companies, and engineering schools recognize.</p>
+            <h3 class="parent-card__title">How is it graded?</h3>
+            <p class="parent-card__desc">Straight points, not weighted categories. What an assignment is worth is printed on the assignment. Grades and submissions live in Canvas, and the daily agenda on this site tells you what was worked on and what was assigned.</p>
           </div>
 
           <div class="parent-card reveal reveal-delay-3">
-            <div class="parent-card__icon" aria-hidden="true">&#x1F4C2;</div>
-            <h3 class="parent-card__title">A Portfolio, Not Just a Grade</h3>
-            <p class="parent-card__desc">Students leave with documented, real work they built with their own hands. That project history is something they can show a hiring manager or college program on day one. A transcript entry plus actual evidence.</p>
+            <h3 class="parent-card__title">Does this count for anything?</h3>
+            <p class="parent-card__desc">Students leave with work they can show, which matters more than it sounds. Metals students can also prepare for the Certified SolidWorks Associate exam, an industry credential they keep whether or not they go into the trades.</p>
           </div>
 
           <div class="parent-card reveal reveal-delay-4">
-            <div class="parent-card__icon" aria-hidden="true">&#x1F331;</div>
-            <h3 class="parent-card__title">For Every Student</h3>
-            <p class="parent-card__desc">No experience needed. You do not need to be handy. Half of every class walks in never having used a drill. We teach everything from scratch, and we meet students where they are.</p>
+            <h3 class="parent-card__title">My student has never done this.</h3>
+            <p class="parent-card__desc">Good. Most have not. Metals 1 and Small Engines 1 assume you have never picked up a welder or a torque wrench, and the first weeks are built around that. Nobody gets handed a machine before they are ready for it.</p>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== STUDENT WORK GALLERY ===== -->
-    <section class="student-work" id="gallery">
-      <div class="container--wide">
-        <div class="section-header reveal">
-          <h2>From the shop floor.</h2>
-          <p>Work made by students in this program. Welding, plasma cutting, engine rebuilds, 3D printing, and more.</p>
-        </div>
-        <div class="gallery-carousel reveal">
-          <div class="gallery-track-wrap">
-            <div class="gallery-track" id="gallery-track">
-              <div class="gallery-slide">
-                <img src="img/abrasive-chop-saw-sparks-action.jpg" alt="Student in face shield operating a chop saw with sparks flying" loading="eager" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/student-mig-welding-setup.jpg" alt="Student in welding helmet and gloves at a MIG welding station" loading="eager" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/plasma-cut-wildlife-panel-led-rainbow.jpg" alt="Plasma-cut metal wildlife panel with rainbow LED backlighting" loading="eager" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/students-group-engine-teardown-lab.jpg" alt="Students collaborating on a small engine teardown" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/plasma-cut-panels-outdoor-railing.jpg" alt="Plasma-cut metal art panels installed in an outdoor school railing" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/student-cold-saw-sparks.jpg" alt="Student wearing face shield operating a metal cutoff saw" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/plasma-cut-wildlife-panel-led-warm.jpg" alt="Plasma-cut wildlife panel with warm LED backlighting" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/lathe-turned-aluminum-cylinder.jpg" alt="Machined aluminum cylinder in front of a metal lathe" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/plasma-cut-wildlife-panel-led-blue.jpg" alt="Plasma-cut wildlife panel with blue LED backlighting" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/students-engine-lab-workbench.jpg" alt="Two students working on an engine teardown at a workbench" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/plasma-cut-engine-silhouette-finishing.jpg" alt="Applying finish to a plasma-cut engine silhouette" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/lathe-turned-aluminum-threaded-shaft.jpg" alt="Machined aluminum shaft with threaded bore" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/plasma-cut-creature-silhouette-wood-frame.jpg" alt="Plasma-cut metal creature silhouette in a wooden frame" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/student-engine-teardown-workbench.jpg" alt="Student at a workbench with a disassembled small engine" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/student-metal-sheet-cutting-outdoor.jpg" alt="Student cutting a large sheet of metal outdoors" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/students-engine-demo-outdoor.jpg" alt="Students and instructor examining a small engine outside" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/3d-printed-part-on-print-bed.jpg" alt="3D-printed part on the build plate of a 3D printer" loading="lazy" width="800" height="600">
-              </div>
-              <div class="gallery-slide">
-                <img src="img/bicycle-frame-disassembly-floor.jpg" alt="Disassembled bicycle frame and wheel on a shop floor" loading="lazy" width="800" height="600">
-              </div>
-            </div>
-          </div>
-          <div class="gallery-controls">
-            <button class="gallery-btn gallery-btn--prev" aria-label="Previous photos">
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M10 4L6 8l4 4"/></svg>
-            </button>
-            <div class="gallery-progress" role="progressbar" aria-label="Gallery position">
-              <div class="gallery-progress-fill" id="gallery-progress-fill"></div>
-            </div>
-            <button class="gallery-btn gallery-btn--next" aria-label="Next photos">
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 4l4 4-4 4"/></svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SUPPORTING CURRICULUM ===== -->
-    <section class="curriculum" id="curriculum">
-      <div class="container--wide">
-        <div class="section-header reveal">
-          <h2>Supporting curriculum.</h2>
-          <p>Reference materials and lesson guides built in-house and updated each semester.</p>
-        </div>
-        <div class="curriculum-grid">
-          <div class="also-card reveal reveal-delay-1">
-            <div class="also-card__icon" aria-hidden="true">&#x1F525;</div>
-            <h3 class="also-card__title">CNC Plasma Curriculum</h3>
-            <p class="also-card__desc">A complete student guide for the Arclight/Hypertherm/SheetCam/CommandCNC workflow. From CAD file to finished cut.</p>
-            <a href="https://mr-mcateer.github.io/plasma-cnc-curriculum/" class="also-card__link" target="_blank" rel="noopener noreferrer">View guide &rarr;</a>
-          </div>
-          <div class="also-card reveal reveal-delay-2">
-            <div class="also-card__icon" aria-hidden="true">&#x1F9EA;</div>
-            <h3 class="also-card__title">FEA + 3D Print Lab</h3>
-            <p class="also-card__desc">Predict with SolidWorks. Print on a Bambu P1S. Break it in a 3-point bend test. Compare simulation to reality.</p>
-            <a href="https://mr-mcateer.github.io/fea-solidworks-2025/" class="also-card__link" target="_blank" rel="noopener noreferrer">View lesson &rarr;</a>
-          </div>
-          <div class="also-card reveal reveal-delay-3">
-            <div class="also-card__icon" aria-hidden="true">&#x1F527;</div>
-            <h3 class="also-card__title">Predator 212 Rebuild</h3>
-            <p class="also-card__desc">A print-ready small engine curriculum. Students disassemble and rebuild a 212cc from bare block to running engine.</p>
-            <a href="https://github.com/mr-mcateer/predator-212-curriculum" class="also-card__link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
-          </div>
-          <div class="also-card reveal reveal-delay-4">
-            <div class="also-card__icon" aria-hidden="true">&#x1F4CA;</div>
-            <h3 class="also-card__title">CTE Program Pitch</h3>
-            <p class="also-card__desc">Data-driven proposal for program expansion. Enrollment trends, budget impact, and the case for investing in shop programs.</p>
-            <a href="https://mr-mcateer.github.io/mcateer-pitch/" class="also-card__link" target="_blank" rel="noopener noreferrer">View pitch &rarr;</a>
-          </div>
         </div>
       </div>
     </section>
@@ -1260,15 +1213,17 @@
           <div class="about__image">
             <img
               src="img/andy-mcateer.jpg"
-              alt="Andy McAteer with his son in Corvallis, Oregon"
+              alt="Andy McAteer outdoors in Corvallis, Oregon"
               width="600" height="750" loading="lazy"
             >
           </div>
           <div class="about__text">
-            <h2>Meet your instructor.</h2>
-            <p><strong>Andy McAteer</strong> teaches like he designs tools: assume students are smart, then get out of the way. A decade, four programs, and four states later, the results speak for themselves.</p>
-            <p>The approach is simple: <strong>give students tools that respect their intelligence.</strong> Interactive digital curriculum instead of photocopied worksheets. Searchable safety databases instead of laminated posters. Real enterprise projects instead of busywork.</p>
-            <p>Students rise to match the expectations set for them. Every tool on this site was built in-house, for the specific students in this program, and is in use every week.</p>
+            <h2>About Mr. McAteer</h2>
+            <p>I teach Metals and Small Engines at Crescent Valley, and I live over in Philomath with my wife and our two boys.</p>
+            <p>We came to Oregon in 2020, when my wife took a faculty position at OSU's College of Veterinary Medicine. Before that I built CTE programs in Colorado, first at a middle school in Denver and then for six years in Fort Collins, and after the move I built more of them in Lebanon. Parametric modeling, CNC milling, robotics, modern manufacturing. Middle schoolers sitting the SolidWorks Associate exam and passing it.</p>
+            <p>The idea I keep coming back to is David Kelley's: <strong>fail faster, succeed sooner.</strong> Nothing in this shop gets learned by watching. You cut the part crooked, you work out why, you cut another one. That is the whole method, and it is why the room is loud.</p>
+            <p>When I am not here I am usually in my own shop with a 3D printer and a CAD file open, chasing my boys around Philomath, running Dan's Trail up in McDonald Forest, or playing indoor soccer at the sports park.</p>
+            <p>I plan on staying.</p>
           </div>
         </div>
       </div>
@@ -1278,9 +1233,9 @@
     <section class="contact-cta" id="contact">
       <div class="container reveal">
         <h2>Questions about the program?</h2>
-        <p>Whether you are a student, parent, or administrator, I am happy to talk about what we build here.</p>
-        <a href="mailto:andrew.mcateer@corvallis.k12.or.us" class="btn btn--primary">
-          Get in touch
+        <p>Students, parents, counselors. If you want to know what we build here, or whether one of these classes is a fit, send me an email.</p>
+        <a href="mailto:andy.mcateer@corvallis.k12.or.us" class="btn btn--primary">
+          Email Mr. McAteer
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
         </a>
       </div>
@@ -1293,20 +1248,19 @@
     <div class="container--wide">
       <div class="footer__inner">
         <div class="footer__info">
+          <p>Andy McAteer &middot; Metals and Small Engines</p>
           <p>Crescent Valley High School &middot; Corvallis School District 509J</p>
-          <p>4444 NW Highland Dr, Corvallis, Oregon 97330</p>
+          <p>4444 NW Highland Dr, Corvallis, Oregon 97330 &middot; Main office (541) 757-5801</p>
         </div>
         <div class="footer__links">
           <a href="#courses">Courses</a>
-          <a href="#parents">Parents</a>
-          <a href="#gallery">Gallery</a>
-          <a href="mailto:andrew.mcateer@corvallis.k12.or.us">Contact</a>
+          <a href="#agenda">Daily Agenda</a>
+          <a href="#parents">For Parents</a>
+          <a href="mailto:andy.mcateer@corvallis.k12.or.us">Contact</a>
         </div>
       </div>
     </div>
   </footer>
-
-  <!-- ===== JS ===== -->
   <script>
     (function() {
       'use strict';

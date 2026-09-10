@@ -26,3 +26,12 @@ venv/
 
 # but DO version the example — it documents required secret names
 !.env.example
+
+# student PII -- never commit (exposure audit 2026-09-09)
+*grades_export*.csv
+draft_grades*.csv
+gradebook_snapshot.json
+detailed_audit.json
+score_anomaly_report.json
+**/canvas-agent-grader/exports/
+synergy_*.json

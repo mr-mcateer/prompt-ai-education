@@ -1,0 +1,617 @@
+<title>Metals and Engines College Pathways</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&family=Source+Code+Pro:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#FFFFFF; --bg-2:#F4F6F9; --bg-3:#E9EDF2;
+  --ink:#1C1F24; --ink-2:#565D68; --ink-3:#8A919C;
+  --rule:#DCE0E6; --rule-2:#C9CFD7;
+  --accent:#1B63C9; --accent-soft:#E6EEF9; --on-accent:#FFFFFF;
+  --say-bg:#F5F3EC; --say-rule:#D9D3C0;
+  --ok:#2E7D4F; --warn:#B7791F;
+  --nav-a:#F8F9FB; --nav-b:#ECEFF3;
+  --sans:"Source Sans 3","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --mono:"Source Code Pro",Menlo,Consolas,"Liberation Mono",monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1114; --bg-2:#171A1F; --bg-3:#1F232A;
+    --ink:#E7EAEF; --ink-2:#A3ABB7; --ink-3:#737B87;
+    --rule:#2A2F37; --rule-2:#363C46;
+    --accent:#74A9FF; --accent-soft:#17263D; --on-accent:#0F1114;
+    --say-bg:#1C1B17; --say-rule:#3A362B;
+    --ok:#5FBF87; --warn:#D9A24A;
+    --nav-a:#171A1F; --nav-b:#121417;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1114; --bg-2:#171A1F; --bg-3:#1F232A;
+  --ink:#E7EAEF; --ink-2:#A3ABB7; --ink-3:#737B87;
+  --rule:#2A2F37; --rule-2:#363C46;
+  --accent:#74A9FF; --accent-soft:#17263D; --on-accent:#0F1114;
+  --say-bg:#1C1B17; --say-rule:#3A362B;
+  --ok:#5FBF87; --warn:#D9A24A;
+  --nav-a:#171A1F; --nav-b:#121417;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;font-weight:400;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:24px}
+.prose{max-width:68ch}
+h1,h2,h3,h4{font-weight:300;letter-spacing:-0.015em;text-wrap:balance;margin:0}
+h1{font-size:clamp(40px,7vw,64px);line-height:1.02;letter-spacing:-0.025em}
+h2{font-size:clamp(28px,4vw,36px);line-height:1.12;margin-bottom:12px}
+h3{font-size:22px;font-weight:600;letter-spacing:-0.005em;line-height:1.25}
+h4{font-size:17px;font-weight:600}
+p{margin:0 0 14px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:10px}
+.lede{font-size:21px;line-height:1.45;font-weight:300;color:var(--ink);max-width:62ch}
+.muted{color:var(--ink-2)}
+.small{font-size:14px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:.92em}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+strong{font-weight:600}
+hr{border:0;border-top:1px solid var(--rule);margin:0}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:linear-gradient(var(--nav-a),var(--nav-b));border-bottom:1px solid var(--rule);backdrop-filter:saturate(1.2) blur(6px)}
+.bar .wrap{display:flex;align-items:center;gap:22px;height:46px;overflow-x:auto;scrollbar-width:none}
+.bar .wrap::-webkit-scrollbar{display:none}
+.bar .brand{font-weight:600;font-size:14px;letter-spacing:.02em;white-space:nowrap;color:var(--ink)}
+.bar a.nl{font-size:14px;color:var(--ink-2);white-space:nowrap}
+.bar a.nl:hover{color:var(--ink);text-decoration:none}
+
+/* masthead */
+.mast{padding-block:64px 40px}
+.mast .kicker{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:baseline;color:var(--ink-2);font-size:15px;margin-top:22px}
+.weights{display:inline-flex;gap:14px;align-items:baseline;font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.weights b{font-weight:500;color:var(--ink)}
+
+/* sections */
+section{padding-block:44px}
+section + section{border-top:1px solid var(--rule)}
+.grid{display:grid;gap:28px}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:760px){.grid-2,.grid-3{grid-template-columns:1fr}}
+
+/* pills */
+.pill{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--rule-2);color:var(--ink-2);vertical-align:middle;white-space:nowrap}
+.pill.doc{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
+.pill.say{background:var(--say-bg);border-color:var(--say-rule);color:var(--ink-2)}
+.pill.ok{color:var(--ok);border-color:var(--ok)}
+.pill.warn{color:var(--warn);border-color:var(--warn)}
+
+/* ranked list */
+.rank{display:grid;gap:0;border-top:1px solid var(--rule)}
+.rank .row{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--rule)}
+.rank .n{font-family:var(--mono);font-size:30px;font-weight:400;line-height:1;color:var(--ink-3);padding-top:4px}
+.rank .row.top .n{color:var(--accent)}
+.rank h3{margin-bottom:4px}
+.rank .why{color:var(--ink-2);max-width:70ch}
+.rank .facts{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:8px;font-size:14px;color:var(--ink-2)}
+.rank .facts span b{color:var(--ink);font-weight:600}
+
+/* profile cards */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:860px){.cards{grid-template-columns:1fr}}
+.card{background:var(--bg-2);border-radius:10px;padding:20px 22px}
+.card h4{margin-bottom:8px}
+.card ul{margin:0;padding-left:18px}
+.card li{margin-bottom:6px}
+.stat{display:flex;flex-direction:column;gap:2px}
+.stat .v{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:28px;line-height:1.1;color:var(--ink)}
+.stat .l{font-size:13px;color:var(--ink-3);letter-spacing:.04em;text-transform:uppercase}
+.stats{display:flex;flex-wrap:wrap;gap:26px 44px;margin:18px 0 6px}
+
+/* tables */
+.tbl{overflow-x:auto;margin:18px 0 8px;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--rule)}
+th{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);border-bottom:1px solid var(--rule-2)}
+td.num,th.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td:first-child{font-weight:600}
+tr:last-child td{border-bottom:0}
+.tbl.tight td,.tbl.tight th{padding:8px 10px}
+
+/* school profiles */
+.school{padding:26px 0;border-top:1px solid var(--rule)}
+.school:first-of-type{border-top:0}
+.school header{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;margin-bottom:8px}
+.school header .loc{color:var(--ink-3);font-size:15px}
+.school .kv{display:grid;grid-template-columns:150px 1fr;gap:6px 18px;font-size:15px;margin:12px 0}
+.school .kv dt{color:var(--ink-3);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding-top:3px}
+.school .kv dd{margin:0}
+@media (max-width:640px){.school .kv{grid-template-columns:1fr;gap:2px 0}.school .kv dt{margin-top:8px}}
+
+/* timeline */
+.tl{display:grid;gap:0;border-top:1px solid var(--rule)}
+.tl .m{display:grid;grid-template-columns:140px 1fr;gap:18px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.tl .m .d{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:14px;color:var(--ink-2);padding-top:3px}
+.tl .m .d b{display:block;font-weight:500;color:var(--ink);font-size:16px}
+.tl ul{margin:0;padding-left:18px}
+.tl li{margin-bottom:6px}
+.tl li.hard::marker{color:var(--accent)}
+@media (max-width:640px){.tl .m{grid-template-columns:1fr;gap:6px}}
+
+/* quotes from the internet */
+.say{background:var(--say-bg);border:1px solid var(--say-rule);border-radius:10px;padding:16px 20px;margin:12px 0}
+.say .src{font-size:13px;color:var(--ink-3);margin-top:6px}
+
+/* callouts */
+.note{border-left:2px solid var(--accent);padding:4px 0 4px 18px;margin:18px 0;color:var(--ink-2)}
+.note b{color:var(--ink)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{position:relative;padding-left:44px;margin-bottom:14px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;border:1px solid var(--rule-2);display:grid;place-items:center;font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+
+/* footer */
+footer{padding-block:36px 60px;border-top:1px solid var(--rule);color:var(--ink-3);font-size:14px}
+.sources ol{padding-left:22px;font-size:14px;color:var(--ink-2)}
+.sources li{margin-bottom:4px;overflow-wrap:anywhere}
+
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{
+  .bar{display:none}
+  body{font-size:11.5pt;color:#000;background:#fff}
+  a{color:#000}
+  section{padding-block:18pt;break-inside:auto}
+  .school,.rank .row,.tl .m,.card{break-inside:avoid}
+  h2{break-after:avoid}
+  .card{background:#f2f2f2}
+}
+</style>
+
+<nav class="bar" aria-label="Sections"><div class="wrap">
+<span class="brand">Senior Playbook</span>
+
+<a class="nl" href="#lanes">Lanes</a>
+
+<a class="nl" href="#schools">Schools</a><a class="nl" href="#alt">Alternatives</a><a class="nl" href="#money">Money</a><a class="nl" href="#calendar">Calendar</a><a class="nl" href="#contacts">Contacts</a><a class="nl" href="#ask">Sharper questions</a><a class="nl" href="#sources">Sources</a>
+</div></nav>
+
+<header class="mast"><div class="wrap">
+
+
+<div class="eyebrow">Corvallis School District 509J · CTE Metals and Engines &amp; Fabrication · September 2026</div>
+<h1>Metals and Engines College Pathways</h1>
+<p class="lede" style="margin-top:18px">Four-year degrees that keep your hands on the work: welding and manufacturing engineering technology, diesel and automotive technology, and the engineering programs with real shops. Costs for Oregon residents, deadlines for Fall 2027 entry, and the alternatives most students never hear about.</p>
+<div class="kicker"><span>For seniors in the class of 2027</span><span>Every figure carries a verification label; confirm before you commit</span></div>
+
+</div></header>
+
+
+
+
+
+<section id="lanes"><div class="wrap">
+<div class="eyebrow">Three lanes</div>
+<h2>Same shop skills, three very different degrees</h2>
+<p class="prose muted">"Hands-on bachelor's" covers three families of programs that admit differently, cost differently and lead to different first jobs. Pick the lane before you pick the school.</p>
+<div class="tbl"><table>
+<thead><tr><th>Lane</th><th>What the degree is</th><th>Math load</th><th>Where it leads first</th><th>Schools in this document</th></tr></thead>
+<tbody>
+<tr><td>Welding, manufacturing or mechanical engineering technology (ETAC of ABET)</td><td>Applied engineering with shop and lab time built into the curriculum. Graduates become welding engineers, manufacturing engineers, process and quality engineers, application and sales engineers.</td><td>College algebra through applied calculus and physics. Less abstract than an engineering degree.</td><td>Plant-level engineering technologist; CWI after one year of experience with a related bachelor's.</td><td>Oregon Tech, Ferris State, Penn College, Eastern Washington, Central Washington, Weber State (MfET welding emphasis), BYU-Idaho, Purdue Polytechnic, K-State Salina</td></tr>
+<tr><td>Diesel, automotive and vehicle technology bachelor's</td><td>Technician training that continues into fleet management, equipment management, field service, OEM technical roles or dealership leadership.</td><td>Lightest. Program math and business courses.</td><td>Dealer or OEM technician track with a supervisor ceiling that an associate degree does not have.</td><td>MSU-Northern, Utah Valley, Weber State, CSU Pueblo, Minnesota State Mankato, SIU, Pittsburg State, UNOH, Idaho State (BAS)</td></tr>
+<tr><td>Engineering (EAC of ABET)</td><td>Calculus-based design and analysis. Shops exist through competition teams and internships, not the core curriculum.</td><td>Heaviest. Calculus sequence, physics, differential equations.</td><td>Design engineer; the widest salary ceiling and the most desk time.</td><td>Oregon State (ME; MfgE suspended until Summer 2027), Western Washington (MfgE), Ohio State (Welding Engineering), LeTourneau (Materials Joining), ASU Polytechnic (MfgE)</td></tr>
+</tbody></table></div>
+
+<div class="grid grid-2" style="margin-top:26px">
+<div>
+<h4>Pay signals <span class="pill doc">Documented</span></h4>
+<div class="tbl tight"><table>
+<thead><tr><th>Occupation (BLS, May 2025 median)</th><th class="num">Annual</th></tr></thead>
+<tbody>
+<tr><td>Welders, cutters, solderers and brazers</td><td class="num">$53,750</td></tr>
+<tr><td>Diesel service technicians and mechanics</td><td class="num">$61,770</td></tr>
+<tr><td>Mechanical engineering technologists and technicians</td><td class="num">$74,510</td></tr>
+</tbody></table></div>
+<p class="small muted">Oregon-specific welder pay from aggregator sites clustered between $46k and $60k in 2025-26 (third-party; the Oregon Employment Department's QualityInfo figures were not reachable from this session).</p>
+</div>
+<div>
+<h4>Program claims <span class="pill say">School or employer claim</span></h4>
+<ul class="small muted" style="padding-left:18px;margin:8px 0 0">
+<li>Ferris State Welding Engineering Technology: 95-plus percent placement; May 2022 graduates started at $70k to $85k.</li>
+<li>Penn College: 98 percent graduate placement across the college.</li>
+<li>Central Washington ETSC programs: "100 percent" placement.</li>
+<li>CSU Pueblo Automotive Industry Management: 97 percent placement.</li>
+<li>Caterpillar ThinkBIG dealer postings: AAS graduates "start at over $31.78/hour."</li>
+<li>ASU Manufacturing Engineering: $65,000 to $85,000 a year.</li>
+</ul>
+</div>
+</div>
+
+<h3 style="margin-top:36px">The wrestling overlay</h3>
+<p class="prose muted">Which of these schools actually sponsor varsity men's wrestling in 2026-27, and at what level. Coaches' names come from the athletics staff directories; emails and phones sit on those pages but could not be opened from this session, so pull them from the URL in the contacts table.</p>
+<div class="tbl"><table>
+<thead><tr><th>School</th><th>Level</th><th>Conference</th><th>Head coach</th><th>2025-26 note</th></tr></thead>
+<tbody>
+<tr><td>Oregon State</td><td>NCAA D1</td><td>Pac-12</td><td>Chris Pendleton (assoc. head coach Josh Rhoden, ex-Clackamas CC)</td><td>Pac-12 champions, second straight; four Pac-12 individual champs; signed four for 2026-27 last November</td></tr>
+<tr><td>Utah Valley</td><td>NCAA D1</td><td>Big 12</td><td>Adam Hall (hired Feb 2024)</td><td>12th at Big 12 Championships; tied 34th of 70 at NCAAs</td></tr>
+<tr><td>MSU-Northern</td><td>NAIA</td><td>Cascade Collegiate</td><td>Tyson Thivierge (18th year; 2002 NAIA champion at 184)</td><td>2024-25: eight national qualifiers, one All-American, 4-10 in duals</td></tr>
+<tr><td>CSU Pueblo</td><td>NCAA D2</td><td>RMAC</td><td>Dax Charles (18th season)</td><td>Not in the top nine at 2026 D2 nationals</td></tr>
+<tr><td>Minnesota State Mankato</td><td>NCAA D2</td><td>not verified</td><td>Brady Wilson (named March 2026)</td><td>Long-time coach retired June 2026; new staff</td></tr>
+<tr><td>Penn College</td><td>NCAA D3</td><td>AMCC (wrestling)</td><td>Dalton Rohrbaugh</td><td>Three national qualifiers, a program first</td></tr>
+<tr><td>Alfred State</td><td>NCAA D3 (level not confirmed)</td><td>not verified</td><td>Justin Signorelli</td><td>Welding is a two-year AOS; the bachelor's is a BBA in Technology Management</td></tr>
+<tr><td>Southern Oregon</td><td>NAIA</td><td>Cascade Collegiate</td><td>Joel Gibson</td><td>Fourth after day two at 2026 NAIA nationals; no hands-on technical bachelor's</td></tr>
+<tr><td>Eastern Oregon</td><td>NAIA</td><td>Cascade Collegiate</td><td>Dustyn Azure</td><td>NWCA scholar team champions 2025; no hands-on technical bachelor's</td></tr>
+<tr><td>No varsity wrestling</td><td colspan="4">Oregon Tech, Ferris State (club), Central Washington (club), Eastern Washington, Western Washington (club), Idaho State, Weber State, Montana Tech, Utah State (club), BYU-Idaho (no intercollegiate sports), Boise State (dropped 2017), LeTourneau, Pittsburg State (not verified), UNOH (not verified)</td></tr>
+</tbody></table></div>
+
+<div class="grid grid-3" style="margin-top:22px">
+<div><h4>Eligibility <span class="pill doc">Documented</span></h4><p class="small muted">NCAA D1: 16 core courses, 2.3 core GPA, no test required. D2: 16 core courses, 2.2 core GPA. NAIA: 2.3 GPA, or two of three (2.0 GPA, top half of class, ACT 18 or SAT 970). Register with the NCAA Eligibility Center for D1 and D2 schools and the NAIA Eligibility Center for NAIA schools.</p></div>
+<div><h4>Money on the mat <span class="pill doc">Documented</span></h4><p class="small muted">After the House settlement, D1 wrestling has no scholarship cap but a 30-man roster limit, and walk-ons are still allowed. D2 teams split up to 9 full equivalencies; NAIA teams split up to 10 if fully funded (some guides say 8). Partial awards are the norm everywhere below D1.</p></div>
+<div><h4>Signing <span class="pill warn">Confirm</span></h4><p class="small muted">Oregon State announced its 2026-27 signees on November 13, 2025, so expect the early window for the class of 2027 in mid-November 2026, with a regular period in April 2027. The exact 2026-27 dates were not reachable from this session; ask the first coach who replies.</p></div>
+</div>
+</div></section>
+
+<section id="schools"><div class="wrap">
+<div class="eyebrow">The schools</div>
+<h2>Seven in depth, twenty in brief</h2>
+<p class="prose muted">Labels: <span class="pill doc">Documented</span> means the figure comes from the school's own page as indexed by search. <span class="pill say">Third-party</span> means an aggregator estimate. <span class="pill warn">Confirm</span> means it could not be verified from this session and must be checked before it goes on a family budget. Distances are driving estimates.</p>
+
+<article class="school"><header><h3>Oregon Institute of Technology</h3><span class="loc">Klamath Falls and Wilsonville (Portland-Metro) · about 205 miles or 62 miles</span></header>
+<dl class="kv">
+<dt>Programs</dt><dd>BS Manufacturing Engineering Technology (ETAC of ABET), BS Mechanical Engineering Technology, BS Mechanical Engineering. All three are offered at both campuses. <span class="pill doc">Documented</span></dd>
+<dt>Hands-on</dt><dd>Catalog courses include MFG 103 Introductory Welding Processes, WLD 101 Welding Fundamentals I, MFG 120 Introductory Machining Processes, MFG 314 Geometric Dimensioning and Tolerancing, MFG 341 Numerical Control Programming and MFG 342 Computer Aided Machining (which are required versus elective in the current plan: <span class="pill warn">Confirm</span>). MECOP places students in paid industry externships. Oregon Tech administers OMIC R&amp;D in Scappoose and hosts its interns; DeArmond Manufacturing Fellows have received fully paid tuition and fees for four years in MET or MFG while interning at OMIC (open to Fall 2027 entrants: <span class="pill warn">Confirm</span>).</dd>
+<dt>Admission</dt><dd>Offered admission at a 3.5 unweighted core GPA with no deficiencies; considered at 2.5 with no math or science deficiency. Three years of math required. SAT and ACT optional. <span class="pill doc">Documented</span></dd>
+<dt>Deadlines</dt><dd>November 1 first priority deadline for fall. Admitted before March 1 to be considered for Presidential Scholarships (minimum 3.26 GPA). Oregon Tech Foundation scholarship application runs early December to March 1. <span class="pill doc">Documented</span></dd>
+<dt>Cost</dt><dd>About $13,859 resident tuition and fees for 2026. <span class="pill say">Third-party</span> The official 2025-26 rate sheet and course-fee schedule are posted as PDFs; the 2026-27 sheet was not found.</dd>
+<dt>Aid</dt><dd>Presidential Scholarship tiers (amounts <span class="pill warn">Confirm</span>); Engineering Scholarship $1,000 a year for four years for engineering majors who qualify for a Presidential; Leadership and Diversity Scholarships $2,000 a year for Oregon residents; DeArmond fellowship as above. <span class="pill doc">Documented</span></dd>
+<dt>Wrestling</dt><dd>None. Athletics were cut after Measure 5 except a short list of sports; wrestling is not among them.</dd>
+<dt>Contacts</dt><dd>Admissions 541-885-1150 or 800-422-2017, oit@oit.edu. Portland-Metro admissions 503-821-1250. MMET department chair Shawn Duan, 541-885-0119, shawn.duan@oit.edu. Academic advising 541-885-1644. Financial aid dollars@oit.edu, 541-885-1280. Daily visits and preview days book at oit.edu/visit.</dd>
+</dl></article>
+
+<article class="school"><header><h3>Montana State University-Northern</h3><span class="loc">Havre, Montana · about 850 miles</span></header>
+<dl class="kv">
+<dt>Programs</dt><dd>BS Diesel Technology (AED Foundation accredited) with Field Maintenance or Equipment Management options; BS Automotive Technology; BS Agricultural Operations Technology. Ag Mechanics is an AAS and Welding is a nine-month certificate, not bachelor's degrees. <span class="pill doc">Documented</span></dd>
+<dt>Hands-on</dt><dd>The Field Maintenance option "integrates welding and fabrication training with traditional diesel coursework." Labs are "networked directly to OEM manufacturers" including John Deere and Cummins. DST 198 and DST 498 are paid, credit-bearing cooperative education; DST 434 is the current-model-year capstone. The Diesel Technology Center is 24,000 square feet, funded with $1 million each from BNSF, GE and the Washington Foundation. <span class="pill doc">Documented</span></dd>
+<dt>Admission</dt><dd>Test-optional by Board of Regents policy. Recent graduates meet one of three: 2.5 GPA, upper half of class, or ACT 22, plus college-prep coursework. <span class="pill doc">Documented</span></dd>
+<dt>Deadlines</dt><dd>Fall 2027 application deadline not posted. Scholarship window was November 1 to February 1 for 2026-27 (prior cycle). <span class="pill warn">Confirm</span></dd>
+<dt>Cost</dt><dd>Resident tuition $220.73 per credit; WUE $331.10 per credit with no non-resident surcharge; non-residents otherwise add $615.64 per credit. Academic year not shown on the page. <span class="pill doc">Documented</span> Fees and housing: <span class="pill warn">Confirm</span> (one aggregator lists housing near $9,670).</dd>
+<dt>WUE</dt><dd>Minimum 3.0 cumulative high school GPA, self-reported on the admission application; award "worth approximately $40,000 over a four year period"; eight semesters; full-time fall and spring; U.S. citizen or permanent resident. <span class="pill doc">Documented</span></dd>
+<dt>Aid</dt><dd>Diesel-specific: Caterpillar Excellence Scholarship, Arthur H. Perkins (2.5 GPA), Dick Irvin Memorial, Evan and Fern Miller. Amounts <span class="pill warn">Confirm</span>. The Chancellor's Scholarship is for Montana residents only.</dd>
+<dt>Wrestling</dt><dd>NAIA, Cascade Collegiate Conference. Head coach Tyson Thivierge, 18th year, 2002 NAIA champion at 184 for this program. 2024-25: eight national qualifiers, one All-American.</dd>
+<dt>Contacts</dt><dd>Admissions 406-265-3704 or 800-662-6132, admissions@msun.edu; WUE questions 406-265-3703. Financial aid finaid@msun.edu, 406-265-3787. Diesel faculty: Brandon Matson 406-265-4127, Keith Jensen 406-265-3797, Tyler De La Vega 406-265-4187. Automotive faculty: Wane Boysun 406-399-0020, Andy Bradshaw 406-265-4179. Dean of Technical Sciences Steven Don. Wrestling: golightsgo.com staff directory. TekNoXpo open house is held each October.</dd>
+</dl></article>
+
+<article class="school"><header><h3>Oregon State University</h3><span class="loc">Corvallis · home</span></header>
+<dl class="kv">
+<dt>Programs</dt><dd>BS/HBS Mechanical Engineering (EAC of ABET). BS/HBS Manufacturing Engineering is listed as "currently suspended until Summer 2027." Industrial Engineering also lives in the MIME school. <span class="pill doc">Documented</span> Whether Fall 2027 admits can declare Manufacturing Engineering: <span class="pill warn">Confirm</span> with info-mime@oregonstate.edu.</dd>
+<dt>Hands-on</dt><dd>MECOP: two paid six-month internships at more than 60 Pacific Northwest companies. OMIC summer practicum where "students can learn welding, machining, electronics, and other applied manufacturing processes." Global Formula Racing and the Baja SAE team share a machine shop and workshop in the basement of Rogers Hall, with a CNC machine and 50 to 80 percent of parts made in-house. ENGAGE is a two-term hands-on elective sequence. <span class="pill doc">Documented</span></dd>
+<dt>Degree Partnership</dt><dd>Jointly admitted and concurrently enrolled at OSU and LBCC; up to 135 community college credits count toward the OSU degree; 2025 agreement added an automatic admission pathway. Contact dpp@linnbenton.edu, 541-917-4237. <span class="pill doc">Documented</span></dd>
+<dt>Admission</dt><dd>Direct admission to an engineering degree with precalculus or calculus completed or in progress at C- or better (or MTH 111Z and 112Z). Test-optional for U.S. high school students. General minimum GPA: <span class="pill warn">Confirm</span>.</dd>
+<dt>Deadlines</dt><dd>Early Action November 1; priority February 3 with documents by February 14. Merit priority February 1. Bridge to Success application by February 3, documents by February 15, FAFSA by February 28. <span class="pill doc">Documented</span> (cycle year not printed on the pages; treat as annual)</dd>
+<dt>Cost</dt><dd>$13,395 tuition and mandatory fees for a 45-credit year in 2026-27 (the 5.75 percent continuing-student figure; new students were set at 6.25 percent, so expect slightly more). <span class="pill doc">Documented</span> Living at home removes housing, the largest line.</dd>
+<dt>Aid</dt><dd>Finley Academic Excellence Scholarship up to $4,500 a year, typically 3.50 unweighted or higher, renewable three years. Bridge to Success: Oregon residents who are Pell-eligible and expected to qualify for the Oregon Opportunity Grant get "the cost of basic tuition and fees" covered plus on-campus work offers. <span class="pill doc">Documented</span></dd>
+<dt>Wrestling</dt><dd>NCAA D1, Pac-12 champions in 2025 and 2026. Head coach Chris Pendleton; associate head coach Josh Rhoden came from Clackamas CC. Recruiting questionnaire at osubeavers.com; roster limited to 30 under the House settlement.</dd>
+<dt>Contacts</dt><dd>askengineering@oregonstate.edu; info-mime@oregonstate.edu. Beaver Open House: October 16, October 30 and November 14, 2026 (capacity-limited, register first).</dd>
+</dl></article>
+
+<article class="school"><header><h3>Utah Valley University</h3><span class="loc">Orem, Utah · about 800 miles</span></header>
+<dl class="kv">
+<dt>Programs</dt><dd>Bachelor of Applied Science in Transportation Technologies: energy storage, electric drive systems, failure analysis, fleet operations management, diesel performance, vehicle design and composites. Also BS Technology Management and the Automotive Technology AAS and AS. The department says its automotive, collision and diesel programs rank in the national top ten. <span class="pill doc">Documented</span></dd>
+<dt>Admission</dt><dd><span class="pill warn">Confirm</span> (not captured this session).</dd>
+<dt>WUE</dt><dd>At least a 3.0 unweighted GPA; Oregon eligible; students pay no more than 150 percent of resident tuition; application windows October 1 to December 1 and January 1 to July 1. <span class="pill doc">Documented</span></dd>
+<dt>Cost</dt><dd>Resident tuition and fees about $6,753 for 2026; out-of-state about $19,172. <span class="pill say">Third-party</span> WUE would be roughly $10,100 by the 150 percent rule (computed, not posted).</dd>
+<dt>Wrestling</dt><dd>NCAA D1, Big 12. Head coach Adam Hall (hired February 2024). 12th at the 2026 Big 12 Championships; tied 34th at the NCAA Championships. The 2026-27 roster page is already live.</dd>
+<dt>Contacts</dt><dd>gouvu.com staff directory for wrestling; uvu.edu/cet/transportation-tech for the department.</dd>
+</dl></article>
+
+<article class="school"><header><h3>Ferris State University</h3><span class="loc">Big Rapids, Michigan · about 2,300 miles, fly into Grand Rapids</span></header>
+<dl class="kv">
+<dt>Programs</dt><dd>BS Welding Engineering Technology, established 1984, "the largest of its kind in the United States." A $30 million construction project expanded the welding labs. Also Heavy Equipment, Automotive, Manufacturing and Product Design engineering technology (details <span class="pill warn">Confirm</span>).</dd>
+<dt>Structure</dt><dd>2+2: complete the Welding Technology AAS, then enter the BS with a minimum 3.0 GPA and prerequisites in math, physics, engineering graphics and materials science. <span class="pill doc">Documented</span></dd>
+<dt>Cost</dt><dd>One tuition rate for every state: about $15,330 tuition and fees for 2026-27. <span class="pill say">Third-party</span> The official rate page is ferris.edu/administration/businessoffice/tuition-rates.htm.</dd>
+<dt>Outcomes</dt><dd>"95-plus percent" placement for the bachelor's; May 2022 graduates started at $70,000 to $85,000; Caterpillar hires from the program. <span class="pill say">School claim</span></dd>
+<dt>Wrestling</dt><dd>Club only (NCWA). No varsity program.</dd>
+<dt>Contacts</dt><dd>Welding Engineering Technology department office 231-591-2511.</dd>
+</dl></article>
+
+<article class="school"><header><h3>Pennsylvania College of Technology</h3><span class="loc">Williamsport, Pennsylvania · about 2,800 miles, fly into Harrisburg</span></header>
+<dl class="kv">
+<dt>Programs</dt><dd>BS Welding &amp; Fabrication Engineering Technology (ETAC of ABET). Carries "the same hands-on welding component as the welding associate degree," then adds the technologist years. The college has the only electron beam welding machine at a U.S. educational institution, a 55,000-plus-square-foot welding lab, about 400 welding students, and a minor in nondestructive testing. <span class="pill doc">Documented</span></dd>
+<dt>Cost</dt><dd>Out-of-state tuition and fees $26,640 for 2026-27 at 30 credits (in-state is $530 to $539 per credit). <span class="pill doc">Documented</span> Total cost of attendance about $42,848. <span class="pill say">Third-party</span></dd>
+<dt>Outcomes</dt><dd>98 percent graduate placement (college-wide claim).</dd>
+<dt>Wrestling</dt><dd>NCAA D3; wrestles in the AMCC. Head coach Dalton Rohrbaugh. Three national qualifiers in 2026, a program first. No athletic scholarships at D3.</dd>
+<dt>Contacts</dt><dd>pctwildcats.com staff directory; admissions details <span class="pill warn">Confirm</span>.</dd>
+</dl></article>
+
+<article class="school"><header><h3>Eastern Washington University</h3><span class="loc">Cheney, Washington · about 430 miles</span></header>
+<dl class="kv">
+<dt>Programs</dt><dd>BS Mechanical Engineering Technology (ETAC of ABET under the MET criteria). Every student completes a design project and an industry internship before graduation. 188 quarter credits over 12 quarters, and the plan assumes a year of high school drafting, which a CAD student already has. Also BS Applied Technology and BS Mechanical Engineering. <span class="pill doc">Documented</span></dd>
+<dt>Admission</dt><dd>Automatic at a 3.0 cumulative GPA; holistic review down to 2.0. <span class="pill doc">Documented</span></dd>
+<dt>WUE</dt><dd>Oregon listed; "you may be automatically eligible, which will annually reduce your non-resident tuition by over $14,000." <span class="pill doc">Documented</span></dd>
+<dt>Cost</dt><dd>About $8,825 resident and $27,292 non-resident tuition and fees (2026 estimate). <span class="pill say">Third-party</span> With the WUE reduction, roughly $13,000 (computed).</dd>
+<dt>Wrestling</dt><dd>None.</dd>
+<dt>Contacts</dt><dd>ewu.edu/cstem/ment/contact-us. Deadlines and merit awards <span class="pill warn">Confirm</span>.</dd>
+</dl></article>
+
+<h3 style="margin-top:40px">Also worth knowing</h3>
+<div class="tbl"><table>
+<thead><tr><th>School</th><th>Relevant programs</th><th>Cost signal for an Oregon resident</th><th>Wrestling</th><th>Watch-outs</th></tr></thead>
+<tbody>
+<tr><td>Weber State, Ogden/Layton UT</td><td>Automotive Technology BS (2+2, Field Service Operations or Advanced Vehicle Systems); Automotive and Vehicle Engineering Technology BS; Manufacturing Engineering Technology BS with welding emphasis; MET BS</td><td>WUE tuition and fees $9,463 a year (year not shown); 2.0 GPA; December 1 priority. Non-resident merit tiers up to $9,000 a year by index score</td><td>None</td><td>Open admission. The automotive BS requires an automotive associate degree first.</td></tr>
+<tr><td>Idaho State, Pocatello</td><td>Diesel / On-Site Power Generation AAS to Bachelor of Applied Science; Welding AAS; Computerized Machining BAS; Energy Systems MET AAS</td><td>WUE at 1.5x resident; preference to 2.5 GPA and on-time applicants, 2.0 minimum; "over $8,000" saved per semester (school claim)</td><td>None (dropped decades ago)</td><td>The clearest trades-to-bachelor's ladder in the region. admiss@isu.edu, 208-282-2475; College of Technology ctech@isu.edu, 208-282-2800.</td></tr>
+<tr><td>Montana Tech, Butte</td><td>Mechanical Engineering; Highlands College welding</td><td>WUE "anyone who meets admissions standards... qualifies," 150 percent of in-state</td><td>None</td><td>Program details not verified this session.</td></tr>
+<tr><td>Utah State, Logan and Price</td><td>Welding and diesel at USU Eastern (Price); Technology Systems; ME</td><td>WUE explicitly covers the Price campus; 2026-27 resident $4,532 per semester, so WUE about $6,800 per semester (computed); WUE+ adds $3,500 a year</td><td>Club only</td><td>Thresholds not verified.</td></tr>
+<tr><td>CSU Pueblo</td><td>Automotive Industry Management BS/BAS with a built-in business minor</td><td>WUE at 150 percent of in-state; 2026-27 rates not final; $1,000 a year on-campus living incentive</td><td>NCAA D2, RMAC; Dax Charles</td><td>Management-leaning, not fabrication. 97 percent placement claim. About 1,300 miles.</td></tr>
+<tr><td>Minnesota State Mankato</td><td>Automotive Engineering Technology BS (ETAC of ABET since 1988); Automotive Engineering BS; Manufacturing ET</td><td>Non-resident tuition $17,726 plus $1,134 fees for 2026-27</td><td>NCAA D2; Brady Wilson (new in 2026)</td><td>OEM product work rather than the service bay. About 1,800 miles.</td></tr>
+<tr><td>Central Washington, Ellensburg</td><td>MET BS (ETAC of ABET); Hogue Technology Building shops</td><td>The Wildcat WUE scholarship list omits Oregon; net cost unresolved</td><td>None (club)</td><td>Guaranteed admission at 2.7. "100 percent" ETSC placement claim. Call before assuming a discount.</td></tr>
+<tr><td>Western Washington, Bellingham</td><td>Manufacturing Engineering BS (EAC of ABET)</td><td>Non-resident tuition $27,690 plus $1,419 fees; WUE only at a 3.50 unweighted GPA</td><td>Club only</td><td>Vehicle Design is in moratorium. Early Action November 1.</td></tr>
+<tr><td>BYU-Idaho, Rexburg</td><td>Welding Engineering Technology BS; Welding Technology Management BS; Automotive Engineering Technology BS; Automotive Technology Management BS</td><td>Member and non-member tuition tiers not verified</td><td>No intercollegiate athletics</td><td>Ecclesiastical endorsement requirement (not verified this session). About 570 miles straight-line.</td></tr>
+<tr><td>Ohio State, Columbus</td><td>Welding Engineering BS, the only ABET undergraduate welding engineering program in North America</td><td>About $38k non-resident tuition plus $14k living (third-party); roughly $60k a year</td><td>NCAA D1, Big Ten, 5th at 2026 NCAAs</td><td>Selective; apply by November 1. Calculus engineering. Elite wrestling.</td></tr>
+<tr><td>LeTourneau, Longview TX</td><td>BS Engineering, Materials Joining; BS Engineering Technology, Welding and Materials Joining</td><td>About $38,898 tuition and fees (2026, third-party); average net price about $25,300</td><td>None</td><td>Private Christian university.</td></tr>
+<tr><td>Purdue Polytechnic, West Lafayette</td><td>MET, Robotics ET, Industrial ET (ETAC of ABET)</td><td>$32,104 non-resident tuition and fees, 2026-27</td><td>NCAA D1</td><td>Price without a discount path.</td></tr>
+<tr><td>K-State Salina</td><td>Engineering Technology, MET option (ETAC); Great Plains Manufacturing Scholars (three-year degree, scholarship covering 85 percent or more of in-state tuition while working part-time)</td><td>Non-resident $951.84 per credit (2025-26)</td><td>None</td><td>Non-resident eligibility for the Scholars program not verified.</td></tr>
+<tr><td>University of Alaska Anchorage</td><td>Diesel Power AAS; Welding and NDT AAS; Automotive AAS; BS Applied Technologies Leadership completion</td><td>WUE at up to 150 percent of resident; consideration is automatic on application; Oregon listed</td><td>None</td><td>The bachelor's is leadership, not technical.</td></tr>
+<tr><td>Arizona State Polytechnic, Mesa</td><td>Manufacturing Engineering BS (EAC); BSE with Automotive Systems concentration</td><td>ASU left WUE for Fall 2026 admits; replaced by the ASU Commitment Scholarship (value not verified)</td><td>NCAA D1, Big 12</td><td>Verify the scholarship before counting on it.</td></tr>
+<tr><td>Pittsburg State, Kansas</td><td>Automotive Technology BST/BAS with Diesel emphasis; Manufacturing Engineering Technology BS; 32,000 square feet of automotive labs</td><td>Gorilla Advantage in-state rate covers 32 states, not Oregon; true non-resident rate not verified</td><td>Not verified</td><td>Strong shops, no discount.</td></tr>
+<tr><td>Southern Illinois Carbondale</td><td>Automotive Technology BS in a 186,000-square-foot Transportation Education Center</td><td>Flat-rate tuition claim not verified</td><td>None</td><td>Holistic secondary program review could reward a portfolio.</td></tr>
+<tr><td>UNOH, Lima OH</td><td>Diesel, High Performance Motorsports, Automotive, Agricultural Equipment associates; Automotive Technology Supervision bachelor's completion</td><td>Not verified</td><td>Not verified</td><td>Trade-school model with a supervision degree on top.</td></tr>
+<tr><td>Alfred State, NY</td><td>Welding Technology AOS with AWS Level I and II; Motorsports Technology; both feed a Technology Management BBA</td><td>SUNY out-of-state rate not verified</td><td>NCAA D3; Justin Signorelli</td><td>The bachelor's is business, not a technical BTech.</td></tr>
+</tbody></table></div>
+</div></section>
+
+<section id="alt"><div class="wrap">
+<div class="eyebrow">Real-world alternatives</div>
+<h2>Four routes that are not a straight four-year degree, and how each one still ends at a bachelor's</h2>
+
+<div class="grid grid-2">
+<div>
+<h3>LBCC plus the OSU Degree Partnership</h3>
+<p class="muted">Linn-Benton's Welding and Fabrication Technology one-year certificate and AAS sit twelve miles from Corvallis, and the Degree Partnership Program lets you be jointly admitted and concurrently enrolled at OSU, applying up to 135 community college credits to an OSU degree. A 2025 agreement added an automatic admission pathway. <span class="pill doc">Documented</span></p>
+<ul class="small muted" style="padding-left:18px">
+<li>2026-27 tuition $160.30 per credit plus $23.25 per credit in fees, after a 7 percent increase.</li>
+<li>Oregon Promise covers community college tuition after other grants for graduates with a 2.0 GPA who apply by June 1, 2027. It does not cover books, fees or housing.</li>
+<li>NW Natural funds one LBCC CTE scholarship each year ($5,000 awards in 2024). Apply through LBCC.</li>
+<li>Contact: dpp@linnbenton.edu, 541-917-4237.</li>
+</ul>
+</div>
+<div>
+<h3>NJCAA wrestling plus a welding program, then transfer</h3>
+<p class="muted">Two junior colleges pair national-title wrestling with real trades programs. Both are two-year stops that feed the four-year schools above.</p>
+<ul class="small muted" style="padding-left:18px">
+<li><b>Clackamas Community College</b>, Oregon City: fifth at the 2026 NJCAA Championships, national runner-up in 2025, six national titles. Welding programs built on the AWS entry-level standard, from a six-month career pathway certificate to the AAS. Head coach Brett Sanchez. Oregon Promise applies. Oregon Tech's Wilsonville campus is about twenty-five minutes away.</li>
+<li><b>North Idaho College</b>, Coeur d'Alene: 14 NJCAA team titles, 55 individual champions, all ten wrestlers qualified for nationals in 2026. Diesel and welding programs. About $8,736 out-of-state tuition and fees (2026 estimate, third-party). Head coach Derrick Booth, derrick.booth@nic.edu, 208-769-3318.</li>
+<li>Western Wyoming (2026 national runner-up) also runs diesel programs; not verified this session.</li>
+</ul>
+</div>
+<div>
+<h3>Registered apprenticeship</h3>
+<p class="muted">Earn while you learn under an Oregon BOLI-registered program, then stack a degree later or not at all.</p>
+<ul class="small muted" style="padding-left:18px">
+<li><b>OMIC Training Center</b> (Portland Community College, Scappoose): registered apprenticeships for machinist, CNC lathe operator, CNC mill operator, welder/fabricator and mechatronics technician, plus a two-week CNC Operator Readiness Essentials micro-credential. 34001 NE Wagner Ct, Scappoose; 971-722-1818.</li>
+<li><b>BOLI</b>: minimum age 18 and a diploma; apply to a program's committee when it opens, interview, test, then wait on the pool of eligibles. 971-245-3844, ATD.General@boli.oregon.gov; opportunities are listed at oregon.gov/boli under Apprenticeship.</li>
+<li><b>IAM/Boeing Joint Apprenticeship Program</b>: multiple manufacturing and mechanic trades; see iam-boeing-apprenticeship.com.</li>
+<li>Impact NW's Pathways to Manufacturing (Daimler Truck, Vigor) is limited to Portland-area high schools.</li>
+</ul>
+</div>
+<div>
+<h3>Dealer-sponsored technician programs</h3>
+<p class="muted">The OEM route pays tuition in exchange for a job commitment and usually ends in an AAS, which the Idaho State, Weber State or Ferris ladders can extend to a bachelor's.</p>
+<ul class="small muted" style="padding-left:18px">
+<li><b>Papé Kenworth Technician Sponsorship</b>: 50 percent tuition reimbursement while in school, paid work during breaks, a full-time position at graduation, more than eight Oregon locations.</li>
+<li><b>John Deere Registered Apprenticeship</b> (U.S. Department of Labor approved) through Papé Machinery, 35-plus locations across Oregon, Washington, California and Idaho.</li>
+<li><b>Caterpillar ThinkBIG</b>: a two-year AAS alternating eight-week class and paid dealer blocks; Caterpillar postings claim graduates start above $31.78 an hour.</li>
+</ul>
+</div>
+</div>
+
+<div class="note" style="margin-top:28px"><b>The stack that costs the least and keeps every door open:</b> LBCC welding on Oregon Promise while enrolled at OSU through the Degree Partnership, then either finish an OSU engineering degree, transfer the AAS into Oregon Tech's Manufacturing Engineering Technology program in Wilsonville, or enter Ferris's 2+2. With a related bachelor's, the Certified Welding Inspector credential needs only one year of experience instead of five.</div>
+</div></section>
+
+<section id="money"><div class="wrap">
+<div class="eyebrow">Money</div>
+<h2>Where the dollars are, in the order they open</h2>
+<p class="prose muted">Oregon is unusually generous to residents who file early. The single most valuable habit this year is submitting each of these the week it opens.</p>
+<div class="tbl"><table>
+<thead><tr><th>Program</th><th>Opens</th><th>Deadline</th><th>What it is worth</th><th>Who qualifies</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>FAFSA 2027-28</td><td class="num">Oct 1, 2026 (expected)</td><td class="num">Jun 30, 2028 federal</td><td>Gateway to Pell, the Oregon Opportunity Grant and every school's need-based aid; uses 2025 income</td><td>Everyone. File the first week; the Oregon Opportunity Grant is first-come, first-served by filing date</td><td><span class="pill say">Aggregator</span></td></tr>
+<tr><td>OSAC Scholarship Application</td><td class="num">Nov 1, 2026</td><td class="num">Mar 1, 2027 (Early Bird Feb 15)</td><td>One application for hundreds of Oregon scholarships; Early Bird entries drawn for $1,000 awards</td><td>Oregon residents</td><td><span class="pill doc">Documented</span></td></tr>
+<tr><td>Ford Scholars (The Ford Family Foundation)</td><td class="num">Dec 1, 2026</td><td class="num">Mar 2 (2026 pattern)</td><td>Up to 120 renewable four-year scholarships</td><td>Oregon seniors with financial need (SAI of 8,000 or less) and barriers; no minimum GPA</td><td><span class="pill doc">Documented</span></td></tr>
+<tr><td>Oregon Promise</td><td class="num">Oct 2026</td><td class="num">Jun 1, 2027</td><td>Community college tuition after other grants</td><td>2.0 GPA, Oregon resident 12 months, starting at an Oregon community college</td><td><span class="pill doc">Documented</span></td></tr>
+<tr><td>Western Undergraduate Exchange (WUE)</td><td colspan="2">Built into each school's admission or scholarship application; watch Weber (Dec 1) and Utah Valley (Dec 1) priority dates</td><td>Tuition capped at 150 percent of resident rate; WICHE reports average savings of $12,517 a year</td><td>Oregon residents at participating schools; each campus sets GPA floors and may cap awards</td><td><span class="pill doc">Documented</span></td></tr>
+<tr><td>AWS Foundation scholarships</td><td class="num">Dec 1</td><td class="num">Mar 1</td><td>National awards $2,500 to $10,000-plus; District and Section awards $1,000 to $2,000; over 130 named national scholarships</td><td>Students entering welding or related degrees; the Willamette Valley Section covers the mid-valley</td><td><span class="pill doc">Documented</span></td></tr>
+<tr><td>SME Education Foundation</td><td class="num">Nov 1, 2026</td><td class="num">Feb 1, 2027</td><td>$2,500 to $20,000; one application covers every eligible award</td><td>High school seniors entering manufacturing or engineering degrees</td><td><span class="pill doc">Documented</span></td></tr>
+<tr><td>mikeroweWORKS Work Ethic Scholarship</td><td colspan="2">2026 rounds closed Jun 30, Aug 30, Oct 31; 2027 rounds not yet posted</td><td>Varies</td><td>Students entering trade programs</td><td><span class="pill warn">Confirm</span></td></tr>
+<tr><td>FMA SparkForce (formerly Nuts, Bolts and Thingamajigs)</td><td colspan="2">Spring and fall rounds; the last posted fall window was Jul 1 to Sep 30</td><td>Varies</td><td>2.5 GPA at a community or technical college, 3.0 at a university, manufacturing-related program</td><td><span class="pill warn">Confirm 2027 dates</span></td></tr>
+<tr><td>SkillsUSA national scholarships</td><td colspan="2">Membership by Mar 1 governs eligibility; one listed window Mar 27 to Apr 7, 2027</td><td>About $1 million awarded annually across programs</td><td>Active SkillsUSA members, 3.0 GPA for some awards</td><td><span class="pill doc">Documented</span></td></tr>
+<tr><td>OSU Finley Academic Excellence</td><td colspan="2">Automatic with the admission application; priority Feb 1</td><td>Up to $4,500 a year, renewable three years</td><td>Oregon resident freshmen, typically 3.50 unweighted or higher</td><td><span class="pill doc">Documented</span></td></tr>
+<tr><td>OSU Bridge to Success</td><td colspan="2">Apply by Feb 3, documents by Feb 15, FAFSA by Feb 28</td><td>Tuition and fees covered, plus a campus job offer</td><td>Oregon residents who are Pell-eligible and expected to qualify for the Oregon Opportunity Grant</td><td><span class="pill doc">Documented</span></td></tr>
+<tr><td>Oregon Tech Presidential and Engineering</td><td colspan="2">Admitted before Mar 1; Foundation application early Dec to Mar 1</td><td>Presidential tiers by GPA (amounts not captured) plus $1,000 a year Engineering; $2,000 a year Leadership and Diversity for Oregon residents</td><td>3.26 GPA for Presidential</td><td><span class="pill doc">Documented</span></td></tr>
+<tr><td>Oregon Tech DeArmond Manufacturing Fellows</td><td colspan="2">Not posted</td><td>Full tuition and fees for four years plus paid OMIC internships</td><td>MET or MFG majors; availability for 2027 unknown</td><td><span class="pill warn">Confirm</span></td></tr>
+<tr><td>MSU-Northern diesel scholarships</td><td colspan="2">With the Nov 1 to Feb 1 scholarship window (prior pattern)</td><td>Caterpillar Excellence, Perkins, Dick Irvin, Miller awards; amounts not captured</td><td>Diesel Technology students</td><td><span class="pill warn">Confirm amounts</span></td></tr>
+<tr><td>Athletic aid</td><td colspan="2">Coach-driven; usually settled between the November and April signing windows</td><td>D1: no cap but a 30-man roster; D2: up to 9 equivalencies split across the team; NAIA: up to 10 if fully funded</td><td>Recruited wrestlers; partial awards are the norm</td><td><span class="pill doc">Documented</span></td></tr>
+</tbody></table></div>
+<p class="small muted" style="margin-top:10px">Not applicable this year but worth knowing: the Miller Electric scholarship administered by AWS ($3,000, January 15) is for college juniors in welding engineering or welding engineering technology. Lincoln Electric's named scholarships are tied to FFA, Cuyahoga Community College and employee families.</p>
+</div></section>
+
+<section id="calendar"><div class="wrap">
+<div class="eyebrow">The calendar</div>
+<h2>September 2026 to August 2027</h2>
+<p class="prose muted">Hard deadlines are marked in blue. Dates that repeat every year are listed as they were posted for the last cycle; confirm each one on the linked source when the 2027 page appears.</p>
+<div class="tl">
+<div class="m"><div class="d"><b>September 2026</b>now</div><ul>
+<li>Transcript and GPA check with counseling. Confirm precalculus is on the senior schedule.</li>
+
+<li>Build a one-page portfolio PDF of your best projects and ask two teachers or coaches for letters.</li>
+<li>If you plan to compete in college, register with the NCAA Eligibility Center and the NAIA Eligibility Center, then email the coaches at every school on your list.</li>
+<li>Start the Oregon Tech and Oregon State applications (both test-optional).</li>
+</ul></div>
+<div class="m"><div class="d"><b>October 2026</b></div><ul>
+<li class="hard">Oct 1: FAFSA 2027-28 expected to open. File in the first week. Oregon Promise application also opens.</li>
+<li class="hard">Oct 1: Utah Valley WUE application window opens (closes Dec 1).</li>
+<li>Oct 16, Oct 30 and Nov 14: OSU Beaver Open House days. Register early; they cap.</li>
+<li>October: MSU-Northern TekNoXpo open house (2026 date not yet posted).</li>
+<li class="hard">Oct 31: last 2026 mikeroweWORKS round.</li>
+</ul></div>
+<div class="m"><div class="d"><b>November 2026</b></div><ul>
+<li class="hard">Nov 1: Oregon State Early Action. Oregon Tech first priority deadline. Western Washington Early Action. Ohio State encourages applications by this date.</li>
+<li class="hard">Nov 1: OSAC Scholarship Application opens. SME Education Foundation application opens.</li>
+<li>Mid-November: early signing window for wrestling (Oregon State announced signees on Nov 13 last cycle). Confirm the exact 2026 dates with the first coach who replies.</li>
+<li>MSU-Northern scholarship window opened Nov 1 last cycle.</li>
+</ul></div>
+<div class="m"><div class="d"><b>December 2026</b></div><ul>
+<li class="hard">Dec 1: AWS Foundation scholarships open. Ford Scholars application opens. Weber State WUE priority deadline. Utah Valley WUE window closes.</li>
+<li>Wrestling season. Every result now goes into the coach emails.</li>
+<li>Oregon Tech Foundation scholarship application opens early December.</li>
+</ul></div>
+<div class="m"><div class="d"><b>January 2027</b></div><ul>
+<li>Jan 1: Idaho State scholarship system opened on this date last cycle. Utah Valley's second WUE window opens (Jan 1 to Jul 1).</li>
+<li>Follow up every coach and admissions email from the fall with a season or project update.</li>
+</ul></div>
+<div class="m"><div class="d"><b>February 2027</b></div><ul>
+<li class="hard">Feb 1: SME Education Foundation deadline. OSU merit scholarship priority (Finley).</li>
+<li class="hard">Feb 3: OSU priority application deadline and Bridge to Success on-time date. Documents by Feb 14 (admission) and Feb 15 (Bridge).</li>
+<li class="hard">Feb 15: OSAC Early Bird deadline, 11:59 p.m. PT.</li>
+<li class="hard">Feb 28: OSU FAFSA deadline for Bridge to Success.</li>
+<li>Late February: OSAA state championships for winter sports; results go straight into coach emails.</li>
+</ul></div>
+<div class="m"><div class="d"><b>March 2027</b></div><ul>
+<li class="hard">Mar 1: OSAC final deadline. AWS National, District and Section deadline. Oregon Tech Presidential Scholarship cutoff (must be admitted). SkillsUSA membership deadline for national scholarships and awards.</li>
+<li class="hard">Mar 2: Ford Scholars deadline (2026 pattern; confirm on tfff.org).</li>
+<li>Financial aid offers begin arriving. Build one spreadsheet: tuition, fees, housing, minus grants, minus WUE, minus athletic aid.</li>
+</ul></div>
+<div class="m"><div class="d"><b>April 2027</b></div><ul>
+<li>SkillsUSA Oregon State Leadership and Skills Conference (2026 was April 10 and 11 at the Knife River Training Center, Albany; 2027 dates not yet posted).</li>
+<li>Regular signing period for wrestling (confirm dates). Campus visits to the top two.</li>
+<li>Oregon Tech Admitted Students Day (date not posted).</li>
+</ul></div>
+<div class="m"><div class="d"><b>May 2027</b></div><ul>
+<li>May 1 is the traditional enrollment deposit date at most four-year schools; confirm each school's own date.</li>
+<li>Decline the other offers in writing so waitlisted students move.</li>
+</ul></div>
+<div class="m"><div class="d"><b>June 2027</b></div><ul>
+<li class="hard">Jun 1: Oregon Promise application deadline (only if the community college route is in play).</li>
+<li>Jun 21 to 26: SkillsUSA National Leadership and Skills Conference (if qualified at state).</li>
+<li>Housing contracts, orientation registration, final transcript to the chosen school.</li>
+</ul></div>
+<div class="m"><div class="d"><b>July to August 2027</b></div><ul>
+<li>Fargo Junior Nationals in July if the coach wants freestyle results.</li>
+<li>FMA SparkForce fall round opened July 1 last cycle.</li>
+<li>Move in. Bring the portfolio; it opens doors in the shop on day one.</li>
+</ul></div>
+</div>
+</div></section>
+
+<section id="contacts"><div class="wrap">
+<div class="eyebrow">Contacts</div>
+<h2>People who can move this forward</h2>
+<div class="tbl"><table>
+<thead><tr><th>Organization</th><th>Role</th><th>Name</th><th>How to reach</th></tr></thead>
+<tbody>
+<tr><td>Crescent Valley High School</td><td>Counseling (transcripts, Eligibility Center, FAFSA help)</td><td>Annika Bay, Harrison Jarrett, Sara McCune, Dwight Roberson II; registrar Chappy Swearingen</td><td>541-757-5815; registrar 541-757-5804; 4444 NW Highland Dr, Corvallis</td></tr>
+
+<tr><td>Oregon Tech</td><td>Admissions</td><td></td><td>541-885-1150 or 800-422-2017, oit@oit.edu; Portland-Metro 503-821-1250</td></tr>
+<tr><td>Oregon Tech</td><td>MMET department chair</td><td>Shawn Duan</td><td>541-885-0119, shawn.duan@oit.edu</td></tr>
+<tr><td>Oregon Tech</td><td>Financial aid</td><td></td><td>dollars@oit.edu, 541-885-1280</td></tr>
+<tr><td>Oregon State</td><td>College of Engineering; MIME (confirm Manufacturing Engineering status)</td><td></td><td>askengineering@oregonstate.edu; info-mime@oregonstate.edu</td></tr>
+<tr><td>Oregon State wrestling</td><td>Head coach; associate head coach</td><td>Chris Pendleton; Josh Rhoden</td><td>osubeavers.com staff directory; recruiting questionnaire on the wrestling page</td></tr>
+<tr><td>LBCC / OSU Degree Partnership</td><td>Dual enrollment</td><td></td><td>dpp@linnbenton.edu, 541-917-4237</td></tr>
+<tr><td>MSU-Northern</td><td>Admissions and WUE</td><td></td><td>406-265-3704 or 800-662-6132, admissions@msun.edu; WUE 406-265-3703</td></tr>
+<tr><td>MSU-Northern</td><td>Diesel faculty</td><td>Brandon Matson; Keith Jensen; Tyler De La Vega</td><td>406-265-4127; 406-265-3797; 406-265-4187</td></tr>
+<tr><td>MSU-Northern wrestling</td><td>Head coach</td><td>Tyson Thivierge</td><td>golightsgo.com staff directory</td></tr>
+<tr><td>Utah Valley wrestling</td><td>Head coach</td><td>Adam Hall</td><td>gouvu.com staff directory</td></tr>
+<tr><td>CSU Pueblo wrestling</td><td>Head coach</td><td>Dax Charles</td><td>gothunderwolves.com staff directory</td></tr>
+<tr><td>Minnesota State Mankato wrestling</td><td>Head coach</td><td>Brady Wilson</td><td>msumavericks.com staff directory</td></tr>
+<tr><td>Penn College wrestling</td><td>Head coach</td><td>Dalton Rohrbaugh</td><td>pctwildcats.com staff directory</td></tr>
+<tr><td>Ferris State</td><td>Welding Engineering Technology office</td><td></td><td>231-591-2511</td></tr>
+<tr><td>Idaho State</td><td>Admissions; College of Technology</td><td></td><td>admiss@isu.edu, 208-282-2475; ctech@isu.edu, 208-282-2800</td></tr>
+<tr><td>Clackamas CC wrestling</td><td>Head coach</td><td>Brett Sanchez</td><td>clackamascougars.com</td></tr>
+<tr><td>North Idaho College wrestling</td><td>Head coach</td><td>Derrick Booth</td><td>derrick.booth@nic.edu, 208-769-3318</td></tr>
+<tr><td>OMIC Training Center (PCC)</td><td>Apprenticeships</td><td></td><td>971-722-1818; 34001 NE Wagner Ct, Scappoose</td></tr>
+<tr><td>Oregon BOLI</td><td>Apprenticeship and Training Division</td><td></td><td>971-245-3844, ATD.General@boli.oregon.gov</td></tr>
+<tr><td>Oregon Building Trades</td><td>Scholarship</td><td>Robert</td><td>robert@oregonbuildingtrades.com, 503-788-7153</td></tr>
+<tr><td>AWS Willamette Valley Section</td><td>Section scholarships</td><td></td><td>sections.aws.org/willamette/scholarships</td></tr>
+<tr><td>SkillsUSA Oregon</td><td>State conference, scholarships</td><td></td><td>skillsusaoregon.org</td></tr>
+<tr><td>OSAC</td><td>Oregon grants and scholarships</td><td></td><td>oregonstudentaid.gov</td></tr>
+<tr><td>The Ford Family Foundation</td><td>Ford Scholars</td><td></td><td>tfff.org/scholarships</td></tr>
+</tbody></table></div>
+</div></section>
+
+<section id="ask"><div class="wrap">
+<div class="eyebrow">Sharper questions</div>
+<h2>What a smarter version of this search asks</h2>
+<div class="grid grid-2">
+<div><h4>Which of these programs will still exist in 2031?</h4><p class="muted">OSU suspended Manufacturing Engineering. Western Washington put Vehicle Design in moratorium. Arizona State left WUE. Boise State cut wrestling. Ask every program how many students graduated last year and whether the faculty count is growing or shrinking.</p></div>
+<div><h4>Is wrestling a lever or a distraction?</h4><p class="muted">Below D1, wrestling money is partial and coaches can walk an admission file across campus; that is a lever. At D1 the roster is capped at 30 and the shop time competes with a 20-hour training week; that is a trade. Decide which one you are buying.</p></div>
+<div><h4>Which lane pays for itself fastest?</h4><p class="muted">A dealer-sponsored AAS (Papé Kenworth, ThinkBIG) pays from day one and ends in a job. A welding engineering technology bachelor's starts at $70k to $85k by Ferris's numbers but costs four years. Run both as cash flows to age 26, not sticker prices.</p></div>
+<div><h4>What credential can be stacked this year?</h4><p class="muted">A passed CSWA, an AWS D1.1 plate test through class or LBCC, OSHA-10, and a SkillsUSA state medal each change how a coach or a scholarship committee reads the file, and all four fit inside senior year.</p></div>
+<div><h4>What is the real net price?</h4><p class="muted">Not one school in this document posts a net figure for an Oregon resident with a specific GPA. Use each school's net price calculator with the actual FAFSA numbers, then subtract WUE and any athletic offer in writing.</p></div>
+<div><h4>Who has already walked this exact path?</h4><p class="muted">Ask each coach for one current wrestler in the diesel, welding or engineering technology program and call that student. Ten minutes with them beats every page here.</p></div>
+</div>
+
+<h3 style="margin-top:36px">What people say</h3>
+<p class="prose muted">Reddit, WeldingWeb and the college forums could not be reached from the environment this document was researched in, so no thread is quoted here; anything presented as a "student says" would have been invented. Run these searches yourself and read the complaints first:</p>
+<ul class="muted small" style="padding-left:18px;max-width:70ch">
+<li>r/Welding and r/Skilled_Trades: "welding engineering technology worth it", "Ferris WET", "Penn College welding".</li>
+<li>r/Diesel and r/DieselTechs: "MSU Northern diesel", "ThinkBIG worth it", "dealer sponsorship contract".</li>
+<li>r/OregonStateUniv and r/EngineeringStudents: "MECOP", "pro school", "how hands on is ME".</li>
+<li>r/OregonTech or r/Oregon: "Klamath Falls campus life", "Wilsonville campus".</li>
+<li>r/wrestling: "NAIA vs D2 scholarship", "walk-on D1 wrestling".</li>
+</ul>
+<div class="say"><p style="margin:0">One relevant first-hand source did surface: a recruiting-side newsletter arguing that D3 and D2 programs "often end up being less expensive than partial D1 scholarships once you factor in all available academic aid." Treat it as one voice, not a consensus.</p><div class="src">d3direct.substack.com, "Playing D3 vs walking on D1" <span class="pill say">What people say</span></div></div>
+</div></section>
+
+<section id="sources" class="sources"><div class="wrap">
+<div class="eyebrow">Sources</div>
+<h2>Where every figure came from</h2>
+<p class="prose muted small">All school and agency figures were read from search-engine extracts of the pages below on September 15, 2026; the pages themselves could not be opened from the research environment. Open each link before quoting a number to a family.</p>
+<ol>
+
+<li>Crescent Valley High School Counseling Department: cvhs.csd509j.net/academics/counseling-department</li>
+<li>Oregon Tech: oit.edu/academics/degrees/manufacturing-engineering-technology; oit.edu/admissions/criteria; oit.edu/admissions/deadlines; oit.edu/college-costs/scholarships; oit.edu/college-costs/scholarships/new-transfer-student/presidential-scholarship; oit.edu/mmet; oit.edu/admissions/general-info/contact; oit.edu/news (DeArmond fellowship; OMIC internships; Portland-Metro ME launch); catalog.oit.edu course pages</li>
+<li>Oregon Tech tuition estimate: research.com/best-colleges/oregon-institute-of-technology/tuition-fees (third-party)</li>
+<li>Oregon State: catalog.oregonstate.edu (Manufacturing Engineering BS/HBS; Mechanical Engineering BS/HBS); admissions.oregonstate.edu/calculus-ready; admissions.oregonstate.edu/undergraduate-admission-deadlines; admissions.oregonstate.edu/bridge-success; scholarships.oregonstate.edu/scholarships-new-osu-students; news.oregonstate.edu (2026-27 tuition); partnerships.oregonstate.edu; visitosu.oregonstate.edu/visit-programs; global-formula-racing.com; beaverracing.org</li>
+<li>KATU, "Tuition for a 45-credit OSU undergraduate could rise $720 next year, to $13,395"</li>
+<li>Oregon State wrestling: osubeavers.com (Pac-12 title release, Mar 6, 2026; staff directory; "Wrestling Signs Four For 2026-27 Season", Nov 13, 2025; Josh Rhoden coach page)</li>
+<li>MSU-Northern: msun.edu/academics/cots/program-Diesel.aspx; program-DieselFieldMaint.aspx; program-AutoTech.aspx; catalog.msun.edu/programs/diesel-technology; msun.edu/admissions/wue.aspx; msun.edu/busserv/tuitfees.aspx; msun.edu/admissions/freshman.aspx; msun.edu/finaid/scholarships/diesel.aspx; msun.edu/academics/cots/faculty.aspx; msun.edu/contact-us.aspx; golightsgo.com/staff-directory/tyson-thivierge/15</li>
+<li>Utah Valley: uvu.edu/cet/transportation-tech/programs; catalog.uvu.edu (Transportation Technologies BAS); uvu.edu/admissions/docs/wuevsresidency.pdf; gouvu.com (Adam Hall; 2025-26 schedule); big12sports.com 2026 championship preview</li>
+<li>Ferris State: ferris.edu/CET/design-mfg/welding (homepage; program requirements; Why-Welding); ferris.edu/news 2024 Caterpillar internship story; ferris.edu/student-life/u-rec/students/clubsports/wrestling.htm; tuition estimate research.com (third-party)</li>
+<li>Penn College: pct.edu/catalog/majors/BWE; pct.edu/academics/et/welding-metal-fabrication; pct.edu/news 2026-06-25 board approves 2026-27 tuition; pct.edu/news 2026-03-02 three qualify for nationals; pctwildcats.com/staff-directory/dalton-rohrbaugh/167</li>
+<li>Eastern Washington: ewu.edu/cstem/ment/mechanical-engineering-technology-bs; ewu.edu/apply/freshman; ewu.edu/apply/tuition/wue; tuition estimate research.com (third-party)</li>
+<li>Central Washington: cwu.edu MET program and Hogue pages; cwu.edu guaranteed admissions; cwu.edu non-resident scholarships</li>
+<li>Western Washington: engineeringdesign.wwu.edu/manufacturing-engineering; catalog.wwu.edu (Vehicle Design in moratorium); sbo.wwu.edu/2026-2027-tuition-and-fees-schedule; financialaid.wwu.edu WUE page; admissions.wwu.edu/first-year/fall-timeline</li>
+<li>Weber State: weber.edu/automotive; weber.edu/east/bachelor.html; weber.edu/financialaid/wue.html; weber.edu/financialaid/nonresident.html; weber.edu/ppm/policies/6-2_admissions.html</li>
+<li>Idaho State: isu.edu/dieseltechnology; coursecat.isu.edu bachelor-applied-science; isu.edu/wue; isu.edu/admissions/freshman; isu.edu/contact</li>
+<li>Utah State: usu.edu/financial-support/scholarshipterms/2627/wue and wue_plus; usu.edu/budget/tuitionfee</li>
+<li>Montana Tech: mtech.edu/financial-aid/cost/wue</li>
+<li>CSU Pueblo: catalog.csupueblo.edu Automotive Industry Management BS; auth.csupueblo.edu/automotive-industry-management; csupueblo.edu tuition and fees; gothunderwolves.com/staff-directory/dax-charles/125</li>
+<li>Minnesota State Mankato: cset.mnsu.edu Automotive Engineering Technology; mankato.mnsu.edu out-of-state tuition page; msumavericks.com (Brady Wilson; May 21, 2026 release)</li>
+<li>BYU-Idaho: byui.edu/engineering-technology and major pages; byui.edu/newsroom sports history</li>
+<li>Ohio State: engineering.osu.edu/welding-engineering; mse.osu.edu apply page; news.osu.edu 2026-27 tuition guarantee; ohiostatebuckeyes.com Mar 21, 2026</li>
+<li>LeTourneau: letu.edu/academics/engineering/materials-joining; tuition estimates college-guides.org and collegetuitioncompare.com (third-party)</li>
+<li>Purdue: purdue.edu/treasurer bursar fee rates 2026-2027; polytechnic.purdue.edu MET, RET, IET pages</li>
+<li>K-State Salina: salina.k-state.edu MET page; k-state.edu FY26 comprehensive fee schedule</li>
+<li>University of Alaska Anchorage: catalog.uaa.alaska.edu (Diesel Power AAS; Welding OEC; Applied Technologies Leadership BS); uaa.alaska.edu western-exchange</li>
+<li>Arizona State: admission.asu.edu/cost-aid/wue; poly.engineering.asu.edu manufacturing engineering</li>
+<li>Pittsburg State: pittstate.edu automotive technology; manufacturing engineering technology; flat-rate tuition (Gorilla Advantage)</li>
+<li>SIU: academics.siu.edu/aviation-and-automotive/automotive/bachelors</li>
+<li>UNOH: unoh.edu/academics/college-of-applied-technologies</li>
+<li>Alfred State: alfredstate.edu welding technology; catalog.alfredstate.edu motorsports technology; alfredstateathletics.com/staff-directory/justin-signorelli/74</li>
+<li>Wrestling governance: ncaa.org initial eligibility (D1, D2); naia.org eligibility center; ncaa.org Jun 23, 2025 roster limits; flowrestling.org House settlement explainer; naia.org financial aid; ncsasports.org scholarship guides</li>
+<li>2026 national results: themat.com Mar 7, 2026 (NAIA); ncaa.com Mar 14, 2026 (D2) and Mar 13, 2026 (D3); iccac.org 2026 NJCAA results; nicathletics.com; clackamascougars.com</li>
+<li>LBCC: linnbenton.edu tuition page; Democrat-Herald and KEZI on the 2026-27 7 percent increase; linnbenton.edu/about/news/2025/dpp-mou-signing; linnbenton.smartcatalogiq.com welding pages; nwnatural.com 2024 LBCC scholarship awards</li>
+<li>Clackamas CC: clackamas.edu welding department; give.clackamas.edu/wrestling; theclackamasprint.net (coaching staff; tuition)</li>
+<li>North Idaho College: nicathletics.com wrestling pages; nic.edu tuition; tuition estimates thecollegemonk.com and collegesimply.com (third-party)</li>
+<li>Apprenticeship: oregon.gov/boli/apprenticeship (become an apprentice; opportunities); pcc.edu OMIC Training Center pages; iam-boeing-apprenticeship.com; impactnw.org Pathways to Manufacturing</li>
+<li>Dealer programs: papekenworth.com technician sponsorship program blog; agriculture.papemachinery.com John Deere registered apprenticeship; cat.com ThinkBIG; dealertechjobs.caterpillar.com postings</li>
+<li>Money: oregonstudentaid.gov (FAFSA/ORSAA; OSAC Scholarship Application; Oregon Promise; Oregon Opportunity Grant); tfff.org/scholarships/apply and 2025 Ford Scholars info sheet; wiche.edu/tuition-savings/wue; aws.org scholarships pages; scholarships.smeef.org; mikeroweworks.org/scholarship; fmamfg.org/foundation/scholarships; skillsusa.org scholarships and Mar 1 membership deadline; skillsusaoregon.org/state-conferences; kb.nths.org scholarships; FAFSA opening date via thecollegeinvestor.com and collegehelpguide.com (aggregators)</li>
+<li>Pay: bls.gov Occupational Outlook Handbook, welders; diesel service technicians; mechanical engineering technologists (May 2025 medians); Oregon aggregator pay pages (ZipRecruiter, Glassdoor, SalaryExpert)</li>
+<li>CWI: aws.org certified welding inspector; sicerts.com how to become a CWI</li>
+
+</ol>
+</div></section>
+<footer><div class="wrap">
+
+Prepared by Andrew McAteer, CTE Metals and Engines &amp; Fabrication, Corvallis School District 509J. Research date September 15, 2026. Figures are labeled by verification status; confirm before relying on any of them.
+</div></footer>

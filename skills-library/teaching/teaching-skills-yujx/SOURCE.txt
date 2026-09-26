@@ -1,0 +1,5 @@
+Repository: https://github.com/YujxZJCN/teaching-skills
+Commit: 50258caf73fb0495adc725864fdf278a3072716c
+Fetched: 2026-09-26
+License: MIT (Copyright 2026 Jiaxing Yu)
+Notes: Subset copied: assessment-architect, student-mentor, and shared/ (both skills reference shared/*.md protocol files; keep the folder layout). University-oriented; adapt tone for high school. No scripts in the copied folders.

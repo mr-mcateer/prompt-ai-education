@@ -1,0 +1,6 @@
+{
+  "_comment": "No MCP config needed. Claude writes quiz.md in text2qti syntax, then runs the CLI locally.",
+  "install": "pipx install text2qti   (or: pip install text2qti)",
+  "run": "text2qti quiz.md   -> quiz.zip (QTI 1.2, Canvas Classic Quizzes; New Quizzes can import it and migrate)",
+  "claude_code_allow": "Add Bash(text2qti:*) to .claude/settings.json permissions.allow"
+}

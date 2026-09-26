@@ -1,0 +1,10 @@
+{
+  "_comment": "Skills only. Recommended: copy skills into ~/.claude/skills so the plugin's bundled third-party hosted MCPs are NOT enabled.",
+  "claude_code_skills_only": "cp -r skills/k12-* ~/.claude/skills/",
+  "claude_code_plugin_upstream": "git clone https://github.com/anthropics/k12-teacher-skills && claude plugin marketplace add ./k12-teacher-skills && claude plugin install k12-education@k12-teacher-skills   (WARNING: this also registers 9 hosted third-party MCPs from plugin/.mcp.json; disable them with /mcp)",
+  "optional_standards_connector": {
+    "mcpServers": {
+      "learning-commons-kg": { "type": "http", "url": "https://mcp.learningcommons.org/mcp" }
+    }
+  }
+}

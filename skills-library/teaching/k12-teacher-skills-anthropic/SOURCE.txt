@@ -1,0 +1,5 @@
+Repository: https://github.com/anthropics/k12-teacher-skills
+Commit: 281eb8d41fe2837d911541c9bbb870b58add804c
+Fetched: 2026-09-26
+License: Apache-2.0 (Copyright 2026 Anthropic PBC and Learning Commons; see NOTICE)
+Notes: Copied the 4 skills and the eval rubrics. Deliberately did NOT copy plugin/.mcp.json, which bundles 9 third-party hosted MCP servers (MagicSchool, Brisk, Diffit, Canva, etc.). Install the skills individually to avoid those endpoints.

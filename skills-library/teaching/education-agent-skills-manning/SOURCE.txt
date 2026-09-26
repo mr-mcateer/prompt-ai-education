@@ -1,0 +1,5 @@
+Repository: https://github.com/GarethManning/education-agent-skills
+Commit: 6bbbce418f82e11044009c9f3b7373a354de5bd0
+Fetched: 2026-09-26
+License: CC-BY-SA-4.0 (Copyright 2026 Gareth Manning). Attribution required; derivatives must stay CC-BY-SA-4.0.
+Notes: Curated subset of 19 of 165 skills chosen for a HS CTE shop teacher (UbD unit planning, rubrics, project briefs, UDL, worked examples, think-alouds, retrieval practice, hinge questions, vocabulary tiering). Prompt-only skills, no scripts. Do NOT use the hosted MCP endpoint (mcp-server-sigma-sooty.vercel.app) for anything containing student info; the local skills are the recommended path.

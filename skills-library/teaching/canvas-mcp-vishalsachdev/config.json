@@ -1,0 +1,21 @@
+{
+  "_comment": "Local stdio only. Token comes from the environment, never inline. For CSD 509J the API URL is https://csd509j.instructure.com/api/v1. ENABLE_DATA_ANONYMIZATION=true replaces student identity fields with Student_xxxxxxxx before results reach Claude.",
+  "claude_code_cli": "claude mcp add canvas-api --scope user -e CANVAS_API_TOKEN=\"${CANVAS_API_TOKEN}\" -e CANVAS_API_URL=\"${CANVAS_API_URL}\" -e ENABLE_DATA_ANONYMIZATION=true -e CANVAS_ROLE=educator -- uvx --from canvas-mcp canvas-mcp-server",
+  "claude_desktop": {
+    "mcpServers": {
+      "canvas-api": {
+        "command": "uvx",
+        "args": ["--from", "canvas-mcp", "canvas-mcp-server"],
+        "env": {
+          "CANVAS_API_TOKEN": "${CANVAS_API_TOKEN}",
+          "CANVAS_API_URL": "${CANVAS_API_URL}",
+          "ENABLE_DATA_ANONYMIZATION": "true",
+          "LOG_REDACT_PII": "true",
+          "CANVAS_ROLE": "educator"
+        }
+      }
+    }
+  },
+  "claude_desktop_alt": "Or download canvas-mcp.mcpb from https://github.com/vishalsachdev/canvas-mcp/releases/latest and double-click it.",
+  "skills_install": "npx skills add vishalsachdev/canvas-mcp  (or copy ./skills/* into ~/.claude/skills/)"
+}

@@ -1,0 +1,5 @@
+Repository: https://github.com/bruchris/canvas-lms-mcp
+Commit: 2a5a7f1f4ed3a41641dc7214eb3888720ece5821
+Fetched: 2026-09-26
+License: MIT
+Notes: MCP server not vendored (npm package canvas-lms-mcp v1.30.0). Copied README, LICENSE, PRIVACY.md and the 16 workflow skills (skills/). Run stdio mode only; do not use its HTTP serve mode for student data.

@@ -1,0 +1,5 @@
+Repository: https://github.com/ChantillyAn/homework-grader
+Commit: 5e9aab47822f87075c355c9bd661f8e073f8830a
+Fetched: 2026-09-26
+License: MIT
+Notes: Full skill copied. Script scan: no curl|sh, no obfuscation, no hidden endpoints. scripts/batch_score.py calls the Anthropic API (anthropic SDK, ANTHROPIC_API_KEY from env) with student submission text; that is the only network egress. preprocess/stats/calibrate/export are local only. Strip student names from submissions before batch scoring.

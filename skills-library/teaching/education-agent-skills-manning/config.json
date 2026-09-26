@@ -1,0 +1,5 @@
+{
+  "_comment": "Prompt-only skills; nothing leaves the machine beyond the normal Claude conversation.",
+  "claude_code_skills": "cp -r skills/* ~/.claude/skills/",
+  "claude_code_full_plugin_upstream": "claude plugin install https://github.com/GarethManning/education-agent-skills   (installs all 165; noisy, prefer the curated subset)"
+}

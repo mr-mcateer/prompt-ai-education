@@ -1,0 +1,21 @@
+{
+  "_comment": "Local stdio only. CANVAS_BASE_URL is the origin only (https://csd509j.instructure.com), no /api/v1. CANVAS_PSEUDONYMIZE_STUDENTS=true swaps student names/emails/SIS ids for stable 'Student N' labels server side; free text inside submissions is NOT scrubbed.",
+  "claude_code_cli": "claude mcp add canvas-lms --scope user -e CANVAS_API_TOKEN=\"${CANVAS_API_TOKEN}\" -e CANVAS_BASE_URL=https://csd509j.instructure.com -e CANVAS_PSEUDONYMIZE_STUDENTS=true -e CANVAS_ROLE=teacher -- npx -y canvas-lms-mcp",
+  "claude_code_plugin": "/plugin marketplace add bruchris/canvas-lms-mcp  then  /plugin install canvas-lms-mcp",
+  "claude_desktop": {
+    "mcpServers": {
+      "canvas-lms": {
+        "command": "npx",
+        "args": ["-y", "canvas-lms-mcp"],
+        "env": {
+          "CANVAS_API_TOKEN": "${CANVAS_API_TOKEN}",
+          "CANVAS_BASE_URL": "https://csd509j.instructure.com",
+          "CANVAS_PSEUDONYMIZE_STUDENTS": "true",
+          "CANVAS_ROLE": "teacher"
+        }
+      }
+    }
+  },
+  "claude_desktop_alt": "Or download canvas-lms-mcp.mcpb from https://github.com/bruchris/canvas-lms-mcp/releases/latest and enable 'FERPA mode' in the install dialog.",
+  "skills_install": "npx skills add bruchris/canvas-lms-mcp  (or copy ./skills/* into ~/.claude/skills/)"
+}

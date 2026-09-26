@@ -1,0 +1,5 @@
+{
+  "_comment": "Remote hosted, free account. Sends only standards search terms, not student data.",
+  "claude_code_cli": "claude mcp add --transport http learning-commons-kg https://mcp.learningcommons.org/mcp",
+  "claude_desktop": "Settings > Connectors > Add custom connector > https://mcp.learningcommons.org/mcp (already built in for Claude for Teachers accounts)"
+}

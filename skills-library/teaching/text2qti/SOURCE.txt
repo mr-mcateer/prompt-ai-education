@@ -1,0 +1,5 @@
+Repository: https://github.com/gpoore/text2qti
+Commit: 80dac052bec7953e5790567cf5a500644886d5b8
+Fetched: 2026-09-26
+License: BSD-3-Clause (Copyright Geoffrey M. Poore)
+Notes: CLI tool, not an MCP or skill. Codebase not vendored; install from PyPI. Runs fully offline; output .zip is imported manually via Canvas Settings > Import Course Content > QTI .zip file.

@@ -1,0 +1,5 @@
+Repository: https://github.com/vishalsachdev/canvas-mcp
+Commit: 877a02d401dc170695d9e4222786b3f91dce266a
+Fetched: 2026-09-26
+License: MIT
+Notes: MCP server not vendored. Copied README, LICENSE, env.template, SECURITY.md and the 8 workflow skills (skills/). Server installs from PyPI package canvas-mcp (v1.12.0). Do NOT use the hosted endpoint at mcp.illinihunt.org for student data; run local stdio only.

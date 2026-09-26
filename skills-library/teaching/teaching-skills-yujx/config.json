@@ -1,0 +1,4 @@
+{
+  "claude_code_skills": "Copy assessment-architect, student-mentor and shared into one skills root (e.g. ~/.claude/skills/) keeping shared/ as a sibling.",
+  "claude_code_full_plugin_upstream": "/plugin marketplace add YujxZJCN/teaching-skills  then  /plugin install teaching-skills"
+}

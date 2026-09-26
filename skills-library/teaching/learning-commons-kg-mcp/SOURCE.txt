@@ -1,0 +1,5 @@
+Repository: https://github.com/learning-commons-org/knowledge-graph
+Commit: aacd55276c51b6a59f6cd10cac378d4e3bdf2aaf
+Fetched: 2026-09-26
+License: Code MIT; Open datasets CC-BY-4.0 or CC0; Gated datasets not openly licensed (see LICENSE.md)
+Notes: Remote hosted MCP (https://mcp.learningcommons.org/mcp). Only standards/curriculum queries go to it; never paste student info into prompts routed there. Coverage is Math, ELA, Science, Social Studies; no CTE standards.

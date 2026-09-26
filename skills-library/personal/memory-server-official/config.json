@@ -1,0 +1,17 @@
+{
+  "claude_code": "claude mcp add --scope user memory -e MEMORY_FILE_PATH=$HOME/.claude-memory.jsonl -- npx -y @modelcontextprotocol/server-memory",
+  "claude_desktop": {
+    "mcpServers": {
+      "memory": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-memory"
+        ],
+        "env": {
+          "MEMORY_FILE_PATH": "/Users/<you>/.claude-memory.jsonl"
+        }
+      }
+    }
+  }
+}

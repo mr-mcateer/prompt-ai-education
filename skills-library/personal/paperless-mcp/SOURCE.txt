@@ -1,0 +1,7 @@
+Repo: https://github.com/baruchiro/paperless-mcp
+Commit: 54b0bc5f830685c952f75b1786ad2240182a87dd
+Commit date: 2026-09-15
+Fetched: 2026-09-26
+License: ISC
+Copied: README, LICENSE, config.json (written locally, placeholders only)
+Security scan: Copied files are Markdown/JSON only; no executable scripts vendored.

@@ -1,0 +1,16 @@
+{
+  "claude_code": "claude mcp add --scope user basic-memory -- uvx --prerelease=allow basic-memory mcp",
+  "claude_code_skills": "npx skills add basicmachines-co/basic-memory/skills  (or copy ./skills/* into ~/.claude/skills/)",
+  "claude_desktop": {
+    "mcpServers": {
+      "basic-memory": {
+        "command": "uvx",
+        "args": [
+          "basic-memory",
+          "mcp"
+        ]
+      }
+    }
+  },
+  "notes": "Data lives as Markdown in ~/basic-memory (point a project at your Obsidian vault with: basic-memory project add vault /path/to/vault). Basic Memory Cloud is optional and paid."
+}

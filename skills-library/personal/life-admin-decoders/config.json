@@ -1,0 +1,28 @@
+{
+  "claude_code_plugin": "/plugin marketplace add mohitagw15856/pm-claude-skills  then  /plugin install pm-decoders@pm-claude-skills  (README writes @pm-skills; use the marketplace name shown by /plugin marketplace list). Also listed in the official Anthropic plugin directory as pm-skills.",
+  "manual": "Copy chosen ./skills/<name> folders into ~/.claude/skills/",
+  "subset_copied": [
+    "medical-bill-decoder",
+    "claim-denial-decoder",
+    "insurance-claim-appeal",
+    "insurance-policy-decoder",
+    "lease-decoder",
+    "tax-deduction-finder",
+    "quarterly-tax-rhythm",
+    "receipts-audit",
+    "property-tax-appeal",
+    "subscription-audit",
+    "lower-my-bill",
+    "bank-fee-refund",
+    "warranty-claim",
+    "inbox-unsubscribe-purge",
+    "email-triage-system",
+    "home-maintenance-calendar",
+    "family-emergency-plan",
+    "travel-brief",
+    "small-claims-prep",
+    "unclaimed-money-tracer",
+    "estate-planning-kit",
+    "school-choice-decision"
+  ]
+}

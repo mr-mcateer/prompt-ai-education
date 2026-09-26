@@ -1,0 +1,7 @@
+Repo: https://github.com/kepano/obsidian-skills
+Commit: 3ccff5338ea700537839b21900aa5358a0402c98
+Commit date: 2026-09-15
+Fetched: 2026-09-26
+License: MIT
+Copied: README, LICENSE, skills, config.json (written locally, placeholders only)
+Security scan: Markdown only; no scripts. grep for risky shell patterns found nothing.

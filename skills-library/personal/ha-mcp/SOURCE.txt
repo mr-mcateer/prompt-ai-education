@@ -1,0 +1,7 @@
+Repo: https://github.com/homeassistant-ai/ha-mcp
+Commit: e9fbd01125e7d7ed973111802ce1b0aa086fa182
+Commit date: 2026-09-26
+Fetched: 2026-09-26
+License: MIT
+Copied: README, LICENSE, config.json (written locally, placeholders only)
+Security scan: Copied files are Markdown/JSON only; no executable scripts vendored.

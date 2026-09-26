@@ -1,0 +1,7 @@
+Repo: https://github.com/microsoft/playwright-mcp
+Commit: e87bb897e15a6f2af402afb0f10b45eced9e1f9b
+Commit date: 2026-09-25
+Fetched: 2026-09-26
+License: Apache-2.0
+Copied: README, LICENSE, config.json (written locally, placeholders only)
+Security scan: Copied files are Markdown/JSON only; no executable scripts vendored.

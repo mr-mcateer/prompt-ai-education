@@ -1,0 +1,19 @@
+{
+  "claude_code": "curl -LsSf https://raw.githubusercontent.com/homeassistant-ai/ha-mcp/master/scripts/install.sh | sh -s -- --claude-code   (review script first)",
+  "claude_code_manual": "claude mcp add --scope user home-assistant -e HOMEASSISTANT_URL=http://homeassistant.local:8123 -e HOMEASSISTANT_TOKEN=${HOMEASSISTANT_TOKEN} -- uvx ha-mcp@latest",
+  "claude_desktop": {
+    "mcpServers": {
+      "home-assistant": {
+        "command": "uvx",
+        "args": [
+          "ha-mcp@latest"
+        ],
+        "env": {
+          "HOMEASSISTANT_URL": "http://homeassistant.local:8123",
+          "HOMEASSISTANT_TOKEN": "<LONG_LIVED_ACCESS_TOKEN>"
+        }
+      }
+    }
+  },
+  "official_alternative": "Home Assistant built-in 'Model Context Protocol Server' integration: remote connector URL https://<your-ha-external-url>/api/mcp (OAuth). Works on claude.ai and phone if HA is reachable (e.g. Nabu Casa, paid)."
+}

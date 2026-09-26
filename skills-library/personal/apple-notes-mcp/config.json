@@ -1,0 +1,16 @@
+{
+  "claude_code": "claude mcp add apple-notes -s user -- npx -y apple-notes-mcp",
+  "setup_check": "npx -y apple-notes-mcp setup --check",
+  "claude_desktop": {
+    "mcpServers": {
+      "apple-notes": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "apple-notes-mcp"
+        ]
+      }
+    }
+  },
+  "notes": "macOS only; uses AppleScript against Notes.app. Full Disk Access improves attachment handling."
+}

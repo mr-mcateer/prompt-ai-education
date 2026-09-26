@@ -1,0 +1,12 @@
+{
+  "install": "brew install --cask mattt/tap/iMCP",
+  "claude_code": "claude mcp add --scope user iMCP -- /Applications/iMCP.app/Contents/MacOS/imcp-server",
+  "claude_desktop": {
+    "mcpServers": {
+      "iMCP": {
+        "command": "/Applications/iMCP.app/Contents/MacOS/imcp-server"
+      }
+    }
+  },
+  "notes": "macOS 15.3+. iMCP menu bar app must be running; enable each service (Messages, Contacts, Calendar, Reminders, Location, Weather, Maps) and grant macOS permissions."
+}

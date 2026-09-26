@@ -1,0 +1,18 @@
+{
+  "claude_code": "claude mcp add --scope user apple-health -e HEALTH_DATA_DIR=$HOME/HealthExport -- npx -y @neiltron/apple-health-mcp",
+  "claude_desktop": {
+    "mcpServers": {
+      "apple-health": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@neiltron/apple-health-mcp"
+        ],
+        "env": {
+          "HEALTH_DATA_DIR": "/path/to/unzipped/health-export"
+        }
+      }
+    }
+  },
+  "requires": "Node 22+, CSV export from the free iOS app Simple Health Export CSV (native export.xml not supported)."
+}

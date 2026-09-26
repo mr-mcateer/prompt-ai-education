@@ -1,0 +1,19 @@
+{
+  "auth_once": "uvx --python 3.12 --from git+https://github.com/Taxuspt/garmin_mcp garmin-mcp-auth",
+  "claude_code": "claude mcp add --scope user garmin -- uvx --python 3.12 --from git+https://github.com/Taxuspt/garmin_mcp garmin-mcp",
+  "claude_desktop": {
+    "mcpServers": {
+      "garmin": {
+        "command": "uvx",
+        "args": [
+          "--python",
+          "3.12",
+          "--from",
+          "git+https://github.com/Taxuspt/garmin_mcp",
+          "garmin-mcp"
+        ]
+      }
+    }
+  },
+  "notes": "Uses unofficial Garmin Connect login (garminconnect library); tokens cached locally in ~/.garminconnect. Garmin rate-limits (429) and MFA changes break it periodically."
+}

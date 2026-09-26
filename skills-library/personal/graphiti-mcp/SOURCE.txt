@@ -1,0 +1,7 @@
+Repo: https://github.com/getzep/graphiti/tree/main/mcp_server
+Commit: ba4a9cb32495b6864160616f8dfa2b898f4a500c
+Commit date: 2026-09-25
+Fetched: 2026-09-26
+License: Apache-2.0
+Copied: README, LICENSE, config.json (written locally, placeholders only)
+Security scan: Copied files are Markdown/JSON only; no executable scripts vendored.

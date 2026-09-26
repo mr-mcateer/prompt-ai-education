@@ -1,0 +1,7 @@
+Repo: https://github.com/s-stefanov/actual-mcp
+Commit: be88850729160c91f2b3300a259218d8095ab2a6
+Commit date: 2026-09-14
+Fetched: 2026-09-26
+License: MIT
+Copied: README, LICENSE, config.json (written locally, placeholders only)
+Security scan: Copied files are Markdown/JSON only; no executable scripts vendored.

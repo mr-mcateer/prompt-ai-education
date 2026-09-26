@@ -1,0 +1,7 @@
+Repo: https://github.com/mohitagw15856/pm-claude-skills
+Commit: f6ca79348c5518f1b0e8bcfd6da53b61251c0fa2
+Commit date: 2026-09-22
+Fetched: 2026-09-26
+License: MIT
+Copied: README, LICENSE, skills, config.json (written locally, placeholders only)
+Security scan: Curated subset of 1100+ skills. Only executable file: skills/subscription-audit/scripts/subscription_audit.py (52 lines, stdlib argparse/json/sys only, no network, no subprocess). Safe.

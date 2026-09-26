@@ -1,0 +1,5 @@
+{
+  "claude_code_plugin": "/plugin marketplace add kepano/obsidian-skills  then  /plugin install obsidian@obsidian-skills",
+  "manual": "Copy ./skills/* into <vault>/.claude/skills/ or ~/.claude/skills/",
+  "requires": "Obsidian 1.12.4+ with the CLI enabled (Settings > General > Command line interface) for the obsidian-cli skill; other skills are format-only."
+}

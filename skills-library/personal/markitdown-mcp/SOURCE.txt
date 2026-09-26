@@ -1,0 +1,7 @@
+Repo: https://github.com/microsoft/markitdown
+Commit: b8f79c57ebc0044be41323d89b2a45d3fda8460e
+Commit date: 2026-09-21
+Fetched: 2026-09-26
+License: MIT
+Copied: README, LICENSE, config.json (written locally, placeholders only)
+Security scan: Copied files are Markdown/JSON only; no executable scripts vendored.

@@ -1,0 +1,7 @@
+Repo: https://github.com/Doist/todoist-mcp (formerly Doist/todoist-ai)
+Commit: 0e9266ec0c2209be5a9d756d8246c71920b168eb
+Commit date: 2026-09-22
+Fetched: 2026-09-26
+License: MIT
+Copied: README, LICENSE, config.json (written locally, placeholders only)
+Security scan: Copied files are Markdown/JSON only; no executable scripts vendored.

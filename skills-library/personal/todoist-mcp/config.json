@@ -1,0 +1,16 @@
+{
+  "claude_code": "claude mcp add --scope user --transport http todoist https://ai.todoist.net/mcp   (then /mcp to OAuth)",
+  "claude_ai_and_phone": "Settings > Connectors > Add custom connector > https://ai.todoist.net/mcp",
+  "claude_desktop": {
+    "mcpServers": {
+      "todoist": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "mcp-remote",
+          "https://ai.todoist.net/mcp"
+        ]
+      }
+    }
+  }
+}

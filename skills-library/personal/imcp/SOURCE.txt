@@ -1,0 +1,7 @@
+Repo: https://github.com/mattt/iMCP
+Commit: 3ce142437894ea5f7d90c99216cbce7fce5c708d
+Commit date: 2026-09-26
+Fetched: 2026-09-26
+License: MIT (LICENSE.md)
+Copied: README, LICENSE, config.json (written locally, placeholders only)
+Security scan: Copied files are Markdown/JSON only; no executable scripts vendored.

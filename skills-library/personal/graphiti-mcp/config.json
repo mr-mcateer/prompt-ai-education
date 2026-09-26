@@ -1,0 +1,8 @@
+{
+  "run": "cd graphiti/mcp_server && docker compose up   (FalkorDB default; Neo4j optional)",
+  "claude_code": "claude mcp add --scope user --transport http graphiti http://localhost:8000/mcp/",
+  "env": {
+    "OPENAI_API_KEY": "<KEY or configure Ollama/other provider in config.yaml>"
+  },
+  "notes": "Needs an LLM + embedder for entity extraction; with a cloud provider your memories are sent to that provider. Use Ollama for fully local."
+}

@@ -1,0 +1,7 @@
+Repo: https://github.com/modelcontextprotocol/servers/tree/main/src/memory
+Commit: f46d9578190b476b3501923ea8977d899e8db2cb
+Commit date: 2026-09-22
+Fetched: 2026-09-26
+License: MIT transitioning to Apache-2.0 (see LICENSE)
+Copied: README, LICENSE, config.json (written locally, placeholders only)
+Security scan: Copied files are Markdown/JSON only; no executable scripts vendored.

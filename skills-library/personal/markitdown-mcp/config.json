@@ -1,0 +1,15 @@
+{
+  "install": "pip install markitdown-mcp  (or uvx markitdown-mcp)",
+  "claude_code": "claude mcp add --scope user markitdown -- uvx markitdown-mcp",
+  "claude_desktop": {
+    "mcpServers": {
+      "markitdown": {
+        "command": "uvx",
+        "args": [
+          "markitdown-mcp"
+        ]
+      }
+    }
+  },
+  "notes": "Converts PDF, DOCX, XLSX, PPTX, images (EXIF/OCR via optional plugins), HTML to Markdown locally."
+}

@@ -1,0 +1,21 @@
+{
+  "claude_code": "claude mcp add --scope user actual -e ACTUAL_SERVER_URL=http://localhost:5006 -e ACTUAL_PASSWORD=${ACTUAL_PASSWORD} -e ACTUAL_BUDGET_SYNC_ID=${ACTUAL_BUDGET_SYNC_ID} -e ACTUAL_DATA_DIR=$HOME/.actual-mcp -- npx -y actual-mcp",
+  "claude_desktop": {
+    "mcpServers": {
+      "actualBudget": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "actual-mcp"
+        ],
+        "env": {
+          "ACTUAL_DATA_DIR": "<PATH_TO_DATA_DIR>",
+          "ACTUAL_PASSWORD": "<YOUR_ACTUAL_PASSWORD>",
+          "ACTUAL_SERVER_URL": "http://localhost:5006",
+          "ACTUAL_BUDGET_SYNC_ID": "<YOUR_SYNC_ID>"
+        }
+      }
+    }
+  },
+  "notes": "Read-only by default; add --enable-write to args to allow creating transactions. Requires self-hosted Actual server (Docker)."
+}

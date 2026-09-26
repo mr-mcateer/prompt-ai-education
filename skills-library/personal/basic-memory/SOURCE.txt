@@ -1,0 +1,7 @@
+Repo: https://github.com/basicmachines-co/basic-memory
+Commit: 22d31e96e2defa465d3703620a537c9125e7d364
+Commit date: 2026-09-23
+Fetched: 2026-09-26
+License: AGPL-3.0 (repo LICENSE); skills/README.md states skills are MIT
+Copied: README, LICENSE, skills, config.json (written locally, placeholders only)
+Security scan: skills/ is Markdown plus eval JSON; grep for curl/wget/rm -rf/base64/sudo found nothing.

@@ -1,0 +1,14 @@
+{
+  "claude_code": "claude mcp add --scope user playwright -- npx @playwright/mcp@latest",
+  "claude_code_persistent_profile": "claude mcp add --scope user playwright -- npx @playwright/mcp@latest --user-data-dir ~/.playwright-life-admin",
+  "claude_desktop": {
+    "mcpServers": {
+      "playwright": {
+        "command": "npx",
+        "args": [
+          "@playwright/mcp@latest"
+        ]
+      }
+    }
+  }
+}

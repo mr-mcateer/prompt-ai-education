@@ -1,0 +1,19 @@
+{
+  "claude_code": "claude mcp add --scope user paperless -e PAPERLESS_URL=http://localhost:8000 -e PAPERLESS_API_KEY=${PAPERLESS_API_KEY} -- npx -y @baruchiro/paperless-mcp@latest",
+  "claude_desktop": {
+    "mcpServers": {
+      "paperless": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@baruchiro/paperless-mcp@latest"
+        ],
+        "env": {
+          "PAPERLESS_URL": "http://localhost:8000",
+          "PAPERLESS_API_KEY": "<YOUR_PAPERLESS_TOKEN>"
+        }
+      }
+    }
+  },
+  "requires": "Self-hosted Paperless-ngx (Docker). https://docs.paperless-ngx.com/setup/"
+}

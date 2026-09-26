@@ -1,0 +1,7 @@
+Repo: https://github.com/neiltron/apple-health-mcp
+Commit: 5b0320d62ae1fc7d30af40d49012afb476217b53
+Commit date: 2026-09-20
+Fetched: 2026-09-26
+License: MIT
+Copied: README, LICENSE, config.json (written locally, placeholders only)
+Security scan: Copied files are Markdown/JSON only; no executable scripts vendored.

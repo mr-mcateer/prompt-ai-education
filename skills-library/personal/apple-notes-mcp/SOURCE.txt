@@ -1,0 +1,7 @@
+Repo: https://github.com/sweetrb/apple-notes-mcp
+Commit: 8644ecee09fbee63054587e484a0cc26d97df2e1
+Commit date: 2026-09-26
+Fetched: 2026-09-26
+License: MIT
+Copied: README, LICENSE, skills, config.json (written locally, placeholders only)
+Security scan: skills/apple-notes is Markdown only; mentions base64 only in the context of Notes image attachments. No scripts vendored.

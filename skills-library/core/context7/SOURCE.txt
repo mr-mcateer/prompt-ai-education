@@ -1,0 +1,6 @@
+Name: context7
+Repo: https://github.com/upstash/context7
+Commit: e275a848a420e0d11c2822f61201ee005bfd1133 (fetched 2026-09-26)
+License: MIT (see LICENSE)
+Copied: README.md, LICENSE, plus a hand-written config.json snippet. Codebase not vendored.
+Also copied: skills/find-docs and skills/context7-cli (MIT, CLI+skill mode, lower context cost than the MCP).

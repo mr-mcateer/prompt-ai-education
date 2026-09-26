@@ -1,0 +1,6 @@
+Name: Remotion agent skills
+Repo: https://github.com/remotion-dev/skills
+Commit: cf49eff5d4463b33966b6618c83f7295797dd028 (2026-09-25, checked 2026-09-26)
+License: No LICENSE file in the skills repo. Remotion itself uses the custom "Remotion License" (source-available; free for individuals and small orgs, company license otherwise). Not OSI open source.
+Status: LINK ONLY.
+Install: npx skills add remotion-dev/skills

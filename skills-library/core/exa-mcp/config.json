@@ -1,0 +1,10 @@
+{
+  "_install_claude_code": "claude mcp add --transport http exa https://mcp.exa.ai/mcp",
+  "_note": "Hosted endpoint works anonymously with rate limits; add ?exaApiKey=... only via env/config you keep private.",
+  "mcpServers": {
+    "exa": {
+      "type": "http",
+      "url": "https://mcp.exa.ai/mcp"
+    }
+  }
+}

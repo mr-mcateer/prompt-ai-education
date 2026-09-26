@@ -1,0 +1,12 @@
+{
+  "_install_claude_code": "claude mcp add fetch -- uvx mcp-server-fetch",
+  "_note": "Claude Code already has WebFetch; mostly useful for Claude Desktop. Fetched pages are untrusted input (prompt injection risk).",
+  "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ]
+    }
+  }
+}

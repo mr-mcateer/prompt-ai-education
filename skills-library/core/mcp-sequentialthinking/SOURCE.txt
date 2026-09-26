@@ -1,0 +1,5 @@
+Name: mcp-sequentialthinking
+Repo: https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking
+Commit: f46d9578190b476b3501923ea8977d899e8db2cb (fetched 2026-09-26)
+License: MIT/Apache-2.0 (repo is mid-transition from MIT to Apache-2.0; see LICENSE) (see LICENSE)
+Copied: README.md, LICENSE, plus a hand-written config.json snippet. Codebase not vendored.

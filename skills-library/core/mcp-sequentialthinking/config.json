@@ -1,0 +1,12 @@
+{
+  "_install_claude_code": "claude mcp add sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking",
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    }
+  }
+}

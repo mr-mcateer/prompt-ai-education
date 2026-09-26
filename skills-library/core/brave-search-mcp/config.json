@@ -1,0 +1,16 @@
+{
+  "_install_claude_code": "claude mcp add brave-search -e BRAVE_API_KEY=${BRAVE_API_KEY} -- npx -y @brave/brave-search-mcp-server",
+  "_note": "Brave replaced its free tier with 5 USD monthly credit (card required) in Feb 2026.",
+  "mcpServers": {
+    "brave-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@brave/brave-search-mcp-server"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+      }
+    }
+  }
+}

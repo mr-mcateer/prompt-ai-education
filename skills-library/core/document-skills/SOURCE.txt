@@ -1,0 +1,8 @@
+Name: Anthropic document skills (docx, pptx, xlsx, pdf)
+Repo: https://github.com/anthropics/skills/tree/main/skills (docx/, pptx/, xlsx/, pdf/)
+Commit: 33375500bcea98d610eb30ce10ac4e59b89c390d (checked 2026-09-26)
+License: Proprietary, "(c) 2025 Anthropic, PBC. All rights reserved." Source-available, NOT open source.
+Status: LINK ONLY. Not copied here.
+How to get them: already built into claude.ai / Claude Desktop (Settings > Capabilities > Skills), or in Claude Code:
+  /plugin marketplace add anthropics/skills
+  /plugin install document-skills@anthropic-agent-skills

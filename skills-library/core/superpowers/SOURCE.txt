@@ -1,0 +1,8 @@
+Name: superpowers (selected skills only)
+Repo: https://github.com/obra/superpowers
+Commit: 8ca22dba9a94f28898bbce59f2537ff4d87c747d (fetched 2026-09-26)
+License: MIT (see LICENSE)
+Copied skills: brainstorming, writing-plans, executing-plans, systematic-debugging, test-driven-development, verification-before-completion, writing-skills, using-superpowers
+Not copied: hooks/, subagent/worktree/code-review skills, tests, plugin manifests.
+Note: brainstorming/scripts/server.cjs (optional visual companion) loads a remote logo image from primeradiant.com as a usage ping. Set SUPERPOWERS_DISABLE_TELEMETRY=1 to disable. Server binds 127.0.0.1 with a token by default.
+Preferred install: /plugin install superpowers@claude-plugins-official (gets updates and the session-start hook).

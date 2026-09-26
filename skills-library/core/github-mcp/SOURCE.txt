@@ -1,0 +1,5 @@
+Name: github-mcp
+Repo: https://github.com/github/github-mcp-server
+Commit: 85598ba6e1256f7ebf4867b95d63b833c4549264 (fetched 2026-09-26)
+License: MIT (see LICENSE)
+Copied: README.md, LICENSE, plus a hand-written config.json snippet. Codebase not vendored.

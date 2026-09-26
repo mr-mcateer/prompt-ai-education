@@ -1,0 +1,12 @@
+{
+  "_install_claude_code": "claude mcp add --transport http context7 https://mcp.context7.com/mcp --header \"Authorization: Bearer ${CONTEXT7_API_KEY}\"  (or: npx ctx7 setup --claude for CLI+skill mode)",
+  "mcpServers": {
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CONTEXT7_API_KEY}"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Name: frontend-design (Anthropic Agent Skill)
+Repo: https://github.com/anthropics/skills/tree/main/skills/frontend-design
+Commit: 33375500bcea98d610eb30ce10ac4e59b89c390d (fetched 2026-09-26)
+License: Apache-2.0 (see LICENSE.txt in this folder)
+Copied: full skill directory, unmodified.

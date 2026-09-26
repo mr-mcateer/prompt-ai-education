@@ -1,0 +1,12 @@
+{
+  "_install_claude_code": "claude mcp add markitdown -- uvx markitdown-mcp",
+  "_note": "Local STDIO only. Converts PDF/DOCX/PPTX/XLSX/HTML to Markdown via convert_to_markdown(uri).",
+  "mcpServers": {
+    "markitdown": {
+      "command": "uvx",
+      "args": [
+        "markitdown-mcp"
+      ]
+    }
+  }
+}

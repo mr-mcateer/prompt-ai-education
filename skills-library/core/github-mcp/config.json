@@ -1,0 +1,13 @@
+{
+  "_install_claude_code": "claude mcp add --transport http github https://api.githubcopilot.com/mcp -H \"Authorization: Bearer ${GITHUB_PAT}\"",
+  "_note": "In Claude Code the gh CLI is usually cheaper on context. Use a fine-grained PAT scoped to specific repos. Limit toolsets (X-MCP-Toolsets header for remote, --toolsets flag for local) to cut context cost.",
+  "mcpServers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_PAT}"
+      }
+    }
+  }
+}

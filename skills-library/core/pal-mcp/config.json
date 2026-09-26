@@ -1,0 +1,18 @@
+{
+  "_install_note": "Requires uv (uvx). Keep only the tools you use via DISABLED_TOOLS to cut context cost. Load GEMINI_API_KEY from your shell env / .env, never paste it here.",
+  "mcpServers": {
+    "pal": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/BeehiveInnovations/pal-mcp-server.git",
+        "pal-mcp-server"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+        "DEFAULT_MODEL": "auto",
+        "DISABLED_TOOLS": "analyze,refactor,testgen,secaudit,docgen,tracer"
+      }
+    }
+  }
+}

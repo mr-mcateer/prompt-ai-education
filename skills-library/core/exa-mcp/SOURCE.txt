@@ -1,0 +1,5 @@
+Name: exa-mcp
+Repo: https://github.com/exa-labs/exa-mcp-server
+Commit: f3d71fb6b0ff4b4683f108f05bc2bae61a9f7e97 (fetched 2026-09-26)
+License: MIT (see LICENSE)
+Copied: README.md, LICENSE, plus a hand-written config.json snippet. Codebase not vendored.

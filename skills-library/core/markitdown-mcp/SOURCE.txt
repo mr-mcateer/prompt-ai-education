@@ -1,0 +1,5 @@
+Name: markitdown-mcp
+Repo: https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp
+Commit: b8f79c57ebc0044be41323d89b2a45d3fda8460e (fetched 2026-09-26)
+License: MIT (see LICENSE)
+Copied: README.md, LICENSE, plus a hand-written config.json snippet. Codebase not vendored.

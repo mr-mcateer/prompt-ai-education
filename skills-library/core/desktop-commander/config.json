@@ -1,0 +1,13 @@
+{
+  "_install_claude_code": "claude mcp add --scope user desktop-commander -- npx -y @wonderwhy-er/desktop-commander@latest",
+  "_note": "Mainly for Claude Desktop (Claude Code already has shell + file tools). Say 'disable telemetry' in chat or set telemetryEnabled false via set_config_value.",
+  "mcpServers": {
+    "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander@latest"
+      ]
+    }
+  }
+}

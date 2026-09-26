@@ -1,0 +1,14 @@
+{
+  "_note": "For Claude Desktop only; Claude Code has built-in file tools. List only the folders you want exposed.",
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/YOU/Documents/Curriculum",
+        "/Users/YOU/Desktop/Worksheets"
+      ]
+    }
+  }
+}

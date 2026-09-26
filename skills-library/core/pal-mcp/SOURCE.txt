@@ -1,0 +1,6 @@
+Name: pal-mcp
+Repo: https://github.com/BeehiveInnovations/pal-mcp-server
+Commit: 7afc7c1cc96e23992c8f105f960132c657883bb1 (fetched 2026-09-26)
+License: Apache-2.0 (see LICENSE)
+Copied: README.md, LICENSE, plus a hand-written config.json snippet. Codebase not vendored.
+Note: last commit on default branch 2025-12-15 (about 9 months stale as of fetch).

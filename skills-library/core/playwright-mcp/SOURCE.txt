@@ -1,0 +1,5 @@
+Name: playwright-mcp
+Repo: https://github.com/microsoft/playwright-mcp
+Commit: e87bb897e15a6f2af402afb0f10b45eced9e1f9b (fetched 2026-09-26)
+License: Apache-2.0 (see LICENSE)
+Copied: README.md, LICENSE, plus a hand-written config.json snippet. Codebase not vendored.

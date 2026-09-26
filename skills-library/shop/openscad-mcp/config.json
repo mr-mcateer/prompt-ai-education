@@ -1,0 +1,19 @@
+{
+  "prereqs": "OpenSCAD installed (2021.01+; nightly with Manifold recommended). uv installed.",
+  "claude_code_command": "claude mcp add openscad --transport stdio -- uvx openscad-mcp",
+  "claude_code_command_custom_path": "claude mcp add openscad --transport stdio --env OPENSCAD_PATH=/path/to/openscad -- uvx openscad-mcp",
+  "claude_desktop": {
+    "mcpServers": {
+      "openscad": {
+        "command": "uvx",
+        "args": [
+          "openscad-mcp"
+        ],
+        "env": {
+          "OPENSCAD_PATH": "/Applications/OpenSCAD.app/Contents/MacOS/OpenSCAD"
+        }
+      }
+    }
+  },
+  "note": "Placeholders only. Never commit real keys; keep secrets in .env or the OS keychain."
+}

@@ -1,0 +1,19 @@
+{
+  "prereqs": "A Home Assistant instance. Recommended: install ha-mcp as the HA custom component or app (add-on) and connect Claude to its secret URL. Use the Setup Wizard at https://homeassistant-ai.github.io/ha-mcp/setup/. Stdio is documented as demo-only.",
+  "claude_code_command": "claude mcp add --transport http home-assistant <SECRET_URL_FROM_HA_MCP_SETUP>",
+  "claude_desktop_stdio_demo_only": {
+    "mcpServers": {
+      "home-assistant": {
+        "command": "uvx",
+        "args": [
+          "ha-mcp@latest"
+        ],
+        "env": {
+          "HOMEASSISTANT_URL": "http://homeassistant.local:8123",
+          "HOMEASSISTANT_TOKEN": "<LONG_LIVED_ACCESS_TOKEN>"
+        }
+      }
+    }
+  },
+  "note": "Placeholders only. Never commit real keys; keep secrets in .env or the OS keychain."
+}

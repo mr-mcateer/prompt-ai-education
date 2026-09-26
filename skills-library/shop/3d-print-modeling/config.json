@@ -1,0 +1,8 @@
+{
+  "claude_code_manual_install": "cp -r skills-library/shop/3d-print-modeling ~/.claude/skills/3d-print-modeling  (or: git clone https://github.com/m-esm/3d-print-modeling ~/.claude/skills/3d-print-modeling)",
+  "plugin_install": [
+    "/plugin marketplace add m-esm/3d-print-modeling",
+    "/plugin install 3d-print-modeling@3d-print-modeling"
+  ],
+  "python_deps": "pip install -r scripts/requirements.txt && python3 -m playwright install chromium"
+}

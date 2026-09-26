@@ -1,0 +1,13 @@
+{
+  "prereqs": "Python 3.10+. First run downloads about 6 MB of equation and table databases to ~/.cache/eq-reference/.",
+  "install": "pip install git+https://github.com/joshuabryson/eq-reference-mcp   (or: brew tap joshuabryson/tap && brew install eq-reference-mcp)",
+  "claude_code_command": "claude mcp add eq-reference -- eq-reference-mcp",
+  "claude_desktop": {
+    "mcpServers": {
+      "eq-reference": {
+        "command": "eq-reference-mcp"
+      }
+    }
+  },
+  "note": "Placeholders only. Never commit real keys; keep secrets in .env or the OS keychain."
+}

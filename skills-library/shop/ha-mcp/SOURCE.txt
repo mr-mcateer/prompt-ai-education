@@ -1,0 +1,5 @@
+Repo: https://github.com/homeassistant-ai/ha-mcp
+Commit: e9fbd01125e7d7ed973111802ce1b0aa086fa182 (last commit 2026-09-26)
+Fetched: 2026-09-26
+License: MIT
+Contents: README and LICENSE only; codebase not vendored. See config.json for Claude Code / Claude Desktop setup.

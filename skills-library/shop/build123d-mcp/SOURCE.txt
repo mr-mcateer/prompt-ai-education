@@ -1,0 +1,5 @@
+Repo: https://github.com/pzfreo/build123d-mcp
+Commit: eb76d294d69245cf673263aea33337025e9e5c71 (last commit 2026-09-25)
+Fetched: 2026-09-26
+License: Apache-2.0
+Contents: README and LICENSE only; codebase not vendored. See config.json for Claude Code / Claude Desktop setup.

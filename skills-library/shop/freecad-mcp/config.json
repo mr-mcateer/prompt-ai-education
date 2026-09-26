@@ -1,0 +1,15 @@
+{
+  "prereqs": "FreeCAD 1.0+ running with the MCP Addon workbench; click 'Start RPC Server'. Install uv (uvx). Copy addon/FreeCADMCP from the repo into your FreeCAD Mod folder.",
+  "claude_code_command": "claude mcp add freecad -- uvx freecad-mcp",
+  "claude_desktop": {
+    "mcpServers": {
+      "freecad": {
+        "command": "uvx",
+        "args": [
+          "freecad-mcp"
+        ]
+      }
+    }
+  },
+  "note": "Placeholders only. Never commit real keys; keep secrets in .env or the OS keychain."
+}

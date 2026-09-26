@@ -1,0 +1,5 @@
+Repo: https://github.com/ahujasid/mcp-for-blender
+Commit: 8ce9f8d45be9370db420c9f6df521277f69819ab (last commit 2026-09-25)
+Fetched: 2026-09-26
+License: MIT
+Contents: README and LICENSE only; codebase not vendored. See config.json for Claude Code / Claude Desktop setup.

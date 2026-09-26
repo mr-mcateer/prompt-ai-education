@@ -1,0 +1,19 @@
+{
+  "prereqs": "CNCjs running (npm install -g cncjs) and connected to a GRBL controller by USB. Clone the repo and build it (npm install && npm run build). SAFETY: this can move a real machine. Keep an operator at the E-stop, dry-run with the spindle off and Z raised, and never let students run AI-generated G-code without teacher review.",
+  "claude_code_command": "claude mcp add cncjs-mcp --env CNCJS_URL=http://localhost:8000 -- node /path/to/CNC-design-control-MCP/build/index.js",
+  "claude_desktop": {
+    "mcpServers": {
+      "cncjs": {
+        "command": "node",
+        "args": [
+          "/path/to/CNC-design-control-MCP/build/index.js"
+        ],
+        "env": {
+          "CNCJS_URL": "http://localhost:8000",
+          "CNCJS_TOKEN": "<optional CNCjs JWT>"
+        }
+      }
+    }
+  },
+  "note": "Placeholders only. Never commit real keys; keep secrets in .env or the OS keychain."
+}

@@ -1,0 +1,17 @@
+{
+  "prereqs": "Autodesk Fusion (Mac or Windows) with the repo addon copied into the Fusion API/AddIns folder and started (Shift+S, Add-Ins, Fusion360MCP, Run). Requires an Autodesk account; Fusion is free for educators and students under the Autodesk Education plan, or Personal use license.",
+  "claude_code_command": "claude mcp add fusion360 -- uvx fusion360-mcp-server --mode socket",
+  "claude_desktop": {
+    "mcpServers": {
+      "fusion360": {
+        "command": "uvx",
+        "args": [
+          "fusion360-mcp-server",
+          "--mode",
+          "socket"
+        ]
+      }
+    }
+  },
+  "note": "Placeholders only. Never commit real keys; keep secrets in .env or the OS keychain."
+}

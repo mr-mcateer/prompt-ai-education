@@ -1,0 +1,5 @@
+Repo: https://github.com/DMontgomery40/mcp-3D-printer-server
+Commit: 5443d9237dad5d7b29d17809a477441f7ab1a040 (last commit 2026-07-30)
+Fetched: 2026-09-26
+License: GPL-2.0
+Contents: README and LICENSE only; codebase not vendored. See config.json for Claude Code / Claude Desktop setup.

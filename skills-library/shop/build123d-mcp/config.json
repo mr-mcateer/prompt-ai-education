@@ -1,0 +1,19 @@
+{
+  "prereqs": "uv installed. Python 3.11 to 3.14 (3.12 recommended). No GUI CAD needed.",
+  "claude_code_command": "claude mcp add build123d -- uv tool run --python 3.12 build123d-mcp@latest",
+  "claude_desktop": {
+    "mcpServers": {
+      "build123d-mcp": {
+        "command": "uv",
+        "args": [
+          "tool",
+          "run",
+          "--python",
+          "3.12",
+          "build123d-mcp@latest"
+        ]
+      }
+    }
+  },
+  "note": "Placeholders only. Never commit real keys; keep secrets in .env or the OS keychain."
+}

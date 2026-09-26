@@ -1,0 +1,5 @@
+Repo: https://github.com/dgahagan/homebox-mcp
+Commit: db77300720a2bc29882207ca4f49eaf1bce056cd (last commit 2026-09-15)
+Fetched: 2026-09-26
+License: MIT
+Contents: README and LICENSE only; codebase not vendored. See config.json for Claude Code / Claude Desktop setup.

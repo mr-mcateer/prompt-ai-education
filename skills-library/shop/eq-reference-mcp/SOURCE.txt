@@ -1,0 +1,5 @@
+Repo: https://github.com/joshuabryson/eq-reference-mcp
+Commit: ed5dff13c90f5cecc28585131812a7b2a671d263 (last commit 2026-09-24)
+Fetched: 2026-09-26
+License: MIT
+Contents: README and LICENSE only; codebase not vendored. See config.json for Claude Code / Claude Desktop setup.

@@ -1,0 +1,10 @@
+{
+  "prereqs": "uv on PATH, Claude Code with plugin support, an Onshape account (Onshape Education plan is free for educators). API key pair from https://dev-portal.onshape.com/ . KNOWN BREAKAGE as of 2026-09: feature-creating tools return HTTP 400 until libraryRelationType lines are removed (see issue #19 for the one-line sed fix).",
+  "claude_code_plugin_install": "/plugin install github:ReshefElisha/jarvis-onshape-mcp",
+  "env_prompted_by_plugin": {
+    "ONSHAPE_API_KEY": "<from dev portal, stored in OS keychain>",
+    "ONSHAPE_API_SECRET": "<from dev portal, stored in OS keychain>"
+  },
+  "official_alternative_claude_code_command": "claude mcp add --transport http onshape https://fs-mcp.labs.onshape.app/mcp",
+  "note": "Placeholders only. Never commit real keys; keep secrets in .env or the OS keychain."
+}

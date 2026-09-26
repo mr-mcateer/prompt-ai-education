@@ -1,0 +1,5 @@
+Repo: https://github.com/mixelpixx/KiCAD-MCP-Server
+Commit: 670d2a9c48e1588f2e07edaf656b5e301fc55a50 (last commit 2026-09-25)
+Fetched: 2026-09-26
+License: MIT
+Contents: README and LICENSE only; codebase not vendored. See config.json for Claude Code / Claude Desktop setup.

@@ -1,0 +1,6 @@
+Repo: https://github.com/m-esm/3d-print-modeling
+Commit: 0bd303f67552534c2a3d42650932a85251a7d3a3 (last commit 2026-09-10)
+Fetched: 2026-09-26
+License: MIT
+Contents: full skill directory (SKILL.md, references/, scripts/, assets/, .claude-plugin/).
+Security scan: no malicious patterns found. Notes: scripts/serve.py binds 0.0.0.0 (visible on the LAN; change to 127.0.0.1 on a school network); viewer HTML loads three.js from cdn.jsdelivr.net; shoot.py drives headless Chromium (Playwright) against localhost only. SKILL.md mentions the author's personal path ~/Desktop/myprojects/mechlib (harmless).

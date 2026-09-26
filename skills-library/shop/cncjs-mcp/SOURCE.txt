@@ -1,0 +1,5 @@
+Repo: https://github.com/brs077/CNC-design-control-MCP
+Commit: 33268e3a9c2dee12a4d636be6ddfb3043e5fb3cd (last commit 2026-03-22)
+Fetched: 2026-09-26
+License: MIT
+Contents: README and LICENSE only; codebase not vendored. See config.json for Claude Code / Claude Desktop setup.

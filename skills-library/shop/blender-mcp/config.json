@@ -1,0 +1,19 @@
+{
+  "prereqs": "Blender 3.6+ open with the MCP for Blender add-on enabled and connected. uv installed via the official installer. DISABLE_TELEMETRY=true turns off even the anonymous usage record. Premium AI model generation (Hunyuan3D, Tripo, Hyper3D) is optional and paid; Poly Haven assets are free CC0.",
+  "claude_code_command": "claude mcp add blender --env DISABLE_TELEMETRY=true -- uvx mcp-for-blender",
+  "install_addon": "uvx mcp-for-blender install-addon",
+  "claude_desktop": {
+    "mcpServers": {
+      "blender": {
+        "command": "uvx",
+        "args": [
+          "mcp-for-blender"
+        ],
+        "env": {
+          "DISABLE_TELEMETRY": "true"
+        }
+      }
+    }
+  },
+  "note": "Placeholders only. Never commit real keys; keep secrets in .env or the OS keychain."
+}

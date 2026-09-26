@@ -1,0 +1,5 @@
+Repo: https://github.com/ReshefElisha/jarvis-onshape-mcp
+Commit: b0e725852280ebcfda5d46a4f2ed2d0b720beace (last commit 2026-04-22)
+Fetched: 2026-09-26
+License: MIT
+Contents: README and LICENSE only; codebase not vendored. See config.json for Claude Code / Claude Desktop setup.

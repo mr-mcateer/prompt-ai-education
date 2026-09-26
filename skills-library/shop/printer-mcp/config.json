@@ -1,0 +1,23 @@
+{
+  "prereqs": "Node 18+. Printer reachable on the LAN (OctoPrint, Klipper/Moonraker, PrusaLink, Duet, Repetier, Bambu LAN mode). Put real values in your OS env or .env, never in this file.",
+  "claude_code_command": "claude mcp add printer --env PRINTER_HOST=${PRINTER_HOST} --env PRINTER_TYPE=octoprint --env API_KEY=${OCTOPRINT_API_KEY} -- npx -y mcp-3d-printer-server",
+  "claude_desktop": {
+    "mcpServers": {
+      "3dprint": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "mcp-3d-printer-server"
+        ],
+        "env": {
+          "PRINTER_HOST": "<printer-ip>",
+          "PRINTER_TYPE": "octoprint | klipper | prusa | bambu",
+          "API_KEY": "<OCTOPRINT_OR_MOONRAKER_KEY>",
+          "BAMBU_SERIAL": "<only-for-bambu>",
+          "BAMBU_TOKEN": "<only-for-bambu-lan-access-code>"
+        }
+      }
+    }
+  },
+  "note": "Placeholders only. Never commit real keys; keep secrets in .env or the OS keychain."
+}

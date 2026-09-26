@@ -1,0 +1,5 @@
+Repo: https://github.com/neka-nat/freecad-mcp
+Commit: d6bbe4b38be3a622b5981d9d2afa7037ee080534 (last commit 2026-09-25)
+Fetched: 2026-09-26
+License: MIT
+Contents: README and LICENSE only; codebase not vendored. See config.json for Claude Code / Claude Desktop setup.

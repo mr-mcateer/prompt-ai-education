@@ -1,0 +1,6 @@
+Repo: https://github.com/jeremylongworth-source/AgentCADCAM
+Commit: 2fd5f918dede5802716aa7965ec21dc8149d578c (last commit 2026-09-19)
+Fetched: 2026-09-26
+License: MIT
+Contents: skills/ (14 SKILL.md contracts plus README), README.md, AGENTS.md, LICENSE. The Python review utilities at the repo root were NOT copied; clone the repo for the file-check scripts.
+Security scan: skills are markdown only; no URLs, shell or network calls found.

@@ -1,0 +1,4 @@
+{
+  "claude_code_manual_install": "Copy the individual folders you want from skills-library/shop/agentcadcam/skills/ into ~/.claude/skills/ (for example nc-static-safety-review, laser-job-preflight, additive-job-preflight, cnc-setup-planner).",
+  "note": "Review-and-planning skills only; they never control a machine."
+}

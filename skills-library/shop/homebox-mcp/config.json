@@ -1,0 +1,19 @@
+{
+  "prereqs": "A self-hosted Homebox instance (0.26+) and a Homebox API key. uv installed.",
+  "claude_code_command": "claude mcp add homebox --scope user -e HOMEBOX_URL=${HOMEBOX_URL} -e HOMEBOX_TOKEN=${HOMEBOX_TOKEN} -- uvx homebox-mcp",
+  "claude_desktop": {
+    "mcpServers": {
+      "homebox": {
+        "command": "uvx",
+        "args": [
+          "homebox-mcp"
+        ],
+        "env": {
+          "HOMEBOX_URL": "https://homebox.example.local",
+          "HOMEBOX_TOKEN": "<HOMEBOX_API_KEY>"
+        }
+      }
+    }
+  },
+  "note": "Placeholders only. Never commit real keys; keep secrets in .env or the OS keychain."
+}

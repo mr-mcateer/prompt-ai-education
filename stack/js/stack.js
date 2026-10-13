@@ -87,7 +87,8 @@
       // contain: the frame is square, the product is centred with margin, edges are page-black
       const s = Math.min(c.width / im.naturalWidth, c.height / im.naturalHeight) * (c.width < c.height ? 1.08 : 1.0);
       const dw = im.naturalWidth * s, dh = im.naturalHeight * s;
-      ctx.drawImage(im, (c.width - dw) / 2, (c.height - dh) / 2 - (c.width < c.height ? c.height * 0.04 : 0), dw, dh);
+      const shift = c.width > 900 * (devicePixelRatio || 1) ? c.width * (parseFloat(this.track.dataset.shift) || 0) : 0; // keep clear of the side captions on wide screens
+      ctx.drawImage(im, (c.width - dw) / 2 + shift, (c.height - dh) / 2 - (c.width < c.height ? c.height * 0.04 : 0), dw, dh);
       this.cur = i;
     }
     update() {

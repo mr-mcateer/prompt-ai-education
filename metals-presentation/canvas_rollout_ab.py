@@ -22,6 +22,9 @@ Option B (Polish):
 import os
 import sys
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from tools.env_loader import get_env
+
 METALS_COURSE_IDS = [23164, 23132, 23157, 23188, 23177]
 
 # Safety quiz due dates (staggered, all Pacific time)
@@ -35,8 +38,8 @@ SAFETY_DUE_DATES = {
 
 def get_canvas():
     from canvasapi import Canvas
-    url = os.environ.get("CANVAS_API_URL")
-    token = os.environ.get("CANVAS_API_TOKEN")
+    url = get_env("CANVAS_API_URL")
+    token = get_env("CANVAS_API_TOKEN")
     if not url or not token:
         print("ERROR: Set CANVAS_API_URL and CANVAS_API_TOKEN")
         sys.exit(1)

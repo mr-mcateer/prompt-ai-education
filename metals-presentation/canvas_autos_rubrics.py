@@ -19,12 +19,15 @@ import json
 import requests
 import argparse
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from tools.env_loader import get_env
+
 ENGINES_FAB_COURSE_IDS = [23124, 23344]
 
 
 def get_creds():
-    url = os.environ.get("CANVAS_API_URL")
-    token = os.environ.get("CANVAS_API_TOKEN")
+    url = get_env("CANVAS_API_URL")
+    token = get_env("CANVAS_API_TOKEN")
     if not url or not token:
         print("ERROR: Set CANVAS_API_URL and CANVAS_API_TOKEN")
         sys.exit(1)

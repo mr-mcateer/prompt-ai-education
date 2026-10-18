@@ -4,7 +4,13 @@
     {
       "name": "education-site",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8082", "--directory", "/Users/andymcateer/Desktop/Claude Projects/03_BUSINESS/Prompt_AI_Solutions/prompt-ai-education"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8082",
+        "--directory",
+        "."
+      ],
       "port": 8082
     }
   ]

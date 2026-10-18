@@ -6,8 +6,11 @@ at the top of "The Exorcism of the Plasma Cutter — Practice Lab" assignment.
 
 import os, sys, requests, json
 
-CANVAS_URL = os.environ.get("CANVAS_API_URL", "https://csd509j.instructure.com")
-TOKEN = os.environ.get("CANVAS_API_TOKEN", "")
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from tools.env_loader import get_env
+
+CANVAS_URL = get_env("CANVAS_API_URL")
+TOKEN = get_env("CANVAS_API_TOKEN")
 HEADERS = {"Authorization": f"Bearer {TOKEN}"}
 METALS_COURSE_IDS = [23164, 23132, 23157, 23188, 23177]
 IMAGE_PATH = os.path.expanduser("~/Downloads/Gemini_Generated_Image_vhpazlvhpazlvhpa.png")

@@ -18,6 +18,9 @@ import argparse
 import requests
 import json
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from tools.env_loader import get_env
+
 METALS_COURSE_IDS = [23164, 23132, 23157, 23188, 23177]
 
 # Thursday 2/26/2026 at 11:59 PM Pacific = Friday 2/27 7:59:59 AM UTC
@@ -27,8 +30,8 @@ MONDAY_UNLOCK = "2026-02-23T14:00:00Z"
 
 
 def get_creds():
-    url = os.environ.get("CANVAS_API_URL")
-    token = os.environ.get("CANVAS_API_TOKEN")
+    url = get_env("CANVAS_API_URL")
+    token = get_env("CANVAS_API_TOKEN")
     if not url or not token:
         print("ERROR: Set CANVAS_API_URL and CANVAS_API_TOKEN")
         sys.exit(1)

@@ -126,7 +126,7 @@
     const rows = [
       [counts.bends ?? 0, 'bends'], [counts.welds ?? 0, 'welds'],
       [counts.plasma_parts, 'plasma-cut steel plates'], [counts.laser_parts, 'laser-cut birch parts'],
-      [counts.printed_parts, 'printed parts: 20 brackets, 3 cradles, 2 stops'], [counts.m4_bolts, 'M4 bolts, one hex key'],
+      [counts.printed_parts, `printed parts: 20 brackets, ${counts.caps ? counts.caps + ' caps, ' : ''}3 cradles, 2 stops`], [counts.m4_bolts, 'M4 bolts, one hex key'],
       [sz.w ? `${Math.round(sz.w)} x ${sz.d} x ${sz.h}` : null, 'mm outside, router not counted'],
       [counts.magnets, 'magnets, in 8 pairs, hold the front on'],
     ].filter((r) => r[0] != null);
@@ -160,6 +160,7 @@
       ['hero_open', 'The grille off and set beside the box. On the box, eight magnet pairs hold it 15 mm off the devices.', true],
       ['close_carrier', 'A front bracket nose. The magnet sits in the printed part, not on bare steel.'],
       ['close_corner', 'A printed bracket bolted to the plate with two M4. The birch level rests on it, located by pegs.'],
+      ['close_cap', 'Outside, a charcoal cap covers each plasma slot. Its spigot centres it in the slot, and two black flanged button heads clamp cap, steel and bracket.'],
       ['service', 'Grille off. The Mac mini M4 sits on the top level and slides straight out by hand. Nothing else moves.'],
       ['close_cords', 'Every cord drops behind the birch spine into the tray.'],
       ['close_button', 'Under the Mac mini M4. Its power button is on the underside, and the cradle leaves that corner open.'],
@@ -233,7 +234,7 @@
     cio.observe(chart);
     chart.addEventListener('click', (e) => { const c = e.target.closest('.pt'); if (c) showRound(+c.dataset.i); });
     const note = $('#chart-note');
-    if (note) note.innerHTML = `<span><i></i>bent steel body + birch (v0.2 to v1.1)</span><span><i class="c"></i>flat plates + printed brackets (C1 to C2R6)</span><span>click a point or a card</span>`;
+    if (note) note.innerHTML = `<span><i></i>bent steel body + birch (v0.2 to v1.1)</span><span><i class="c"></i>flat plates + printed brackets (C1 to C2R7)</span><span>click a point or a card</span>`;
     const por = T.findIndex((r) => r.id === (S.meta && S.meta.plan_of_record));
     showRound(por >= 0 ? por : T.length - 1);
   }

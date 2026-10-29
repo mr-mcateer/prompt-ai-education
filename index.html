@@ -545,23 +545,6 @@
       font-size: 1.8rem;
       margin-bottom: 16px;
     }
-    .sponsor-band {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 40px;
-      align-items: center;
-      margin-top: 28px;
-    }
-    .sponsor-band img {
-      width: 100%;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-      border-radius: var(--radius);
-    }
-    .sponsor-band .parent-card__desc { margin-bottom: 24px; }
-    @media (max-width: 900px) {
-      .sponsor-band { grid-template-columns: 1fr; gap: 24px; }
-    }
     .parent-card__title {
       font-family: var(--font-display);
       font-size: 1.15rem;
@@ -934,7 +917,6 @@
         <li><a href="#courses">Courses</a></li>
         <li><a href="#agenda"><span class="nav-hide-mobile">Daily </span>Agenda</a></li>
         <li><a href="/bobs-corner/">Bob's Corner</a></li>
-        <li class="nav-hide-mobile"><a href="/projects/">Sponsor a Build</a></li>
         <li class="nav-hide-mobile"><a href="#gallery">Student Work</a></li>
         <li class="nav-hide-mobile"><a href="#parents">For Parents</a></li>
         <li class="nav-hide-mobile"><a href="#about">About</a></li>
@@ -1222,18 +1204,6 @@
           </div>
 
         </div>
-
-        <div class="parent-card sponsor-band reveal">
-          <img src="img/bicycle-frame-disassembly-floor.jpg" alt="A donated bike frame and front wheel on the shop floor, waiting to become an e-bike" loading="lazy" width="800" height="600">
-          <div>
-            <h3 class="parent-card__title">Want to help pay for a build?</h3>
-            <p class="parent-card__desc">Families and local businesses can fund a student build, from $500 for an e-bike rebuild to about $3,000 for a CNC machine. The projects page shows what each build costs and what the money pays for.</p>
-            <a href="/projects/" class="btn btn--primary">
-              See the projects
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-            </a>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -1288,7 +1258,6 @@
           <a href="#agenda">Daily Agenda</a>
           <a href="/bobs-corner/">Bob's Corner</a>
           <a href="#parents">For Parents</a>
-          <a href="/projects/">Sponsor a Build</a>
           <a href="mailto:andy.mcateer@corvallis.k12.or.us">Contact</a>
         </div>
       </div>

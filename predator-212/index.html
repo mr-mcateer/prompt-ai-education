@@ -313,6 +313,16 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
 .example p { color: var(--gray-600); }
 .lab-card .rubric strong { color: var(--gray-800); }
 
+
+/* TEACHER AGENDA DAY */
+.agenda-day { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 28px; background: var(--white); }
+.agenda-day > * { min-width: 0; }
+.agenda-day h3 { font-family: var(--font-body); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-400); margin: 18px 0 6px; }
+.agenda-day h3:first-child { margin-top: 0; }
+.agenda-day p, .agenda-day li { font-size: 15px; color: var(--gray-600); }
+.agenda-day ol, .agenda-day ul { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+@media (max-width: 860px) { .agenda-day { grid-template-columns: 1fr; padding: 20px; } }
+
 /* SOURCES */
 .sources ul { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
 .sources li span { color: var(--gray-600); }
@@ -352,6 +362,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
       <li><a href="#causes">Causes</a></li>
       <li><a href="#card">Bench card</a></li>
       <li><a href="#lab">Lab</a></li>
+      <li><a href="#teacher">Teacher</a></li>
       <li><a href="#reference-head">Reference</a></li>
       <li><a href="https://promptaieducation.com/agenda/se/">Engines agenda</a></li>
     </ul>
@@ -1133,6 +1144,48 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <p class="eyebrow" style="margin-bottom: 6px;">Worked example, full credit</p>
           <p>Engine 2. T0: initialed. T1a: lamp flashed 3 of 3. T1b: skipped, passed 1a. T2: fired about 2 seconds and died, both tries. T3: skipped, fired on fluid. <strong>Diagnosis: cause 5.</strong> Spark passed with wires on, so not 2 or 4. It ran on fluid, so not 1, 3, 7, or 8. Not 6: throttle plate was open at rest in Test 0. Not 10: bowl drained fresh, clear gas. Fix: cleaned main jet and emulsion tube, photo of daylight through the jet, carb checkpoint 5 initialed. Retest: started on the third pull, ran until I turned it off.</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="teacher">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">For the teacher</p>
+      <h2>Running this lab in one period</h2>
+      <p>A 90-minute Period 3 day, in the shape of the daily agenda. Before the day: run the three tests on one known-good engine with the class gauge and write its psi on the Test 3 card and on the whiteboard.</p>
+    </div>
+    <div class="agenda-day">
+      <div class="agenda-day__main">
+        <h3>Objective</h3>
+        <p>By the end of class you can run the three tests on a dead engine, write one cause number, and say which two results rule out the rest.</p>
+        <h3>Journal</h3>
+        <p>Four of our engines will not start after the rebuild. Before anyone touches a tool: what is the one step every team did the same way, and how would you prove it was done right?</p>
+        <h3>Today</h3>
+        <ol>
+          <li>Journal, then phones in the caddy (5 min)</li>
+          <li>Demo on the known-good engine: Test 0 gate read aloud, spark tester lamp, one squirt, gauge reading on the board (12 min)</li>
+          <li>Test 0 at every bench. Teacher initials each sheet before any cord gets pulled (10 min)</li>
+          <li>Tests 1 to 3, photo or video of every result, tape in frame. Starting fluid handed out one test at a time (30 min)</li>
+          <li>Diagnosis written on the sheet, checkpoint 2 initialed. Teacher steps stay closed until checkpoint 3 (15 min)</li>
+          <li>Student fixes only (lash, coil gap, carb clean, plug, fuel). Retest after checkpoint 6 (10 min)</li>
+          <li>Cleanup: tools returned, parts bagged, bench wiped, exit ticket: your cause number and the test that proved it (8 min)</li>
+        </ol>
+      </div>
+      <div class="agenda-day__side">
+        <h3>Due</h3>
+        <p>Record sheet with five captures on Canvas by the end of the period. Engine Lab Safety at 100 percent, or your engine stays closed.</p>
+        <h3>Next class</h3>
+        <p>Teacher steps: side covers and flywheels come off with the teacher at the bench, one team at a time, while the other teams do the carb walkthrough. Bring the timing-dot photo from teardown.</p>
+        <h3>Watch for</h3>
+        <ul>
+          <li>Pulling before the gate is initialed</li>
+          <li>Choke on plus starting fluid</li>
+          <li>Plug lying on the shroud during Test 3</li>
+          <li>Lash set at the wrong TDC: ask which rocker they lifted</li>
+          <li>A second pull after a kickback</li>
+        </ul>
       </div>
     </div>
   </div>

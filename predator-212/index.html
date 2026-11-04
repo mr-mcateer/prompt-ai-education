@@ -401,7 +401,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
       <li><span class="box"></span><div><strong>Safety glasses on.</strong> Gas can, rags, and starting fluid are off the bench. Starting fluid lives in the flammables cabinet and the teacher hands it out one test at a time. At home: one can, kept off the bench between squirts.</div></li>
       <li><span class="box"></span><div><strong>Engine level, oil at the lower edge of the fill hole.</strong> Dipstick oil is not thin and does not smell of gas. If it does, stop: fuel got into the crankcase. Drain and refill before anything else.</div></li>
       <li><span class="box"></span><div><strong>Air filter off, look into the carb throat.</strong> The throttle plate is edge-on to you (open). Push the throttle lever shut and let go: it snaps back open. If it does not, stop and go to <a href="#governor">Governor</a>. Do not pull.</div></li>
-      <li><span class="box"></span><div><strong>Kill switch set to Run, both wires on the coil tab.</strong> Fuel valve off until a test calls for fuel.</div></li>
+      <li><span class="box"></span><div><strong>Kill switch set to Run, both wires plugged in at their connectors.</strong> Fuel valve off until a test calls for fuel.</div></li>
       <li><span class="box"></span><div><strong>Engine number on tape on the shroud. Camera ready.</strong> Every test result gets a photo or a short video with the tape in frame.</div></li>
       <li><span class="box"></span><div><strong>Stand beside the recoil, never over the carb.</strong> If the cord ever snaps back out of your hand: stop, do not pull again, get the teacher.</div></li>
       <li class="gate__sign"><span class="box box--teacher"></span><div><strong>Teacher initials</strong> on the record sheet, Checkpoint 1. <em>Working alone at home: read every box out loud, tick it on paper, and do not pull until all six are ticked.</em></div></li>
@@ -452,13 +452,13 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
         <p class="step__safe">Glasses on. Fuel valve off. Hands clear of the flywheel fins.</p>
         <p class="step__tool">Tool: inline spark tester</p>
         <ol class="mini">
-          <li><strong>1a, wires on.</strong> Clip the tester between the plug and the plug boot. Pull the cord three times and watch the tester window.</li>
-          <li><strong>1b, only if 1a shows no spark.</strong> Unplug the black kill wire and the yellow sensor wire where they join before the coil. On most 69730s that junction is under the blower housing: four bolts and the housing lifts off, which is normal and takes two minutes. If there is a two-wire connector behind the switch panel, unplug there instead. Pull three times.</li>
+          <li><strong>1a, wires on.</strong> Clip the tester between the plug and the plug boot. Pull the cord three times and watch the tester lamp. (The Lisle and OTC testers in the parts list flash a lamp; only an open-gap tester shows a colored arc.)</li>
+          <li><strong>1b, only if 1a shows no spark.</strong> Follow the yellow sensor wire from the block to its bullet connector (outside the housing, no tools) and unplug it. Pull three times. Spark now: <a href="#c2">cause 2</a>, sensor side. Still none: unplug the black kill wire at the switch or its connector and pull three more. Only lift the blower housing (fuel tank off first) if neither connector can be found.</li>
           <li><strong>Plug both wires back in now, before anything else.</strong> Then set the switch to Off and pull once: no spark means the switch works.</li>
         </ol>
         <ul>
-          <li><strong>PASS:</strong> blue flash on 3 of 3 pulls. Go to test 2.</li>
-          <li><strong>WEAK:</strong> orange, or fewer than 3 of 3. Treat as no spark.</li>
+          <li><strong>PASS:</strong> the tester lamp flashes on every pull, 3 of 3 (several flashes per pull is normal; the magneto fires every revolution). Go to test 2.</li>
+          <li><strong>INTERMITTENT:</strong> flashes on some pulls, not all. Treat as weak: re-gap the coil first (<a href="#c4">cause 4</a>).</li>
           <li><strong>NONE in 1a, spark in 1b:</strong> a wire is grounding the coil. <a href="#c2">Cause 2</a>.</li>
           <li><strong>NONE in both:</strong> coil gap or flywheel key. <a href="#c4">Cause 4</a>, then <a href="#c3">cause 3</a>.</li>
         </ul>
@@ -474,24 +474,25 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <li>Nothing? One more squirt, three more pulls. Then stop.</li>
         </ol>
         <ul>
-          <li><strong>FIRES:</strong> at least one pop, or it runs 1 to 3 seconds and dies. Spark and compression are fine; fuel delivery is not. <a href="#c5">Causes 5</a>, <a href="#c6">6</a>, <a href="#c10">10</a>. Skip test 3.</li>
+          <li><strong>FIRES:</strong> it catches and runs for a second or more, or you hear it fire in the muffler, then dies. Spark and compression are fine; fuel delivery is not. (A pop or sneeze back out of the carb is not a pass: write it down, it points to <a href="#c1">causes 1</a> and <a href="#c7">7</a>.) <a href="#c5">Causes 5</a>, <a href="#c6">6</a>, <a href="#c10">10</a>. Skip test 3.</li>
           <li><strong>NOTHING</strong> in two tries: go to test 3.</li>
         </ul>
       </div>
       <div class="step">
         <div class="step__n">3</div>
         <h3>Compression</h3>
-        <p class="step__safe">Kill switch Off. Fuel valve off. Plug out, clipped in its boot, and its metal threads pressed against bare metal on the head (not the plastic shroud), a foot from the hole, so the coil has somewhere to spark.</p>
+        <p class="step__safe">Kill switch Off. Fuel valve off. Plug out, clipped in its boot, and its metal threads pressed against bare metal on the head (not the plastic shroud), well away from the hole, in case the switch is not killing the spark.</p>
         <p class="step__tool">Tool: compression gauge, 14 mm</p>
         <ol class="mini">
-          <li>Gauge threaded in finger tight. Throttle held wide open. Pull six times. Photograph the needle.</li>
+          <li>Gauge threaded in finger tight. Choke and throttle both held wide open. Pull six sharp full pulls. Photograph the needle.</li>
           <li><strong>3b, only if LOW.</strong> One teaspoon of oil into the plug hole. Gauge back in. Six pulls. Photograph again.</li>
         </ol>
         <ul>
-          <li><strong>Known-good reading:</strong> the teacher's running engine reads <span class="fill">____</span> psi on this gauge. Within 15 psi of that is NORMAL. 30 or more below is LOW. In between: pull six more and use the higher number. <em>No second engine? Skip the absolute number: do 3b anyway and read only the change.</em></li>
-          <li><strong>NORMAL, still nothing on fluid:</strong> cam timing or flywheel key. <a href="#c1">Cause 1</a>, then <a href="#c3">3</a>. (A sheared key still shows spark on the tester; the spark is just at the wrong moment.)</li>
+          <li><strong>Known-good reading:</strong> the teacher's running engine reads <span class="fill">____</span> psi on this gauge. Same gauge, same person pulling, choke and throttle both wide open. Within about 15 psi (20 percent) is NORMAL. 30 or more below (40 percent) is LOW. In between: pull six more and use the higher number. These cutoffs are a judgment call, not a manual spec. <em>No second engine? Skip the absolute number: do 3b anyway and read only the change.</em></li>
+          <li><strong>NORMAL, still nothing on fluid:</strong> cam timing or flywheel key. <a href="#c1">Cause 1</a>, then <a href="#c3">3</a>. (A sheared key still shows spark on the tester; the spark is just at the wrong moment. One tooth off barely moves a cranking reading, which is why timing lives on this branch.)</li>
           <li><strong>LOW, 3b rises 20 psi or more:</strong> rings. <a href="#c8">Cause 8</a>.</li>
-          <li><strong>LOW, 3b rises under 10 psi:</strong> valve, lash, timing, or head gasket. <a href="#c7">Cause 7</a>, <a href="#c1">1</a>, <a href="#c8">8</a>.</li>
+          <li><strong>LOW, 3b rises under 10 psi:</strong> valve, lash, or head gasket. <a href="#c7">Cause 7</a>, <a href="#c8">8</a>.</li>
+          <li><strong>LOW, 3b rises 10 to 19 psi:</strong> pull six more dry, then six more with oil. Still in between: check lash first, then treat as rings.</li>
         </ul>
       </div>
     </div>
@@ -553,13 +554,13 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <text x="755" y="333" font-weight="600">Oil-squirt retest</text>
           <text x="755" y="353" font-size="12">rises 20 psi or more: rings (8)</text>
           <text x="755" y="371" font-size="12">rises under 10: valves, lash,</text>
-          <text x="755" y="387" font-size="12">timing, head gasket (1, 7, 8)</text>
+          <text x="755" y="387" font-size="12">head gasket (7, 8)</text>
         </g>
       </svg>
       <ol class="flow-list">
         <li><strong>1. Spark?</strong> No in 1a, yes in 1b: cause 2. No in both: causes 4, 3. Yes: go on.</li>
         <li><strong>2. Fires on fluid?</strong> Yes then dies: causes 5, 6, 10. Done. No: go on.</li>
-        <li><strong>3. Compression?</strong> Normal: causes 1, 3. Low: oil retest. Rises 20 or more: cause 8. Rises under 10: causes 7, 1, 8.</li>
+        <li><strong>3. Compression?</strong> Normal: causes 1, 3. Low: oil retest. Rises 20 or more: cause 8. Rises under 10: causes 7, 8. 10 to 19: repeat both, then lash first.</li>
       </ol>
       <figcaption>Each test only runs if the one before it did not settle it. Most rebuilt engines stop at test 1 or test 3, and both of those point at the rebuild, not at parts.</figcaption>
     </figure>
@@ -590,7 +591,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
         <h4>Test, in order</h4>
         <ol>
           <li>Test 0 boxes, teacher initials.</li>
-          <li>Spark tester, wires on, 3 pulls. None: wires off, 3 pulls. Wires back on.</li>
+          <li>Spark tester, wires on, 3 pulls. None: yellow wire off, 3 pulls; then black wire off, 3 pulls. Wires back on.</li>
           <li>Spark good: one squirt, 3 pulls, twice.</li>
           <li>Nothing: switch Off, plug out and grounded, gauge, 6 pulls. Low: teaspoon of oil, 6 more.</li>
         </ol>
@@ -651,7 +652,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
         <thead><tr><th>#</th><th>Cause</th><th>How you know</th><th>Why it happens on a rebuild</th><th>Fix</th><th>Parts</th></tr></thead>
         <tbody>
           <tr id="c1"><td data-l="#">1</td><td data-l="Cause"><strong>Cam gear one tooth off</strong></td><td data-l="How you know">Good spark and fuel, compression normal, pops back through the carb or exhaust</td><td data-l="Why it happens on a rebuild">Dots on the cam gear and crank gear not lined up at the moment the cam was dropped into mesh</td><td data-l="Fix">Side cover off, line up the dots, reinstall <span class="tag tag--teacher">Teacher step</span></td><td data-l="Parts">Side cover gasket</td></tr>
-          <tr id="c2"><td data-l="#">2</td><td data-l="Cause"><strong>Low-oil sensor or kill switch grounding the coil</strong></td><td data-l="How you know">No spark in 1a; spark in 1b with both wires off</td><td data-l="Why it happens on a rebuild">Oil a little low, engine tilted on the bench, sensor wire pinched under the cover, switch wired backward</td><td data-l="Fix">Fill oil to the lower edge of the fill hole with the engine level; fix the wire; bypass only for testing <span class="tag tag--free">You do it</span></td><td data-l="Parts">None</td></tr>
+          <tr id="c2"><td data-l="#">2</td><td data-l="Cause"><strong>Low-oil sensor or kill switch grounding the coil</strong></td><td data-l="How you know">No spark in 1a; spark in 1b with both wires off</td><td data-l="Why it happens on a rebuild">Oil a little low, engine tilted on the bench, sensor wire pinched under the cover, switch stuck or its wire chafed to ground</td><td data-l="Fix">Fill oil to the lower edge of the fill hole with the engine level; fix the wire; bypass only for testing <span class="tag tag--free">You do it</span></td><td data-l="Parts">None</td></tr>
           <tr id="c3"><td data-l="#">3</td><td data-l="Cause"><strong>Flywheel key sheared, missing, or not seated</strong></td><td data-l="How you know">Weak spark, no spark, or spark at the wrong time (kicks back on the cord)</td><td data-l="Why it happens on a rebuild">Flywheel slipped on an oily taper or an under-torqued nut, a kickback sheared it, or the key was left half out of its slot</td><td data-l="Fix">Flywheel off, new key, torque the nut to spec <span class="tag tag--teacher">Teacher step</span></td><td data-l="Parts">Flywheel key</td></tr>
           <tr id="c4"><td data-l="#">4</td><td data-l="Cause"><strong>Coil air gap too wide</strong></td><td data-l="How you know">Weak or no spark in both 1a and 1b</td><td data-l="Why it happens on a rebuild">Coil not re-gapped after the flywheel went back on</td><td data-l="Fix">Re-gap to 0.010 to 0.016 in with a brass or plastic shim <span class="tag tag--free">You do it</span></td><td data-l="Parts">None</td></tr>
           <tr id="c5"><td data-l="#">5</td><td data-l="Cause"><strong>Carb varnished or assembled wrong</strong></td><td data-l="How you know">Fires on starting fluid, then dies</td><td data-l="Why it happens on a rebuild">Old gas left in the bowl; float, needle or main jet gummed; gaskets stacked out of order</td><td data-l="Fix">Clean the main jet and emulsion tube, or swap in a new carb <span class="tag tag--free">You do it</span></td><td data-l="Parts">Carb cleaner, gasket kit, or carb</td></tr>
@@ -720,7 +721,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
             <text x="420" y="275" font-weight="600" font-size="14" fill="var(--danger)">One tooth off</text>
           </g>
         </svg>
-        <figcaption>The punch marks sit on the line between the two gear centers. Any other position is wrong, even if it is only one tooth.</figcaption>
+        <figcaption>The punch marks sit on the line between the two gear centers. The cam gear has twice the teeth and turns at half speed, so the dots meet once every two turns of the crank: at TDC compression only. Any other position is wrong, even if it is only one tooth.</figcaption>
       </figure>
     </div>
 
@@ -785,12 +786,12 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <div class="body">
             <ol>
               <li>Engine cold. Valve cover off, plug out, kill switch off.</li>
-              <li>Finger over the plug hole. Turn the flywheel by hand clockwise (facing the recoil) until you feel air push against your finger. That is the compression stroke starting.</li>
+              <li>Finger over the plug hole. Turn the engine slowly in its normal direction, with the recoil or by the shaft, until you feel air push against your finger. That is the compression stroke starting.</li>
               <li>Keep turning until a straw in the plug hole stops rising. That is TDC compression. Lift each rocker tip with one finger: each lifts and ticks back down. If either one will not lift, you are on exhaust TDC. Turn one full turn and try again.</li>
               <li>Press the intake rocker down onto its pushrod with a thumb so the gap is all at the valve end. The adjuster is the square-headed stud on the rocker; the lock nut sits on it. Loosen the nut. Slide the blade between the rocker tip and the top of the valve stem. Turn the adjuster until the 0.004 in blade slides in and the 0.006 in blade will not. Both true = done. The blade should move when you pull it and should not bend.</li>
-              <li>Hold the adjuster with a wrench so it cannot move, tighten the lock nut to 7 ft-lb, then check the feeler again. If the drag changed, do it over.</li>
+              <li>Hold the adjuster with a thin open-end wrench on its small square (about 7/32 in; a valve adjuster wrench fits) so it cannot move, tighten the 10 mm lock nut to 7 ft-lb, then check the feeler again. If the drag changed, do it over.</li>
               <li>Same on the exhaust: the 0.006 in blade slides in, the 0.008 in blade will not.</li>
-              <li>If the exhaust rocker is tight at TDC but loosens a few degrees past it, the rocker is sitting on the compression release bump. Turn the flywheel a hair past TDC and set the exhaust there.</li>
+              <li>If the exhaust rocker is tight at TDC but loosens a little past it, the rocker is sitting on the compression release bump. Turn the engine about a quarter turn past TDC compression (piston heading down on the power stroke, both valves still closed) and set both valves there. Honda sets at TDC; a quarter turn past is the common clone-engine practice, and either is fine.</li>
               <li>Turn the engine two full turns and come back to TDC compression. Check both gaps one more time. Cover on with a new gasket.</li>
               <li>After the first run, let it cool and check lash again. New valves and seats settle.</li>
             </ol>
@@ -995,7 +996,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <line x1="440" y1="77" x2="476" y2="77" stroke="currentColor" stroke-width="3"/>
           <text x="458" y="106" text-anchor="middle" fill="currentColor" font-size="10">plate open at rest</text>
         </svg>
-        <figcaption>At rest the spring pulls the governor arm forward, the solid rod pushes the throttle lever, and the plate stands open. Only a spinning engine closes it.</figcaption>
+        <figcaption>At rest the spring pulls the governor arm forward, the solid rod holds the throttle lever open, and the plate stands open. Only a spinning engine closes it.</figcaption>
       </figure>
       <div>
         <p class="eyebrow">Ten seconds</p>
@@ -1004,7 +1005,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <li><strong>Air filter off.</strong> Look into the carb throat. The throttle plate should be edge-on to you, wide open.</li>
           <li><strong>Push the throttle lever closed by hand and let go.</strong> It must snap back open. If it stays shut or moves slowly, the spring is on the wrong hole or the rod is binding.</li>
           <li><strong>Rod and spring in the holes they came out of.</strong> The solid rod links the governor arm to the throttle lever. The spring runs from the throttle control plate to the governor arm. Your teardown photo is the spec; if nobody took one, a running engine of the same model or a clear photo of a stock 69730 linkage is the next best thing.</li>
-          <li><strong>Governor arm set. Teacher step.</strong> If the clamp bolt was loosened: loosen it, push the throttle lever to wide open, turn the governor shaft fully in the same direction with pliers, tighten the clamp. Skip this if the clamp was never touched.</li>
+          <li><strong>Governor arm set. Teacher step.</strong> If the clamp bolt was loosened: loosen it, push the throttle lever to wide open, turn the governor shaft fully in the same direction with pliers on the shaft end (not the arm), gently, until it stops against the slider inside; tighten the clamp. Spring on the same hole of the throttle control plate it came from; the hole sets top speed. Skip this if the clamp was never touched.</li>
         </ol>
         <div class="callout callout--danger" style="margin-top: 20px;">
           <strong>A governor hooked up wrong can also over-rev</strong>
@@ -1027,10 +1028,10 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
         <p class="eyebrow">Four pulls</p>
         <h3>Find which one it is</h3>
         <ol class="step-list">
-          <li><strong>Both wires off the coil tab:</strong> spark. That proves the coil and flywheel are fine.</li>
+          <li><strong>Both wires unplugged at their connectors:</strong> spark. That proves the coil and flywheel are fine.</li>
           <li><strong>Kill wire back on, sensor wire off:</strong> pull. No spark means the switch or its wire is grounded. Check the switch is set to Run, the wire is not pinched under the shroud, and the terminal is not touching the block.</li>
           <li><strong>Sensor wire back on, kill wire off:</strong> pull. No spark means the sensor is grounding the coil. First fill the oil to the lower edge of the fill hole with the engine level and try again. Still no spark: the float is stuck or the sensor wire is pinched under the side cover.</li>
-          <li><strong>Both back on:</strong> spark. Done. If it fails only now, the two wires are shorting to each other at the connector.</li>
+          <li><strong>Both back on:</strong> spark. Done. If it fails only now, a wire is intermittent: wiggle each wire while a partner pulls, and look for a pinch under the shroud or side cover.</li>
         </ol>
         <p style="margin-top: 16px;">Running with the sensor wire off is a bench test, not a fix. The sensor is there to save the engine the first time a student runs it dry.</p>
         <div class="spec-pair"><span class="chip">Yellow wire = low-oil sensor (it enters the block through a grommet)</span><span class="chip">Black wire = kill switch</span><span class="chip chip--warn">Oil full and level before you blame the sensor</span></div>
@@ -1305,11 +1306,11 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
         <ol>
           <li>Drain oil and fuel. Fuel valve off, carb bowl drained into a can.</li>
           <li>Air filter, carb, insulator block, and gaskets. Note the gasket order.</li>
-          <li>Recoil starter, shroud, and fan cover.</li>
+          <li>Fuel tank (it bolts to the blower housing), then recoil starter, shroud, and fan cover.</li>
           <li>Coil (note the wire routing), then the flywheel nut and flywheel with a puller.</li>
           <li>Valve cover, rockers, pushrods.</li>
           <li>Head and head gasket.</li>
-          <li>Bring the piston to TDC compression first, so the timing dots sit lined up. Side cover off, photograph the dots, then lift the cam. The tappets can drop out once the cam is gone: keep each one paired to its bore.</li>
+          <li>Turn the crank until the timing dots meet (that is TDC compression; at the other TDC the cam dot is on the far side). Side cover off, photograph the dots, then lift the cam. The tappets can drop out once the cam is gone: keep each one paired to its bore.</li>
           <li>Rod cap, then piston and rod out the top of the bore.</li>
         </ol>
       </div>
@@ -1378,7 +1379,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <tr><td>Ignition coil</td><td><a href="https://www.amazon.com/Atunee-Ignition-30500-ZE1-073-30500-ZE1-033-36100-ZE1-015/dp/B0B9NDR5B5">Atunee 30500-ZE1-073</a></td><td class="num">0 to 1</td><td><span class="tag tag--wait">If no spark after re-gap</span></td><td>Avoid "racing" or no-rev-limit coils</td></tr>
           <tr><td>Piston and rings, 70 mm</td><td><a href="https://www.amazon.com/RHYTHM-TESTAMENT-Predator-212cc-Piston/dp/B0DWSLR4N3">70 mm piston and rings, stock-block fit</a></td><td class="num">0 to 4</td><td><span class="tag tag--wait">If the oil-squirt test says rings</span></td><td>68 mm sets are for 196cc engines</td></tr>
           <tr><td>Torque wrench, 3/8 in drive</td><td>Any brand that covers 5 to 60 ft-lb (rod bolts to flywheel nut); an in-lb click wrench is nicer for the 7 and 9 ft-lb settings</td><td class="num">1</td><td><span class="tag tag--now">Buy now</span></td><td>Not in a basic socket set, and every spec on this page needs one</td></tr>
-          <tr><td>Hand tools the kit may lack</td><td>13/16 in spark plug socket, 10 mm wrench (lock nuts, valve cover), strap wrench or small puller (flywheel), feeler gauges above</td><td class="num">1 each</td><td><span class="tag tag--now">Buy now</span></td><td>Check the toolbox first</td></tr>
+          <tr><td>Hand tools the kit may lack</td><td>13/16 in spark plug socket, 10 mm wrench (lock nuts, valve cover), 19 mm socket (flywheel nut), thin valve adjuster wrench for the square on the adjuster, strap wrench or small puller (flywheel), feeler gauges above</td><td class="num">1 each</td><td><span class="tag tag--now">Buy now</span></td><td>Check the toolbox first</td></tr>
           <tr><td>Valve cover gasket</td><td>Included in the gasket kits above; sold alone by the same vendors</td><td class="num">1 per engine</td><td><span class="tag tag--now">Buy now</span></td><td>The cover comes off to set lash, and the old gasket rarely survives</td></tr>
           <tr><td>Shop basics</td><td>Nitrile gloves, drain pan, small funnel, zip bags, painter's tape and a marker</td><td class="num">1 set</td><td><span class="tag tag--now">Buy now</span></td><td>Any brand</td></tr>
           <tr><td>Valve lapping compound</td><td>Permatex 80036</td><td class="num">1</td><td><span class="tag tag--wait">If a valve leaks</span></td><td>Search "Permatex 80036"</td></tr>
@@ -1403,11 +1404,11 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
     </details>
     <details>
       <summary>How do I know the cam is one tooth off without taking the cover off?</summary>
-      <div class="body"><p>You mostly cannot, which is why it is the number one cause. Clues: the engine sneezes back through the carb, or it has strong spark and fuel but cranks with an odd rhythm. The honest answer is to pull the side cover, which is six bolts and a gasket, and look at the dots.</p></div>
+      <div class="body"><p>You can get a strong hint with the valve cover off. Turn the engine to the TDC where both rockers are pushed down (the exhaust closing as the intake opens). They should be down by about the same amount. If one is well down and the other barely moved, the cam is a tooth off. Other clues: sneezing back through the carb, or strong spark and fuel with an odd cranking rhythm. The side cover (six bolts and a gasket) still has to come off to confirm and fix it, and that is a teacher step.</p></div>
     </details>
     <details>
       <summary>The compression gauge only reads 40 psi. Is the engine ruined?</summary>
-      <div class="body"><p>Probably not. The automatic compression release holds the exhaust valve open a little at cranking speed, so a healthy 212 on a pull start often reads far below its true compression. There is no official number. Compare your four engines against each other; the odd one out is the one with the problem. Then do the oil-squirt retest: a big jump means rings, no change means a valve or the head gasket.</p></div>
+      <div class="body"><p>Maybe not. The automatic compression release holds the exhaust valve open a little at cranking speed, so a healthy 212 on a pull start often reads only 60 to 90 psi (forum figures; gauges and pull speed vary), and 40 on its own proves little. There is no official number. Compare your four engines against each other; the odd one out is the one with the problem. Then do the oil-squirt retest: a big jump means rings, no change means a valve or the head gasket.</p></div>
     </details>
     <details>
       <summary>Can I just buy a new carb and skip the cleaning?</summary>
@@ -1415,7 +1416,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
     </details>
     <details>
       <summary>Why does the cord snap back and hurt my hand?</summary>
-      <div class="body"><p>Spark is coming too early at cranking speed, so the explosion pushes the piston backward. On a stock engine the usual reason is a flywheel that has slipped on a sheared or half-seated key. Stop pulling: the kickback can break the recoil pawls. Get the flywheel off and look at the key.</p></div>
+      <div class="body"><p>Spark is coming too early at cranking speed, so the explosion pushes the piston backward. On a stock engine the usual reason is a flywheel that has slipped on a sheared or half-seated key. Stop pulling: the kickback can break the recoil pawls. Get the flywheel off and look at the key. A cord that is hard and snatchy without the snap-back is different: that is the compression release not working (<a href="#c7">cause 7</a>).</p></div>
     </details>
     <details>
       <summary>I bypassed the low-oil sensor and it runs. Can I leave it?</summary>
@@ -1454,7 +1455,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
       <dt>Plug boot</dt><dd>The rubber cap on the end of the plug wire that pushes onto the spark plug.</dd>
       <dt>Ground, grounding</dt><dd>Connecting a wire to the engine block. The kill switch stops spark by grounding the coil tab.</dd>
       <dt>Coil tab</dt><dd>The small spade terminal on the ignition coil where the kill wire and sensor wire plug on.</dd>
-      <dt>Tappet</dt><dd>The small cup that rides on the cam and pushes the pushrod. One per valve, and they fall out when the cam is removed.</dd>
+      <dt>Tappet</dt><dd>The mushroom-shaped lifter between the cam and the pushrod. One per valve, and they fall out when the cam is removed.</dd>
       <dt>Journal</dt><dd>The polished part of the crank the rod rides on. Oil it before the cap goes on.</dd>
       <dt>Dowel</dt><dd>A short pin that locates the side cover or head exactly. Both must be in before the bolts.</dd>
       <dt>Hydraulic lock</dt><dd>Liquid (fuel or oil) in the cylinder that the piston cannot compress. The cord stops dead. Pull the plug and crank it out.</dd>

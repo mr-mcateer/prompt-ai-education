@@ -146,6 +146,7 @@ figure { margin: 0; }
 .figure svg { display: block; margin: 0 auto; color: var(--gray-800); width: 100%; }
 .figure figcaption { font-size: 14px; color: var(--gray-600); margin-top: 18px; max-width: 700px; margin-left: auto; margin-right: auto; text-align: center; }
 .figure--tight { padding: 20px; }
+@media (max-width: 700px) { .figure--tight svg { min-width: 560px; } .figure--tight { padding: 16px; } .figure--tight figcaption::after { content: " Swipe sideways to see the whole drawing."; color: var(--gray-400); } }
 
 /* TWO COLUMN */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
@@ -1256,7 +1257,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <line x1="120" y1="20" x2="120" y2="90" stroke="var(--danger)" stroke-width="4"/>
           <text x="128" y="36" fill="var(--danger)" font-weight="600">straw</text>
           <!-- rockers loose indicators -->
-          <text x="120" y="235" text-anchor="middle" fill="currentColor">both valves closed, both rockers wiggle</text>
+          <text x="120" y="235" text-anchor="middle" fill="currentColor">both valves closed, both rockers lift and tick</text>
           <path d="M40 160 L62 160" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr3)" fill="none"/>
           <text x="10" y="150" fill="currentColor" font-size="9">finger felt</text>
           <text x="10" y="162" fill="currentColor" font-size="9">pressure</text>

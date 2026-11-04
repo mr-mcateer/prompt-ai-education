@@ -339,7 +339,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
         <div class="step__n">1</div>
         <h3>Spark</h3>
         <p class="step__tool">Tool: inline spark tester</p>
-        <p>Unplug the kill-switch wire and the low-oil sensor wire where they meet the coil. Clip the tester between the plug and the plug boot. Pull the cord.</p>
+        <p>Unplug the kill-switch wire and the low-oil sensor wire where they join before the coil. On the 69730 that junction can sit under the blower housing; if so, the recoil and housing come off first, or test at the connector behind the switch panel. Clip the tester between the plug and the plug boot. Pull the cord.</p>
         <ul>
           <li><strong>Bright blue flash every pull:</strong> spark is good. Go to test 2.</li>
           <li><strong>No spark:</strong> coil air gap or flywheel key. Causes 3 and 4.</li>
@@ -360,7 +360,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
         <div class="step__n">3</div>
         <h3>Compression</h3>
         <p class="step__tool">Tool: compression gauge, 14 mm</p>
-        <p>Plug out, gauge in, throttle held wide open. Pull hard five or six times. Write down the number.</p>
+        <p>Fuel valve off. Plug out, and clip the plug into its boot and lay it against the head so the coil has somewhere to spark. Gauge in, throttle held wide open. Pull hard five or six times. Write down the number.</p>
         <ul>
           <li><strong>Close to your other engines, still no fire:</strong> cam timing or flywheel key. Causes 1 and 3.</li>
           <li><strong>Much lower than the others:</strong> put a teaspoon of oil in the plug hole and test again. Goes up a lot means rings (cause 8). Stays low means valves, lash, cam timing, or head gasket (causes 1, 7, 8).</li>
@@ -448,13 +448,13 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
       <table class="causes">
         <thead><tr><th>#</th><th>Cause</th><th>Why it happens on a rebuild</th><th>How you know</th><th>Fix</th><th>Parts</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td><strong>Cam gear one tooth off</strong></td><td>Dots on the cam gear and crank gear not lined up, or the crank turned while the side cover went on</td><td>Good spark and fuel, compression normal or odd, pops back through the carb or exhaust</td><td>Pull the side cover, line up the dots, reinstall</td><td>Side cover gasket</td></tr>
-          <tr><td>2</td><td><strong>Low-oil sensor or kill switch grounding the coil</strong></td><td>Oil a little low, engine tilted on the bench, sensor wire pinched under the cover, switch wired backward</td><td>No spark; spark returns with both wires unplugged at the coil</td><td>Fill oil to the top of the fill neck on level ground; fix the wire; bypass only for testing</td><td>None</td></tr>
-          <tr><td>3</td><td><strong>Flywheel key sheared, missing, or not seated</strong></td><td>Aluminum key cut when the nut was torqued, or the flywheel dropped on crooked</td><td>Weak spark, no spark, or spark at the wrong time (kicks back on the cord)</td><td>Pull the flywheel, new key, torque the nut to spec</td><td>Flywheel key</td></tr>
+          <tr><td>1</td><td><strong>Cam gear one tooth off</strong></td><td>Dots on the cam gear and crank gear not lined up at the moment the cam was dropped into mesh</td><td>Good spark and fuel, compression normal or odd, pops back through the carb or exhaust</td><td>Pull the side cover, line up the dots, reinstall</td><td>Side cover gasket</td></tr>
+          <tr><td>2</td><td><strong>Low-oil sensor or kill switch grounding the coil</strong></td><td>Oil a little low, engine tilted on the bench, sensor wire pinched under the cover, switch wired backward</td><td>No spark; spark returns with both wires unplugged at the coil</td><td>Fill oil to the lower edge of the fill hole with the engine level; fix the wire; bypass only for testing</td><td>None</td></tr>
+          <tr><td>3</td><td><strong>Flywheel key sheared, missing, or not seated</strong></td><td>Flywheel slipped on an oily taper or an under-torqued nut, a kickback sheared it, or the key was left half out of its slot</td><td>Weak spark, no spark, or spark at the wrong time (kicks back on the cord)</td><td>Pull the flywheel, new key, torque the nut to spec</td><td>Flywheel key</td></tr>
           <tr><td>4</td><td><strong>Coil air gap too wide</strong></td><td>Coil not re-gapped after the flywheel went back on</td><td>Weak or no spark</td><td>Re-gap to 0.010 to 0.016 in with a brass or plastic shim</td><td>None</td></tr>
           <tr><td>5</td><td><strong>Carb varnished or assembled wrong</strong></td><td>Old gas left in the bowl; float, needle or main jet gummed; gaskets stacked out of order</td><td>Fires on starting fluid, then dies</td><td>Clean the main jet and emulsion tube, or swap in a new carb</td><td>Carb cleaner, gasket kit, or carb</td></tr>
           <tr><td>6</td><td><strong>Governor linkage holding the throttle shut</strong></td><td>Linkage rods swapped, governor arm clamped at the wrong angle</td><td>Throttle plate closed at rest (it should sit wide open with the engine off)</td><td>Re-hook the linkage, re-set the governor arm</td><td>None</td></tr>
-          <tr><td>7</td><td><strong>Valve lash set on the wrong stroke</strong></td><td>Set at top dead center of the exhaust stroke instead of compression</td><td>Low compression, or a valve that never fully closes</td><td>Find TDC compression (both rockers loose), set again</td><td>None</td></tr>
+          <tr><td>7</td><td><strong>Valve lash set on the wrong stroke</strong></td><td>Set at top dead center of the exhaust stroke instead of compression</td><td>Low compression, a valve that never fully closes, or a cord that pulls like a wall (exhaust too loose)</td><td>Find TDC compression (both rockers loose), set again</td><td>None</td></tr>
           <tr><td>8</td><td><strong>Rings or head gasket</strong></td><td>Rings upside down, broken, or gaps lined up; head bolts not torqued in a cross pattern</td><td>Low compression that rises with a squirt of oil (rings) or stays low (gasket, valves)</td><td>Re-ring, or new head gasket torqued in sequence</td><td>Ring set, gasket kit</td></tr>
           <tr><td>9</td><td><strong>Flooded or fouled plug</strong></td><td>Many pulls with the choke on</td><td>Plug wet and smells of gas</td><td>Dry or new plug, choke off, throttle open, pull five times</td><td>Spark plug</td></tr>
           <tr><td>10</td><td><strong>Bad gas, or fuel not reaching the carb</strong></td><td>Fuel valve off, stale or watered gas, plugged tank vent</td><td>Carb bowl empty, or gas smells sour</td><td>Fresh gas, check the valve and the cap vent</td><td>Fresh fuel</td></tr>
@@ -463,7 +463,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
     </div>
     <div class="callout" style="margin-top: 24px;">
       <strong>Two rebuild slips that look like cause 8</strong>
-      The piston went in backward (the arrow on the crown must point toward the pushrod side), or the rod cap went on backward (the match marks on the rod and cap must line up). Both show as low compression, knocking, or a piston that drags.
+      The piston went in backward (the arrow on the crown must point toward the pushrod side), or the rod cap went on backward (the oil dipper on the cap must hang down into the sump, and the rod and cap go together the way they came apart). Both show as low compression, knocking, or a piston that drags.
     </div>
   </div>
 </section>
@@ -482,7 +482,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
         <p class="eyebrow">Check 1</p>
         <h3>Cam timing dots</h3>
         <p>With the side cover off, the small gear on the crank and the big gear on the cam each have one punch mark. The two marks must point straight at each other along the line between the gear centers. One tooth off and the valves open at the wrong time: the engine still has spark and fuel and will not run.</p>
-        <p>Hold the crank still while the cover goes back on. Rotate the engine two full turns by hand afterward and feel for any touch between a valve and the piston.</p>
+        <p>Timing is set the moment the cam drops into mesh with the crank gear, and only then. Turning the crank afterward moves both gears together and cannot change it. Check the dots before the cover goes on, photograph them, then rotate the engine two full turns by hand and feel for any touch between a valve and the piston.</p>
         <div class="spec-pair"><span class="chip">Crank dot faces cam dot</span><span class="chip chip--warn">1 tooth off = no start</span></div>
       </div>
       <figure class="figure figure--tight">
@@ -527,9 +527,9 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
       <div>
         <p class="eyebrow">Check 2</p>
         <h3>Flywheel key</h3>
-        <p>The flywheel sits on a taper on the crank. The small aluminum key does not hold the flywheel on; the taper and the nut do that. The key only sets ignition timing by locating the magnets against the coil. If the key is cut, bent, or sitting half out of its slot, the engine sparks at the wrong moment and kicks back on the cord or never fires.</p>
-        <p>Pull the flywheel with a puller, never by prying. Fit a stock key, not an offset timing key. Clean both tapers dry before the flywheel goes on.</p>
-        <div class="spec-pair"><span class="chip">Flywheel nut 54 ft-lb</span><span class="chip">Stock key only</span><span class="chip chip--warn">Never pry the flywheel</span></div>
+        <p>The flywheel sits on a taper on the crank. The small key does not hold the flywheel on; the taper and the nut do that. The key only sets ignition timing by locating the magnets against the coil. If the key is cut, bent, or sitting half out of its slot, the engine sparks at the wrong moment and kicks back on the cord or never fires.</p>
+        <p>Getting it off: back the nut off a few turns so it still covers the threads, then a dead blow on the nut, the way Mr. Hall showed in class. The shock breaks the taper. A puller works too. Never pry under the flywheel. Going back on: key into the crank keyway first, then slide the flywheel down over it, clean and dry tapers, stock key only. Tighten the nut with a strap wrench holding the flywheel, not an impact gun; the impact is for loosening.</p>
+        <div class="spec-pair"><span class="chip">Flywheel nut 54 ft-lb</span><span class="chip">Stock key only</span><span class="chip chip--warn">Never pry it, never impact it tight</span></div>
       </div>
       <figure class="figure figure--tight">
         <svg viewBox="0 0 560 300" role="img" aria-label="Section view of the crankshaft taper, the keyway, the flywheel hub and the nut, with a good key beside a sheared key" font-family="Inter, sans-serif" font-size="12">
@@ -564,7 +564,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
             <path d="M35 130 L70 130 L68 148 L35 148 Z" fill="var(--danger)"/>
             <path d="M74 130 L105 130 L105 148 L72 148 Z" fill="var(--danger)" transform="translate(4 6) rotate(-8 90 139)"/>
             <text x="70" y="180" text-anchor="middle" fill="var(--danger)">sheared</text>
-            <text x="70" y="200" text-anchor="middle" fill="currentColor" font-size="11">spark fires late</text>
+            <text x="70" y="200" text-anchor="middle" fill="currentColor" font-size="11">spark at the wrong time</text>
           </g>
         </svg>
         <figcaption>The taper carries the load. A sheared key lets the flywheel rotate on the taper, so the magnets pass the coil at the wrong time.</figcaption>
@@ -577,7 +577,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
         <h3>Valve lash at TDC compression</h3>
         <p>Lash is set cold, with the piston at top dead center on the compression stroke, when both valves are closed and both rockers wiggle. The classic mistake is setting it at the top of the exhaust stroke, where the exhaust valve is still open: the numbers look right on the feeler gauge, but the valve never seats.</p>
         <p>To find the right TDC: pull the plug, put a finger over the hole, turn the engine over by hand until you feel pressure, then bring the piston to the top with a straw or rod in the hole. Both rockers should move freely.</p>
-        <p>Exhaust lash that is too tight also disables the automatic compression release, which makes the cord hard to pull and can hide a good engine behind a bad reading.</p>
+        <p>Exhaust lash that is too loose also defeats the automatic compression release: the small bump on the cam cannot take up the gap, the valve never cracks open, and the cord pulls like a wall. Too tight holds the valve off its seat and loses compression.</p>
         <div class="spec-pair"><span class="chip">Intake 0.004 to 0.006 in</span><span class="chip">Exhaust 0.006 to 0.008 in</span><span class="chip chip--warn">Set on compression, not exhaust</span></div>
         <details style="margin-top: 22px;">
           <summary>Setting lash, step by step</summary>
@@ -589,7 +589,9 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
               <li>Slide a 0.005 in feeler between the intake rocker and the valve stem tip. Loosen the lock nut, turn the adjuster until the feeler drags lightly, like pulling paper out from under a book.</li>
               <li>Hold the adjuster with a wrench so it cannot move, tighten the lock nut to 7 ft-lb, then check the feeler again. If the drag changed, do it over.</li>
               <li>Same on the exhaust with a 0.007 in feeler.</li>
+              <li>If the exhaust rocker is tight at TDC but loosens a few degrees past it, the rocker is sitting on the compression release bump. Turn the flywheel a hair past TDC and set the exhaust there.</li>
               <li>Turn the engine two full turns and come back to TDC compression. Check both gaps one more time. Cover on with a new gasket.</li>
+              <li>After the first run, let it cool and check lash again. New valves and seats settle.</li>
             </ol>
           </div>
         </details>
@@ -720,16 +722,16 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
         <p class="eyebrow">Twenty minutes, in this order</p>
         <h3>The cleaning walkthrough</h3>
         <ol class="step-list">
-          <li><strong>Fuel off, bowl drained.</strong> Loosen the bowl nut and drain into a can. Smell it. Sour or varnish-colored gas is already a finding.</li>
-          <li><strong>Carb off the engine.</strong> Two nuts, the governor rod and spring, the choke link. Photograph the linkage first. Note the gasket order.</li>
+          <li><strong>Fuel valve off, bowl drained.</strong> Open the drain screw on the side of the bowl into a can. Smell it. Sour or varnish-colored gas is already a finding.</li>
+          <li><strong>Carb off the engine.</strong> Photograph the linkage first. Two nuts, the governor rod and its spring, the breather hose from the valve cover to the air box. If the idle mixture screw has a limiter cap, count the turns out before touching it and put it back to the same count. Note the gasket order.</li>
           <li><strong>Bowl off.</strong> Look at the bottom. Rust flakes, white crust, or a brown ring mean water or old fuel sat here.</li>
           <li><strong>Float and needle out.</strong> Push the float pin out, lift the float, catch the needle. The rubber tip of the needle must be a clean cone. A groove or flat spot means a new carb.</li>
           <li><strong>Main jet out.</strong> It is the brass screw in the center column. Hold it to the light. You must see daylight through the hole. If not, carb cleaner and the wire from the jet kit, sized smaller than the hole, never a drill bit.</li>
           <li><strong>Emulsion tube out.</strong> Push it up and out of the column with a wooden dowel. Every side hole must show daylight.</li>
-          <li><strong>Pilot jet out.</strong> Under the rubber plug or screw near the throttle. The smallest hole in the carb and the one that clogs first.</li>
+          <li><strong>Pilot jet.</strong> Pull the rubber cap near the throttle end. If the jet has a screwdriver slot, back it out and hold it to the light. If it has no slot it is pressed in: leave it and clean it in place with spray and the finest wire. The smallest hole in the carb and the one that clogs first.</li>
           <li><strong>Spray every passage.</strong> Carb cleaner through each jet hole and the body passages until it comes out the other side clear. Compressed air to finish. Safety glasses.</li>
           <li><strong>Reassemble dry.</strong> Jets snug, not cranked. Float pin in, float level: with the carb upside down the float sits parallel to the body.</li>
-          <li><strong>Gaskets in the right order.</strong> Head, insulator block, gasket, carb, gasket, air filter base. A gasket out of place is a vacuum leak, and a vacuum leak is a no-start that looks like a carb problem.</li>
+          <li><strong>Gaskets in the right order.</strong> Head, gasket, insulator block, gasket, carb, gasket, air filter base. Three gaskets, and the port-shaped one goes against the head. The carb-side and air-box-side gaskets look alike but differ in thickness and cutouts, so label them at teardown. A gasket out of place is a vacuum leak, and a vacuum leak is a no-start that looks like a carb problem.</li>
         </ol>
         <div class="callout" style="margin-top: 20px;">
           <strong>Clean, then still dies on fluid</strong>
@@ -770,7 +772,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
           <text x="328" y="68" fill="currentColor">throttle lever</text>
           <!-- solid rod -->
           <line x1="150" y1="92" x2="320" y2="92" stroke="var(--accent)" stroke-width="2.5"/>
-          <text x="235" y="84" text-anchor="middle" fill="var(--accent)" font-weight="600">solid rod (top hole to top hole)</text>
+          <text x="235" y="84" text-anchor="middle" fill="var(--accent)" font-weight="600">solid rod</text>
           <!-- spring -->
           <!-- governor spring from arm to throttle control -->
           <path d="M156 96 Q200 140 236 226" fill="none" stroke="var(--warning)" stroke-width="2" stroke-dasharray="5 3"/>
@@ -789,7 +791,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
         <ol class="step-list">
           <li><strong>Air filter off.</strong> Look into the carb throat. The throttle plate should be edge-on to you, wide open.</li>
           <li><strong>Push the throttle lever closed by hand and let go.</strong> It must snap back open. If it stays shut or moves slowly, the spring is on the wrong hole or the rod is binding.</li>
-          <li><strong>Rod and spring in the right holes.</strong> The solid rod goes from the top hole of the governor arm to the top hole of the throttle lever. The spring goes from the throttle control plate to the governor arm. Your teardown photo settles any argument.</li>
+          <li><strong>Rod and spring in the holes they came out of.</strong> The solid rod links the governor arm to the throttle lever. The spring runs from the throttle control plate to the governor arm. Your teardown photo is the spec; if nobody took one, find a running engine of the same model and copy it.</li>
           <li><strong>Governor arm set.</strong> If the clamp bolt was loosened: loosen it, push the throttle lever to wide open, turn the governor shaft fully in the same direction with pliers, tighten the clamp. Skip this if the clamp was never touched.</li>
         </ol>
         <div class="callout callout--danger" style="margin-top: 20px;">
@@ -815,11 +817,11 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
         <ol class="step-list">
           <li><strong>Both wires off the coil tab:</strong> spark. That proves the coil and flywheel are fine.</li>
           <li><strong>Kill wire back on, sensor wire off:</strong> pull. No spark means the switch or its wire is grounded. Check the switch is set to Run, the wire is not pinched under the shroud, and the terminal is not touching the block.</li>
-          <li><strong>Sensor wire back on, kill wire off:</strong> pull. No spark means the sensor is grounding the coil. First fill the oil to the top of the neck with the engine level and try again. Still no spark: the float is stuck or the sensor wire is pinched under the side cover.</li>
+          <li><strong>Sensor wire back on, kill wire off:</strong> pull. No spark means the sensor is grounding the coil. First fill the oil to the lower edge of the fill hole with the engine level and try again. Still no spark: the float is stuck or the sensor wire is pinched under the side cover.</li>
           <li><strong>Both back on:</strong> spark. Done. If it fails only now, the two wires are shorting to each other at the connector.</li>
         </ol>
         <p style="margin-top: 16px;">Running with the sensor wire off is a bench test, not a fix. The sensor is there to save the engine the first time a student runs it dry.</p>
-        <div class="spec-pair"><span class="chip">Yellow wire = low-oil sensor</span><span class="chip">Black wire = kill switch</span><span class="chip chip--warn">Oil full and level before you blame the sensor</span></div>
+        <div class="spec-pair"><span class="chip">Yellow wire = low-oil sensor (it enters the block through a grommet)</span><span class="chip">Black wire = kill switch</span><span class="chip chip--warn">Oil full and level before you blame the sensor</span></div>
       </div>
       <figure class="figure figure--tight">
         <svg viewBox="0 0 560 300" role="img" aria-label="Wiring diagram: the ignition coil's kill tab connects to the kill switch and to the low-oil sensor, and either one can ground it and stop spark" font-family="Inter, sans-serif" font-size="12">
@@ -874,17 +876,17 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
     <div class="section-header">
       <p class="eyebrow">Non-hemi 212cc, Harbor Freight item 69730</p>
       <h2>Specs to set it by</h2>
-      <p>Lash, plug and oil come from the Predator owner's manual. Torque values come from the Honda GX200 service manual, the engine the 212 copies, cross-checked against clone-engine tables that disagree by a few foot-pounds; use the low end on stock parts.</p>
+      <p>Lash, plug and oil come from the Predator owner's manual. Torque values are Honda GX200 shop-manual values, which the 212 shares; clone-engine tables disagree by a few foot-pounds, so use the low end on stock parts.</p>
     </div>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Spec</th><th>Value</th><th>Note</th></tr></thead>
         <tbody>
-          <tr><td>Valve lash, intake (cold)</td><td class="num">0.004 to 0.006 in</td><td>Set at TDC compression</td></tr>
-          <tr><td>Valve lash, exhaust (cold)</td><td class="num">0.006 to 0.008 in</td><td>Too tight disables the compression release</td></tr>
-          <tr><td>Spark plug</td><td>NGK BPR6ES</td><td>Also BP6ES, Torch F6RTC, Champion RN9YC</td></tr>
+          <tr><td>Valve lash, intake (cold)</td><td class="num">0.004 to 0.006 in</td><td>Set at TDC compression. These are the Honda GX200 figures; some 69730 manual revisions print 0.002 to 0.004 in for both valves. Use these</td></tr>
+          <tr><td>Valve lash, exhaust (cold)</td><td class="num">0.006 to 0.008 in</td><td>Too loose defeats the compression release (hard pull); too tight holds the valve off its seat</td></tr>
+          <tr><td>Spark plug</td><td>NGK BP6ES or Torch F6TC (manual)</td><td>NGK BPR6ES, the resistor plug from the Honda GX200, is the usual substitute. Champion RN9YC crosses to it</td></tr>
           <tr><td>Plug gap</td><td class="num">0.027 to 0.031 in</td><td>0.7 to 0.8 mm</td></tr>
-          <tr><td>Coil air gap</td><td class="num">0.010 to 0.016 in</td><td>Forum figure; the manual lists none. Use a brass or plastic shim</td></tr>
+          <tr><td>Coil air gap</td><td class="num">0.010 to 0.016 in</td><td>Predator manual lists none. Honda GX200 spec is 0.4 mm plus or minus 0.2 (0.008 to 0.024 in); this is the safe middle. Brass or plastic shim</td></tr>
           <tr><td>Head bolts</td><td class="num">17 to 20 ft-lb</td><td>Cross pattern, two passes</td></tr>
           <tr><td>Rod bolts, stock rod</td><td class="num">9 ft-lb (108 in-lb)</td><td>M7 bolts. Do not overtighten</td></tr>
           <tr><td>Side cover bolts</td><td class="num">17 ft-lb (24 Nm)</td><td>M8, cross pattern. Honda GX200 value</td></tr>
@@ -892,9 +894,9 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
           <tr><td>Valve cover bolts</td><td class="num">7 ft-lb (10 Nm)</td><td>M6. Snug; the gasket seals, not the torque</td></tr>
           <tr><td>Rocker adjuster lock nuts</td><td class="num">7 ft-lb (10 Nm)</td><td>Hold the adjuster while the nut goes tight, then re-check lash</td></tr>
           <tr><td>Spark plug</td><td class="num">14 ft-lb (20 Nm)</td><td>New plug: finger tight plus a half turn</td></tr>
-          <tr><td>Oil</td><td class="num">0.5 qt, 10W-30</td><td>5W-30 below 32 F. Fill to the top of the neck on level ground</td></tr>
+          <tr><td>Oil</td><td class="num">0.5 qt, 10W-30</td><td>5W-30 below 32 F. Fill to the lower edge of the fill hole with the engine level</td></tr>
           <tr><td>Bore x stroke</td><td class="num">70 x 55 mm</td><td>Rings are 70 mm, not the 68 mm of the 196cc clone</td></tr>
-          <tr><td>Compression ratio</td><td class="num">8.5:1</td><td></td></tr>
+          <tr><td>Compression ratio</td><td class="num">8.5:1 to 9:1</td><td>Depends on the manual revision</td></tr>
           <tr><td>Piston arrow</td><td>Toward the pushrod side</td><td>Marks the offset wrist pin</td></tr>
           <tr><td>Cranking compression</td><td>No official spec</td><td>The compression release makes a healthy engine read low on a pull. Compare engines against each other</td></tr>
         </tbody>
@@ -912,18 +914,18 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
       <p>Each step has the check that proves it before you close the next part over it. Photograph each check. No evidence, no credit.</p>
     </div>
     <ol class="checklist">
-      <li><div><strong>Rings on the piston</strong><span>Oil ring first, then second, then top. Marks face up. Stagger the three gaps 120 degrees apart, none in line with the wrist pin.</span></div><span class="torque">no torque</span></li>
+      <li><div><strong>Rings on the piston</strong><span>Oil ring first: it is three pieces, expander in with its ends butted not overlapped, then the lower rail, then the upper rail. Then the second ring, then the top. Marks face up. Stagger every gap, none in line with the wrist pin.</span></div><span class="torque">no torque</span></li>
       <li><div><strong>Piston and rod into the bore</strong><span>Arrow on the crown toward the pushrod side. Oil the bore and rings. Ring compressor snug, tap with a hammer handle, never force it.</span></div><span class="torque">no torque</span></li>
-      <li><div><strong>Rod cap onto the crank</strong><span>Match marks on the rod and cap line up. Oil the journal. Turn the crank by hand after torquing: it must spin freely with no tight spot.</span></div><span class="torque">9 ft-lb</span></li>
-      <li><div><strong>Cam and timing dots</strong><span>Crank dot faces cam dot on the line between centers. Tappets in first. Photograph the dots before the cover goes on.</span></div><span class="torque">no torque</span></li>
-      <li><div><strong>Side cover and gasket</strong><span>New gasket, dowels in place, hold the crank still. Cross pattern. Turn the engine two turns by hand: no binding.</span></div><span class="torque">17 ft-lb</span></li>
+      <li><div><strong>Rod cap onto the crank</strong><span>Cap on the way it came off (scribe marks from teardown), oil dipper hanging down into the sump. Oil the journal. Turn the crank by hand after torquing: it must spin freely with no tight spot.</span></div><span class="torque">9 ft-lb</span></li>
+      <li><div><strong>Cam and timing dots</strong><span>Tappets in first, paired to their bores. Crank dot faces cam dot on the line between centers as the cam drops into mesh. Photograph the dots before the cover goes on.</span></div><span class="torque">no torque</span></li>
+      <li><div><strong>Side cover and gasket</strong><span>New gasket, both dowels in place, governor gear seated. Six bolts, cross pattern. Turn the engine two turns by hand: no binding.</span></div><span class="torque">17 ft-lb</span></li>
       <li><div><strong>Head gasket and head</strong><span>Gasket dry, no sealer. Head bolts cross pattern in two passes. Pushrods in their original holes.</span></div><span class="torque">17 ft-lb</span></li>
       <li><div><strong>Rockers and valve lash</strong><span>Find TDC compression (finger over the plug hole, feel pressure, both rockers loose). Intake 0.004 to 0.006, exhaust 0.006 to 0.008 in. Hold the adjuster while the lock nut goes tight, then re-check.</span></div><span class="torque">lash spec</span></li>
-      <li><div><strong>Flywheel and key</strong><span>Both tapers clean and dry. Stock key fully in the slot. Nut torqued with a strap wrench on the flywheel.</span></div><span class="torque">54 ft-lb</span></li>
+      <li><div><strong>Flywheel and key</strong><span>Both tapers clean and dry. Key into the crank keyway first, then the flywheel over it. Nut torqued with a strap wrench holding the flywheel, never an impact gun.</span></div><span class="torque">54 ft-lb</span></li>
       <li><div><strong>Coil air gap</strong><span>Magnet under the coil, shim between, bolts snug, pull the shim, spin by hand: no rub.</span></div><span class="torque">0.010 to 0.016 in</span></li>
-      <li><div><strong>Carb, gaskets, and linkage</strong><span>Gasket order: head, insulator block, gasket, carb, gasket, air filter base. Governor rod and spring in the same holes they came from. Throttle plate sits open at rest.</span></div><span class="torque">snug</span></li>
+      <li><div><strong>Carb, gaskets, and linkage</strong><span>Gasket order: head, gasket, insulator block, gasket, carb, gasket, air filter base. Governor rod and spring in the same holes they came from. Throttle plate sits open at rest.</span></div><span class="torque">snug</span></li>
       <li><div><strong>Kill switch and low-oil sensor</strong><span>Yellow sensor wire and the kill wire to the coil tab, not pinched under any cover. Switch to Run.</span></div><span class="torque">no torque</span></li>
-      <li><div><strong>Oil, fuel, plug, pull</strong><span>0.5 qt oil to the top of the neck. Fresh ethanol-free gas. New plug gapped to 0.030 in. Fuel valve on, choke on, throttle open. Pull.</span></div><span class="torque">0.5 qt</span></li>
+      <li><div><strong>Oil, fuel, plug, pull</strong><span>Check the dipstick first: thin oil over the mark that smells of gas means fuel got into the crankcase; drain and refill. 0.5 qt oil to the lower edge of the fill hole, engine level. Fresh ethanol-free gas. New plug gapped to 0.030 in. Fuel valve on, choke on, throttle open. Pull.</span></div><span class="torque">0.5 qt</span></li>
     </ol>
 
     <div class="fig-row">
@@ -1028,7 +1030,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
           <li>Coil (note the wire routing), then the flywheel nut and flywheel with a puller.</li>
           <li>Valve cover, rockers, pushrods.</li>
           <li>Head and head gasket.</li>
-          <li>Side cover, then the cam. Photograph the timing dots before the cam comes out.</li>
+          <li>Bring the piston to TDC compression first, so the timing dots sit lined up. Side cover off, photograph the dots, then lift the cam. The tappets can drop out once the cam is gone: keep each one paired to its bore.</li>
           <li>Rod cap, then piston and rod out the top of the bore.</li>
         </ol>
       </div>
@@ -1048,7 +1050,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
     <details>
       <summary>Which version do you have? Non-hemi, hemi, and generations</summary>
       <div class="body">
-        <p>This guide covers the non-hemi 212 (item 69730), the common one in school shops. The hemi (item 60363 and later) has a domed combustion chamber, a different head, and a round valve cover with the bolts in the middle; the non-hemi valve cover is a rounded rectangle with bolts around the edge. Gasket kits also depend on the generation of the non-hemi, which is printed on the engine label and the box. Check it before ordering gaskets.</p>
+        <p>This guide covers the non-hemi 212 (item 69730), the common one in school shops. The hemi (item 60363) has a domed combustion chamber, a different head, and a dull cast-aluminum valve cover; the non-hemi cover is shiny stamped steel. Parts vendors also split the non-hemi into generations by its valve hardware, which changes gasket shapes and ring thickness. Check it before ordering gaskets.</p>
       </div>
     </details>
   </div>
@@ -1147,8 +1149,8 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
       <table>
         <thead><tr><th>Look at</th><th>Non-hemi (this guide)</th><th>Hemi</th></tr></thead>
         <tbody>
-          <tr><td>Harbor Freight item number</td><td>69730, 69727</td><td>60363 and most engines sold since 2020; the box and label say Hemi</td></tr>
-          <tr><td>Valve cover</td><td>Rounded rectangle, bolts around the edge</td><td>Round-ish cover, bolts through the middle</td></tr>
+          <tr><td>Harbor Freight item number</td><td>69730, 69727</td><td>60363. Engines have shipped in mislabeled boxes, so confirm by the valve cover, not the sticker</td></tr>
+          <tr><td>Valve cover</td><td>Shiny stamped steel, the Honda GX200 shape</td><td>Dull cast aluminum</td></tr>
           <tr><td>Combustion chamber</td><td>Flat, wedge shaped</td><td>Domed, plug in the center</td></tr>
           <tr><td>Low-oil sensor</td><td>Yes, yellow wire</td><td>Usually yes</td></tr>
           <tr><td>Head gasket, rings, cam</td><td>Non-hemi only</td><td>Hemi only</td></tr>
@@ -1156,7 +1158,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
         </tbody>
       </table>
     </div>
-    <p style="margin-top: 20px; font-size: 15px; color: var(--gray-600);">Within the non-hemi there are also generations (Gen 1, 2, 3) that change gasket shapes and ring thickness. The generation is printed on the engine label and the box. Write it on tape on the shroud with the engine number and it never has to be looked up again.</p>
+    <p style="margin-top: 20px; font-size: 15px; color: var(--gray-600);">Within the non-hemi, parts vendors talk about generations (Gen 1, Gen 3) that change gasket shapes and ring thickness. Harbor Freight does not print that on the label. Tell them apart with the valve cover off: clip-on valve retainers are Gen 1, split keepers are Gen 3. Photograph the keepers at teardown and write the result on tape on the shroud with the engine number.</p>
   </div>
 </section>
 
@@ -1225,8 +1227,8 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
       <table>
         <thead><tr><th>You notice</th><th>It usually means</th><th>Go to</th></tr></thead>
         <tbody>
-          <tr><td>Cord pulls with no resistance at all</td><td>No compression: a valve held open, lash far too tight, or the compression release stuck</td><td>Causes 7, 1</td></tr>
-          <tr><td>Cord very hard to pull, like a wall every turn</td><td>Compression release not working: exhaust lash too tight, or hydraulic lock from fuel or oil in the cylinder</td><td>Cause 7; pull the plug and look</td></tr>
+          <tr><td>Cord pulls with no resistance at all</td><td>No compression: a valve held open, lash far too tight, the compression release stuck open, or a head gasket blown</td><td>Causes 7, 1, 8. A stuck or broken release means a new cam</td></tr>
+          <tr><td>Cord very hard to pull, like a wall every turn</td><td>Compression release not working: exhaust lash too loose, a broken release pin on the cam, or hydraulic lock from fuel or oil in the cylinder</td><td>Cause 7; pull the plug and look</td></tr>
           <tr><td>Cord snaps back and takes the handle with it</td><td>Spark too early: sheared flywheel key</td><td>Cause 3</td></tr>
           <tr><td>Pop or sneeze back through the carb</td><td>Intake valve open when it should not be: cam timing, or intake lash too tight</td><td>Causes 1, 7</td></tr>
           <tr><td>Bang out the muffler</td><td>Fuel reaching the exhaust unburned, then lighting: cam timing, or flooding</td><td>Causes 1, 9</td></tr>
@@ -1234,7 +1236,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
           <tr><td>Plug bone dry after twenty pulls</td><td>No fuel reaching the cylinder</td><td>Causes 5, 6, 10</td></tr>
           <tr><td>Gas smells sour or looks cloudy</td><td>Stale or watered fuel</td><td>Cause 10</td></tr>
           <tr><td>Fires on fluid every time, dies in two seconds</td><td>Spark and compression are fine. Fuel delivery is not</td><td>Carb section</td></tr>
-          <tr><td>Oil milky or smells of gas</td><td>Fuel leaked past the carb into the crankcase. Needle not seating, or the fuel valve left on and tipped</td><td>Change oil; carb section</td></tr>
+          <tr><td>Oil thin, over the mark, and smells of gas</td><td>Fuel leaked past the needle into the crankcase: needle not seating, or the fuel valve left on while the engine sat tipped. Milky or tan oil is water instead</td><td>Change oil either way; carb section</td></tr>
           <tr><td>Metallic knock when turning by hand</td><td>Rod cap backward, piston backward, or a valve touching the piston</td><td>Reassembly steps 2 to 4</td></tr>
         </tbody>
       </table>
@@ -1254,7 +1256,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
     </details>
     <details>
       <summary>How do I know the cam is one tooth off without taking the cover off?</summary>
-      <div class="body"><p>You mostly cannot, which is why it is the number one cause. Clues: the engine sneezes back through the carb, or it has strong spark and fuel but cranks with an odd rhythm. The honest answer is to pull the side cover, which is eight bolts and a gasket, and look at the dots.</p></div>
+      <div class="body"><p>You mostly cannot, which is why it is the number one cause. Clues: the engine sneezes back through the carb, or it has strong spark and fuel but cranks with an odd rhythm. The honest answer is to pull the side cover, which is six bolts and a gasket, and look at the dots.</p></div>
     </details>
     <details>
       <summary>The compression gauge only reads 40 psi. Is the engine ruined?</summary>
@@ -1266,7 +1268,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
     </details>
     <details>
       <summary>Why does the cord snap back and hurt my hand?</summary>
-      <div class="body"><p>Spark is firing before the piston reaches the top, so the explosion pushes the piston backward. On a stock engine that is almost always a sheared or half-seated flywheel key. Stop pulling: the kickback can break the recoil pawls. Pull the flywheel and look at the key.</p></div>
+      <div class="body"><p>Spark is coming too early at cranking speed, so the explosion pushes the piston backward. On a stock engine the usual reason is a flywheel that has slipped on a sheared or half-seated key. Stop pulling: the kickback can break the recoil pawls. Get the flywheel off and look at the key.</p></div>
     </details>
     <details>
       <summary>I bypassed the low-oil sensor and it runs. Can I leave it?</summary>
@@ -1274,7 +1276,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
     </details>
     <details>
       <summary>What is the difference between the 212 and a Honda GX200?</summary>
-      <div class="body"><p>The 212 is a copy of the GX200 with a 2 mm bigger bore (70 mm instead of 68 mm). Most procedures and torque values carry over. Rings, pistons and head gaskets do not: a 68 mm ring set will not fit a 212.</p></div>
+      <div class="body"><p>The 212 is a copy of the GX200 with a 2 mm bigger bore (70 instead of 68 mm) and a 1 mm longer stroke (55 instead of 54 mm). Most procedures and torque values carry over. Rings, pistons and head gaskets do not: a 68 mm ring set will not fit a 212.</p></div>
     </details>
     <details>
       <summary>Why did all four of our engines fail the same way?</summary>
@@ -1291,9 +1293,9 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
     </div>
     <dl class="glossary">
       <dt>TDC</dt><dd>Top dead center. The piston at the very top of its travel. It happens twice per cycle: once on compression (both valves closed) and once on exhaust (exhaust valve open).</dd>
-      <dt>Lash</dt><dd>The small gap between the rocker arm and the valve stem when the valve is closed. It lets the valve seat fully as the metal heats and grows.</dd>
-      <dt>Compression release</dt><dd>A small weight on the cam gear that holds the exhaust valve open a crack at cranking speed so the cord is easier to pull. It lets go once the engine spins fast.</dd>
-      <dt>Flywheel key</dt><dd>The small aluminum key that locates the flywheel on the crank so the magnets pass the coil at the right moment. It sets timing; the taper and nut hold the flywheel on.</dd>
+      <dt>Lash</dt><dd>The small gap between the rocker arm and the valve stem when the valve is closed. It lets the valve seat fully as the metal heats and grows. Too tight: the valve never seats. Too loose: noisy, and on the exhaust it defeats the compression release.</dd>
+      <dt>Compression release</dt><dd>A small weight and pin on the cam gear that lifts the exhaust valve a crack at cranking speed so the cord is easier to pull. It lets go once the engine spins fast. Exhaust lash set too loose swallows that lift and the release stops working.</dd>
+      <dt>Flywheel key</dt><dd>The small key that locates the flywheel on the crank so the magnets pass the coil at the right moment. It sets timing; the taper and nut hold the flywheel on.</dd>
       <dt>Coil air gap</dt><dd>The gap between the ignition coil legs and the flywheel magnets. Too wide and the spark is weak or gone.</dd>
       <dt>Timing dots</dt><dd>Punch marks on the crank gear and cam gear. When they face each other, the valves open and close in step with the piston.</dd>
       <dt>Main jet</dt><dd>The brass screw with a tiny hole that meters fuel at speed. The emulsion tube above it mixes that fuel with air.</dd>
@@ -1301,7 +1303,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
       <dt>Float and needle</dt><dd>The float rises with fuel in the bowl and pushes the needle into its seat to shut off the fuel. A worn needle floods the carb.</dd>
       <dt>Governor</dt><dd>Spinning weights in the crankcase that pull the throttle closed as speed rises. Its arm and springs must go back exactly as they came off.</dd>
       <dt>Vacuum leak</dt><dd>Air getting into the intake somewhere other than through the carb, usually a bad gasket or a loose insulator block. It leans the mixture until the engine will not run.</dd>
-      <dt>Non-hemi</dt><dd>The 212 with a flat, wedge-shaped combustion chamber and a rounded-rectangle valve cover. The hemi has a domed chamber and a round cover.</dd>
+      <dt>Non-hemi</dt><dd>The 212 with a flat, wedge-shaped combustion chamber and a shiny stamped-steel valve cover. The hemi has a domed chamber and a dull cast-aluminum cover.</dd>
     </dl>
   </div>
 </section>
@@ -1316,7 +1318,7 @@ details .body ul, details .body ol { padding-left: 22px; display: flex; flex-dir
   <div class="container">
     <div class="section-header">
       <h2>Sources and what is not verified</h2>
-      <p>Lash, plug, oil, and bore come from the owner's manual. Torque values come from clone-engine tables that disagree by a few foot-pounds. Coil gap, piston arrow, and compression readings come from forum consensus, not a manual.</p>
+      <p>Lash, plug, oil, and bore come from the owner's manual. Torque values are Honda GX200 shop-manual values, which the 212 shares. Piston arrow and compression readings come from forum consensus, not a manual.</p>
     </div>
     <ul>
       <li><a href="https://manuals.harborfreight.com/manuals/69000-69999/69730-792363697309.pdf">Predator 212 non-hemi owner's manual, item 69730</a> <span>(valve lash, plug, oil, bore and stroke)</span></li>

@@ -24,6 +24,7 @@
   --danger: #ff3b30;
   --yes-bg: #e9f8ec;
   --no-bg: #fff1e6;
+  --warning-ink: #9a7400;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: 'Playfair Display', Georgia, serif;
   --max-width: 980px;
@@ -36,14 +37,14 @@
   :root:not([data-theme="light"]) {
     --white: #1d1d1f; --off-white: #161618; --gray-50: #2a2a2c; --gray-100: #3a3a3c; --gray-200: #48484a;
     --gray-300: #636366; --gray-400: #98989d; --gray-600: #aeaeb2; --gray-800: #f5f5f7; --black: #ffffff;
-    --accent: #2997ff; --accent-hover: #64b5f6; --accent-light: #1a2a3a; --yes-bg: #1b2e20; --no-bg: #3a2a1a;
+    --accent: #2997ff; --accent-hover: #64b5f6; --accent-light: #1a2a3a; --yes-bg: #1b2e20; --no-bg: #3a2a1a; --warning-ink: #ffcc66;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --white: #1d1d1f; --off-white: #161618; --gray-50: #2a2a2c; --gray-100: #3a3a3c; --gray-200: #48484a;
   --gray-300: #636366; --gray-400: #98989d; --gray-600: #aeaeb2; --gray-800: #f5f5f7; --black: #ffffff;
-  --accent: #2997ff; --accent-hover: #64b5f6; --accent-light: #1a2a3a; --yes-bg: #1b2e20; --no-bg: #3a2a1a;
+  --accent: #2997ff; --accent-hover: #64b5f6; --accent-light: #1a2a3a; --yes-bg: #1b2e20; --no-bg: #3a2a1a; --warning-ink: #ffcc66;
   color-scheme: dark;
 }
 
@@ -69,11 +70,11 @@ svg { max-width: 100%; height: auto; }
 }
 .container { max-width: var(--max-width); }
 .container--wide { max-width: var(--max-width-wide); }
-section { padding-block: 88px; }
-.section-header { text-align: center; margin-bottom: 48px; }
+section { padding-block: 96px; }
+.section-header { text-align: center; margin-bottom: 56px; }
 .section-header h2 { font-size: clamp(1.8rem, 3.8vw, 2.6rem); letter-spacing: -0.02em; margin-bottom: 12px; }
 .section-header p { font-size: 1.05rem; color: var(--gray-600); max-width: 640px; margin: 0 auto; }
-.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+.eyebrow, .section-header p.eyebrow, .split p.eyebrow, .lab-card p.eyebrow, .example p.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 auto 14px; max-width: none; }
 p + p { margin-top: 1em; }
 strong { font-weight: 600; }
 .num { font-variant-numeric: tabular-nums; }
@@ -99,7 +100,7 @@ strong { font-weight: 600; }
 .site-nav__links a:hover { color: var(--gray-800); }
 
 /* HERO */
-.hero { padding: 96px 0 64px; text-align: center; }
+.hero { padding: 120px 0 80px; text-align: center; }
 .hero h1 { font-size: clamp(2.2rem, 5.5vw, 3.6rem); letter-spacing: -0.025em; max-width: 820px; margin: 0 auto 22px; }
 .hero__sub { font-size: 1.15rem; color: var(--gray-600); max-width: 640px; margin: 0 auto 32px; }
 .hero__actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
@@ -113,7 +114,8 @@ strong { font-weight: 600; }
 /* PHOTO BANNER */
 .photo-banner { position: relative; background: #1d1d1f; max-height: 560px; overflow: hidden; }
 .photo-banner img { width: 100%; height: 100%; object-fit: cover; max-height: 560px; }
-.photo-banner__overlay { position: absolute; left: 0; right: 0; bottom: 0; padding: 48px 24px 18px; background: linear-gradient(transparent, rgba(0,0,0,0.6)); }
+.photo-banner__overlay { position: absolute; inset: 0; padding: 32px; display: flex; align-items: flex-end; background: linear-gradient(transparent 40%, rgba(0,0,0,0.45)); }
+.photo-banner--low img { object-position: center 40%; }
 .photo-banner__text { color: #fff; font-size: 13px; font-weight: 500; opacity: 0.9; }
 
 /* STATS STRIP */
@@ -124,7 +126,7 @@ strong { font-weight: 600; }
 .stat-item__label { font-size: 13px; color: var(--gray-600); margin-top: 8px; }
 
 /* RULE BAND */
-.rule-band { background: var(--gray-800); color: var(--white); padding-block: 56px; text-align: center; }
+.rule-band { background: var(--gray-800); color: var(--white); padding-block: 64px; text-align: center; }
 .rule-band p { font-family: var(--font-display); font-size: clamp(1.3rem, 2.6vw, 1.8rem); max-width: 760px; margin: 0 auto 10px; text-wrap: balance; }
 .rule-band small { color: var(--gray-300); font-size: 14px; }
 
@@ -132,7 +134,7 @@ strong { font-weight: 600; }
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .step { background: var(--gray-50); border-radius: var(--radius); padding: 28px 26px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
 .step__n { font-family: var(--font-display); font-size: 2rem; color: var(--accent); line-height: 1; }
-.step h3 { font-size: 1.35rem; }
+.step h3 { font-size: 1.4rem; }
 .step p, .step li { font-size: 15px; color: var(--gray-600); }
 .step ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .step li { padding-left: 18px; position: relative; }
@@ -146,6 +148,11 @@ figure { margin: 0; }
 .figure svg { display: block; margin: 0 auto; color: var(--gray-800); width: 100%; }
 .figure figcaption { font-size: 14px; color: var(--gray-600); margin-top: 18px; max-width: 700px; margin-left: auto; margin-right: auto; text-align: center; }
 .figure--tight { padding: 20px; }
+.figure--tight svg text { font-size: 13px; }
+.figure--tight svg text[font-size="14"], .figure--tight svg text[font-size="15"] { font-size: 15px; }
+.fig-row svg text { font-size: 11px; }
+.fig-row svg text[font-size="12"] { font-size: 12px; }
+.fig-row svg text[font-size="14"] { font-size: 14px; }
 @media (max-width: 700px) { .figure--tight svg { min-width: 560px; } .figure--tight { padding: 16px; } .figure--tight figcaption::after { content: " Swipe sideways to see the whole drawing."; color: var(--gray-400); } }
 
 /* TWO COLUMN */
@@ -156,6 +163,7 @@ figure { margin: 0; }
 .split + .split { margin-top: 72px; }
 .split--reverse > :first-child { order: 2; }
 .split--top { align-items: start; }
+.split--top > figure { position: sticky; top: 72px; }
 .spec-pair { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
 .chip { font-size: 13px; font-weight: 600; background: var(--accent-light); color: var(--accent); padding: 6px 12px; border-radius: 999px; font-variant-numeric: tabular-nums; }
 .chip--warn { background: var(--no-bg); color: #b4540c; }
@@ -164,6 +172,7 @@ figure { margin: 0; }
 
 /* TABLES */
 .table-wrap { overflow-x: auto; border: 1px solid var(--gray-100); border-radius: var(--radius); }
+@media (max-width: 700px) { .table-wrap table:not(.causes) { min-width: 640px; } .table-wrap { position: relative; } }
 table { border-collapse: collapse; width: 100%; font-size: 15px; }
 th, td { text-align: left; padding: 12px 14px; vertical-align: top; border-bottom: 1px solid var(--gray-100); }
 th { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray-600); background: var(--gray-50); white-space: nowrap; }
@@ -323,6 +332,8 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
   .lab-grid { grid-template-columns: 1fr; }
   section { padding-block: 64px; }
   .hero { padding: 72px 0 48px; }
+  .hero__actions { flex-direction: column; align-items: center; }
+  .btn { width: 100%; max-width: 280px; justify-content: center; }
   .site-nav__links { gap: 16px; }
   .checklist li { grid-template-columns: 44px 1fr; }
   .checklist .torque { grid-column: 2; justify-self: start; }
@@ -353,7 +364,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
   <div class="container">
     <p class="eyebrow">Small Engines &middot; Crescent Valley High School &middot; Corvallis, Oregon</p>
     <h1>You rebuilt the Predator 212. It won't start. Here is how to find out why.</h1>
-    <p class="hero__sub">A bench guide for the non-hemi 212cc engine, written for Small Engines at Crescent Valley and anyone else with a dead clone engine: a safety gate, three tests with pass lines you can count, the ten causes they point to, the three rebuild mistakes behind most of them, and what to buy only after a test says so.</p>
+    <p class="hero__sub">A bench guide for the non-hemi 212, for Small Engines at Crescent Valley and anyone else with a dead clone engine. Three tests with pass lines you can count, the ten causes they point to, and what to buy only after a test says so.</p>
     <div class="hero__actions">
       <a href="#gate" class="btn btn--primary">Start at Test 0
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
@@ -975,10 +986,10 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <text x="235" y="84" text-anchor="middle" fill="var(--accent)" font-weight="600">solid rod</text>
           <!-- spring -->
           <!-- governor spring from arm to throttle control -->
-          <path d="M156 96 Q200 140 236 226" fill="none" stroke="var(--warning)" stroke-width="2" stroke-dasharray="5 3"/>
+          <path d="M156 96 Q200 140 236 226" fill="none" stroke="var(--warning)" stroke-width="2.5" stroke-dasharray="5 3"/>
           <rect x="236" y="214" width="90" height="30" rx="6" fill="var(--white)" stroke="currentColor" stroke-width="1.5"/>
           <text x="281" y="233" text-anchor="middle" fill="currentColor" font-size="11">throttle control</text>
-          <text x="210" y="190" fill="#9a7400" font-weight="600" font-size="11">governor spring</text>
+          <text x="210" y="190" fill="var(--warning-ink)" font-weight="600" font-size="11">governor spring</text>
           <!-- throttle plate open indicator -->
           <rect x="430" y="60" width="56" height="34" rx="6" fill="var(--yes-bg)" stroke="currentColor" stroke-width="1"/>
           <line x1="440" y1="77" x2="476" y2="77" stroke="currentColor" stroke-width="3"/>
@@ -987,6 +998,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
         <figcaption>At rest the spring pulls the governor arm forward, the solid rod pushes the throttle lever, and the plate stands open. Only a spinning engine closes it.</figcaption>
       </figure>
       <div>
+        <p class="eyebrow">Ten seconds</p>
         <h3>Check it in ten seconds</h3>
         <ol class="step-list">
           <li><strong>Air filter off.</strong> Look into the carb throat. The throttle plate should be edge-on to you, wide open.</li>
@@ -1012,6 +1024,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
     </div>
     <div class="split split--reverse split--top">
       <div>
+        <p class="eyebrow">Four pulls</p>
         <h3>Find which one it is</h3>
         <ol class="step-list">
           <li><strong>Both wires off the coil tab:</strong> spark. That proves the coil and flywheel are fine.</li>
@@ -1037,7 +1050,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <!-- wires -->
           <g fill="none" stroke="currentColor" stroke-width="2">
             <path d="M216 145 L300 145 L300 70 L380 70"/>
-            <path d="M300 145 L300 220 L380 220" stroke="#d9a400"/>
+            <path d="M300 145 L300 220 L380 220" stroke="var(--warning)"/>
           </g>
           <!-- kill switch -->
           <rect x="380" y="45" width="130" height="50" rx="8" fill="var(--white)" stroke="currentColor" stroke-width="1.5"/>
@@ -1053,7 +1066,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
             <line x1="510" y1="220" x2="535" y2="220"/><line x1="535" y1="210" x2="535" y2="230"/><line x1="540" y1="214" x2="540" y2="226"/><line x1="545" y1="218" x2="545" y2="222"/>
           </g>
           <text x="300" y="285" text-anchor="middle" fill="currentColor" font-size="12">Either path to ground = no spark. Unplug at the tab to test.</text>
-          <text x="340" y="212" fill="#9a7400" font-size="11">yellow</text>
+          <text x="340" y="212" fill="var(--warning-ink)" font-size="11">yellow</text>
           <text x="340" y="62" fill="currentColor" font-size="11">black</text>
         </svg>
         <figcaption>A grounded kill tab stops spark. The engine cannot tell whether the ground came from the switch, the sensor, or a pinched wire, so you test each path on its own.</figcaption>
@@ -1129,11 +1142,11 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
   </div>
 </div>
 
-<section id="reference-head" style="padding-block: 56px 0;">
+<section id="reference-head" style="padding-block: 72px 0;">
   <div class="container">
     <div class="section-header" style="margin-bottom: 0;">
       <p class="eyebrow">Reference</p>
-      <h2>Specs, reassembly, parts, and the rest</h2>
+      <h2 style="font-size: clamp(1.4rem, 2.6vw, 1.8rem);">Specs, reassembly, parts, and the rest</h2>
       <p>Everything below is for looking things up. The bench path ends at the lab above.</p>
     </div>
   </div>
@@ -1455,7 +1468,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
   </div>
 </section>
 
-<div class="photo-banner">
+<div class="photo-banner photo-banner--low">
   <img src="img/students-group-engine-teardown-lab.jpg" alt="Students gathered around a workbench taking a small engine apart" width="1600" height="1200" loading="lazy">
   <div class="photo-banner__overlay"><span class="photo-banner__text">Teardown day &middot; CVHS small engines</span></div>
 </div>

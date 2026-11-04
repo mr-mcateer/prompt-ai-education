@@ -387,13 +387,13 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
       <p>By the end of this you can show the teacher an engine that is safe to crank. Every box, every engine, every time. No pull until the teacher initials the record sheet.</p>
     </div>
     <ul class="gate">
-      <li><span class="box"></span><div><strong>Safety glasses on.</strong> Gas can, rags, and starting fluid are off the bench. Starting fluid lives in the flammables cabinet and the teacher hands it out one test at a time.</div></li>
+      <li><span class="box"></span><div><strong>Safety glasses on.</strong> Gas can, rags, and starting fluid are off the bench. Starting fluid lives in the flammables cabinet and the teacher hands it out one test at a time. At home: one can, kept off the bench between squirts.</div></li>
       <li><span class="box"></span><div><strong>Engine level, oil at the lower edge of the fill hole.</strong> Dipstick oil is not thin and does not smell of gas. If it does, stop: fuel got into the crankcase. Drain and refill before anything else.</div></li>
       <li><span class="box"></span><div><strong>Air filter off, look into the carb throat.</strong> The throttle plate is edge-on to you (open). Push the throttle lever shut and let go: it snaps back open. If it does not, stop and go to <a href="#governor">Governor</a>. Do not pull.</div></li>
       <li><span class="box"></span><div><strong>Kill switch set to Run, both wires on the coil tab.</strong> Fuel valve off until a test calls for fuel.</div></li>
       <li><span class="box"></span><div><strong>Engine number on tape on the shroud. Camera ready.</strong> Every test result gets a photo or a short video with the tape in frame.</div></li>
       <li><span class="box"></span><div><strong>Stand beside the recoil, never over the carb.</strong> If the cord ever snaps back out of your hand: stop, do not pull again, get the teacher.</div></li>
-      <li class="gate__sign"><span class="box box--teacher"></span><div><strong>Teacher initials</strong> on the record sheet, Checkpoint 1.</div></li>
+      <li class="gate__sign"><span class="box box--teacher"></span><div><strong>Teacher initials</strong> on the record sheet, Checkpoint 1. <em>Working alone at home: read every box out loud, tick it on paper, and do not pull until all six are ticked.</em></div></li>
     </ul>
   </div>
 </section>
@@ -442,7 +442,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
         <p class="step__tool">Tool: inline spark tester</p>
         <ol class="mini">
           <li><strong>1a, wires on.</strong> Clip the tester between the plug and the plug boot. Pull the cord three times and watch the tester window.</li>
-          <li><strong>1b, only if 1a shows no spark.</strong> Unplug the black kill wire and the yellow sensor wire where they join before the coil (on the 69730 that junction can sit under the blower housing; if so, test at the connector behind the switch panel). Pull three times.</li>
+          <li><strong>1b, only if 1a shows no spark.</strong> Unplug the black kill wire and the yellow sensor wire where they join before the coil. On most 69730s that junction is under the blower housing: four bolts and the housing lifts off, which is normal and takes two minutes. If there is a two-wire connector behind the switch panel, unplug there instead. Pull three times.</li>
           <li><strong>Plug both wires back in now, before anything else.</strong> Then set the switch to Off and pull once: no spark means the switch works.</li>
         </ol>
         <ul>
@@ -456,9 +456,9 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
         <div class="step__n">2</div>
         <h3>Fuel</h3>
         <p class="step__safe">Stand beside the recoil. One squirt is one count: "one," not "one-two." Two tries maximum.</p>
-        <p class="step__tool">Tool: starting fluid, from the teacher</p>
+        <p class="step__tool">Tool: starting fluid, from the teacher (at home, your own can)</p>
         <ol class="mini">
-          <li>Air filter off. Throttle held open. Choke off: the fluid takes the choke's job, and choke plus fluid floods it (<a href="#c9">cause 9</a>).</li>
+          <li>Air filter off. Two levers on the carb: the choke lever is on the air-filter end and turns a plate in the throat; the throttle lever is on the engine end and has the governor rod hooked to it. Throttle held open. Choke off: the fluid takes the choke's job, and choke plus fluid floods it (<a href="#c9">cause 9</a>).</li>
           <li>One short squirt into the carb throat. Pull up to three times.</li>
           <li>Nothing? One more squirt, three more pulls. Then stop.</li>
         </ol>
@@ -470,14 +470,14 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
       <div class="step">
         <div class="step__n">3</div>
         <h3>Compression</h3>
-        <p class="step__safe">Kill switch Off. Fuel valve off. Plug out, clipped in its boot and laid against the head so the coil has somewhere to spark, on the far side from the hole.</p>
+        <p class="step__safe">Kill switch Off. Fuel valve off. Plug out, clipped in its boot, and its metal threads pressed against bare metal on the head (not the plastic shroud), a foot from the hole, so the coil has somewhere to spark.</p>
         <p class="step__tool">Tool: compression gauge, 14 mm</p>
         <ol class="mini">
           <li>Gauge threaded in finger tight. Throttle held wide open. Pull six times. Photograph the needle.</li>
           <li><strong>3b, only if LOW.</strong> One teaspoon of oil into the plug hole. Gauge back in. Six pulls. Photograph again.</li>
         </ol>
         <ul>
-          <li><strong>Known-good reading:</strong> the teacher's running engine reads <span class="fill">____</span> psi on this gauge. Within 15 psi of that is NORMAL. 30 or more below is LOW. In between: pull six more and use the higher number.</li>
+          <li><strong>Known-good reading:</strong> the teacher's running engine reads <span class="fill">____</span> psi on this gauge. Within 15 psi of that is NORMAL. 30 or more below is LOW. In between: pull six more and use the higher number. <em>No second engine? Skip the absolute number: do 3b anyway and read only the change.</em></li>
           <li><strong>NORMAL, still nothing on fluid:</strong> cam timing or flywheel key. <a href="#c1">Cause 1</a>, then <a href="#c3">3</a>. (A sheared key still shows spark on the tester; the spark is just at the wrong moment.)</li>
           <li><strong>LOW, 3b rises 20 psi or more:</strong> rings. <a href="#c8">Cause 8</a>.</li>
           <li><strong>LOW, 3b rises under 10 psi:</strong> valve, lash, timing, or head gasket. <a href="#c7">Cause 7</a>, <a href="#c1">1</a>, <a href="#c8">8</a>.</li>
@@ -485,7 +485,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
       </div>
     </div>
 
-    <p class="note">A pull-start reading on this engine is always far below its true compression, because the compression release holds the exhaust valve open a crack while you crank. That is why you compare against a known-good engine on the same gauge, not against a number from the internet.</p>
+    <p class="note">A pull-start reading on this engine is always far below its true compression, because the compression release holds the exhaust valve open a crack while you crank. That is why you compare against a known-good engine on the same gauge, not against a number from the internet. (<a href="#faq">Why a 40 psi reading does not mean the engine is ruined.</a>)</p>
 
     <figure class="figure flow-figure" style="margin-top: 32px;">
       <svg viewBox="0 0 960 420" role="img" aria-label="Flowchart: spark test leads to fuel test leads to compression test, each branch ending at a numbered cause" font-family="Inter, sans-serif" font-size="13">
@@ -633,7 +633,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
     <div class="section-header">
       <p class="eyebrow">Ranked for engines that have never run since the rebuild</p>
       <h2>Ten causes, most likely first</h2>
-      <p>When several rebuilt engines all fail the same way, the cause is usually the same assembly step done the same way on each one. Most fixes cost nothing. The ones marked Teacher step mean a cover or the flywheel comes off: your diagnosis earns full credit without doing the fix, and doing one without a check earns zero for the fix.</p>
+      <p>When several rebuilt engines all fail the same way, the cause is usually the same assembly step done the same way on each one. Most fixes cost nothing. The ones marked Teacher step mean a cover or the flywheel comes off: in class, your diagnosis earns full credit without doing the fix, and doing one without a check earns zero for the fix. At home they are your steps too; each needs one extra tool (a strap wrench or puller for the flywheel, a torque wrench for the cover and head), and the how-to is in the three checks below.</p>
     </div>
     <div class="table-wrap">
       <table class="causes">
@@ -776,7 +776,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
               <li>Engine cold. Valve cover off, plug out, kill switch off.</li>
               <li>Finger over the plug hole. Turn the flywheel by hand clockwise (facing the recoil) until you feel air push against your finger. That is the compression stroke starting.</li>
               <li>Keep turning until a straw in the plug hole stops rising. That is TDC compression. Lift each rocker tip with one finger: each lifts and ticks back down. If either one will not lift, you are on exhaust TDC. Turn one full turn and try again.</li>
-              <li>Loosen the intake lock nut. Turn the adjuster until the 0.004 in blade slides in and the 0.006 in blade will not. Both true = done. The blade should move when you pull it and should not bend.</li>
+              <li>Press the intake rocker down onto its pushrod with a thumb so the gap is all at the valve end. The adjuster is the square-headed stud on the rocker; the lock nut sits on it. Loosen the nut. Slide the blade between the rocker tip and the top of the valve stem. Turn the adjuster until the 0.004 in blade slides in and the 0.006 in blade will not. Both true = done. The blade should move when you pull it and should not bend.</li>
               <li>Hold the adjuster with a wrench so it cannot move, tighten the lock nut to 7 ft-lb, then check the feeler again. If the drag changed, do it over.</li>
               <li>Same on the exhaust: the 0.006 in blade slides in, the 0.008 in blade will not.</li>
               <li>If the exhaust rocker is tight at TDC but loosens a few degrees past it, the rocker is sitting on the compression release bump. Turn the flywheel a hair past TDC and set the exhaust there.</li>
@@ -991,7 +991,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
         <ol class="step-list">
           <li><strong>Air filter off.</strong> Look into the carb throat. The throttle plate should be edge-on to you, wide open.</li>
           <li><strong>Push the throttle lever closed by hand and let go.</strong> It must snap back open. If it stays shut or moves slowly, the spring is on the wrong hole or the rod is binding.</li>
-          <li><strong>Rod and spring in the holes they came out of.</strong> The solid rod links the governor arm to the throttle lever. The spring runs from the throttle control plate to the governor arm. Your teardown photo is the spec; if nobody took one, find a running engine of the same model and copy it.</li>
+          <li><strong>Rod and spring in the holes they came out of.</strong> The solid rod links the governor arm to the throttle lever. The spring runs from the throttle control plate to the governor arm. Your teardown photo is the spec; if nobody took one, a running engine of the same model or a clear photo of a stock 69730 linkage is the next best thing.</li>
           <li><strong>Governor arm set. Teacher step.</strong> If the clamp bolt was loosened: loosen it, push the throttle lever to wide open, turn the governor shaft fully in the same direction with pliers, tighten the clamp. Skip this if the clamp was never touched.</li>
         </ol>
         <div class="callout callout--danger" style="margin-top: 20px;">
@@ -1345,7 +1345,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
     <div class="section-header">
       <p class="eyebrow">For four engines</p>
       <h2>What to buy, and when</h2>
-      <p>Order the "buy now" rows today. Hold the rest until a test points to them. Check the star rating and the fit notes on each listing before checkout; the links were found by search and could not be opened to verify ratings.</p>
+      <p>Quantities are for four class engines; one engine at home needs one of each tool, two plugs, and one quart of fuel. Order the "buy now" rows today. Hold the rest until a test points to them. Check the star rating and the fit notes on each listing before checkout; the links were found by search and could not be opened to verify ratings.</p>
     </div>
     <div class="table-wrap">
       <table>
@@ -1364,6 +1364,10 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <tr><td>Carburetor</td><td><a href="https://www.amazon.com/Carburetor-Gaskets-Harbor-Freight-Predator/dp/B07Z291W5S">69730 / 60363 carb with gaskets</a></td><td class="num">0 to 4</td><td><span class="tag tag--wait">If cleaning fails</span></td><td>No name brand makes one; confirm 69730 is named</td></tr>
           <tr><td>Ignition coil</td><td><a href="https://www.amazon.com/Atunee-Ignition-30500-ZE1-073-30500-ZE1-033-36100-ZE1-015/dp/B0B9NDR5B5">Atunee 30500-ZE1-073</a></td><td class="num">0 to 1</td><td><span class="tag tag--wait">If no spark after re-gap</span></td><td>Avoid "racing" or no-rev-limit coils</td></tr>
           <tr><td>Piston and rings, 70 mm</td><td><a href="https://www.amazon.com/RHYTHM-TESTAMENT-Predator-212cc-Piston/dp/B0DWSLR4N3">70 mm piston and rings, stock-block fit</a></td><td class="num">0 to 4</td><td><span class="tag tag--wait">If the oil-squirt test says rings</span></td><td>68 mm sets are for 196cc engines</td></tr>
+          <tr><td>Torque wrench, 3/8 in drive</td><td>Any brand that covers 5 to 60 ft-lb (rod bolts to flywheel nut); an in-lb click wrench is nicer for the 7 and 9 ft-lb settings</td><td class="num">1</td><td><span class="tag tag--now">Buy now</span></td><td>Not in a basic socket set, and every spec on this page needs one</td></tr>
+          <tr><td>Hand tools the kit may lack</td><td>13/16 in spark plug socket, 10 mm wrench (lock nuts, valve cover), strap wrench or small puller (flywheel), feeler gauges above</td><td class="num">1 each</td><td><span class="tag tag--now">Buy now</span></td><td>Check the toolbox first</td></tr>
+          <tr><td>Valve cover gasket</td><td>Included in the gasket kits above; sold alone by the same vendors</td><td class="num">1 per engine</td><td><span class="tag tag--now">Buy now</span></td><td>The cover comes off to set lash, and the old gasket rarely survives</td></tr>
+          <tr><td>Shop basics</td><td>Nitrile gloves, drain pan, small funnel, zip bags, painter's tape and a marker</td><td class="num">1 set</td><td><span class="tag tag--now">Buy now</span></td><td>Any brand</td></tr>
           <tr><td>Valve lapping compound</td><td>Permatex 80036</td><td class="num">1</td><td><span class="tag tag--wait">If a valve leaks</span></td><td>Search "Permatex 80036"</td></tr>
         </tbody>
       </table>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Predator 212 Comic Bench Guide | CVHS Small Engines | Mr. McAteer</title>
+  <meta name="description" content="The bench path of the Predator 212 no-start guide as a ten-panel comic: the safety gate, listening, three tests, ten causes, three rebuild mistakes.">
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="canonical" href="https://promptaieducation.com/engines/212/comic.html">
+  <meta property="og:title" content="It won't start. The Predator 212 comic bench guide">
+  <meta property="og:description" content="A rebuilt Predator 212, a student, a coach, and the engine itself. Three tests, ten minutes, one answer.">
+  <meta property="og:url" content="https://promptaieducation.com/engines/212/comic.html">
+  <meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Patrick+Hand&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: a one-column comic strip on phones, two columns of panels on desktop. Bubble-toon look: 4px ink outlines, flat fills, halftone shadows. */
+:root {
+  --paper: #fffdf7;
+  --ink: #1d1d1f;
+  --panel: #ffffff;
+  --gray: #e8e8ed;
+  --mute: #6e6e73;
+  --yellow: #ffd166;
+  --red: #ef476f;
+  --blue: #0071e3;
+  --green: #06d6a0;
+  --orange: #ff9f1c;
+  --skin: #f6c9a0;
+  --font-title: 'Bangers', Impact, sans-serif;
+  --font-bubble: 'Patrick Hand', 'Comic Sans MS', cursive;
+  --font-ui: 'Inter', -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper: #161618; --ink: #f5f5f7; --panel: #26262a; --gray: #3a3a3c; --mute: #aeaeb2; --blue: #2997ff; --skin: #e0b48c; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --paper: #161618; --ink: #f5f5f7; --panel: #26262a; --gray: #3a3a3c; --mute: #aeaeb2; --blue: #2997ff; --skin: #e0b48c; color-scheme: dark; }
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-ui); font-size: 17px; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
+a { color: var(--blue); }
+a:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+svg { max-width: 100%; height: auto; display: block; }
+
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 64px; }
+
+/* MASTHEAD */
+.mast { text-align: center; padding: 32px 0 20px; }
+.mast .kicker { font-family: var(--font-ui); font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); }
+.mast h1 { font-family: var(--font-title); font-size: clamp(2.6rem, 9vw, 5.5rem); letter-spacing: 0.02em; line-height: 0.95; margin: 8px 0 12px; text-wrap: balance; -webkit-text-stroke: 1px var(--ink); }
+.mast h1 span { color: var(--red); }
+.mast p { font-family: var(--font-bubble); font-size: 1.35rem; color: var(--mute); max-width: 560px; margin: 0 auto; }
+.mast .links { margin-top: 14px; font-size: 14px; }
+
+/* GRID OF PANELS */
+.strip { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.panel { background: var(--panel); border: 4px solid var(--ink); border-radius: 6px; box-shadow: 8px 8px 0 var(--ink); padding: 34px 18px 18px; display: flex; flex-direction: column; gap: 12px; min-width: 0; position: relative; }
+.panel--wide { grid-column: 1 / -1; }
+.panel__n { position: absolute; top: -16px; left: -16px; width: 44px; height: 44px; border: 4px solid var(--ink); border-radius: 50%; background: var(--yellow); color: #1d1d1f; font-family: var(--font-title); font-size: 1.5rem; display: flex; align-items: center; justify-content: center; }
+.panel h2 { font-family: var(--font-title); font-size: clamp(1.5rem, 4vw, 2.1rem); letter-spacing: 0.02em; line-height: 1; }
+.panel h2 small { display: block; font-family: var(--font-ui); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+.art { border: 3px solid var(--ink); border-radius: 4px; background: var(--paper); overflow: hidden; }
+.art svg { width: 100%; }
+.cap { font-size: 14px; color: var(--mute); }
+
+/* BUBBLES */
+.bubble { position: relative; font-family: var(--font-bubble); font-size: 1.25rem; line-height: 1.25; background: var(--panel); color: var(--ink); border: 3px solid var(--ink); border-radius: 22px; padding: 12px 16px; max-width: 100%; }
+.bubble::after { content: ""; position: absolute; bottom: -16px; left: 32px; width: 18px; height: 18px; background: var(--panel); border-right: 3px solid var(--ink); border-bottom: 3px solid var(--ink); transform: skewX(30deg) rotate(45deg); }
+.bubble--r::after { left: auto; right: 32px; transform: skewX(-30deg) rotate(45deg); }
+.bubble--shout { border-radius: 8px; background: var(--yellow); color: #1d1d1f; font-family: var(--font-title); font-size: 1.5rem; letter-spacing: 0.03em; }
+.bubble--shout::after { background: var(--yellow); }
+.bubble--think { border-style: dashed; }
+.bubble--think::after { display: none; }
+.who { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mute); margin-top: 18px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.row > * { min-width: 0; }
+
+/* SFX */
+.sfx { font-family: var(--font-title); font-size: clamp(1.6rem, 6vw, 2.6rem); color: var(--red); -webkit-text-stroke: 1.5px var(--ink); transform: rotate(-4deg); display: inline-block; }
+.sfx--ok { color: var(--green); }
+.sfx--blue { color: var(--blue); }
+
+/* BRANCH CARDS */
+.branches { display: flex; flex-direction: column; gap: 8px; }
+.branch { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; border: 3px solid var(--ink); border-radius: 10px; padding: 8px 12px; font-family: var(--font-bubble); font-size: 1.15rem; line-height: 1.2; background: var(--panel); }
+.branch b { font-family: var(--font-title); font-size: 1.1rem; letter-spacing: 0.03em; padding: 2px 8px; border-radius: 6px; border: 2px solid var(--ink); color: #1d1d1f; white-space: nowrap; }
+.b-ok { background: var(--green); } .b-no { background: var(--red); color: #fff !important; } .b-hm { background: var(--yellow); }
+.branch a { font-weight: 700; }
+
+/* CHECK LIST */
+.check { list-style: none; display: flex; flex-direction: column; gap: 8px; font-family: var(--font-bubble); font-size: 1.2rem; line-height: 1.2; }
+.check li { display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: start; }
+.check li::before { content: ""; width: 24px; height: 24px; border: 3px solid var(--ink); border-radius: 5px; background: var(--panel); margin-top: 2px; }
+.check li.t::before { border-style: dashed; border-color: var(--blue); }
+
+/* CAUSES LINEUP */
+.lineup { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.lineup > a { display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; color: var(--ink); border: 3px solid var(--ink); border-radius: 10px; padding: 10px 6px; background: var(--panel); text-align: center; font-family: var(--font-bubble); font-size: 1rem; line-height: 1.1; min-width: 0; }
+.lineup > a:hover { background: var(--yellow); color: #1d1d1f; }
+.lineup .num { font-family: var(--font-title); font-size: 1.6rem; color: var(--red); }
+.lineup .t { font-size: 10px; font-family: var(--font-ui); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue); }
+
+/* NEVER */
+.never { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.never div { border: 3px solid var(--red); border-radius: 10px; padding: 10px; text-align: center; font-family: var(--font-bubble); font-size: 1.1rem; line-height: 1.15; position: relative; background: var(--panel); }
+.never div::before { content: "NO"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%) rotate(-6deg); font-family: var(--font-title); background: var(--red); color: #fff; padding: 0 8px; border: 2px solid var(--ink); border-radius: 4px; font-size: 0.9rem; letter-spacing: 0.05em; }
+
+.foot { text-align: center; margin-top: 40px; font-size: 14px; color: var(--mute); }
+.foot a { color: var(--blue); }
+
+@media (max-width: 760px) {
+  .strip { grid-template-columns: 1fr; gap: 24px; }
+  .panel { box-shadow: 6px 6px 0 var(--ink); }
+  .row { grid-template-columns: 1fr; }
+  .lineup { grid-template-columns: repeat(2, 1fr); }
+  .never { grid-template-columns: 1fr 1fr; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .panel { transition: transform 0.2s; }
+}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <p class="kicker">CVHS Small Engines &middot; the comic version of the bench guide</p>
+  <h1>It won't <span>start.</span></h1>
+  <p>A rebuilt Predator 212, a student, a coach, and the engine itself. Three tests, ten minutes, one answer.</p>
+  <p class="links"><a href="./">Read the full guide</a> &middot; <a href="../../agenda/se/">Engines agenda</a></p>
+</header>
+
+<div class="strip">
+
+  <!-- PANEL 1: the scene -->
+  <section class="panel panel--wide">
+    <div class="panel__n">1</div>
+    <div class="row">
+      <div class="art">
+        <svg viewBox="0 0 520 300" role="img" aria-label="A student pulls the starter cord on a Predator 212 on a bench while a coach watches with arms folded" font-family="Patrick Hand, cursive" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+          <!-- bench -->
+          <rect x="40" y="200" width="440" height="22" fill="#c9a06b"/>
+          <line x1="70" y1="222" x2="70" y2="290"/><line x1="450" y1="222" x2="450" y2="290"/>
+          <!-- engine -->
+          <rect x="200" y="120" width="130" height="80" rx="8" fill="#2b2b2e"/>
+          <rect x="215" y="95" width="100" height="30" rx="6" fill="#d1d1d6"/>
+          <circle cx="235" cy="160" r="26" fill="#1d1d1f"/><circle cx="235" cy="160" r="16" fill="#555"/>
+          <rect x="300" y="135" width="36" height="34" rx="4" fill="var(--red)"/>
+          <text x="265" y="110" font-size="13" text-anchor="middle" stroke="none" fill="var(--ink)">212</text>
+          <!-- cord -->
+          <path d="M235 160 Q 150 150 120 120" fill="none"/>
+          <!-- student (left) -->
+          <circle cx="110" cy="85" r="24" fill="var(--skin)"/>
+          <path d="M86 78 q24 -30 48 0" fill="#3a2a1a"/>
+          <rect x="88" y="60" width="44" height="10" rx="5" fill="#9ad0ff" opacity="0.9"/>
+          <path d="M80 200 L80 140 q30 -40 60 0 L140 200" fill="#4a6fa5"/>
+          <line x1="105" y1="135" x2="122" y2="120"/>
+          <circle cx="104" cy="90" r="2" fill="var(--ink)"/><circle cx="118" cy="90" r="2" fill="var(--ink)"/>
+          <path d="M104 100 q7 -6 14 0" fill="none"/>
+          <!-- coach (right) -->
+          <circle cx="410" cy="80" r="26" fill="var(--skin)"/>
+          <path d="M384 70 h52 l-6 -14 h-40 z" fill="var(--blue)"/>
+          <path d="M392 95 q18 18 36 0 v10 q-18 14 -36 0 z" fill="#6b4a2a"/>
+          <path d="M378 200 L378 135 q32 -40 64 0 L442 200" fill="#2f3b2f"/>
+          <path d="M385 150 q25 -12 50 0" fill="none"/>
+          <circle cx="402" cy="82" r="2" fill="var(--ink)"/><circle cx="418" cy="82" r="2" fill="var(--ink)"/>
+          <!-- motion lines -->
+          <path d="M150 110 l-12 -10 M156 100 l-6 -14" fill="none"/>
+        </svg>
+      </div>
+      <div>
+        <div class="bubble">We rebuilt it all the way down to the piston. Lash is right. It will not even cough.</div>
+        <p class="who">Student</p>
+        <div class="bubble bubble--r">Then it is almost never the parts. Four engines, same hands, same step done the same way. We test first, we buy nothing yet.</div>
+        <p class="who">Coach</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANEL 2: Test 0 -->
+  <section class="panel">
+    <div class="panel__n">2</div>
+    <h2><small>Test 0</small>Nobody pulls until the gate is checked</h2>
+    <ul class="check">
+      <li>Glasses on. Gas can, rags and starting fluid off the bench.</li>
+      <li>Engine level. Oil at the lower edge of the fill hole, not thin, no gas smell.</li>
+      <li>Air filter off: throttle plate stands open, lever snaps back.</li>
+      <li>Kill switch on Run, both wires plugged in. Fuel valve off.</li>
+      <li>Engine number on tape. Camera ready.</li>
+      <li>Stand beside the recoil. Kickback means stop.</li>
+      <li class="t">Coach initials the sheet. Alone at home: tick all six on paper first.</li>
+    </ul>
+    <div class="bubble bubble--shout">No initials, no pull.</div>
+    <p class="who">Coach</p>
+  </section>
+
+  <!-- PANEL 3: Listen first -->
+  <section class="panel">
+    <div class="panel__n">3</div>
+    <h2><small>Listen first</small>The engine already talks</h2>
+    <div class="art">
+      <svg viewBox="0 0 520 260" role="img" aria-label="The engine with three speech bubbles: snap back means a sheared key, a sneeze through the carb means cam timing, no resistance means a valve held open" font-family="Patrick Hand, cursive" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+          <rect x="195" y="150" width="130" height="80" rx="8" fill="#2b2b2e"/>
+          <rect x="210" y="125" width="100" height="30" rx="6" fill="#d1d1d6"/>
+          <circle cx="230" cy="190" r="26" fill="#1d1d1f"/><circle cx="230" cy="190" r="14" fill="#555"/>
+          <circle cx="222" cy="186" r="3" fill="#fff" stroke="none"/><circle cx="238" cy="186" r="3" fill="#fff" stroke="none"/>
+          <path d="M222 200 q8 6 16 0" fill="none" stroke="#fff" stroke-width="3"/>
+          <g fill="var(--panel)">
+            <path d="M20 20 h170 a12 12 0 0 1 12 12 v50 a12 12 0 0 1 -12 12 h-110 l-20 18 l4 -18 h-44 a12 12 0 0 1 -12 -12 v-50 a12 12 0 0 1 12 -12 z"/>
+            <path d="M330 20 h170 a12 12 0 0 1 12 12 v50 a12 12 0 0 1 -12 12 h-44 l4 18 l-20 -18 h-110 a12 12 0 0 1 -12 -12 v-50 a12 12 0 0 1 12 -12 z"/>
+            <path d="M340 130 h160 a12 12 0 0 1 12 12 v44 a12 12 0 0 1 -12 12 h-120 l-18 16 l2 -16 h-24 a12 12 0 0 1 -12 -12 v-44 a12 12 0 0 1 12 -12 z"/>
+          </g>
+          <g stroke="none" fill="var(--ink)" font-size="17" text-anchor="middle">
+            <text x="105" y="48">SNAP! Cord yanks back.</text>
+            <text x="105" y="74" font-size="14" fill="var(--red)">Sheared flywheel key (3)</text>
+            <text x="415" y="48">Pffft! Sneeze out the carb.</text>
+            <text x="415" y="74" font-size="14" fill="var(--red)">Cam one tooth off (1)</text>
+            <text x="420" y="158">Cord pulls like nothing.</text>
+            <text x="420" y="184" font-size="14" fill="var(--red)">Valve held open, lash (7)</text>
+          </g>
+      </svg>
+    </div>
+    <p class="cap">Write what you hear on the sheet before any tool comes out. Plug wet and gassy: flooded (9). Plug bone dry: no fuel (5, 6, 10). Cord like a wall: exhaust lash too loose, release can't work (7).</p>
+  </section>
+
+  <!-- PANEL 4: Test 1 spark -->
+  <section class="panel">
+    <div class="panel__n">4</div>
+    <h2><small>Test 1</small>Spark</h2>
+    <div class="art">
+      <svg viewBox="0 0 520 220" role="img" aria-label="An inline spark tester clipped between the plug and the boot, flashing, with the student pulling the cord three times" font-family="Patrick Hand, cursive" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+          <!-- plug and tester -->
+          <rect x="60" y="120" width="60" height="30" rx="4" fill="#d1d1d6"/>
+          <rect x="120" y="128" width="30" height="14" fill="#fff"/>
+          <rect x="150" y="112" width="110" height="46" rx="10" fill="#f4f4f4"/>
+          <circle cx="205" cy="135" r="14" fill="var(--yellow)"/>
+          <rect x="260" y="124" width="60" height="22" rx="6" fill="#2b2b2e"/>
+          <path d="M320 135 q60 -40 120 -10" fill="none" stroke="#2b2b2e" stroke-width="7"/>
+          <!-- flash rays -->
+          <g stroke="var(--orange)" stroke-width="5">
+            <line x1="205" y1="95" x2="205" y2="78"/><line x1="232" y1="106" x2="245" y2="94"/><line x1="178" y1="106" x2="165" y2="94"/><line x1="240" y1="135" x2="256" y2="135"/>
+          </g>
+          <text x="205" y="195" font-size="18" text-anchor="middle" stroke="none" fill="var(--ink)">tester between plug and boot</text>
+          <text x="440" y="60" font-size="30" font-family="Bangers, Impact" text-anchor="middle" stroke="none" fill="var(--red)">FLASH</text>
+          <text x="440" y="90" font-size="16" text-anchor="middle" stroke="none" fill="var(--ink)">3 pulls, 3 flashes</text>
+      </svg>
+    </div>
+    <div class="bubble">Wires on first. Three pulls. Does the lamp flash every time?</div>
+    <p class="who">Coach</p>
+    <div class="branches">
+      <div class="branch"><b class="b-ok">YES 3 of 3</b><span>Spark is fine. Go to Test 2.</span></div>
+      <div class="branch"><b class="b-hm">SOME</b><span>Weak. Re-gap the coil, 0.010 to 0.016 in (cause 4), then test again.</span></div>
+      <div class="branch"><b class="b-no">NONE</b><span>Test 1b: unplug the yellow sensor wire at its bullet connector, pull 3. Flashes now? Cause 2. Still none: unplug the black kill wire, pull 3. Still none: coil gap (4), then key (3). <strong>Plug both wires back in.</strong></span></div>
+    </div>
+  </section>
+
+  <!-- PANEL 5: Test 2 fuel -->
+  <section class="panel">
+    <div class="panel__n">5</div>
+    <h2><small>Test 2</small>Fuel</h2>
+    <div class="art">
+      <svg viewBox="0 0 520 220" role="img" aria-label="The coach gives one short squirt of starting fluid into the carb throat while the student pulls, standing beside the recoil" font-family="Patrick Hand, cursive" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+          <rect x="300" y="110" width="130" height="80" rx="8" fill="#2b2b2e"/>
+          <rect x="250" y="130" width="50" height="40" rx="6" fill="#8e8e93"/>
+          <circle cx="250" cy="150" r="18" fill="#1d1d1f"/><circle cx="250" cy="150" r="10" fill="#fff"/>
+          <!-- can -->
+          <rect x="120" y="100" width="44" height="90" rx="6" fill="var(--red)"/>
+          <rect x="130" y="86" width="24" height="14" rx="3" fill="#d1d1d6"/>
+          <path d="M160 94 q50 30 80 52" fill="none" stroke="var(--blue)" stroke-width="5" stroke-dasharray="2 8"/>
+          <text x="142" y="150" font-size="14" text-anchor="middle" stroke="none" fill="#fff">START</text>
+          <text x="90" y="60" font-size="30" font-family="Bangers, Impact" stroke="none" fill="var(--blue)">ONE.</text>
+          <text x="90" y="84" font-size="15" stroke="none" fill="var(--ink)">not "one-two"</text>
+          <text x="365" y="80" font-size="15" text-anchor="middle" stroke="none" fill="var(--ink)">choke OFF, throttle OPEN</text>
+      </svg>
+    </div>
+    <div class="bubble">The fluid does the choke's job. Choke plus fluid floods it. One squirt, three pulls, twice at most.</div>
+    <p class="who">Coach</p>
+    <div class="branches">
+      <div class="branch"><b class="b-ok">VROOM... dies</b><span>Runs a second or more, or fires in the muffler, then quits. Spark and compression are fine. It is fuel: carb (5), governor (6), or bad gas (10). Skip Test 3.</span></div>
+      <div class="branch"><b class="b-hm">PFFT</b><span>A sneeze back out the carb is not a pass. Write it down: cam timing (1) or intake lash (7).</span></div>
+      <div class="branch"><b class="b-no">NOTHING</b><span>Two tries, nothing. Go to Test 3.</span></div>
+    </div>
+  </section>
+
+  <!-- PANEL 6: Test 3 compression -->
+  <section class="panel panel--wide">
+    <div class="panel__n">6</div>
+    <h2><small>Test 3</small>Compression</h2>
+    <div class="row">
+      <div class="art">
+        <svg viewBox="0 0 520 260" role="img" aria-label="A compression gauge threaded into the plug hole, the plug grounded on the head, and two gauge faces compared: the coach's known-good engine and this one" font-family="Patrick Hand, cursive" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+          <!-- engine head -->
+          <rect x="40" y="150" width="200" height="80" rx="8" fill="#2b2b2e"/>
+          <rect x="60" y="130" width="160" height="24" rx="4" fill="#d1d1d6"/>
+          <!-- hose + gauge -->
+          <path d="M120 130 q0 -60 60 -70" fill="none" stroke="#2b2b2e" stroke-width="7"/>
+          <circle cx="200" cy="60" r="36" fill="#fff"/>
+          <line x1="200" y1="60" x2="222" y2="40" stroke="var(--red)"/>
+          <circle cx="200" cy="60" r="4" fill="var(--ink)"/>
+          <!-- grounded plug -->
+          <rect x="180" y="118" width="40" height="14" rx="3" fill="#d1d1d6"/>
+          <text x="200" y="112" font-size="12" text-anchor="middle" stroke="none" fill="var(--ink)">plug on bare metal</text>
+          <!-- two gauge faces -->
+          <circle cx="340" cy="120" r="48" fill="#fff"/><line x1="340" y1="120" x2="372" y2="92" stroke="var(--green)" stroke-width="5"/>
+          <text x="340" y="190" font-size="16" text-anchor="middle" stroke="none" fill="var(--ink)">coach's good engine</text>
+          <text x="340" y="212" font-size="16" text-anchor="middle" stroke="none" fill="var(--ink)">____ psi</text>
+          <circle cx="460" cy="120" r="48" fill="#fff"/><line x1="460" y1="120" x2="440" y2="80" stroke="var(--red)" stroke-width="5"/>
+          <text x="460" y="190" font-size="16" text-anchor="middle" stroke="none" fill="var(--ink)">this one</text>
+          <text x="460" y="212" font-size="16" text-anchor="middle" stroke="none" fill="var(--ink)">same gauge</text>
+        </svg>
+      </div>
+      <div>
+        <div class="bubble">Switch off. Fuel off. Plug out, grounded on the head, away from the hole. Choke and throttle wide open. Six sharp pulls. Photograph the needle.</div>
+        <p class="who">Coach</p>
+        <div class="bubble bubble--r bubble--think">There is no magic number. The compression release holds a valve open while you crank, so every pull-start reading is low. Compare to a good engine on this gauge.</div>
+        <p class="who">Coach, quietly</p>
+      </div>
+    </div>
+    <div class="branches">
+      <div class="branch"><b class="b-ok">NORMAL</b><span>Within about 15 psi of the good engine, but it would not fire on fluid: cam timing (1), then flywheel key (3). A sheared key still flashes the tester, just at the wrong moment.</span></div>
+      <div class="branch"><b class="b-no">LOW</b><span>30 or more below. Teaspoon of oil in the hole, six more pulls. Rises 20 psi or more: rings (8). Rises under 10: valve, lash, or head gasket (7, 8). In between: do both again, lash first.</span></div>
+    </div>
+  </section>
+
+  <!-- PANEL 7: lineup -->
+  <section class="panel panel--wide">
+    <div class="panel__n">7</div>
+    <h2><small>The verdict</small>Ten suspects, most likely first</h2>
+    <div class="lineup">
+      <a href="./#c1"><span class="num">1</span>Cam gear one tooth off<span class="t">Coach step</span></a>
+      <a href="./#c2"><span class="num">2</span>Sensor or kill wire grounding the coil<span class="t">You</span></a>
+      <a href="./#c3"><span class="num">3</span>Flywheel key sheared or loose<span class="t">Coach step</span></a>
+      <a href="./#c4"><span class="num">4</span>Coil gap too wide<span class="t">You</span></a>
+      <a href="./#c5"><span class="num">5</span>Carb gummed or stacked wrong<span class="t">You</span></a>
+      <a href="./#c6"><span class="num">6</span>Governor holding throttle shut<span class="t">Coach step</span></a>
+      <a href="./#c7"><span class="num">7</span>Lash set on the wrong stroke<span class="t">You</span></a>
+      <a href="./#c8"><span class="num">8</span>Rings or head gasket<span class="t">Coach step</span></a>
+      <a href="./#c9"><span class="num">9</span>Flooded plug<span class="t">You</span></a>
+      <a href="./#c10"><span class="num">10</span>Bad gas, no fuel<span class="t">You</span></a>
+    </div>
+    <div class="bubble">So which one is mine?</div>
+    <p class="who">Student</p>
+    <div class="bubble bubble--r">Your sheet tells you. Two results point at one number and rule out the rest. Write the number, write the two results, and then we fix exactly that.</div>
+    <p class="who">Coach</p>
+  </section>
+
+  <!-- PANEL 8: three mistakes -->
+  <section class="panel panel--wide">
+    <div class="panel__n">8</div>
+    <h2><small>Where rebuilds go wrong</small>The three usual suspects, drawn</h2>
+    <div class="row" style="grid-template-columns: 1fr 1fr 1fr;">
+      <div class="art">
+        <svg viewBox="0 0 300 220" role="img" aria-label="Crank gear dot facing the cam gear dot, with a red X version one tooth off" font-family="Patrick Hand, cursive" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round">
+          <circle cx="150" cy="60" r="22" fill="#d1d1d6"/><circle cx="150" cy="150" r="48" fill="#d1d1d6"/>
+          <circle cx="150" cy="82" r="6" fill="var(--blue)" stroke="none"/><circle cx="150" cy="102" r="6" fill="var(--blue)" stroke="none"/>
+          <line x1="150" y1="60" x2="150" y2="150" stroke-dasharray="4 6"/>
+          <text x="150" y="212" font-size="18" text-anchor="middle" stroke="none" fill="var(--ink)">dots face each other, every time</text>
+        </svg>
+      </div>
+      <div class="art">
+        <svg viewBox="0 0 300 220" role="img" aria-label="A flywheel key fully seated in its slot beside a sheared key" font-family="Patrick Hand, cursive" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round">
+          <rect x="40" y="90" width="220" height="50" rx="6" fill="#d1d1d6"/>
+          <rect x="120" y="76" width="60" height="22" rx="3" fill="var(--blue)"/>
+          <text x="150" y="60" font-size="16" text-anchor="middle" stroke="none" fill="var(--ink)">key all the way in its slot</text>
+          <path d="M60 180 l30 0 l-4 14 l-30 0 z" fill="var(--red)"/><path d="M98 182 l34 0 l0 14 l-30 0 z" fill="var(--red)" transform="rotate(-10 115 190)"/>
+          <text x="200" y="195" font-size="16" text-anchor="middle" stroke="none" fill="var(--red)">sheared = kickback</text>
+        </svg>
+      </div>
+      <div class="art">
+        <svg viewBox="0 0 300 220" role="img" aria-label="A feeler gauge in the gap between rocker and valve, with the four strokes labeled and the compression stroke marked as the one to set lash on" font-family="Patrick Hand, cursive" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round">
+          <path d="M40 80 L200 70 L210 76 L200 90 L40 95 Z" fill="#d1d1d6"/>
+          <rect x="190" y="98" width="12" height="60" fill="#d1d1d6"/>
+          <rect x="150" y="90" width="80" height="6" fill="var(--blue)" stroke="none"/>
+          <text x="150" y="60" font-size="16" text-anchor="middle" stroke="none" fill="var(--ink)">0.004 goes, 0.006 does not</text>
+          <g stroke-width="3">
+            <rect x="20" y="175" width="60" height="30" rx="5" fill="#fff"/><rect x="85" y="175" width="80" height="30" rx="5" fill="var(--green)"/><rect x="170" y="175" width="50" height="30" rx="5" fill="#fff"/><rect x="225" y="175" width="60" height="30" rx="5" fill="var(--red)"/>
+          </g>
+          <g stroke="none" fill="var(--ink)" font-size="13" text-anchor="middle">
+            <text x="50" y="195">intake</text><text x="125" y="195">COMPRESSION</text><text x="195" y="195">power</text><text x="255" y="195" fill="#fff">exhaust</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="bubble bubble--r">Top dead center comes twice. Only the compression one has both valves shut. Finger over the plug hole, feel the push, both rockers lift and tick. Set lash there.</div>
+    <p class="who">Coach</p>
+  </section>
+
+  <!-- PANEL 9: never -->
+  <section class="panel">
+    <div class="panel__n">9</div>
+    <h2><small>The never list</small>Six things that end the lab early</h2>
+    <div class="never">
+      <div>Pull again after a kickback</div>
+      <div>Plug lying near the open hole</div>
+      <div>Pry a flywheel</div>
+      <div>Drill out a jet</div>
+      <div>Lash on the exhaust stroke</div>
+      <div>Soak it in starting fluid</div>
+    </div>
+  </section>
+
+  <!-- PANEL 10: closing -->
+  <section class="panel">
+    <div class="panel__n">10</div>
+    <h2><small>The rule</small>Tools first, parts second</h2>
+    <div class="art">
+      <svg viewBox="0 0 520 200" role="img" aria-label="The engine running with exhaust puffs, the student and coach high-fiving" font-family="Patrick Hand, cursive" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+          <rect x="200" y="100" width="130" height="80" rx="8" fill="#2b2b2e"/>
+          <rect x="215" y="75" width="100" height="30" rx="6" fill="#d1d1d6"/>
+          <circle cx="235" cy="140" r="26" fill="#1d1d1f"/><circle cx="235" cy="140" r="14" fill="#555"/>
+          <g fill="#d1d1d6" stroke-width="3"><circle cx="350" cy="90" r="10"/><circle cx="368" cy="70" r="14"/><circle cx="392" cy="48" r="18"/></g>
+          <text x="265" y="55" font-size="34" font-family="Bangers, Impact" text-anchor="middle" stroke="none" fill="var(--green)">VROOOM</text>
+          <circle cx="90" cy="70" r="22" fill="var(--skin)"/><path d="M70 150 L70 110 q20 -30 40 0 L110 150" fill="#4a6fa5"/>
+          <line x1="110" y1="110" x2="150" y2="80"/>
+          <circle cx="450" cy="70" r="24" fill="var(--skin)"/><path d="M426 60 h48 l-6 -12 h-36 z" fill="var(--blue)"/><path d="M428 150 L428 110 q22 -32 44 0 L472 150" fill="#2f3b2f"/>
+          <line x1="428" y1="110" x2="390" y2="80"/>
+          <text x="270" y="195" font-size="14" text-anchor="middle" stroke="none" fill="var(--ink)">(fixed with a feeler gauge and a photo, not a new carb)</text>
+      </svg>
+    </div>
+    <div class="bubble">A spark tester, a can of fluid, a gauge and a feeler set. About the price of one carburetor nobody needed.</div>
+    <p class="who">Coach</p>
+  </section>
+
+</div>
+
+<p class="foot">The comic covers the bench path. Specs, reassembly order, parts list, the lab rubric and the teacher's day are in the <a href="./">full guide</a>. Mr. McAteer &middot; CVHS Metals, Engines and Fabrication &middot; <a href="../../">promptaieducation.com</a></p>
+
+</div>
+</body>
+</html>

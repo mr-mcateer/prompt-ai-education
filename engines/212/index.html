@@ -1,6 +1,17 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Predator 212 Rebuild Guide</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Predator 212 Rebuild Guide | CVHS Small Engines | Mr. McAteer</title>
+  <meta name="description" content="A bench guide for the non-hemi Predator 212 that will not start after a rebuild: a safety gate, three tests with countable pass lines, ten ranked causes, the three rebuild mistakes, specs, reassembly order, parts and the lab.">
+  <meta name="theme-color" content="#1a1a1a">
+  <link rel="canonical" href="https://promptaieducation.com/engines/212/">
+  <meta property="og:title" content="Predator 212 Rebuild Guide">
+  <meta property="og:description" content="You rebuilt the Predator 212. It won't start. Here is how to find out why.">
+  <meta property="og:url" content="https://promptaieducation.com/engines/212/">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://promptaieducation.com/engines/212/img/predator-212-engine.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
@@ -324,6 +335,12 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
 .agenda-day ol, .agenda-day ul { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
 @media (max-width: 860px) { .agenda-day { grid-template-columns: 1fr; padding: 20px; } }
 
+.related { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; }
+.related li { display: flex; flex-direction: column; gap: 2px; font-size: 15px; min-width: 0; }
+.related li a { font-weight: 600; }
+.related li span { color: var(--gray-600); }
+@media (max-width: 700px) { .related { grid-template-columns: 1fr; } }
+
 /* SOURCES */
 .sources ul { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
 .sources li span { color: var(--gray-600); }
@@ -351,6 +368,8 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
 }
 </style>
 
+</head>
+<body>
 <nav class="site-nav" aria-label="Page navigation">
   <div class="site-nav__inner">
     <div class="site-nav__brand">
@@ -364,7 +383,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
       <li><a href="#card">Bench card</a></li>
       <li><a href="#lab">Lab</a></li>
       <li><a href="#reference-head">Reference</a></li>
-      <li><a href="https://promptaieducation.com/agenda/se/">Engines agenda</a></li>
+      <li><a href="../../agenda/se/">Engines agenda</a></li>
     </ul>
   </div>
 </nav>
@@ -381,6 +400,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
         <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </a>
       <a href="#card" class="btn btn--secondary">Bench card</a>
+      <a href="comic.html" class="btn btn--secondary">Comic version</a>
     </div>
   </div>
 </section>
@@ -584,7 +604,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <li>Why does the compression test tell you to compare against the teacher's engine instead of a number?</li>
           <li>You got no spark in 1a and no spark in 1b. Which do you check first, the coil gap or the key, and why?</li>
         </ol>
-      </div>
+              </div>
     </details>
   </div>
 </section>
@@ -862,7 +882,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
           <li>What holds the flywheel on the crank: the key, or something else?</li>
           <li>After the cam is in, can turning the crank change the timing? Why not?</li>
         </ol>
-      </div>
+              </div>
     </details>
   </div>
 </section>
@@ -1146,6 +1166,7 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
     </div>
   </div>
 </section>
+
 
 <div class="rule-band">
   <div class="container">
@@ -1481,6 +1502,23 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
   </div>
 </section>
 
+
+<section id="related" class="band">
+  <div class="container">
+    <div class="section-header" style="margin-bottom: 28px;">
+      <p class="eyebrow">More from this class</p>
+      <h2 style="font-size: clamp(1.4rem, 2.6vw, 1.8rem);">Related pages on this site</h2>
+    </div>
+    <ul class="related">
+      <li><a href="comic.html">The comic version</a><span>The bench path in ten panels, for a phone at the bench.</span></li>
+      <li><a href="../../agenda/se/">Small Engines daily agenda</a><span>What we did today, newest on top, with the teardown days and timing-mark photos.</span></li>
+      <li><a href="../../metals-presentation/syllabus_engines_fab.html">Engines and Fabrication syllabus</a><span>Grading, Module 2 teardown portfolio, the self-assessment rules this lab follows.</span></li>
+      <li><a href="../../engine-review/">Engine parts review</a><span>The parts-identification slides from the anatomy unit.</span></li>
+      <li><a href="../../bobs-corner/">Bob's Corner</a><span>Shop videos picked by Bob Musil.</span></li>
+    </ul>
+  </div>
+</section>
+
 <section id="sources" class="sources band">
   <div class="container">
     <div class="section-header">
@@ -1505,9 +1543,9 @@ dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray
   <div class="container--wide">
     <div class="footer__inner">
       <div>Mr. McAteer &middot; CTE Metals, Engines and Fabrication &middot; Crescent Valley High School</div>
-      <div><a href="https://promptaieducation.com/">promptaieducation.com</a> &middot; <a href="https://promptaieducation.com/agenda/se/">Small Engines agenda</a> &middot; Updated November 2026</div>
+      <div><a href="../../">promptaieducation.com</a> &middot; <a href="../../agenda/se/">Small Engines agenda</a> &middot; <a href="teacher.html">For the teacher</a> &middot; Updated November 2026</div>
     </div>
   </div>
 </footer>
-
-</body></html>
+</body>
+</html>

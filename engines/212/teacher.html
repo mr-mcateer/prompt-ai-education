@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>No-Start Lab, Teacher Page | CVHS Small Engines | Mr. McAteer</title>
+  <meta name="description" content="Teacher page for the Predator 212 no-start lab: the 90-minute agenda day, answer keys, and the numbers to fill in before class.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#1a1a1a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+/* Layout: same system as promptaieducation.com. 980px reading column, 1120px wide band, step cards, one rule band. */
+:root {
+  --white: #ffffff;
+  --off-white: #fafafa;
+  --gray-50: #f5f5f7;
+  --gray-100: #e8e8ed;
+  --gray-200: #d2d2d7;
+  --gray-300: #c7c7cc;
+  --gray-400: #86868b;
+  --gray-600: #6e6e73;
+  --gray-800: #1d1d1f;
+  --black: #000000;
+  --accent: #0071e3;
+  --accent-hover: #0077ed;
+  --accent-light: #e8f2ff;
+  --success: #34c759;
+  --warning: #f5a623;
+  --danger: #ff3b30;
+  --yes-bg: #e9f8ec;
+  --no-bg: #fff1e6;
+  --warning-ink: #9a7400;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --max-width: 980px;
+  --max-width-wide: 1120px;
+  --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --radius: 16px;
+  --radius-lg: 24px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --white: #1d1d1f; --off-white: #161618; --gray-50: #2a2a2c; --gray-100: #3a3a3c; --gray-200: #48484a;
+    --gray-300: #636366; --gray-400: #98989d; --gray-600: #aeaeb2; --gray-800: #f5f5f7; --black: #ffffff;
+    --accent: #2997ff; --accent-hover: #64b5f6; --accent-light: #1a2a3a; --yes-bg: #1b2e20; --no-bg: #3a2a1a; --warning-ink: #ffcc66;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --white: #1d1d1f; --off-white: #161618; --gray-50: #2a2a2c; --gray-100: #3a3a3c; --gray-200: #48484a;
+  --gray-300: #636366; --gray-400: #98989d; --gray-600: #aeaeb2; --gray-800: #f5f5f7; --black: #ffffff;
+  --accent: #2997ff; --accent-hover: #64b5f6; --accent-light: #1a2a3a; --yes-bg: #1b2e20; --no-bg: #3a2a1a; --warning-ink: #ffcc66;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  font-family: var(--font-body); font-size: 17px; line-height: 1.65;
+  color: var(--gray-800); background: var(--white);
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--white); }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.15; text-wrap: balance; }
+a { color: var(--accent); text-decoration: none; transition: color 0.2s var(--ease-out); }
+a:hover { color: var(--accent-hover); }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+img { max-width: 100%; height: auto; display: block; }
+svg { max-width: 100%; height: auto; }
+.container, .container--wide {
+  margin: 0 auto;
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+}
+.container { max-width: var(--max-width); }
+.container--wide { max-width: var(--max-width-wide); }
+section { padding-block: 96px; }
+.section-header { text-align: center; margin-bottom: 56px; }
+.section-header h2 { font-size: clamp(1.8rem, 3.8vw, 2.6rem); letter-spacing: -0.02em; margin-bottom: 12px; }
+.section-header p { font-size: 1.05rem; color: var(--gray-600); max-width: 640px; margin: 0 auto; }
+.eyebrow, .section-header p.eyebrow, .split p.eyebrow, .lab-card p.eyebrow, .example p.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 auto 14px; max-width: none; }
+p + p { margin-top: 1em; }
+strong { font-weight: 600; }
+.num { font-variant-numeric: tabular-nums; }
+
+/* NAV */
+.site-nav {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 100;
+  background: color-mix(in srgb, var(--white) 82%, transparent);
+  backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--gray-100);
+}
+.site-nav__inner {
+  max-width: var(--max-width-wide); margin: 0 auto; height: 52px;
+  padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px));
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.site-nav__brand { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+.site-nav__logo { font-weight: 700; font-size: 14px; color: var(--gray-800); }
+.site-nav__badge { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); background: var(--accent-light); padding: 3px 8px; border-radius: 999px; }
+.site-nav__links { display: flex; gap: 22px; list-style: none; overflow-x: auto; scrollbar-width: none; }
+.site-nav__links::-webkit-scrollbar { display: none; }
+.site-nav__links a { font-size: 13px; font-weight: 500; color: var(--gray-600); white-space: nowrap; }
+.site-nav__links a:hover { color: var(--gray-800); }
+
+/* HERO */
+.hero { padding: 120px 0 80px; text-align: center; }
+.hero h1 { font-size: clamp(2.2rem, 5.5vw, 3.6rem); letter-spacing: -0.025em; max-width: 820px; margin: 0 auto 22px; }
+.hero__sub { font-size: 1.15rem; color: var(--gray-600); max-width: 640px; margin: 0 auto 32px; }
+.hero__actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 999px; font-weight: 500; font-size: 15px; transition: background 0.2s, color 0.2s, transform 0.2s; }
+.btn--primary { background: var(--accent); color: #fff; }
+.btn--primary:hover { background: var(--accent-hover); color: #fff; }
+.btn--secondary { background: var(--gray-50); color: var(--gray-800); }
+.btn--secondary:hover { background: var(--gray-100); color: var(--gray-800); }
+.btn svg { width: 16px; height: 16px; }
+
+/* PHOTO BANNER */
+.photo-banner { position: relative; background: #1d1d1f; max-height: 560px; overflow: hidden; }
+.photo-banner img { width: 100%; height: 100%; object-fit: cover; max-height: 560px; }
+.photo-banner__overlay { position: absolute; inset: 0; padding: 32px; display: flex; align-items: flex-end; background: linear-gradient(transparent 40%, rgba(0,0,0,0.45)); }
+.photo-banner--low img { object-position: center 40%; }
+.photo-banner__text { color: #fff; font-size: 13px; font-weight: 500; opacity: 0.9; }
+
+/* STATS STRIP */
+.stats-strip { background: var(--gray-50); border-top: 1px solid var(--gray-100); border-bottom: 1px solid var(--gray-100); }
+.stats-strip__inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding-block: 40px; }
+.stat-item { text-align: center; }
+.stat-item__number { font-family: var(--font-display); font-size: 2.4rem; font-weight: 700; color: var(--gray-800); line-height: 1; font-variant-numeric: tabular-nums; }
+.stat-item__label { font-size: 13px; color: var(--gray-600); margin-top: 8px; }
+
+/* RULE BAND */
+.rule-band { background: var(--gray-800); color: var(--white); padding-block: 64px; text-align: center; }
+.rule-band p { font-family: var(--font-display); font-size: clamp(1.3rem, 2.6vw, 1.8rem); max-width: 760px; margin: 0 auto 10px; text-wrap: balance; }
+.rule-band small { color: var(--gray-300); font-size: 14px; }
+
+/* STEP CARDS */
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.step { background: var(--gray-50); border-radius: var(--radius); padding: 28px 26px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.step__n { font-family: var(--font-display); font-size: 2rem; color: var(--accent); line-height: 1; }
+.step h3 { font-size: 1.4rem; }
+.step p, .step li { font-size: 15px; color: var(--gray-600); }
+.step ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.step li { padding-left: 18px; position: relative; }
+.step li::before { content: ""; position: absolute; left: 0; top: 10px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.step li strong { color: var(--gray-800); }
+.step__tool { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray-400); }
+
+/* FIGURES */
+figure { margin: 0; }
+.figure { background: var(--gray-50); border-radius: var(--radius-lg); padding: 28px; overflow-x: auto; }
+.figure svg { display: block; margin: 0 auto; color: var(--gray-800); width: 100%; }
+.figure figcaption { font-size: 14px; color: var(--gray-600); margin-top: 18px; max-width: 700px; margin-left: auto; margin-right: auto; text-align: center; }
+.figure--tight { padding: 20px; }
+.figure--tight svg text { font-size: 13px; }
+.figure--tight svg text[font-size="14"], .figure--tight svg text[font-size="15"] { font-size: 15px; }
+.fig-row svg text { font-size: 11px; }
+.fig-row svg text[font-size="12"] { font-size: 12px; }
+.fig-row svg text[font-size="14"] { font-size: 14px; }
+@media (max-width: 700px) { .figure--tight svg { min-width: 560px; } .figure--tight { padding: 16px; } .figure--tight figcaption::after { content: " Swipe sideways to see the whole drawing."; color: var(--gray-400); } }
+
+/* TWO COLUMN */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.split > * { min-width: 0; }
+.split h3 { font-size: 1.7rem; margin-bottom: 14px; }
+.split p { color: var(--gray-600); }
+.split + .split { margin-top: 72px; }
+.split--reverse > :first-child { order: 2; }
+.split--top { align-items: start; }
+.split--top > figure { position: sticky; top: 72px; }
+.spec-pair { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+.chip { font-size: 13px; font-weight: 600; background: var(--accent-light); color: var(--accent); padding: 6px 12px; border-radius: 999px; font-variant-numeric: tabular-nums; }
+.chip--warn { background: var(--no-bg); color: #b4540c; }
+:root[data-theme="dark"] .chip--warn, :root[data-theme="dark"] .step__safe { color: #ffb067; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .chip--warn, :root:not([data-theme="light"]) .step__safe { color: #ffb067; } }
+
+/* TABLES */
+.table-wrap { overflow-x: auto; border: 1px solid var(--gray-100); border-radius: var(--radius); }
+@media (max-width: 700px) { .table-wrap table:not(.causes) { min-width: 640px; } .table-wrap { position: relative; } }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 12px 14px; vertical-align: top; border-bottom: 1px solid var(--gray-100); }
+th { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray-600); background: var(--gray-50); white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+td.num, th.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.causes td:first-child { font-family: var(--font-display); font-size: 1.3rem; color: var(--accent); font-variant-numeric: tabular-nums; }
+.tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
+.tag--now { background: var(--yes-bg); color: #1b7a34; }
+.tag--wait { background: var(--no-bg); color: #b4540c; }
+.tag--free { background: var(--accent-light); color: var(--accent); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tag--now { color: #6fdc86; } :root:not([data-theme="light"]) .tag--wait { color: #ffb067; } }
+:root[data-theme="dark"] .tag--now { color: #6fdc86; }
+:root[data-theme="dark"] .tag--wait { color: #ffb067; }
+
+/* CHECKLIST */
+.checklist { list-style: none; counter-reset: step; display: flex; flex-direction: column; gap: 0; border: 1px solid var(--gray-100); border-radius: var(--radius); overflow: hidden; }
+.checklist li { counter-increment: step; display: grid; grid-template-columns: 56px 1fr auto; gap: 16px; padding: 16px 20px; border-bottom: 1px solid var(--gray-100); align-items: start; }
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before { content: counter(step, decimal-leading-zero); font-family: var(--font-display); font-size: 1.4rem; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.2; }
+.checklist li > div { min-width: 0; }
+.checklist strong { display: block; margin-bottom: 2px; }
+.checklist span { font-size: 15px; color: var(--gray-600); }
+.checklist .torque { font-size: 13px; font-weight: 600; color: var(--gray-800); background: var(--gray-50); padding: 6px 10px; border-radius: 8px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* STEP LIST */
+.step-list { padding-left: 0; list-style: none; counter-reset: s; display: flex; flex-direction: column; gap: 10px; }
+.step-list li { counter-increment: s; position: relative; padding-left: 36px; font-size: 15px; color: var(--gray-600); }
+.step-list li::before { content: counter(s); position: absolute; left: 0; top: 1px; width: 24px; height: 24px; border-radius: 50%; background: var(--accent-light); color: var(--accent); font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; font-variant-numeric: tabular-nums; }
+.step-list li strong { color: var(--gray-800); }
+
+/* MINI FIGURES ROW */
+.fig-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+.fig-row > * { min-width: 0; }
+.fig-row .figure { padding: 20px; }
+.fig-row figcaption { font-size: 13px; margin-top: 12px; }
+.fig-row h3 { font-family: var(--font-display); font-weight: 500; font-size: 1.15rem; text-align: center; margin-bottom: 10px; }
+@media (max-width: 860px) { .fig-row { grid-template-columns: 1fr; } }
+
+/* CALLOUT */
+.callout { border-left: 4px solid var(--warning); background: var(--gray-50); padding: 18px 22px; border-radius: 0 var(--radius) var(--radius) 0; font-size: 15px; }
+.callout--danger { border-left-color: var(--danger); }
+.callout strong { display: block; margin-bottom: 4px; }
+.stack { display: flex; flex-direction: column; gap: 24px; }
+
+/* DETAILS */
+details { border: 1px solid var(--gray-100); border-radius: var(--radius); padding: 0 22px; }
+details + details { margin-top: 12px; }
+summary { cursor: pointer; padding: 18px 0; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; font-size: 22px; color: var(--gray-400); font-weight: 400; }
+details[open] summary::after { content: "\2212"; }
+details .body { padding: 0 0 22px; color: var(--gray-600); font-size: 15px; }
+details .body ul, details .body ol { padding-left: 22px; display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+
+/* LAB */
+.lab-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; }
+.lab-grid > * { min-width: 0; }
+.lab-card { background: var(--gray-50); border-radius: var(--radius); padding: 28px; }
+.lab-card h3 { font-size: 1.4rem; margin-bottom: 12px; }
+.lab-card p, .lab-card li { font-size: 15px; color: var(--gray-600); }
+.lab-card ol, .lab-card ul { padding-left: 22px; display: flex; flex-direction: column; gap: 8px; }
+.record { width: 100%; border-collapse: collapse; font-size: 14px; }
+.record th, .record td { border: 1px solid var(--gray-200); padding: 10px; height: 44px; }
+.record th { background: var(--white); color: var(--gray-800); text-transform: none; letter-spacing: 0; font-size: 14px; white-space: normal; }
+.record { table-layout: fixed; }
+.record td, .record th { overflow-wrap: anywhere; }
+
+/* BENCH CARD */
+.bench-card { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 2px solid var(--gray-800); border-radius: var(--radius); overflow: hidden; }
+.bench-col { padding: 22px 20px; border-right: 1px solid var(--gray-200); min-width: 0; }
+.bench-col:last-child { border-right: none; }
+.bench-col h3 { font-family: var(--font-body); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+.bench-col ol, .bench-col ul { padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+.bench-col ul.bench-nums { list-style: none; padding-left: 0; gap: 4px; }
+.bench-nums li { display: flex; justify-content: space-between; gap: 8px; font-variant-numeric: tabular-nums; }
+.bench-nums li span { color: var(--gray-600); }
+.bench-nums li b { font-weight: 600; white-space: nowrap; }
+@media (max-width: 860px) { .bench-card { grid-template-columns: 1fr 1fr; } .bench-col:nth-child(2n) { border-right: none; } .bench-col:nth-child(-n+2) { border-bottom: 1px solid var(--gray-200); } }
+@media (max-width: 480px) { .bench-card { grid-template-columns: 1fr; } .bench-col { border-right: none; border-bottom: 1px solid var(--gray-200); } .bench-col:last-child { border-bottom: none; } }
+
+/* GLOSSARY */
+.glossary { display: grid; grid-template-columns: 160px 1fr; gap: 14px 24px; font-size: 15px; }
+.glossary dt { font-weight: 600; }
+.glossary dd { color: var(--gray-600); }
+@media (max-width: 600px) { .glossary { grid-template-columns: 1fr; gap: 4px 0; } .glossary dd { margin-bottom: 12px; } }
+
+
+/* BANDS and rhythm */
+.band { background: var(--off-white); border-top: 1px solid var(--gray-100); border-bottom: 1px solid var(--gray-100); }
+.band + .band { border-top: none; }
+.note { font-size: 15px; color: var(--gray-600); max-width: 760px; margin: 28px auto 0; text-align: center; }
+dfn { font-style: normal; font-weight: 600; border-bottom: 1px dotted var(--gray-400); }
+.fill { display: inline-block; min-width: 48px; border-bottom: 2px solid var(--gray-800); }
+
+/* GATE */
+.gate { list-style: none; display: flex; flex-direction: column; border: 2px solid var(--gray-800); border-radius: var(--radius); overflow: hidden; background: var(--white); }
+.gate li { display: grid; grid-template-columns: 36px 1fr; gap: 14px; padding: 16px 20px; border-bottom: 1px solid var(--gray-200); align-items: start; font-size: 15px; color: var(--gray-600); }
+.gate li:last-child { border-bottom: none; }
+.gate li strong { color: var(--gray-800); }
+.gate .box { width: 24px; height: 24px; border: 2px solid var(--gray-800); border-radius: 6px; margin-top: 1px; }
+.gate .box--teacher { border-style: dashed; border-color: var(--accent); }
+.gate__sign { background: var(--accent-light); }
+
+/* STEP CARD extras */
+.step__safe { font-size: 13px; font-weight: 600; color: #b4540c; background: var(--no-bg); padding: 8px 12px; border-radius: 10px; }
+.step ol.mini li { padding-left: 0; }
+.step ol.mini li::before { content: none; }
+.step ol.mini { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; color: var(--gray-600); }
+.step ol.mini strong, .step ul strong { color: var(--gray-800); }
+.steps .step ul li a { font-weight: 600; }
+
+/* FLOWCHART: list on narrow screens */
+.flow-list { display: none; list-style: none; padding-left: 0; flex-direction: column; gap: 10px; font-size: 15px; color: var(--gray-600); }
+.flow-list strong { color: var(--gray-800); }
+@media (max-width: 700px) { .flow-figure svg { display: none; } .flow-list { display: flex; } }
+
+/* CHECK YOURSELF */
+.check-q { background: var(--accent-light); border-color: transparent; }
+.check-q .body ol { padding-left: 22px; display: flex; flex-direction: column; gap: 8px; }
+
+/* TAGS */
+.tag--teacher { background: var(--accent); color: #fff; }
+
+/* CAUSES on phone: cards */
+@media (max-width: 700px) {
+  .causes thead { display: none; }
+  .causes tr { display: block; padding: 14px 4px; border-bottom: 1px solid var(--gray-100); }
+  .causes td { display: block; border: none; padding: 3px 0; }
+  .causes td[data-l]:not([data-l="#"]):not([data-l="Cause"])::before { content: attr(data-l); display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray-400); margin-top: 6px; }
+  .causes td:first-child { display: inline; font-size: 1.3rem; margin-right: 8px; }
+  .causes td[data-l="Cause"] { display: inline; font-size: 1.05rem; }
+}
+
+/* RUBRIC */
+.rubric { width: 100%; font-size: 14px; }
+.rubric td, .rubric th { padding: 10px 8px; }
+.example { margin-top: 18px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 12px; padding: 16px 18px; font-size: 14px; }
+.example p { color: var(--gray-600); }
+.lab-card .rubric strong { color: var(--gray-800); }
+
+
+/* TEACHER AGENDA DAY */
+.agenda-day { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 28px; background: var(--white); }
+.agenda-day > * { min-width: 0; }
+.agenda-day h3 { font-family: var(--font-body); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-400); margin: 18px 0 6px; }
+.agenda-day h3:first-child { margin-top: 0; }
+.agenda-day p, .agenda-day li { font-size: 15px; color: var(--gray-600); }
+.agenda-day ol, .agenda-day ul { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+@media (max-width: 860px) { .agenda-day { grid-template-columns: 1fr; padding: 20px; } }
+
+.related { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 28px; }
+.related li { display: flex; flex-direction: column; gap: 2px; font-size: 15px; min-width: 0; }
+.related li a { font-weight: 600; }
+.related li span { color: var(--gray-600); }
+@media (max-width: 700px) { .related { grid-template-columns: 1fr; } }
+
+/* SOURCES */
+.sources ul { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
+.sources li span { color: var(--gray-600); }
+
+/* FOOTER */
+.site-footer { border-top: 1px solid var(--gray-100); padding-block: 40px; }
+.footer__inner { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; font-size: 13px; color: var(--gray-600); }
+.footer__inner a { color: var(--gray-600); }
+.footer__inner a:hover { color: var(--gray-800); }
+
+@media (max-width: 860px) {
+  .steps { grid-template-columns: 1fr; }
+  .split { grid-template-columns: 1fr; gap: 28px; }
+  .split--reverse > :first-child { order: 0; }
+  .split + .split { margin-top: 56px; }
+  .stats-strip__inner { grid-template-columns: repeat(2, 1fr); }
+  .lab-grid { grid-template-columns: 1fr; }
+  section { padding-block: 64px; }
+  .hero { padding: 72px 0 48px; }
+  .hero__actions { flex-direction: column; align-items: center; }
+  .btn { width: 100%; max-width: 280px; justify-content: center; }
+  .site-nav__links { gap: 16px; }
+  .checklist li { grid-template-columns: 44px 1fr; }
+  .checklist .torque { grid-column: 2; justify-self: start; }
+}
+</style>
+
+</head>
+<body>
+<nav class="site-nav" aria-label="Page navigation">
+  <div class="site-nav__inner">
+    <div class="site-nav__brand"><span class="site-nav__logo">Mr. McAteer</span><span class="site-nav__badge">CVHS</span></div>
+    <ul class="site-nav__links">
+      <li><a href="./">Student guide</a></li>
+      <li><a href="comic.html">Comic</a></li>
+      <li><a href="../../agenda/se/">Engines agenda</a></li>
+      <li><a href="../../">Home</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+<section class="hero" id="top" style="padding-bottom: 32px;">
+  <div class="container">
+    <p class="eyebrow">Teacher page &middot; not linked from the student nav</p>
+    <h1>Running the no-start lab</h1>
+    <p class="hero__sub">The agenda-day plan, the answer keys for the two check-yourself boxes, and the known-good numbers to fill in before class.</p>
+  </div>
+</section>
+
+<section id="teacher" style="padding-top: 24px;">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">For the teacher</p>
+      <h2>Running this lab in one period</h2>
+      <p>A 90-minute Period 3 day, in the shape of the daily agenda. Before the day: run the three tests on one known-good engine with the class gauge and write its psi on the Test 3 card and on the whiteboard.</p>
+    </div>
+    <div class="agenda-day">
+      <div class="agenda-day__main">
+        <h3>Objective</h3>
+        <p>By the end of class you can run the three tests on a dead engine, write one cause number, and say which two results rule out the rest.</p>
+        <h3>Journal</h3>
+        <p>Four of our engines will not start after the rebuild. Before anyone touches a tool: what is the one step every team did the same way, and how would you prove it was done right?</p>
+        <h3>Today</h3>
+        <ol>
+          <li>Journal, then phones in the caddy (5 min)</li>
+          <li>Demo on the known-good engine: Test 0 gate read aloud, spark tester lamp, one squirt, gauge reading on the board (12 min)</li>
+          <li>Test 0 at every bench. Teacher initials each sheet before any cord gets pulled (10 min)</li>
+          <li>Tests 1 to 3, photo or video of every result, tape in frame. Starting fluid handed out one test at a time (30 min)</li>
+          <li>Diagnosis written on the sheet, checkpoint 2 initialed. Teacher steps stay closed until checkpoint 3 (15 min)</li>
+          <li>Student fixes only (lash, coil gap, carb clean, plug, fuel). Retest after checkpoint 6 (10 min)</li>
+          <li>Cleanup: tools returned, parts bagged, bench wiped, exit ticket: your cause number and the test that proved it (8 min)</li>
+        </ol>
+      </div>
+      <div class="agenda-day__side">
+        <h3>Due</h3>
+        <p>Record sheet with five captures on Canvas by the end of the period. Engine Lab Safety at 100 percent, or your engine stays closed.</p>
+        <h3>Next class</h3>
+        <p>Teacher steps: side covers and flywheels come off with the teacher at the bench, one team at a time, while the other teams do the carb walkthrough. Bring the timing-dot photo from teardown.</p>
+        <h3>Watch for</h3>
+        <ul>
+          <li>Pulling before the gate is initialed</li>
+          <li>Choke on plus starting fluid</li>
+          <li>Plug lying on the shroud during Test 3</li>
+          <li>Lash set at the wrong TDC: ask which rocker they lifted</li>
+          <li>A second pull after a kickback</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="keys" class="band">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Answer keys</p>
+      <h2>The two check-yourself boxes</h2>
+      <p>The student page shows the questions only.</p>
+    </div>
+    <h3 style="font-size: 1.3rem; margin-bottom: 8px;">After the 10-minute test</h3>
+    <p style="margin-top: 10px;"><strong>Answers:</strong> 1: spark rules out 2 and 4; firing on fluid rules out 1, 3, 7, 8; left are 5, 6, 10. 2: the compression release makes every pull-start reading low, so only a same-gauge comparison means anything. 3: the coil gap, because it takes a shim and two bolts; the key means the flywheel comes off, a teacher step.</p>
+
+    <h3 style="font-size: 1.3rem; margin: 24px 0 8px;">After the three checks</h3>
+    <p style="margin-top: 10px;"><strong>Answers:</strong> 1: TDC compression; the finger over the plug hole feels pressure on the way up, and both rockers lift and tick. 2: the taper and the nut; the key only sets timing. 3: no; the gears are meshed and turn together, so timing can only be set when the cam drops in.</p>
+
+  </div>
+</section>
+<section id="before">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Before the first lab day</p>
+      <h2>Numbers only you can supply</h2>
+    </div>
+    <ol class="step-list">
+      <li><strong>Known-good compression.</strong> Run Test 3 on a running engine with the class gauge, same person pulling, choke and throttle open, six sharp pulls. Write the psi on the whiteboard and in the blank on the student page's Test 3 card.</li>
+      <li><strong>Engine numbers and generation.</strong> Tape on every shroud. Valve cover off once to photograph the keepers (clip-on retainers or split keepers) and write Gen 1 or Gen 3 next to the number.</li>
+      <li><strong>Starting fluid.</strong> One can in the flammables cabinet, signed out per test.</li>
+      <li><strong>Photos still missing from the page.</strong> The yellow sensor wire's bullet connector; the carb side with throttle and choke levers; the rocker with lock nut, adjuster and feeler blade. Three shots on a class engine and they can go in.</li>
+    </ol>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container--wide">
+    <div class="footer__inner">
+      <div>Mr. McAteer &middot; CTE Metals, Engines and Fabrication &middot; Crescent Valley High School</div>
+      <div><a href="./">Student guide</a> &middot; <a href="../../">promptaieducation.com</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

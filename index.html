@@ -1314,8 +1314,9 @@
     (function() {
       'use strict';
 
-      // Respect reduced motion: show everything at once and skip autoplay,
-      // but keep the nav, theme toggle and gallery working.
+      // Respect reduced motion: show everything at once (the CSS also makes
+      // transitions instant), but keep the nav, theme toggle and gallery
+      // working. The gallery still advances on its own; hover pauses it.
       var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       if (reduceMotion) {
@@ -1402,7 +1403,7 @@
         }
         function gFwd() { gGo(gIdx >= gMaxIdx() ? 0 : gIdx + 1); }
         function gBck() { gGo(gIdx <= 0 ? gMaxIdx() : gIdx - 1); }
-        function gStart() { gStop(); if (!reduceMotion) gAuto = setInterval(gFwd, 4500); }
+        function gStart() { gStop(); gAuto = setInterval(gFwd, 4500); }
         function gStop() { if (gAuto) { clearInterval(gAuto); gAuto = null; } }
 
         if (gPrev) gPrev.addEventListener('click', function() { gBck(); gStart(); });

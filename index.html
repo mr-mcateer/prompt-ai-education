@@ -572,6 +572,8 @@
     }
     .gallery-slide {
       flex-shrink: 0;
+      /* Width set here so the carousel holds its shape even if the script never runs. */
+      width: calc((100% - 32px) / 3);
       aspect-ratio: 4/3;
       border-radius: var(--radius);
       overflow: hidden;
@@ -764,6 +766,7 @@
       .stats-strip__inner { grid-template-columns: repeat(2, 1fr); gap: 20px; }
       .courses-grid { grid-template-columns: repeat(2, 1fr); }
       .project-card { grid-template-columns: 1fr; }
+      .gallery-slide { width: calc((100% - 16px) / 2); }
       .project-card--reverse .project-card__image { order: 0; }
       .project-card--reverse .project-card__body { order: 0; }
       .project-card__image { min-height: 260px; }
@@ -776,6 +779,7 @@
 
     @media (max-width: 600px) {
       section { padding: 72px 0; }
+      .gallery-slide { width: 100%; }
       .hero { padding: 130px 0 72px; }
       .hero h1 { font-size: 2.2rem; }
       .hero__actions { flex-direction: column; align-items: center; }
@@ -1271,36 +1275,38 @@
     (function() {
       'use strict';
 
-      // Respect reduced motion
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      // Respect reduced motion: show everything at once and skip autoplay,
+      // but keep the nav, theme toggle and gallery working.
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (reduceMotion) {
         document.querySelectorAll('.reveal').forEach(function(el) {
           el.classList.add('visible');
         });
-        return;
-      }
+      } else {
+        // Immediately reveal hero
+        var heroReveal = document.querySelector('.hero .reveal');
+        if (heroReveal) heroReveal.classList.add('visible');
 
-      // Immediately reveal hero
-      var heroReveal = document.querySelector('.hero .reveal');
-      if (heroReveal) heroReveal.classList.add('visible');
+        // Scroll reveal
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.08,
+          rootMargin: '0px 0px -20px 0px'
+        });
 
-      // Scroll reveal
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
+        document.querySelectorAll('.reveal').forEach(function(el) {
+          if (!el.classList.contains('visible')) {
+            observer.observe(el);
           }
         });
-      }, {
-        threshold: 0.08,
-        rootMargin: '0px 0px -20px 0px'
-      });
-
-      document.querySelectorAll('.reveal').forEach(function(el) {
-        if (!el.classList.contains('visible')) {
-          observer.observe(el);
-        }
-      });
+      }
 
       // Nav background on scroll
       var nav = document.querySelector('.site-nav');
@@ -1330,8 +1336,8 @@
       var gtrack = document.querySelector('.gallery-track');
       if (gwrap && gtrack) {
         var gslides = gtrack.querySelectorAll('.gallery-slide');
-        var gPrev = document.querySelector('.gallery-btn--prev');
-        var gNext = document.querySelector('.gallery-btn--next');
+        var gPrev = document.getElementById('gallery-prev');
+        var gNext = document.getElementById('gallery-next');
         var gFill = document.getElementById('gallery-progress-fill');
         var gIdx = 0;
         var gAuto = null;
@@ -1357,7 +1363,7 @@
         }
         function gFwd() { gGo(gIdx >= gMaxIdx() ? 0 : gIdx + 1); }
         function gBck() { gGo(gIdx <= 0 ? gMaxIdx() : gIdx - 1); }
-        function gStart() { gStop(); gAuto = setInterval(gFwd, 4500); }
+        function gStart() { gStop(); if (!reduceMotion) gAuto = setInterval(gFwd, 4500); }
         function gStop() { if (gAuto) { clearInterval(gAuto); gAuto = null; } }
 
         if (gPrev) gPrev.addEventListener('click', function() { gBck(); gStart(); });
